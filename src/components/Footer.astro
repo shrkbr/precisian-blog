@@ -1,0 +1,18 @@
+---
+// precisian-blog/src/components/Footer.astro
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const year = new Date().getFullYear()
+---
+
+<footer class="border-t border-border mt-24 bg-bg-elevated">
+  <div class="max-w-4xl mx-auto px-6 py-8 text-sm text-fg-muted flex flex-col sm:flex-row justify-between gap-4">
+    <p>© {year} · {t('site.footer.copyright')}</p>
+    <nav class="flex gap-4">
+      <a href={`/blog/${lang}/rss.xml`} class="hover:text-fg">RSS</a>
+      <a href="https://precisian.io" class="hover:text-fg">precisian.io</a>
+    </nav>
+  </div>
+</footer>

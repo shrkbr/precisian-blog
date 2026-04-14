@@ -1,0 +1,26 @@
+---
+// precisian-blog/src/components/Header.astro
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import LanguageSwitcher from './LanguageSwitcher.astro'
+
+interface Props {
+  alternateUrl?: Partial<Record<'pt-BR' | 'en', string>>
+}
+
+const { alternateUrl } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<header class="border-b border-border bg-bg-base">
+  <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href={`/blog/${lang}/`} class="font-display text-xl font-bold text-fg">
+      Precisian <span class="text-accent">Blog</span>
+    </a>
+    <nav class="flex items-center gap-6 text-sm">
+      <a href={`/blog/${lang}/`} class="text-fg-muted hover:text-fg">{t('nav.home')}</a>
+      <a href={`/blog/${lang}/tags/`} class="text-fg-muted hover:text-fg">{t('nav.tags')}</a>
+      <LanguageSwitcher alternateUrl={alternateUrl} />
+    </nav>
+  </div>
+</header>

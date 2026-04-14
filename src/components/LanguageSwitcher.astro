@@ -1,0 +1,33 @@
+---
+// precisian-blog/src/components/LanguageSwitcher.astro
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { languages, type Lang } from '../i18n/ui'
+
+interface Props {
+  alternateUrl?: Partial<Record<Lang, string>>
+}
+
+const { alternateUrl = {} } = Astro.props
+const currentLang = getLangFromUrl(Astro.url)
+const t = useTranslations(currentLang)
+---
+
+<nav aria-label="Language" class="flex gap-3 text-sm">
+  {(Object.keys(languages) as Lang[]).map((lang) => {
+    const isCurrent = lang === currentLang
+    const href = alternateUrl[lang] ?? `/blog/${lang}/`
+    return (
+      <a
+        href={href}
+        class:list={[
+          'hover:text-accent-hover',
+          isCurrent ? 'text-accent font-semibold' : 'text-fg-muted',
+        ]}
+        aria-current={isCurrent ? 'page' : undefined}
+        lang={lang}
+      >
+        {languages[lang]}
+      </a>
+    )
+  })}
+</nav>
