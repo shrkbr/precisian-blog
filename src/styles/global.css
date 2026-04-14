@@ -1,0 +1,69 @@
+/* precisian-blog/src/styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg: #0a0a0a;
+    --bg-elevated: #151515;
+    --fg: #e5e5e5;
+    --fg-muted: #a1a1aa;
+    --accent: #FD68B3;
+    --accent-hover: #ff7bc0;
+    --border: #262626;
+    --code-bg: #111111;
+  }
+
+  :root.light {
+    --bg: #ffffff;
+    --bg-elevated: #fafafa;
+    --fg: #0a0a0a;
+    --fg-muted: #52525b;
+    --accent: #FD68B3;
+    --accent-hover: #d94a94;
+    --border: #e5e5e5;
+    --code-bg: #f4f4f5;
+  }
+
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', Consolas, monospace;
+  }
+
+  a {
+    color: var(--accent);
+    transition: color 0.15s ease;
+  }
+  a:hover {
+    color: var(--accent-hover);
+  }
+
+  main {
+    flex: 1;
+  }
+}
+
+@layer components {
+  .container-prose {
+    @apply max-w-prose mx-auto px-6;
+  }
+}

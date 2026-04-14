@@ -1,5 +1,6 @@
 ---
 // precisian-blog/src/layouts/BaseLayout.astro
+import '../styles/global.css'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 
 interface Props {
@@ -23,6 +24,14 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/blog/favicon.svg" />
+
+    <!-- Fonts: Inter (body), Sora (display), JetBrains Mono (code) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Sora:wght@400;600;700;800&display=swap"
+    />
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
