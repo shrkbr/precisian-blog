@@ -1,0 +1,34 @@
+---
+// precisian-blog/src/components/TableOfContents.astro
+import { useTranslations, getLangFromUrl } from '../i18n/utils'
+import type { MarkdownHeading } from 'astro'
+
+interface Props {
+  headings: MarkdownHeading[]
+}
+
+const { headings } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const visibleHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3)
+---
+
+{visibleHeadings.length > 0 && (
+  <nav aria-label="Table of contents" class="toc">
+    <h3 class="font-display text-sm font-bold uppercase tracking-wider text-fg-muted mb-3">
+      {t('tableOfContents.title')}
+    </h3>
+    <ul class="space-y-2 text-sm">
+      {visibleHeadings.map((heading) => (
+        <li class={heading.depth === 3 ? 'ml-4' : ''}>
+          <a
+            href={`#${heading.slug}`}
+            class="text-fg-muted hover:text-accent transition block leading-tight"
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
