@@ -1,0 +1,39 @@
+---
+// precisian-blog/src/pages/[lang]/index.astro
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import { filterPublishedByLang, sortByDateDesc } from '../../lib/posts'
+import { useTranslations } from '../../i18n/utils'
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'pt-BR' } },
+    { params: { lang: 'en' } },
+  ]
+}
+
+const { lang } = Astro.params as { lang: 'pt-BR' | 'en' }
+const t = useTranslations(lang)
+const all = await getCollection('posts')
+const posts = sortByDateDesc(filterPublishedByLang(all, lang))
+---
+
+<BaseLayout
+  title={`Precisian Blog — ${lang === 'pt-BR' ? 'Início' : 'Home'}`}
+  description={t('site.tagline')}
+>
+  <h1>Precisian Blog</h1>
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={`/blog/${lang}/posts/${post.data.slug}`}>
+          <h2>{post.data.title}</h2>
+          <p>{post.data.description}</p>
+          <time datetime={post.data.publishedAt.toISOString()}>
+            {post.data.publishedAt.toLocaleDateString(lang)}
+          </time>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

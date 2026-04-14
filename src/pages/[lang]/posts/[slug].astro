@@ -1,0 +1,20 @@
+---
+// precisian-blog/src/pages/[lang]/posts/[slug].astro
+import { getCollection } from 'astro:content'
+import ArticleLayout from '../../../layouts/ArticleLayout.astro'
+
+export async function getStaticPaths() {
+  const all = await getCollection('posts', ({ data }) => !data.draft)
+  return all.map((post) => ({
+    params: { lang: post.data.lang, slug: post.data.slug },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await post.render()
+---
+
+<ArticleLayout post={post}>
+  <Content />
+</ArticleLayout>

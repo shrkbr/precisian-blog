@@ -1,0 +1,28 @@
+---
+// precisian-blog/src/pages/[lang]/tags/index.astro
+import { getCollection } from 'astro:content'
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import { filterPublishedByLang, collectTags } from '../../../lib/posts'
+import { useTranslations } from '../../../i18n/utils'
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'pt-BR' } },
+    { params: { lang: 'en' } },
+  ]
+}
+
+const { lang } = Astro.params as { lang: 'pt-BR' | 'en' }
+const t = useTranslations(lang)
+const all = await getCollection('posts')
+const tags = collectTags(filterPublishedByLang(all, lang)).sort()
+---
+
+<BaseLayout title={`Tags — Precisian Blog`} description={t('site.tagline')}>
+  <h1>{t('nav.tags')}</h1>
+  <ul>
+    {tags.map((tag) => (
+      <li><a href={`/blog/${lang}/tags/${tag}`}>#{tag}</a></li>
+    ))}
+  </ul>
+</BaseLayout>
