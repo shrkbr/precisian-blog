@@ -1,7 +1,7 @@
 ---
-// precisian-blog/src/pages/[lang]/index.astro
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import ArticleCard from '../../components/ArticleCard.astro'
 import { filterPublishedByLang, sortByDateDesc } from '../../lib/posts'
 import { useTranslations } from '../../i18n/utils'
 
@@ -22,18 +22,13 @@ const posts = sortByDateDesc(filterPublishedByLang(all, lang))
   title={`Precisian Blog — ${lang === 'pt-BR' ? 'Início' : 'Home'}`}
   description={t('site.tagline')}
 >
-  <h1>Precisian Blog</h1>
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={`/blog/${lang}/posts/${post.data.slug}`}>
-          <h2>{post.data.title}</h2>
-          <p>{post.data.description}</p>
-          <time datetime={post.data.publishedAt.toISOString()}>
-            {post.data.publishedAt.toLocaleDateString(lang)}
-          </time>
-        </a>
-      </li>
-    ))}
-  </ul>
+  <div class="max-w-3xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <h1 class="font-display text-5xl font-bold mb-3">Precisian Blog</h1>
+      <p class="text-lg text-fg-muted">{t('site.tagline')}</p>
+    </header>
+    <div>
+      {posts.map((post) => <ArticleCard post={post} />)}
+    </div>
+  </div>
 </BaseLayout>

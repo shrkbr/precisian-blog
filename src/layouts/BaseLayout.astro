@@ -1,17 +1,18 @@
 ---
-// precisian-blog/src/layouts/BaseLayout.astro
 import '../styles/global.css'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 
 interface Props {
   title: string
   description: string
   image?: string
+  alternateUrl?: Partial<Record<'pt-BR' | 'en', string>>
 }
 
-const { title, description, image } = Astro.props
+const { title, description, image, alternateUrl } = Astro.props
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 const canonical = new URL(Astro.url.pathname, Astro.site).toString()
 ---
 
@@ -33,6 +34,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Sora:wght@400;600;700;800&display=swap"
     />
 
+    {alternateUrl && Object.entries(alternateUrl).map(([l, url]) => (
+      <link rel="alternate" hreflang={l} href={new URL(url, Astro.site).toString()} />
+    ))}
+
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -48,18 +53,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
 
     <slot name="head" />
   </head>
-  <body>
-    <header>
-      <nav>
-        <a href={`/blog/${lang}/`}>{t('nav.home')}</a>
-        <a href={`/blog/${lang}/tags/`}>{t('nav.tags')}</a>
-      </nav>
-    </header>
-    <main>
+  <body class="bg-bg-base text-fg font-sans antialiased min-h-screen flex flex-col">
+    <Header alternateUrl={alternateUrl} />
+    <main class="flex-1 w-full">
       <slot />
     </main>
-    <footer>
-      <p>{t('site.footer.copyright')}</p>
-    </footer>
+    <Footer />
   </body>
 </html>

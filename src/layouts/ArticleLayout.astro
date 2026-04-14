@@ -1,43 +1,68 @@
 ---
-// precisian-blog/src/layouts/ArticleLayout.astro
 import BaseLayout from './BaseLayout.astro'
+import TableOfContents from '../components/TableOfContents.astro'
+import ReadingProgress from '../components/ReadingProgress.astro'
+import TagBadge from '../components/TagBadge.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import { getCollection } from 'astro:content'
+import { findTranslation } from '../lib/posts'
 import type { CollectionEntry } from 'astro:content'
+import type { MarkdownHeading } from 'astro'
 
 interface Props {
   post: CollectionEntry<'posts'>
+  headings: MarkdownHeading[]
 }
 
-const { post } = Astro.props
+const { post, headings } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const { title, description, publishedAt, readingTimeMinutes, tags, author } = post.data
+
+const allPosts = await getCollection('posts')
+const otherLang = lang === 'pt-BR' ? 'en' : 'pt-BR'
+const translation = findTranslation(allPosts, post, otherLang)
+
+const alternateUrl: Partial<Record<'pt-BR' | 'en', string>> = {
+  [lang]: `/blog/${lang}/posts/${post.data.slug}`,
+}
+if (translation) {
+  alternateUrl[otherLang] = `/blog/${otherLang}/posts/${translation.data.slug}`
+}
 ---
 
-<BaseLayout title={title} description={description}>
-  <article>
-    <header>
-      <h1>{title}</h1>
-      <p>
-        <time datetime={publishedAt.toISOString()}>
-          {t('post.publishedOn')} {publishedAt.toLocaleDateString(lang)}
-        </time>
-        {readingTimeMinutes && (
-          <span>· {readingTimeMinutes} {t('post.readingTime')}</span>
-        )}
-        <span>· {author}</span>
-      </p>
-    </header>
-    <div>
-      <slot />
-    </div>
-    <footer>
-      <p>{t('post.tags')}:</p>
-      <ul>
-        {tags.map((tag) => (
-          <li><a href={`/blog/${lang}/tags/${tag}`}>#{tag}</a></li>
-        ))}
-      </ul>
-    </footer>
-  </article>
+<BaseLayout title={title} description={description} alternateUrl={alternateUrl}>
+  <ReadingProgress />
+
+  <div class="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[1fr_240px] gap-12">
+    <article class="min-w-0">
+      <header class="mb-10 pb-6 border-b border-border">
+        <h1 class="font-display text-4xl md:text-5xl font-bold mb-4 leading-tight">{title}</h1>
+        <p class="text-lg text-fg-muted mb-4">{description}</p>
+        <div class="flex flex-wrap items-center gap-4 text-sm text-fg-muted">
+          <time datetime={publishedAt.toISOString()}>
+            {publishedAt.toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+          {readingTimeMinutes && <span>· {readingTimeMinutes} {t('post.readingTime')}</span>}
+          <span>· {author}</span>
+        </div>
+      </header>
+
+      <div class="prose prose-invert prose-lg max-w-none">
+        <slot />
+      </div>
+
+      <footer class="mt-12 pt-6 border-t border-border">
+        <div class="flex flex-wrap gap-2">
+          {tags.map((tag) => <TagBadge tag={tag} />)}
+        </div>
+      </footer>
+    </article>
+
+    <aside class="hidden lg:block">
+      <div class="sticky top-8">
+        <TableOfContents headings={headings} />
+      </div>
+    </aside>
+  </div>
 </BaseLayout>
