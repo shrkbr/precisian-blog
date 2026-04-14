@@ -40,32 +40,34 @@ const breadcrumbs = buildBreadcrumbListJsonLd([
   description={`${t('site.tagline')} — ${label} em #${tag}.`}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbs)} />
-  <div class="max-w-3xl mx-auto px-6 py-12">
-    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-fg-muted">
-      <ol class="flex items-center gap-2">
-        <li><a href={`/blog/${lang}/`} class="hover:text-accent transition">{t('nav.home')}</a></li>
-        <li aria-hidden="true">/</li>
-        <li><a href={`/blog/${lang}/tags/`} class="hover:text-accent transition">{t('nav.tags')}</a></li>
-        <li aria-hidden="true">/</li>
-        <li class="text-fg">#{tag}</li>
-      </ol>
-    </nav>
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <div class="max-w-3xl">
+      <nav aria-label="Breadcrumb" class="mb-6 text-sm text-fg-muted">
+        <ol class="flex items-center gap-2">
+          <li><a href={`/blog/${lang}/`} class="hover:text-accent transition">{t('nav.home')}</a></li>
+          <li aria-hidden="true">/</li>
+          <li><a href={`/blog/${lang}/tags/`} class="hover:text-accent transition">{t('nav.tags')}</a></li>
+          <li aria-hidden="true">/</li>
+          <li class="text-fg">#{tag}</li>
+        </ol>
+      </nav>
 
-    <header class="mb-10 pb-6 border-b border-border">
-      <h1 class="font-display text-5xl font-bold mb-3">
-        <span class="text-fg-muted">#</span><span class="text-accent">{tag}</span>
-      </h1>
-      <p class="text-lg text-fg-muted">{label}</p>
-    </header>
+      <header class="mb-10 pb-6 border-b border-border">
+        <h1 class="font-display text-5xl font-bold mb-3">
+          <span class="text-fg-muted">#</span><span class="text-accent">{tag}</span>
+        </h1>
+        <p class="text-lg text-fg-muted">{label}</p>
+      </header>
 
-    {posts.length === 0 ? (
-      <p class="text-fg-muted">
-        {lang === 'pt-BR' ? 'Nenhum artigo nessa tag ainda.' : 'No articles in this tag yet.'}
-      </p>
-    ) : (
-      <div>
-        {posts.map((post) => <ArticleCard post={post} />)}
-      </div>
-    )}
+      {posts.length === 0 ? (
+        <p class="text-fg-muted">
+          {lang === 'pt-BR' ? 'Nenhum artigo nessa tag ainda.' : 'No articles in this tag yet.'}
+        </p>
+      ) : (
+        <div>
+          {posts.map((post) => <ArticleCard post={post} />)}
+        </div>
+      )}
+    </div>
   </div>
 </BaseLayout>
