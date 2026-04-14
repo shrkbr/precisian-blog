@@ -1,0 +1,43 @@
+---
+// precisian-blog/src/layouts/ArticleLayout.astro
+import BaseLayout from './BaseLayout.astro'
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  post: CollectionEntry<'posts'>
+}
+
+const { post } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const { title, description, publishedAt, readingTimeMinutes, tags, author } = post.data
+---
+
+<BaseLayout title={title} description={description}>
+  <article>
+    <header>
+      <h1>{title}</h1>
+      <p>
+        <time datetime={publishedAt.toISOString()}>
+          {t('post.publishedOn')} {publishedAt.toLocaleDateString(lang)}
+        </time>
+        {readingTimeMinutes && (
+          <span>· {readingTimeMinutes} {t('post.readingTime')}</span>
+        )}
+        <span>· {author}</span>
+      </p>
+    </header>
+    <div>
+      <slot />
+    </div>
+    <footer>
+      <p>{t('post.tags')}:</p>
+      <ul>
+        {tags.map((tag) => (
+          <li><a href={`/blog/${lang}/tags/${tag}`}>#{tag}</a></li>
+        ))}
+      </ul>
+    </footer>
+  </article>
+</BaseLayout>

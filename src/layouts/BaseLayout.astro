@@ -1,0 +1,56 @@
+---
+// precisian-blog/src/layouts/BaseLayout.astro
+import { getLangFromUrl, useTranslations } from '../i18n/utils'
+
+interface Props {
+  title: string
+  description: string
+  image?: string
+}
+
+const { title, description, image } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const canonical = new URL(Astro.url.pathname, Astro.site).toString()
+---
+
+<!DOCTYPE html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/blog/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content={lang === 'pt-BR' ? 'pt_BR' : 'en_US'} />
+    {image && <meta property="og:image" content={image} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    <slot name="head" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href={`/blog/${lang}/`}>{t('nav.home')}</a>
+        <a href={`/blog/${lang}/tags/`}>{t('nav.tags')}</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>{t('site.footer.copyright')}</p>
+    </footer>
+  </body>
+</html>
