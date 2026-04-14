@@ -5,6 +5,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro'
 import ArticleCard from '../../../components/ArticleCard.astro'
 import { filterPublishedByLang, filterByTag, collectTags, sortByDateDesc } from '../../../lib/posts'
 import { useTranslations } from '../../../i18n/utils'
+import { buildBreadcrumbListJsonLd } from '../../../lib/schema'
 
 export async function getStaticPaths() {
   const all = await getCollection('posts')
@@ -25,12 +26,20 @@ const posts = sortByDateDesc(filterByTag(filterPublishedByLang(all, lang), tag))
 const label = lang === 'pt-BR'
   ? `${posts.length} ${posts.length === 1 ? 'artigo' : 'artigos'}`
   : `${posts.length} ${posts.length === 1 ? 'article' : 'articles'}`
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? 'https://precisian.io'
+const breadcrumbs = buildBreadcrumbListJsonLd([
+  { name: t('nav.home'), url: `${siteOrigin}/blog/${lang}/` },
+  { name: t('nav.tags'), url: `${siteOrigin}/blog/${lang}/tags/` },
+  { name: `#${tag}`, url: `${siteOrigin}/blog/${lang}/tags/${tag}` },
+])
 ---
 
 <BaseLayout
   title={`#${tag} — Precisian Blog`}
   description={`${t('site.tagline')} — ${label} em #${tag}.`}
 >
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbs)} />
   <div class="max-w-3xl mx-auto px-6 py-12">
     <nav aria-label="Breadcrumb" class="mb-6 text-sm text-fg-muted">
       <ol class="flex items-center gap-2">

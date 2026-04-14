@@ -6,7 +6,7 @@ import TagBadge from '../components/TagBadge.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { getCollection } from 'astro:content'
 import { findTranslation } from '../lib/posts'
-import { buildBlogPostingJsonLd, countWords } from '../lib/schema'
+import { buildBlogPostingJsonLd, countWords, buildBreadcrumbListJsonLd } from '../lib/schema'
 import type { CollectionEntry } from 'astro:content'
 import type { MarkdownHeading } from 'astro'
 
@@ -42,11 +42,32 @@ const jsonLd = buildBlogPostingJsonLd({
   lang,
   wordCount: countWords(post.body ?? ''),
   tags,
+  mentions: post.data.mentions,
+  about: post.data.about,
+  citations: post.data.citations,
+  lastReviewed: post.data.lastReviewed,
 })
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? 'https://precisian.io'
+const breadcrumbs = buildBreadcrumbListJsonLd([
+  { name: t('nav.home'), url: `${siteOrigin}/blog/${lang}/` },
+  { name: t('nav.tags'), url: `${siteOrigin}/blog/${lang}/tags/` },
+  { name: title, url: canonicalUrl },
+])
 ---
 
 <BaseLayout title={title} description={description} alternateUrl={alternateUrl}>
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbs)} />
+  <meta slot="head" property="article:published_time" content={publishedAt.toISOString()} />
+  {updatedAt && <meta slot="head" property="article:modified_time" content={updatedAt.toISOString()} />}
+  <meta slot="head" property="article:author" content="https://precisian.io" />
+  <meta slot="head" property="article:section" content={tags[0] ?? 'blog'} />
+  {tags.map((tag) => <meta slot="head" property="article:tag" content={tag} />)}
+  {readingTimeMinutes && <meta slot="head" name="twitter:label1" content={lang === 'pt-BR' ? 'Tempo de leitura' : 'Reading time'} />}
+  {readingTimeMinutes && <meta slot="head" name="twitter:data1" content={`${readingTimeMinutes} ${t('post.readingTime')}`} />}
+  <meta slot="head" name="twitter:label2" content={lang === 'pt-BR' ? 'Categoria' : 'Section'} />
+  <meta slot="head" name="twitter:data2" content={tags[0] ?? 'blog'} />
 
   <ReadingProgress />
 

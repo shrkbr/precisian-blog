@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content'
 import BaseLayout from '../../../layouts/BaseLayout.astro'
 import { filterPublishedByLang, filterByTag, collectTags } from '../../../lib/posts'
 import { useTranslations } from '../../../i18n/utils'
+import { buildBreadcrumbListJsonLd } from '../../../lib/schema'
 
 export async function getStaticPaths() {
   return [
@@ -19,12 +20,19 @@ const published = filterPublishedByLang(all, lang)
 const tags = collectTags(published)
   .map((tag) => ({ tag, count: filterByTag(published, tag).length }))
   .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
+
+const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? 'https://precisian.io'
+const breadcrumbs = buildBreadcrumbListJsonLd([
+  { name: t('nav.home'), url: `${siteOrigin}/blog/${lang}/` },
+  { name: t('nav.tags'), url: `${siteOrigin}/blog/${lang}/tags/` },
+])
 ---
 
 <BaseLayout
   title={`${t('nav.tags')} — Precisian Blog`}
   description={t('site.tagline')}
 >
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbs)} />
   <div class="max-w-3xl mx-auto px-6 py-12">
     <header class="mb-12">
       <h1 class="font-display text-5xl font-bold mb-3">{t('nav.tags')}</h1>

@@ -18,6 +18,10 @@ const posts = defineCollection({
     readingTimeMinutes: z.number().int().positive().optional(),
     draft: z.boolean().default(false),
     llmSummary: z.string().max(300).optional(),
+    mentions: z.array(z.string().url()).optional(),
+    about: z.array(z.string().url()).optional(),
+    citations: z.array(z.string().url()).optional(),
+    lastReviewed: z.coerce.date().optional(),
   }),
 })
 

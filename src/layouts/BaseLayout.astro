@@ -3,6 +3,7 @@ import '../styles/global.css'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import { buildWebSiteJsonLd, buildOrganizationJsonLd } from '../lib/schema'
 
 interface Props {
   title: string
@@ -23,12 +24,23 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/blog/favicon.svg" />
+
+    <!-- Site-wide structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify(buildWebSiteJsonLd())} />
+    <script type="application/ld+json" set:html={JSON.stringify(buildOrganizationJsonLd())} />
 
     <!-- Fonts: Inter (body), Sora (display), JetBrains Mono (code) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Sora:wght@400;600;700;800&display=swap"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Sora:wght@400;600;700;800&display=swap"
