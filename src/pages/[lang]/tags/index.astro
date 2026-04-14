@@ -2,7 +2,7 @@
 // precisian-blog/src/pages/[lang]/tags/index.astro
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../../layouts/BaseLayout.astro'
-import { filterPublishedByLang, collectTags } from '../../../lib/posts'
+import { filterPublishedByLang, filterByTag, collectTags } from '../../../lib/posts'
 import { useTranslations } from '../../../i18n/utils'
 
 export async function getStaticPaths() {
@@ -15,14 +15,44 @@ export async function getStaticPaths() {
 const { lang } = Astro.params as { lang: 'pt-BR' | 'en' }
 const t = useTranslations(lang)
 const all = await getCollection('posts')
-const tags = collectTags(filterPublishedByLang(all, lang)).sort()
+const published = filterPublishedByLang(all, lang)
+const tags = collectTags(published)
+  .map((tag) => ({ tag, count: filterByTag(published, tag).length }))
+  .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
 ---
 
-<BaseLayout title={`Tags — Precisian Blog`} description={t('site.tagline')}>
-  <h1>{t('nav.tags')}</h1>
-  <ul>
-    {tags.map((tag) => (
-      <li><a href={`/blog/${lang}/tags/${tag}`}>#{tag}</a></li>
-    ))}
-  </ul>
+<BaseLayout
+  title={`${t('nav.tags')} — Precisian Blog`}
+  description={t('site.tagline')}
+>
+  <div class="max-w-3xl mx-auto px-6 py-12">
+    <header class="mb-12">
+      <h1 class="font-display text-5xl font-bold mb-3">{t('nav.tags')}</h1>
+      <p class="text-lg text-fg-muted">
+        {lang === 'pt-BR'
+          ? `Navegue por tópico. ${tags.length} ${tags.length === 1 ? 'tag' : 'tags'} no total.`
+          : `Browse by topic. ${tags.length} ${tags.length === 1 ? 'tag' : 'tags'} in total.`}
+      </p>
+    </header>
+
+    {tags.length === 0 ? (
+      <p class="text-fg-muted">
+        {lang === 'pt-BR' ? 'Nenhuma tag ainda.' : 'No tags yet.'}
+      </p>
+    ) : (
+      <ul class="flex flex-wrap gap-3" aria-label={t('nav.tags')}>
+        {tags.map(({ tag, count }) => (
+          <li>
+            <a
+              href={`/blog/${lang}/tags/${tag}`}
+              class="group inline-flex items-baseline gap-2 px-4 py-2 rounded-full border border-border bg-bg-elevated hover:border-accent hover:bg-bg-base transition"
+            >
+              <span class="font-mono text-sm text-fg group-hover:text-accent transition">#{tag}</span>
+              <span class="text-xs text-fg-muted tabular-nums">{count}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
 </BaseLayout>

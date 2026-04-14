@@ -2,6 +2,7 @@
 // precisian-blog/src/pages/[lang]/tags/[tag].astro
 import { getCollection } from 'astro:content'
 import BaseLayout from '../../../layouts/BaseLayout.astro'
+import ArticleCard from '../../../components/ArticleCard.astro'
 import { filterPublishedByLang, filterByTag, collectTags, sortByDateDesc } from '../../../lib/posts'
 import { useTranslations } from '../../../i18n/utils'
 
@@ -21,18 +22,41 @@ const { lang, tag } = Astro.params as { lang: 'pt-BR' | 'en'; tag: string }
 const t = useTranslations(lang)
 const all = await getCollection('posts')
 const posts = sortByDateDesc(filterByTag(filterPublishedByLang(all, lang), tag))
+const label = lang === 'pt-BR'
+  ? `${posts.length} ${posts.length === 1 ? 'artigo' : 'artigos'}`
+  : `${posts.length} ${posts.length === 1 ? 'article' : 'articles'}`
 ---
 
-<BaseLayout title={`#${tag} — Precisian Blog`} description={t('site.tagline')}>
-  <h1>#{tag}</h1>
-  <ul>
-    {posts.map((post) => (
-      <li>
-        <a href={`/blog/${lang}/posts/${post.data.slug}`}>
-          <h2>{post.data.title}</h2>
-          <p>{post.data.description}</p>
-        </a>
-      </li>
-    ))}
-  </ul>
+<BaseLayout
+  title={`#${tag} — Precisian Blog`}
+  description={`${t('site.tagline')} — ${label} em #${tag}.`}
+>
+  <div class="max-w-3xl mx-auto px-6 py-12">
+    <nav aria-label="Breadcrumb" class="mb-6 text-sm text-fg-muted">
+      <ol class="flex items-center gap-2">
+        <li><a href={`/blog/${lang}/`} class="hover:text-accent transition">{t('nav.home')}</a></li>
+        <li aria-hidden="true">/</li>
+        <li><a href={`/blog/${lang}/tags/`} class="hover:text-accent transition">{t('nav.tags')}</a></li>
+        <li aria-hidden="true">/</li>
+        <li class="text-fg">#{tag}</li>
+      </ol>
+    </nav>
+
+    <header class="mb-10 pb-6 border-b border-border">
+      <h1 class="font-display text-5xl font-bold mb-3">
+        <span class="text-fg-muted">#</span><span class="text-accent">{tag}</span>
+      </h1>
+      <p class="text-lg text-fg-muted">{label}</p>
+    </header>
+
+    {posts.length === 0 ? (
+      <p class="text-fg-muted">
+        {lang === 'pt-BR' ? 'Nenhum artigo nessa tag ainda.' : 'No articles in this tag yet.'}
+      </p>
+    ) : (
+      <div>
+        {posts.map((post) => <ArticleCard post={post} />)}
+      </div>
+    )}
+  </div>
 </BaseLayout>
