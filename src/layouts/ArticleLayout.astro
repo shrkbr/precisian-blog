@@ -6,6 +6,7 @@ import TagBadge from '../components/TagBadge.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { getCollection } from 'astro:content'
 import { findTranslation } from '../lib/posts'
+import { buildBlogPostingJsonLd, countWords } from '../lib/schema'
 import type { CollectionEntry } from 'astro:content'
 import type { MarkdownHeading } from 'astro'
 
@@ -17,7 +18,7 @@ interface Props {
 const { post, headings } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const { title, description, publishedAt, readingTimeMinutes, tags, author } = post.data
+const { title, description, publishedAt, updatedAt, readingTimeMinutes, tags, author } = post.data
 
 const allPosts = await getCollection('posts')
 const otherLang = lang === 'pt-BR' ? 'en' : 'pt-BR'
@@ -29,9 +30,24 @@ const alternateUrl: Partial<Record<'pt-BR' | 'en', string>> = {
 if (translation) {
   alternateUrl[otherLang] = `/blog/${otherLang}/posts/${translation.data.slug}`
 }
+
+const canonicalUrl = new URL(`/blog/${lang}/posts/${post.data.slug}`, Astro.site).toString()
+const jsonLd = buildBlogPostingJsonLd({
+  title,
+  description,
+  url: canonicalUrl,
+  publishedAt,
+  updatedAt,
+  author,
+  lang,
+  wordCount: countWords(post.body ?? ''),
+  tags,
+})
 ---
 
 <BaseLayout title={title} description={description} alternateUrl={alternateUrl}>
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(jsonLd)} />
+
   <ReadingProgress />
 
   <div class="max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-[1fr_240px] gap-12">
