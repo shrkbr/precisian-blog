@@ -11,7 +11,7 @@ export function getLangFromUrl(url: URL): Lang {
   return defaultLang
 }
 
-export function useTranslations(lang: Lang | string) {
+export function useTranslations(lang: Lang) {
   const resolved: Lang = lang === 'pt-BR' || lang === 'en' ? lang : defaultLang
   return function t(key: UiKey): string {
     return ui[resolved][key] ?? ui[defaultLang][key]
