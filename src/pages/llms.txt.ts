@@ -13,7 +13,7 @@ export const GET: APIRoute = async ({ site }) => {
   const lines: string[] = [
     '# Precisian Blog',
     '',
-    '> Technical blog from Precisian — AI-powered GA4 data integrity platform by Nação Digital. Articles on data quality, MMM, attribution, GTM, and analytics engineering. Content is bilingual (pt-BR + en).',
+    '> Technical blog from Precisian — AI-powered GA4 data integrity platform. Articles on data quality, MMM, attribution, GTM, and analytics engineering. Content is bilingual (pt-BR + en).',
     '',
     '## Artigos em Português',
     '',

@@ -2,14 +2,14 @@
 
 const PRECISIAN_SAME_AS = [
   'https://precisian.io',
-  'https://linkedin.com/company/nacao-digital/',
-  'https://instagram.com/nacaodigital/',
+  'https://www.linkedin.com/company/precisiananalytics/',
+  'https://www.instagram.com/precisian.io/',
 ] as const
 
 const BLOG_URL = 'https://precisian.io/blog'
 const ORG_NAME = 'Precisian'
 const ORG_DESCRIPTION =
-  'AI-powered GA4 data integrity platform by Nação Digital. Frameworks like DVQ (Data Value Quotient) and operating modules for attribution, MMM, and analytics engineering.'
+  'AI-powered GA4 data integrity platform. Frameworks like DVQ (Data Value Quotient) and operating modules for attribution, MMM, and analytics engineering.'
 
 // ──────────────────────────────────────────────────────────
 // BlogPosting

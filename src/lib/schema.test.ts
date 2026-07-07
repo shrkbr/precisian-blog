@@ -107,8 +107,8 @@ describe('buildOrganizationJsonLd (enhanced)', () => {
   it('includes sameAs array with known social profiles', () => {
     const result = buildOrganizationJsonLd()
     expect(result.sameAs).toBeDefined()
-    expect(result.sameAs).toContain('https://linkedin.com/company/nacao-digital/')
-    expect(result.sameAs).toContain('https://instagram.com/nacaodigital/')
+    expect(result.sameAs).toContain('https://www.linkedin.com/company/precisiananalytics/')
+    expect(result.sameAs).toContain('https://www.instagram.com/precisian.io/')
     expect(result.description).toBeDefined()
     expect(typeof result.description).toBe('string')
   })
@@ -157,7 +157,7 @@ describe('buildBlogPostingJsonLd (enhanced)', () => {
       tags: [],
     })
     const authorObj = result.author as { sameAs?: string[] }
-    expect(authorObj.sameAs).toContain('https://linkedin.com/company/nacao-digital/')
+    expect(authorObj.sameAs).toContain('https://www.linkedin.com/company/precisiananalytics/')
   })
 
   it('includes mentions when provided', () => {
