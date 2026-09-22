@@ -39,18 +39,47 @@ Unit tests cover `src/i18n/utils.ts`, `src/lib/posts.ts`, and `src/lib/schema.ts
 
 ## Deployment
 
-### Manual deploy
+**You do not deploy. You push to `main` and the server publishes.**
+
+Since 2026-09-22 the VPS runs a systemd timer (`blog-autodeploy.timer`) that,
+every 5 minutes, pulls `main`, builds, and promotes `dist/`. A post merged into
+`main` is live at https://precisian.io/blog within ~5 minutes.
+
+### The publish gate — read this before writing a post
+
+The build runs `astro check` and **refuses to publish if the content does not
+match the schema**. When that happens the previous version of the site stays up
+and an alert goes to the maintainer's WhatsApp — **you will not see an error on
+your side**. Your commit sits in `main`, green, and the post never appears.
+
+So validate locally before pushing:
 
 ```bash
-./scripts/deploy.sh
-# rsyncs dist/ → VPS Nação
+npm run build     # = astro check && astro build
 ```
 
-Requires SSH key configured for `nacaodigital@precisian.io`. Environment variables `VPS_USER`, `VPS_HOST`, `REMOTE_DIR` can override the defaults.
+The limits that actually bite (full schema: `src/content.config.ts`):
 
-### Automatic deploy (future)
+| Field | Rule |
+|---|---|
+| `title` | 10–100 characters |
+| `description` | **50–160 characters** |
+| `slug` | kebab-case, must match the filename |
+| `lang` | `pt-BR` or `en` |
+| `translationKey` | required — links the pt-BR and en versions |
+| `publishedAt` | a date; **not** `pubDate` |
+| `tags` | 1 to 8 |
 
-Articles added via ContentMaster are committed directly to `main` via GitHub API. A post-receive hook or GitHub Actions workflow can trigger `git pull && npm ci && npm run build` on the VPS.
+A 162-character `description` is what kept this repo from building on a clean
+clone until 2026-09-22, so the 160 limit is not theoretical.
+
+### Manual deploy — superseded, do not use
+
+`scripts/deploy.sh` rsyncs a locally built `dist/` to the VPS. It predates the
+automatic publish and is kept only for emergencies. **Running it now races the
+timer**: both write the same `dist/`, and whichever finishes last wins, so a
+stale local build can silently overwrite the published site. If the timer is
+broken, fix the timer.
 
 ## Content
 
