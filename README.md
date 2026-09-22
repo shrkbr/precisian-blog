@@ -28,6 +28,30 @@ npm run build
 # → dist/ contains static site
 ```
 
+### Why this repo ships an `.npmrc`
+
+`npm ci` cannot resolve this dependency tree on its own, so the repo commits
+`.npmrc` with `legacy-peer-deps=true`. Without it a clean `npm ci` fails with
+`ERESOLVE` and nobody can install — including CI and the VPS publish job.
+
+Two peer conflicts cause it:
+
+| Package | Wants | Repo has |
+|---|---|---|
+| `@astrojs/check@0.9.8` | `typescript@^5` | `typescript@6.0.2` |
+| `@astrojs/tailwind@6.0.2` | `astro@^3 \|\| ^4 \|\| ^5` | `astro@6.1.6` |
+
+The first is fixable by bumping to `@astrojs/check@^0.9.10`, which accepts
+`typescript@^5 || ^6`. **The second is not:** `@astrojs/tailwind` has no release
+that supports Astro 6 — 6.0.2 is the latest and it is not deprecated, it simply
+stopped. So the flag would be needed regardless, and bumping only `check` buys
+nothing today.
+
+The real exit is migrating off `@astrojs/tailwind` to Tailwind's Vite plugin,
+which is Astro's recommended path since Astro 5. That is a styling refactor with
+visual risk across every page, so it should be its own task with someone
+reviewing the result — not a side effect of a dependency fix.
+
 ## Tests
 
 ```bash
