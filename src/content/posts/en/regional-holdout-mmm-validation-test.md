@@ -1,6 +1,6 @@
 ---
 title: "Regional Holdout: The Only Real MMM Validation Test"
-description: "Regional holdout is the only test that separates an MMM that discovered real signal from one that memorized noise. Learn to design and interpret validation tests."
+description: "Regional holdout is the only test that separates an MMM that found real signal from one that memorized noise. Learn to design and run it."
 slug: "regional-holdout-mmm-validation-test"
 lang: "en"
 translationKey: "validacao-mmm-holdout-regional"
