@@ -26,7 +26,7 @@ Três coisas, e nenhuma aparece no monitoramento convencional.
 
 **A amostragem.** Acima de **10 milhões de eventos por consulta** numa propriedade padrão, o relatório passa a ser estimado ([Google](https://support.google.com/analytics/answer/13331292)). O número continua aparecendo; ele só deixa de ser exato, sem que nada na tela diga isso com clareza.
 
-**A cardinalidade.** Uma dimensão com mais de **500 valores únicos por dia** é considerada de alta cardinalidade, e o limite geral é de 50.000 valores ([Google](https://support.google.com/analytics/answer/12226705)). Quando a tabela estoura, o excedente vai para uma linha chamada `(other)`. Em Black Friday, dimensões que passam o ano inteiro comportadas, como nome de campanha ou variante de produto, estouram num dia. Vale lembrar que nome de campanha é campo escrito por gente de fora e [sem validação de conteúdo documentada](https://precisian.io/blog/en/posts/prompt-injection-marketing-data/), o que é outro problema do mesmo campo.
+**A cardinalidade.** Uma dimensão com mais de **500 valores únicos por dia** é considerada de alta cardinalidade, e o limite geral é de 50.000 valores ([Google](https://support.google.com/analytics/answer/12226705)). Quando a tabela estoura, o excedente vai para uma linha chamada `(other)`. Em Black Friday, dimensões que passam o ano inteiro comportadas, como nome de campanha ou variante de produto, estouram num dia. Vale lembrar que nome de campanha é campo escrito por gente de fora e [sem validação de conteúdo documentada](https://precisian.io/blog/en/posts/prompt-injection-marketing-data/) (em inglês), o que é outro problema do mesmo campo.
 
 ## Por que o frescor piora exatamente quando você mais precisa?
 
