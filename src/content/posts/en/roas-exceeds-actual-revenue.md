@@ -97,7 +97,7 @@ Four things, and none of them is switching vendors.
 
 **Stop summing across platforms.** The sum of platform-reported revenue is not a portfolio number, because each addend double counts the others by design. If a report adds them, it is producing a figure that no vendor claims.
 
-**Compare against the source of record, not across platforms.** The only external check is your own ERP or order system. That comparison also has a definition problem, which is [a different article](https://precisian.io/blog/pt-BR/posts/vtex-ga4-nao-batem/), but it is the right axis.
+**Compare against the source of record, not across platforms.** The only external check is your own ERP or order system. That comparison also has a definition problem, which is [a different article](https://precisian.io/blog/pt-BR/posts/vtex-ga4-nao-batem/) (in Portuguese), but it is the right axis.
 
 **Run a holdout before you trust a lift claim.** Geo experiments are the method the platforms themselves use, and Google published the design ([Vaver and Koehler, 2011](https://research.google/pubs/measuring-ad-effectiveness-using-geo-experiments/)). Brand campaigns deserve the test first: that is where the eBay result was most extreme.
 
