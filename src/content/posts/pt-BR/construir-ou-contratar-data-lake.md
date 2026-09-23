@@ -100,7 +100,7 @@ Três casos, e eles são reais.
 
 **Cinco ou mais fontes, com time:** a decisão vira de foco. Construir é viável e o custo é calculável; a pergunta é se manter conector é o melhor uso do seu time de dados. A documentação da Airbyte sobre conector de comunidade responde boa parte disso.
 
-**Grupo multimarca ou operação com agência:** o critério que domina passa a ser isolamento, e aí a arquitetura importa mais que o preço. Vale ler sobre [isolamento por cliente](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/) antes de comparar planilha.
+**Grupo multimarca ou operação com agência:** o critério que domina passa a ser isolamento, e aí a arquitetura importa mais que o preço. Vale ler sobre [isolamento por cliente](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/) (em inglês) antes de comparar planilha.
 
 O que está incluso do lado da Precisian, e a faixa de entrada, estão publicados em [preços](https://precisian.io/precos), o que, dado o resto deste artigo, é uma escolha de posicionamento e não um detalhe.
 
