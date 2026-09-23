@@ -46,7 +46,7 @@ The practical consequence is short. Policies configured plus an agent connected 
 
 The clearest published demonstration of this failure runs end to end, and every component behaved as documented.
 
-A security firm planted instructions inside a **support ticket**. A developer asked an assistant to review recent tickets. The agent read the ticket, followed the planted instruction, and — running under a role that bypasses row-level security — read a table of integration tokens and wrote the contents back into the ticket, where the attacker collected them ([General Analysis, 08/07/2025](https://generalanalysis.com/blog/supabase-mcp-blog)).
+A security firm planted instructions inside a **support ticket**. A developer asked an assistant to review recent tickets. The agent read the ticket, followed the planted instruction, and, running under a role that bypasses row-level security, read a table of integration tokens and wrote the contents back into the ticket, where the attacker collected them ([General Analysis, 08/07/2025](https://generalanalysis.com/blog/supabase-mcp-blog)).
 
 The vendor's response is as useful as the demonstration, because it names the mitigations and ends with a sentence that settles the architecture question: use non-production data, keep manual approval, limit tool groups, log every query, and **"never connect AI agents directly to production data"** ([Supabase, 16/09/2025](https://supabase.com/blog/defense-in-depth-mcp)).
 
@@ -86,7 +86,7 @@ Yes, and conflating them is the most common architectural shortcut in this space
 
 Row-level isolation puts every tenant's data in the same tables and separates it by predicate. It is efficient, it is standard, and its failure mode is total: one role misconfiguration, one policy gap, one path that does not evaluate predicates, and every tenant is exposed at once.
 
-Per-client isolation puts each tenant in its own environment. It costs more to operate and its failure mode is bounded — a mistake reaches one tenant, because there is no shared table to leak from.
+Per-client isolation puts each tenant in its own environment. It costs more to operate and its failure mode is bounded, a mistake reaches one tenant, because there is no shared table to leak from.
 
 Neither is universally right. What decides is what a breach would cost you, and whether your clients are competitors with each other. For a platform where agencies and brands would rather not share infrastructure with rivals, the second model is not paranoia; it is the product.
 
@@ -110,7 +110,7 @@ At the moment the agent reads something a third party can write.
 
 Tenancy answers "whose data is this." It does not answer "should this text be treated as an instruction." An agent perfectly isolated to tenant A can still be induced, by content inside tenant A's own records, to do something tenant A did not ask for. The damage is contained to one tenant, which is exactly what isolation promises, and is not the same as prevented.
 
-The layer that helps there is different: separating what the agent may read from what it may do, and keeping a human in the loop for anything irreversible. Reducing what the agent can see also reduces the surface — an agent working against a [governed semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) does not have the token table in context, because the token table is not a metric.
+The layer that helps there is different: separating what the agent may read from what it may do, and keeping a human in the loop for anything irreversible. Reducing what the agent can see also reduces the surface, an agent working against a [governed semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) does not have the token table in context, because the token table is not a metric.
 
 ## What does this article not cover?
 

@@ -20,7 +20,7 @@ A diferença mais útil entre construir e contratar não é preço: é que só u
 
 ## Quais critérios decidem essa escolha?
 
-Antes de qualquer número, vale declarar o que está sendo comparado — porque a maior parte das comparações publicadas troca os critérios no meio do caminho.
+Antes de qualquer número, vale declarar o que está sendo comparado, porque a maior parte das comparações publicadas troca os critérios no meio do caminho.
 
 1. **Custo de infraestrutura**: armazenar e consultar.
 2. **Custo de ingestão**: trazer e manter as fontes conectadas.
@@ -40,7 +40,7 @@ Duas observações que quase nunca aparecem em material brasileiro sobre o tema.
 
 **São Paulo custa bem mais caro que a Virgínia.** Comparando a mesma tabela oficial entre regiões ([AWS](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260918174747/sa-east-1/index.json)), a diferença é da ordem de 76% acima do preço da região americana. Post que copia preço de `us-east-1` subestima o armazenamento de qualquer operação que precise manter o dado no Brasil.
 
-**As requisições têm unidades diferentes.** PUT, COPY, POST e LIST custam US$ 0,007 por **mil** requisições; GET e demais custam US$ 0,0056 por **dez mil** ([AWS](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260918174747/sa-east-1/index.json)). Quem compara as duas linhas sem olhar a unidade erra por dez vezes. Ingestão de e-commerce é intensiva em PUT — muitos arquivos pequenos — e é justamente a tarifa cara.
+**As requisições têm unidades diferentes.** PUT, COPY, POST e LIST custam US$ 0,007 por **mil** requisições; GET e demais custam US$ 0,0056 por **dez mil** ([AWS](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260918174747/sa-east-1/index.json)). Quem compara as duas linhas sem olhar a unidade erra por dez vezes. Ingestão de e-commerce é intensiva em PUT, muitos arquivos pequenos, e é justamente a tarifa cara.
 
 ## E consultar?
 
@@ -48,7 +48,7 @@ Aqui a mecânica importa mais que a tarifa, e a mecânica está documentada.
 
 **BigQuery** cobra por bytes lidos, sempre **lógicos (descomprimidos)**, com franquia permanente de 1 TB de consulta por mês por projeto. E repete o alerta que vale para qualquer agente: `LIMIT` não reduz o custo em tabela não clusterizada ([Google Cloud](https://docs.cloud.google.com/bigquery/docs/best-practices-costs)).
 
-**Snowflake** cobra créditos **por segundo, com mínimo de 60 segundos** — todo start ou resume de warehouse já consome um minuto inteiro — e cada salto de tamanho de warehouse **dobra** os créditos por hora ([Snowflake](https://docs.snowflake.com/en/user-guide/cost-understanding-compute)).
+**Snowflake** cobra créditos **por segundo, com mínimo de 60 segundos**, todo start ou resume de warehouse já consome um minuto inteiro, e cada salto de tamanho de warehouse **dobra** os créditos por hora ([Snowflake](https://docs.snowflake.com/en/user-guide/cost-understanding-compute)).
 
 Note o que não está aqui: o preço por TiB do BigQuery e o preço por crédito da Snowflake. Os dois circulam amplamente, e eu não consegui confirmar nenhum dos dois em fonte oficial. Preferi trazer a mecânica confirmada a repetir uma cifra de agregador.
 
@@ -66,7 +66,7 @@ Em dois modelos diferentes, e um deles é calculável.
 
 Fontes: [Airbyte](https://airbyte.com/pricing) e [Fivetran](https://fivetran.com/docs/core-concepts/usage-based-pricing).
 
-A Fivetran define MAR com precisão — "the number of distinct rows synced from the source system to your destination system in a given calendar month", contado por chave primária distinta, uma vez por mês mesmo que sincronize várias vezes — e publica a tabela de transformações (US$ 0,01 por run entre 5.001 e 30.000, caindo a US$ 0,002 acima de 100.000). **Mas a tarifa por MAR não está publicada.** Conferi nas três páginas oficiais que tratam de preço e uso.
+A Fivetran define MAR com precisão, "the number of distinct rows synced from the source system to your destination system in a given calendar month", contado por chave primária distinta, uma vez por mês mesmo que sincronize várias vezes, e publica a tabela de transformações (US$ 0,01 por run entre 5.001 e 30.000, caindo a US$ 0,002 acima de 100.000). **Mas a tarifa por MAR não está publicada.** Conferi nas três páginas oficiais que tratam de preço e uso.
 
 Isso não é crítica: é o critério 5 se manifestando. Um dos lados deixa você montar a planilha sozinho; o outro exige uma conversa antes de existir número.
 
@@ -76,11 +76,11 @@ A manutenção. E a documentação dos próprios fornecedores descreve esse cust
 
 A Airbyte classifica o suporte dos conectores em níveis, e o texto sobre os da comunidade é direto: são "not maintained by Airbyte", não cobertos pelos SLAs de suporte, e "might not be feature complete and may experience backward-incompatible breaking changes with no notice" ([Airbyte](https://docs.airbyte.com/integrations/connector-support-levels)).
 
-A mesma documentação detalha o que acontece quando a origem muda. Só duas mudanças são consideradas quebra — remoção da chave primária e remoção do cursor — e ambas **pausam a conexão** até alguém intervir. A verificação de schema acontece a cada 15 minutos na versão gerenciada e a cada **24 horas** em instalação própria: quem roda a própria casa descobre a quebra até um dia depois ([Airbyte](https://docs.airbyte.com/platform/using-airbyte/schema-change-management)).
+A mesma documentação detalha o que acontece quando a origem muda. Só duas mudanças são consideradas quebra, remoção da chave primária e remoção do cursor, e ambas **pausam a conexão** até alguém intervir. A verificação de schema acontece a cada 15 minutos na versão gerenciada e a cada **24 horas** em instalação própria: quem roda a própria casa descobre a quebra até um dia depois ([Airbyte](https://docs.airbyte.com/platform/using-airbyte/schema-change-management)).
 
-Do outro lado, a Fivetran não cobra MAR em re-sync de troubleshooting nem em backfill de migração automática de schema — mas as linhas re-sincronizadas **que tiverem mudanças contam como MAR pago**.
+Do outro lado, a Fivetran não cobra MAR em re-sync de troubleshooting nem em backfill de migração automática de schema, mas as linhas re-sincronizadas **que tiverem mudanças contam como MAR pago**.
 
-Sobre o custo de pessoa, a pesquisa mais recente com metodologia aberta que encontrei é a da dbt Labs: 363 respondentes, coleta entre dezembro de 2025 e fevereiro de 2026, com **57% relatando aumento de gasto com warehouse contra 13% relatando queda**, e apenas 36% relatando aumento de orçamento de time ([dbt Labs, 14/04/2026](https://www.getdbt.com/resources/state-of-analytics-engineering-2026)). É pesquisa de fornecedor, com amostra pequena e majoritariamente não-brasileira, e declaro isso — mas o recorte é o dado mais defensável que achei para a assimetria entre custo e orçamento.
+Sobre o custo de pessoa, a pesquisa mais recente com metodologia aberta que encontrei é a da dbt Labs: 363 respondentes, coleta entre dezembro de 2025 e fevereiro de 2026, com **57% relatando aumento de gasto com warehouse contra 13% relatando queda**, e apenas 36% relatando aumento de orçamento de time ([dbt Labs, 14/04/2026](https://www.getdbt.com/resources/state-of-analytics-engineering-2026)). É pesquisa de fornecedor, com amostra pequena e majoritariamente não-brasileira, e declaro isso, mas o recorte é o dado mais defensável que achei para a assimetria entre custo e orçamento.
 
 ## Quando **não** escolher a Precisian?
 
@@ -102,7 +102,7 @@ Três casos, e eles são reais.
 
 **Grupo multimarca ou operação com agência:** o critério que domina passa a ser isolamento, e aí a arquitetura importa mais que o preço. Vale ler sobre [isolamento por cliente](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/) antes de comparar planilha.
 
-O que está incluso do lado da Precisian, e a faixa de entrada, estão publicados em [preços](https://precisian.io/precos) — o que, dado o resto deste artigo, é uma escolha de posicionamento e não um detalhe.
+O que está incluso do lado da Precisian, e a faixa de entrada, estão publicados em [preços](https://precisian.io/precos), o que, dado o resto deste artigo, é uma escolha de posicionamento e não um detalhe.
 
 ## O que este artigo não cobre?
 
