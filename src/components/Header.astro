@@ -10,16 +10,44 @@ interface Props {
 const { alternateUrl } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+// Links do site institucional. O blog e servido em precisian.io/blog, entao
+// sao caminhos absolutos same-origin (nao URL completa). As rotas por idioma
+// vem do site v3 e sao as unicas publicadas: pt-BR na raiz, en sob /en.
+const site = lang === 'en'
+  ? { home: '/en', pricing: '/en/pricing', demo: '/en/demo' }
+  : { home: '/', pricing: '/precos', demo: '/demonstracao' }
+
+const blogHome = `/blog/${lang}/`
+const linkClass = 'text-fg-muted hover:text-fg transition-colors'
 ---
 
-<header class="border-b border-border bg-bg-base">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-    <a href={`/blog/${lang}/`} class="font-display text-xl font-bold text-fg">
-      Precisian <span class="text-accent">Blog</span>
+<header class="sticky top-0 z-40 border-b border-border bg-bg-base/90 backdrop-blur supports-[backdrop-filter]:bg-bg-base/75">
+  <div class="max-w-6xl mx-auto px-6 py-3 flex flex-wrap items-center gap-x-6 gap-y-3">
+    <!-- Marca: "Precisian" leva ao produto, "Blog" leva a home do blog. -->
+    <div class="flex items-center gap-2 font-display text-xl font-bold mr-auto">
+      <a href={site.home} class="text-fg hover:text-accent transition-colors" title={t('nav.backToSite')}>
+        Precisian
+      </a>
+      <span aria-hidden="true" class="text-border font-normal">/</span>
+      <a href={blogHome} class="text-accent hover:text-accent-hover transition-colors">Blog</a>
+    </div>
+
+    <!-- CTA fica sempre visivel, inclusive no mobile. -->
+    <a
+      href={site.demo}
+      class="order-last sm:order-none rounded-md border border-accent px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent hover:text-bg-base transition-colors"
+    >
+      {t('nav.demo')}
     </a>
-    <nav class="flex items-center gap-6 text-sm">
-      <a href={`/blog/${lang}/`} class="text-fg-muted hover:text-fg">{t('nav.home')}</a>
-      <a href={`/blog/${lang}/tags/`} class="text-fg-muted hover:text-fg">{t('nav.tags')}</a>
+
+    <nav aria-label={t('nav.home')} class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+      <a href={blogHome} class={linkClass}>{t('nav.home')}</a>
+      <a href={`/blog/${lang}/tags/`} class={linkClass}>{t('nav.tags')}</a>
+      <span aria-hidden="true" class="hidden sm:inline h-4 w-px bg-border"></span>
+      <a href={site.home} class={linkClass}>{t('nav.site')}</a>
+      <a href={site.pricing} class={linkClass}>{t('nav.pricing')}</a>
+      <span aria-hidden="true" class="hidden sm:inline h-4 w-px bg-border"></span>
       <LanguageSwitcher alternateUrl={alternateUrl} />
     </nav>
   </div>
