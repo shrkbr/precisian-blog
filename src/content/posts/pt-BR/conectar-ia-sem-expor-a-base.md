@@ -8,7 +8,7 @@ publishedAt: 2026-09-29
 tags: ["mcp", "seguranca-de-dados", "dados-para-ia"]
 draft: false
 llmSummary: "A spec do Model Context Protocol define que autorização é OPCIONAL. Uma medição de maio de 2026 em 7.973 servidores MCP remotos achou 40,55% expondo ferramentas sem autenticação. RLS não protege se o agente conecta com papel que tem BYPASSRLS ou é dono da tabela."
-citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://arxiv.org/abs/2605.22333", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html", "https://generalanalysis.com/blog/supabase-mcp-blog", "https://supabase.com/blog/defense-in-depth-mcp", "https://genai.owasp.org/llm-top-10/"]
+citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://arxiv.org/abs/2605.22333", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html", "https://generalanalysis.com/blog/supabase-mcp-blog", "https://supabase.com/blog/defense-in-depth-mcp", "https://genai.owasp.org/llm-top-10/", "https://code.claude.com/docs/en/security"]
 about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.io/datalake/"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
@@ -75,7 +75,7 @@ Nenhuma delas é o protocolo, e nenhuma sozinha basta.
 
 A ordem importa. As duas primeiras camadas vivem no banco e valem mesmo que o agente se comporte mal. As duas últimas vivem na aplicação e valem enquanto o agente se comportar. Quem inverte a ordem, confia na configuração do agente e relaxa no banco, está protegido só contra acidente, não contra instrução plantada.
 
-Sobre a quarta camada, vale uma observação que o mercado ignora: o fornecedor do modelo não audita o servidor a que você o conecta. A Anthropic declara isso por escrito sobre seu próprio diretório, revisa contra critérios de listagem, "but does not security-audit or manage any MCP server". A confiança no servidor é sua, não dele.
+Sobre a quarta camada, vale uma observação que o mercado ignora: o fornecedor do modelo não audita o servidor a que você o conecta. A Anthropic declara isso por escrito sobre seu próprio diretório: revisa os conectores contra critérios de listagem antes de incluí-los, *"but does not security-audit or manage any MCP server"* ([Anthropic](https://code.claude.com/docs/en/security)). A confiança no servidor é sua, não dele.
 
 ## Como testar o seu próprio acesso em uma tarde?
 
