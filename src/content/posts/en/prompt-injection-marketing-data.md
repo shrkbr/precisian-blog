@@ -28,15 +28,15 @@ OWASP's definition is worth quoting exactly here, because it removes a common fa
 
 ## Has this actually happened?
 
-Through a marketing field, yes. Through a campaign name specifically, not that I could verify — and I would rather say so than imply otherwise.
+Through a marketing field, yes. Through a campaign name specifically, not that I could verify, and I would rather say so than imply otherwise.
 
-The closest documented case is **ForcedLeak**, reported in Salesforce Agentforce by the security firm [Noma Labs](https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce/). The payload was written into the description field of a **Web-to-Lead form** — a public, attacker-writable marketing field. An employee later asked the AI agent about that lead through a normal workflow, and the agent executed both the employee's request and the attacker's instructions. The description field accepts 42,000 characters, and the exfiltration path used an expired whitelisted domain bought for five dollars. It was rated CVSS 9.4, reported in July 2025 and disclosed that September, after Salesforce shipped trusted-URL enforcement.
+The closest documented case is **ForcedLeak**, reported in Salesforce Agentforce by the security firm [Noma Labs](https://noma.security/blog/forcedleak-agent-risks-exposed-in-salesforce-agentforce/). The payload was written into the description field of a **Web-to-Lead form**, a public, attacker-writable marketing field. An employee later asked the AI agent about that lead through a normal workflow, and the agent executed both the employee's request and the attacker's instructions. The description field accepts 42,000 characters, and the exfiltration path used an expired whitelisted domain bought for five dollars. It was rated CVSS 9.4, reported in July 2025 and disclosed that September, after Salesforce shipped trusted-URL enforcement.
 
 Two caveats that belong with that case. Every detail above originates with the security firm that found it; I did not find an independent advisory confirming the character count, the domain price or the score. And it is a lead form, not a campaign name.
 
 The second documented case is **EchoLeak**, and here the primary record is authoritative. The MITRE CVE entry for CVE-2025-32711 describes it as "Ai command injection in M365 Copilot allows an unauthorized attacker to disclose information over a network," rated CVSS 9.3 critical under CWE-74, published 11 June 2025 ([MITRE](https://cveawg.mitre.org/api/cve/CVE-2025-32711)). The payload arrived in an ordinary email. No click was required.
 
-Unit 42 also documented what it called its first observed case of AI-based ad review evasion, in December 2025 — a payload aimed at an automated ad-review system ([Unit 42, March 2026](https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/)).
+Unit 42 also documented what it called its first observed case of AI-based ad review evasion, in December 2025, a payload aimed at an automated ad-review system ([Unit 42, March 2026](https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/)).
 
 So: documented in marketing-adjacent fields, documented against ad systems, and not yet documented through a campaign name. The campaign-name vector is a reasoned extension of confirmed behavior, and I am labeling it as such rather than dressing it as an incident.
 
@@ -58,7 +58,7 @@ Three things fall out of that table.
 
 **Forty words is plenty.** The 256-character cap [Google documents](https://developers.google.com/google-ads/api/docs/best-practices/system-limits) does not constrain an instruction; it constrains an essay.
 
-**Meta documents no cap at all on campaign names**, and advertises emoji support, which means the full Unicode surface is in scope by design — homoglyphs, right-to-left overrides, zero-width characters.
+**Meta documents no cap at all on campaign names**, and advertises emoji support, which means the full Unicode surface is in scope by design, homoglyphs, right-to-left overrides, zero-width characters.
 
 **Everything marketers "know" about safe UTM characters is convention, not policy.** The rules you have read about sticking to alphanumerics and hyphens come from practitioner blogs. Google's own documentation states one rule: values are case sensitive. That gap between folk practice and documented policy is the actual finding here.
 
@@ -68,11 +68,11 @@ Three properties that rarely coincide elsewhere in a company's data.
 
 **It is written by outsiders as a matter of routine.** Agencies edit campaign names. Partners construct UTMs. Suppliers write product titles. Affiliates build links. In most organizations the list of people who can put text into these fields is longer than the list of people with database access, and nobody thinks of it as a permission.
 
-**It is never reviewed for content.** A campaign name is checked for naming convention, if at all. No one reads it as untrusted input, because for two decades it was not input at all — it was a label.
+**It is never reviewed for content.** A campaign name is checked for naming convention, if at all. No one reads it as untrusted input, because for two decades it was not input at all, it was a label.
 
 **It flows automatically to exactly where an agent will read it.** That is the whole point of the pipeline. The field goes from the ad platform to the warehouse to the report without a human in the path, by design and correctly. The same automation that makes reporting possible makes the payload's trip free.
 
-Compare that with a database column, which has a schema, an owner and a review process, or with a support ticket, which at least someone reads. Marketing metadata combines outside authorship, zero content review and automatic delivery — and it has done so for years, harmlessly, which is why nobody has revisited it.
+Compare that with a database column, which has a schema, an owner and a review process, or with a support ticket, which at least someone reads. Marketing metadata combines outside authorship, zero content review and automatic delivery, and it has done so for years, harmlessly, which is why nobody has revisited it.
 
 ## Why doesn't "it's just a campaign name" hold?
 
@@ -88,19 +88,19 @@ OWASP's framing of severity is the useful one: how bad this gets depends on "the
 
 Architecture, not filtering. The most useful published work on this says so plainly.
 
-A 2025 paper with authors across ETH Zurich, Google, Microsoft, IBM and EPFL states the principle directly: "once an LLM agent has ingested untrusted input, it must be constrained so that it is impossible for that input to trigger any consequential actions" ([arXiv 2506.08837](https://arxiv.org/abs/2506.08837)). It names six design patterns — Action-Selector, Plan-Then-Execute, LLM Map-Reduce, Dual LLM, Code-Then-Execute and Context-Minimization — each of which limits what tainted context can reach.
+A 2025 paper with authors across ETH Zurich, Google, Microsoft, IBM and EPFL states the principle directly: "once an LLM agent has ingested untrusted input, it must be constrained so that it is impossible for that input to trigger any consequential actions" ([arXiv 2506.08837](https://arxiv.org/abs/2506.08837)). It names six design patterns, Action-Selector, Plan-Then-Execute, LLM Map-Reduce, Dual LLM, Code-Then-Execute and Context-Minimization, each of which limits what tainted context can reach.
 
 Google's published defense is layered rather than singular: injection classifiers, security thought reinforcement, markdown sanitization and URL redaction, a user confirmation framework for risky operations, and end-user notifications ([Google, June 2025](https://blog.google/security/mitigating-prompt-injection-attacks/)).
 
-Anthropic reports a 1% attack success rate for one model against an internal adaptive attacker, and pairs it with its own caveat that this "still represents meaningful risk" and that no browser agent is immune ([Anthropic, November 2025](https://www.anthropic.com/news/prompt-injection-defenses)). That is a vendor evaluating itself on an internal benchmark, and it should be read as such — but the caveat is the honest part, and it matches the research consensus.
+Anthropic reports a 1% attack success rate for one model against an internal adaptive attacker, and pairs it with its own caveat that this "still represents meaningful risk" and that no browser agent is immune ([Anthropic, November 2025](https://www.anthropic.com/news/prompt-injection-defenses)). That is a vendor evaluating itself on an internal benchmark, and it should be read as such, but the caveat is the honest part, and it matches the research consensus.
 
-For a marketing data stack specifically, the practical version is short. Do not let the agent that reads campaign metadata be the same agent that can act. Keep irreversible operations behind human approval, and check which role the connection uses — the detail where [multi-tenant setups usually fail](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/). And reduce what enters context in the first place: an agent querying a [governed semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) sees metrics, not raw name strings, which removes the payload before it is ever parsed.
+For a marketing data stack specifically, the practical version is short. Do not let the agent that reads campaign metadata be the same agent that can act. Keep irreversible operations behind human approval, and check which role the connection uses, the detail where [multi-tenant setups usually fail](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/). And reduce what enters context in the first place: an agent querying a [governed semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) sees metrics, not raw name strings, which removes the payload before it is ever parsed.
 
 ## How common is this really?
 
 Nobody credible knows, and the honest answer is more useful than the numbers on offer.
 
-Unit 42 published twelve case studies and twenty-two payload-construction techniques from its telemetry. It does not disclose a denominator, a time window or the sensor. The percentages it reports are shares of a small undisclosed sample, so "14% of attacks" would be a misreading. Unit 42 also states that it is not aware of any confirmed real-world instance where such an attack succeeded against a deployed ad-checking agent — the detections are attempts.
+Unit 42 published twelve case studies and twenty-two payload-construction techniques from its telemetry. It does not disclose a denominator, a time window or the sensor. The percentages it reports are shares of a small undisclosed sample, so "14% of attacks" would be a misreading. Unit 42 also states that it is not aware of any confirmed real-world instance where such an attack succeeded against a deployed ad-checking agent, the detections are attempts.
 
 Google Threat Intelligence ran a three-stage filter over Common Crawl snapshots of two to three billion pages each and reported a 32% relative increase in the malicious category between November 2025 and February 2026 ([Google, April 2026](https://blog.google/security/prompt-injections-web/)). No baseline, no raw counts, no malicious-versus-benign split. It is a trend claim, not a prevalence measurement, and Google notes most prompt-injection text on the web is educational material producing false positives.
 

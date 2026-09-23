@@ -32,7 +32,7 @@ So if you arrived at this page looking for a winner, the honest answer is that t
 
 A set of metadata tables with a defined shape, living in your warehouse.
 
-The specification defines six table families: `AGENTS.ROOT` as the provider registry, plus families for dbt, LookML, OSI, Sigma and skill usage. The repository README compares it to `information_schema`, "but extensible across many providers." The spec carries exactly one hard requirement — uniqueness of the provider-and-key pair in the registry.
+The specification defines six table families: `AGENTS.ROOT` as the provider registry, plus families for dbt, LookML, OSI, Sigma and skill usage. The repository README compares it to `information_schema`, "but extensible across many providers." The spec carries exactly one hard requirement, uniqueness of the provider-and-key pair in the registry.
 
 It matters that this is two things with one name, and the distinction gets blurred constantly:
 
@@ -65,7 +65,7 @@ In how each one is governed. Both are described as open, and the published artif
 | Current version | `v0.0.11` (Aug 2026) | `2026-07-28` |
 | Versioning | semver, pre-1.0 | date string, bumped only on breaking change |
 
-The MCP side of that table comes from its published [governance document](https://modelcontextprotocol.io/community/governance) and [versioning policy](https://modelcontextprotocol.io/specification/versioning). The Agents Schema side comes from the repository's own LICENSE and CONTRIBUTING files — the latter covering technical contribution and saying nothing about who decides what enters the specification.
+The MCP side of that table comes from its published [governance document](https://modelcontextprotocol.io/community/governance) and [versioning policy](https://modelcontextprotocol.io/specification/versioning). The Agents Schema side comes from the repository's own LICENSE and CONTRIBUTING files, the latter covering technical contribution and saying nothing about who decides what enters the specification.
 
 This is an observation about documents that exist, not a claim about anyone's intentions. A single-vendor specification can be excellent, move faster, and serve users well. But the two are open in different senses, and a team adopting one should know which sense applies, because that is what determines what happens when your needs and the vendor's roadmap diverge.
 
@@ -81,11 +81,11 @@ The first spec tag predates the merger announcement by four days. MCP's current 
 
 Depends on which problem is actually blocking you, and for most teams the answer is neither, yet.
 
-**If your agent gives inconsistent answers about the same metric**, your problem is upstream of both. No transport and no metadata table fixes an undefined metric — that is what a [semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) is for, and both of these standards assume you have one.
+**If your agent gives inconsistent answers about the same metric**, your problem is upstream of both. No transport and no metadata table fixes an undefined metric, that is what a [semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) is for, and both of these standards assume you have one.
 
 **If your definitions exist and agents cannot find them**, Agents Schema is the lighter answer, because publishing tables requires no new service.
 
-**If agents need to do things**, not just read, you need MCP or something like it, and you need the access controls that come with it — starting with the role the connection uses, which is where [multi-tenant setups usually fail](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/).
+**If agents need to do things**, not just read, you need MCP or something like it, and you need the access controls that come with it, starting with the role the connection uses, which is where [multi-tenant setups usually fail](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/).
 
 **If you are choosing between vendors**, the governance table above is the more durable input. Function converges; governance does not.
 

@@ -24,7 +24,7 @@ Responde perguntas que ninguém antecipou.
 
 Um painel é a resposta a uma pergunta que alguém já fez. Alguém decidiu quais cortes existem, quais filtros aparecem e qual granularidade importa, e materializou isso numa tela. Enquanto a sua pergunta estiver dentro daquele conjunto, o painel é mais rápido, mais barato e mais confiável que qualquer agente.
 
-A pergunta que não estava prevista é outra história. "Quanto da receita de agosto veio de clientes que já tinham comprado no primeiro trimestre, excluindo marketplace" não costuma ter botão. Ela vira um pedido para a área de dados, entra numa fila e volta em dias — ou não volta.
+A pergunta que não estava prevista é outra história. "Quanto da receita de agosto veio de clientes que já tinham comprado no primeiro trimestre, excluindo marketplace" não costuma ter botão. Ela vira um pedido para a área de dados, entra numa fila e volta em dias, ou não volta.
 
 O servidor MCP muda o custo marginal dessa segunda categoria. A pergunta nova deixa de exigir alguém construindo um relatório e passa a exigir apenas que o dado esteja modelado. É uma mudança de fila para conversa.
 
@@ -46,9 +46,9 @@ Há também a questão de quem consome. Uma tela serve quem precisa olhar; um pr
 
 ## Por que os dois precisam da mesma coisa embaixo?
 
-Porque nenhum dos dois inventa a regra de negócio. Os dois a leem de algum lugar — e quando esse lugar não existe, cada um inventa a sua.
+Porque nenhum dos dois inventa a regra de negócio. Os dois a leem de algum lugar, e quando esse lugar não existe, cada um inventa a sua.
 
-Um teste pareado publicado em abril de 2026 com três modelos de fronteira mediu o tamanho dessa diferença: fornecer as definições de negócio como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)). A intervenção testada foi um documento descrevendo medidas, convenções e regras de desambiguação — não um produto.
+Um teste pareado publicado em abril de 2026 com três modelos de fronteira mediu o tamanho dessa diferença: fornecer as definições de negócio como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)). A intervenção testada foi um documento descrevendo medidas, convenções e regras de desambiguação, não um produto.
 
 É por isso que a pergunta "MCP ou BI" costuma estar mal formulada. Os dois consomem a mesma [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/); a diferença é o formato da saída. Quem instala um servidor MCP sobre dado não modelado troca um painel que estava certo por um agente que responde rápido e erra com confiança, que é o padrão da [alucinação de métrica](https://precisian.io/blog/pt-BR/posts/alucinacao-de-metrica/).
 
@@ -58,7 +58,7 @@ Menos do que o nome sugere, e vale saber antes de tratar o protocolo como camada
 
 O que ela exige de quem implementa: validar todas as entradas de ferramenta, aplicar controle de acesso, **limitar a taxa de invocação** e sanitizar as saídas. Do lado do cliente, recomenda timeouts e registro de uso para auditoria, e afirma que "there SHOULD always be a human in the loop with the ability to deny tool invocations" ([spec MCP](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 
-O que ela **não** exige: autenticação. O texto é literal — "Authorization is OPTIONAL for MCP implementations" ([spec MCP](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
+O que ela **não** exige: autenticação. O texto é literal, "Authorization is OPTIONAL for MCP implementations" ([spec MCP](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
 E há uma armadilha de leitura nas anotações de ferramenta. Existe um campo `readOnlyHint`, que tem valor padrão falso, e um `destructiveHint`, cujo padrão é verdadeiro. Mas a própria especificação avisa que essas anotações são **dicas**: "they are not guaranteed to provide a faithful description of tool behavior". Um servidor pode declarar que uma ferramenta é somente-leitura e não ser. A garantia tem que vir do banco e do controle de acesso, não do rótulo.
 
@@ -68,7 +68,7 @@ Vale ver como um fornecedor implementa isso na prática. O servidor MCP do BigQu
 
 Vale desfazer uma imagem que confunde: o servidor MCP não manda a sua base para dentro do modelo.
 
-O que acontece é mais modesto e mais controlável. O servidor publica uma lista de ferramentas — consultar métrica, listar dimensões, buscar um recorte. O modelo escolhe uma, envia parâmetros, e recebe de volta o resultado daquela chamada. O que trafega é pergunta e resposta, não o acervo.
+O que acontece é mais modesto e mais controlável. O servidor publica uma lista de ferramentas, consultar métrica, listar dimensões, buscar um recorte. O modelo escolhe uma, envia parâmetros, e recebe de volta o resultado daquela chamada. O que trafega é pergunta e resposta, não o acervo.
 
 Isso importa por dois motivos. O primeiro é de perímetro: o que o modelo pode ver é exatamente o conjunto de ferramentas publicadas, e a especificação permite que essa lista varie conforme a autorização de quem chama, devolvendo apenas as ferramentas que o escopo concedido permite. Ferramenta que o agente não enxerga é ferramenta que ele não usa por engano.
 
@@ -80,9 +80,9 @@ A pergunta útil de arquitetura, então, não é "o modelo vai ver meus dados". 
 
 Quando as perguntas da sua operação já cabem no painel.
 
-Se o time pergunta as mesmas dez coisas todo mês e as dez estão na tela, instalar um servidor MCP resolve um problema que você não tem. O sinal de que a hora chegou não é tecnológico: é a fila de pedidos ad hoc na área de dados. Quando ela cresce mais rápido do que a capacidade de atendê-la, o gargalo virou o custo de formular perguntas novas — e é exatamente aí que o protocolo muda a conta.
+Se o time pergunta as mesmas dez coisas todo mês e as dez estão na tela, instalar um servidor MCP resolve um problema que você não tem. O sinal de que a hora chegou não é tecnológico: é a fila de pedidos ad hoc na área de dados. Quando ela cresce mais rápido do que a capacidade de atendê-la, o gargalo virou o custo de formular perguntas novas, e é exatamente aí que o protocolo muda a conta.
 
-O segundo sinal é a chegada da IA por outra porta. Quando alguém do time já está colando planilha no chat para perguntar, a pergunta deixou de ser "se" e passou a ser "com qual dado". Entre um agente consultando um recorte modelado e um agente lendo uma planilha exportada à mão, a diferença de risco é grande — e a segunda opção já está acontecendo em quase toda empresa.
+O segundo sinal é a chegada da IA por outra porta. Quando alguém do time já está colando planilha no chat para perguntar, a pergunta deixou de ser "se" e passou a ser "com qual dado". Entre um agente consultando um recorte modelado e um agente lendo uma planilha exportada à mão, a diferença de risco é grande, e a segunda opção já está acontecendo em quase toda empresa.
 
 Na Precisian, o servidor MCP é uma das portas de acesso sobre um [lake isolado por cliente](https://precisian.io/datalake/), ao lado da API aberta e da conexão ao BI que o cliente já usa. A entrega termina na camada semântica; o consumo acontece na ferramenta dele.
 
