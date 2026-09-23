@@ -38,7 +38,7 @@ Há um detalhe da VTEX que costuma passar despercebido e move bastante: pedidos 
 
 O GA4 mede intenção no checkout. A plataforma mede estado final. Entre os dois há uma fila de eventos que mudam o valor depois que o `purchase` já disparou.
 
-Cancelamento, devolução e recusa de antifraude são mudanças de estado posteriores à coleta — a Adobe classifica exatamente assim, como "cancelled, refunded, or frauded orders, which is a state change that happens after" o rastreamento ([Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)).
+Cancelamento, devolução e recusa de antifraude são mudanças de estado posteriores à coleta, a Adobe classifica exatamente assim, como "cancelled, refunded, or frauded orders, which is a state change that happens after" o rastreamento ([Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)).
 
 E há uma assimetria contraintuitiva no GA4: a métrica Transactions **inclui eventos de reembolso**, não apenas de compra ([GA4](https://support.google.com/analytics/answer/13428834)). Quem conta transações no GA4 e compara com pedidos na plataforma está somando duas categorias diferentes.
 
@@ -48,7 +48,7 @@ Bastante, e essa parte não existe fora do Brasil.
 
 A VTEX documenta a regra de forma explícita: "PIX e Boleto: a marcação ocorre somente após a confirmação de pagamento" ([VTEX](https://help.vtex.com/pt/docs/tutorials/compreenda-o-valor-da-receita-aprovada)). O `purchase` do GA4, porém, dispara no checkout. Para cartão os dois momentos quase coincidem. Para boleto, não.
 
-Quanto é "não coincide"? A FEBRABAN publicou a medição no primeiro mês do novo prazo de cobrança: entre 18/03 e 18/04/2024 houve 376 milhões de transações via boleto, movimentando R$ 540 bilhões, dos quais R$ 260 bilhões foram repassados em D+0 — **52% das operações liquidam no mesmo dia** ([FEBRABAN, 10/05/2024](https://portal.febraban.org.br/noticia/4112/pt-br)).
+Quanto é "não coincide"? A FEBRABAN publicou a medição no primeiro mês do novo prazo de cobrança: entre 18/03 e 18/04/2024 houve 376 milhões de transações via boleto, movimentando R$ 540 bilhões, dos quais R$ 260 bilhões foram repassados em D+0, **52% das operações liquidam no mesmo dia** ([FEBRABAN, 10/05/2024](https://portal.febraban.org.br/noticia/4112/pt-br)).
 
 Lido ao contrário: mesmo depois da mudança de prazo, perto de metade do boleto só confirma no dia útil seguinte. Numa operação com fatia relevante de boleto, o fechamento do mês pelo GA4 e o fechamento pela plataforma nunca cobrem o mesmo conjunto de pedidos, porque a virada do mês corta a fila no meio.
 
@@ -62,7 +62,7 @@ Mais do que a maioria dos times imagina, e cada etapa muda o número.
 
 **Amostragem.** Acima de 10 milhões de eventos por consulta numa propriedade padrão, o relatório passa a ser estimado ([GA4](https://support.google.com/analytics/answer/13331292)). E a contagem de sessões usa HLL++, com precisão de "±1,63% para contagem de sessão" num intervalo de confiança de 95% ([Google for Developers, abr/2023](https://developers.google.com/analytics/blog/2023/bigquery-vs-ui)).
 
-**Modelagem de consentimento.** Aqui está a armadilha mais cara. A modelagem comportamental exige "at least 1,000 events per day with `analytics_storage='denied'` for at least 7 days" e mil usuários diários com consentimento concedido em 7 dos 28 dias anteriores ([GA4](https://support.google.com/analytics/answer/11161109)). Abaixo desse volume não há modelagem: o dado simplesmente não aparece. E acima dele, a mesma fonte do Google avisa que "none of the modeled data is available in the BigQuery event export" — o número da interface e o número do BigQuery divergem por construção.
+**Modelagem de consentimento.** Aqui está a armadilha mais cara. A modelagem comportamental exige "at least 1,000 events per day with `analytics_storage='denied'` for at least 7 days" e mil usuários diários com consentimento concedido em 7 dos 28 dias anteriores ([GA4](https://support.google.com/analytics/answer/11161109)). Abaixo desse volume não há modelagem: o dado simplesmente não aparece. E acima dele, a mesma fonte do Google avisa que "none of the modeled data is available in the BigQuery event export", o número da interface e o número do BigQuery divergem por construção.
 
 **Coleta perdida antes de tudo isso.** A VTEX lista as causas na própria FAQ: bloqueio de JavaScript, ad blockers, data layer mal configurado, página de confirmação que falha ou duplica, e aplicativos de pagamento que concluem a compra sem redirecionar para a confirmação ([VTEX](https://help.vtex.com/en/docs/tutorials/google-analytics-faq)). A Shopify é igualmente direta: "Google can only count visitors with JavaScript and cookies activated" ([Shopify](https://help.shopify.com/en/manual/reports-and-analytics/discrepancies)).
 
@@ -72,7 +72,7 @@ E o navegador colabora contra. O WebKit bloqueia cookies de terceiros por padrã
 
 Porque a divergência de receita tem uma irmã que quase ninguém separa dela, e a causa é outra.
 
-A VTEX mantém uma página só para essa pergunta e a resposta é de modelo, não de coleta: os dois sistemas usam **modelos de atribuição diferentes**, o GA usa Last Interaction por padrão, os cookies são distintos, e o conceito de sessão da VTEX "is not a replica" do conceito do GA — ainda que ambos expirem com trinta minutos de inatividade ([VTEX](https://help.vtex.com/en/faq/why-is-the-origin-of-the-orders-different-on-vtex-and-on-google-analytics--frequentlyAskedQuestions_5030)).
+A VTEX mantém uma página só para essa pergunta e a resposta é de modelo, não de coleta: os dois sistemas usam **modelos de atribuição diferentes**, o GA usa Last Interaction por padrão, os cookies são distintos, e o conceito de sessão da VTEX "is not a replica" do conceito do GA, ainda que ambos expirem com trinta minutos de inatividade ([VTEX](https://help.vtex.com/en/faq/why-is-the-origin-of-the-orders-different-on-vtex-and-on-google-analytics--frequentlyAskedQuestions_5030)).
 
 Isso importa na prática porque muda quem recebe o crédito. Um pedido que o GA4 atribui a busca paga pode aparecer como orgânico na VTEX, sem que nenhum dos dois esteja errado: eles estão respondendo perguntas diferentes sobre a mesma venda. Se o time de mídia otimiza pelo GA4 e o time comercial fecha o mês pela VTEX, os dois estão certos e vão discordar todo mês.
 
@@ -82,7 +82,7 @@ Separar as duas divergências é o primeiro movimento de qualquer reconciliaçã
 
 O formato que funciona é uma cascata, do número do analytics até o da plataforma, com cada linha nomeada e assinada por quem decidiu.
 
-Comece pelo valor do GA4 no período. Some frete e imposto, que ele exclui por definição. Some os pedidos que nunca passaram pelo site. Subtraia cancelamento, devolução e recusa de antifraude, se o seu lado da comparação os mantiver. Ajuste a janela para o reconhecimento de boleto e Pix. O que sobrar de diferença depois dessas cinco linhas é o que realmente merece investigação técnica — e costuma ser uma fração pequena do susto inicial.
+Comece pelo valor do GA4 no período. Some frete e imposto, que ele exclui por definição. Some os pedidos que nunca passaram pelo site. Subtraia cancelamento, devolução e recusa de antifraude, se o seu lado da comparação os mantiver. Ajuste a janela para o reconhecimento de boleto e Pix. O que sobrar de diferença depois dessas cinco linhas é o que realmente merece investigação técnica, e costuma ser uma fração pequena do susto inicial.
 
 A utilidade da cascata não é chegar a zero. É transformar "os números não batem" numa lista de cinco decisões que alguém pode arbitrar, em vez de um mistério que volta toda segunda-feira.
 
@@ -96,7 +96,7 @@ Quatro passos, em ordem de esforço. Nenhum exige ferramenta nova.
 
 **Compare a mesma janela com três dias de folga.** Fechar o mês no dia 1º mistura dado ainda em processamento com dado consolidado.
 
-**Confira se você está acima do limiar de modelagem.** Se não estiver, a fatia sem consentimento não está sendo estimada — está ausente.
+**Confira se você está acima do limiar de modelagem.** Se não estiver, a fatia sem consentimento não está sendo estimada, está ausente.
 
 ## Quando isso não tem conserto?
 

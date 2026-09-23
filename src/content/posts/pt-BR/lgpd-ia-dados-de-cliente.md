@@ -14,7 +14,7 @@ author: "Gabriel Sorato"
 readingTimeMinutes: 6
 ---
 
-Se você manda dado de cliente para um LLM hospedado fora do Brasil, hoje existem dois caminhos legais vivos, e não três. Ou o dado fica na União Europeia, considerada adequada pela ANPD desde janeiro de 2026, ou o contrato incorpora as cláusulas-padrão da [Resolução 19/2024](https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024) — cujo prazo de adequação **já venceu**. A terceira saída que todo fornecedor oferece, normas corporativas globais, não está disponível: a ANPD declara por escrito que nunca aprovou nenhuma.
+Se você manda dado de cliente para um LLM hospedado fora do Brasil, hoje existem dois caminhos legais vivos, e não três. Ou o dado fica na União Europeia, considerada adequada pela ANPD desde janeiro de 2026, ou o contrato incorpora as cláusulas-padrão da [Resolução 19/2024](https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024), cujo prazo de adequação **já venceu**. A terceira saída que todo fornecedor oferece, normas corporativas globais, não está disponível: a ANPD declara por escrito que nunca aprovou nenhuma.
 
 > **Transferência internacional de dados**: envio de dado pessoal para fora do país, permitido pelo art. 33 da LGPD apenas nas hipóteses que a lei lista, entre elas país com grau de proteção adequado e contrato com cláusulas-padrão aprovadas pela autoridade.
 
@@ -30,7 +30,7 @@ Os números do próprio documento ajudam a dimensionar: foram 99 contribuições
 
 **O documento que de fato coloca IA como eixo de fiscalização é outro:** a Resolução CD/ANPD nº 30, de 23 de dezembro de 2025, que aprova o Mapa de Temas Prioritários para 2026-2027, e lista inteligência artificial e tecnologias emergentes entre os quatro eixos ([ANPD, regulamentações](https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd)).
 
-Se o seu jurídico recebeu um alerta citando a NT 12/2025 como base de risco, ele está certo na conclusão e errado na fonte — e fonte errada é o tipo de coisa que desmonta numa reunião.
+Se o seu jurídico recebeu um alerta citando a NT 12/2025 como base de risco, ele está certo na conclusão e errado na fonte, e fonte errada é o tipo de coisa que desmonta numa reunião.
 
 ## Para onde o dado pode ir hoje?
 
@@ -54,15 +54,15 @@ Doze meses contados de agosto de 2024 significa que o prazo se encerrou em **23 
 
 ## Quem responde se o fornecedor usar seu dado para treinar?
 
-Você, e possivelmente ele junto — e essa é a parte que a maioria dos contratos de IA não trata.
+Você, e possivelmente ele junto, e essa é a parte que a maioria dos contratos de IA não trata.
 
 A LGPD separa os papéis pela titularidade da decisão. Controlador é quem toma "as decisões referentes ao tratamento", operador é quem "realiza o tratamento de dados pessoais em nome do controlador" (art. 5º, VI e VII). O art. 39 prende o operador às instruções recebidas, e o art. 37 obriga os dois a manter registro das operações ([Lei 13.709/2018](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-publicacaooriginal-156212-pl.html)). A distinção não é formal: ela define quem paga a conta quando algo dá errado.
 
 A empresa que decide mandar o dado do cliente para o modelo é controladora. O fornecedor do LLM que processa conforme instruções é operador. Até aí, arranjo comum.
 
-O deslocamento está no art. 42, §1º, I, que o Guia Orientativo da própria ANPD destaca: o operador responde solidariamente "quando descumprir as obrigações da legislação de proteção de dados ou quando não tiver seguido as instruções lícitas do controlador, **hipótese em que o operador equipara-se ao controlador**". O Guia acrescenta que, em princípio, essa é a única hipótese de equiparação ([Guia Orientativo — Agentes de Tratamento, v2.0](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-para-definicoes-dos-agentes-de-tratamento-de-dados-pessoais-e-do-encarregado)).
+O deslocamento está no art. 42, §1º, I, que o Guia Orientativo da própria ANPD destaca: o operador responde solidariamente "quando descumprir as obrigações da legislação de proteção de dados ou quando não tiver seguido as instruções lícitas do controlador, **hipótese em que o operador equipara-se ao controlador**". O Guia acrescenta que, em princípio, essa é a única hipótese de equiparação ([Guia Orientativo, Agentes de Tratamento, v2.0](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/materiais-educativos-e-publicacoes/guia-orientativo-para-definicoes-dos-agentes-de-tratamento-de-dados-pessoais-e-do-encarregado)).
 
-Traduzindo para a cláusula que interessa: se o contrato permite que o fornecedor use o conteúdo dos seus prompts para treinar o modelo dele, isso é tratamento com finalidade própria, fora das suas instruções. Não é detalhe de termo de uso — é o que decide quem responde.
+Traduzindo para a cláusula que interessa: se o contrato permite que o fornecedor use o conteúdo dos seus prompts para treinar o modelo dele, isso é tratamento com finalidade própria, fora das suas instruções. Não é detalhe de termo de uso, é o que decide quem responde.
 
 Vale notar que a ANPD já atuou nesse terreno. O índice oficial de documentos técnicos lista a Nota Técnica nº 27/2024, sobre tratamento de dados de terceiros para desenvolver modelo de IA generativa, a NT nº 39/2024 sobre o plano de conformidade da Meta, e a NT nº 1/2026 sobre o sistema Grok ([ANPD](https://www.gov.br/anpd/pt-br/centrais-de-conteudo/documentos-tecnicos-orientativos)).
 
@@ -72,7 +72,7 @@ Ela deixa de ser sobre qual modelo usar e passa a ser sobre onde o dado repousa.
 
 O modelo que responde a pergunta pode estar em qualquer lugar; o que precisa de base legal é o **dado pessoal que sai do país**. São decisões separáveis, e separá-las é o que abre as opções: manter a base num ambiente isolado e sob controle contratual conhecido, e expor ao modelo apenas o recorte necessário, muda o perímetro da transferência.
 
-É por isso que um [data lake isolado por cliente](https://precisian.io/datalake/) deixa de ser detalhe técnico nesse contexto. Quando as definições vivem numa [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) e o acesso passa por API e servidor MCP, dá para responder com precisão o que foi consultado, por quem e quando — que é exatamente o registro das operações exigido pelo art. 37.
+É por isso que um [data lake isolado por cliente](https://precisian.io/datalake/) deixa de ser detalhe técnico nesse contexto. Quando as definições vivem numa [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) e o acesso passa por API e servidor MCP, dá para responder com precisão o que foi consultado, por quem e quando, que é exatamente o registro das operações exigido pelo art. 37.
 
 ## O que este artigo não cobre?
 
