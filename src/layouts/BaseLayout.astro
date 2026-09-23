@@ -20,6 +20,16 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
 <!DOCTYPE html>
 <html lang={lang}>
   <head>
+    <!-- Tema antes do primeiro paint. Precisa ser is:inline (script de
+         componente Astro e deferido e chega tarde demais: flash escuro para
+         quem le no claro). O try/catch cobre localStorage bloqueado. -->
+    <script is:inline>
+      try {
+        var stored = localStorage.getItem('precisian-blog-theme')
+        var light = stored ? stored === 'light' : window.matchMedia('(prefers-color-scheme: light)').matches
+        if (light) document.documentElement.classList.add('light')
+      } catch (e) {}
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>

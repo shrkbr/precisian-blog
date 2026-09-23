@@ -2,6 +2,7 @@
 // precisian-blog/src/components/Header.astro
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import LanguageSwitcher from './LanguageSwitcher.astro'
+import ThemeToggle from './ThemeToggle.astro'
 
 interface Props {
   alternateUrl?: Partial<Record<'pt-BR' | 'en', string>>
@@ -51,6 +52,7 @@ const linkClass = 'text-fg-muted hover:text-fg transition-colors'
       <a href={site.pricing} class={linkClass}>{t('nav.pricing')}</a>
       <span aria-hidden="true" class="hidden sm:inline h-4 w-px bg-border"></span>
       <LanguageSwitcher alternateUrl={alternateUrl} />
+      <ThemeToggle />
     </nav>
   </div>
 </header>

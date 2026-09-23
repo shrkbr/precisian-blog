@@ -3,6 +3,10 @@
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { languages, type Lang } from '../i18n/ui'
 
+// No mobile o rotulo e abreviado: "Portugues"/"English" por extenso faziam a
+// nav do header quebrar numa terceira linha a 375px.
+const shortLabels: Record<Lang, string> = { 'pt-BR': 'PT', en: 'EN' }
+
 interface Props {
   alternateUrl?: Partial<Record<Lang, string>>
 }
@@ -26,7 +30,8 @@ const t = useTranslations(currentLang)
         aria-current={isCurrent ? 'page' : undefined}
         lang={lang}
       >
-        {languages[lang]}
+        <span class="sm:hidden">{shortLabels[lang]}</span>
+        <span class="hidden sm:inline">{languages[lang]}</span>
       </a>
     )
   })}

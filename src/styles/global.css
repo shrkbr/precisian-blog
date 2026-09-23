@@ -10,24 +10,33 @@
     scroll-padding-top: 5rem;
   }
 
+  /* O rosa da marca (#FD68B3) da 7,4:1 no preto e apenas 2,7:1 no branco: no
+     modo claro ele e ilegivel como TEXTO. Por isso --accent muda de valor e
+     --accent-brand guarda o rosa da marca para preenchimento e decoracao
+     (rosa sobre texto escuro passa em qualquer fundo). Os tons do modo claro
+     sao os passos 70 e 80 da rampa rosa do brand system (6,7:1 e 10,9:1). */
   :root {
+    color-scheme: dark;
     --bg: #0a0a0a;
     --bg-elevated: #151515;
     --fg: #e5e5e5;
     --fg-muted: #a1a1aa;
     --accent: #FD68B3;
     --accent-hover: #ff7bc0;
+    --accent-brand: #FD68B3;
     --border: #262626;
     --code-bg: #111111;
   }
 
   :root.light {
+    color-scheme: light;
     --bg: #ffffff;
     --bg-elevated: #fafafa;
     --fg: #0a0a0a;
     --fg-muted: #52525b;
-    --accent: #FD68B3;
-    --accent-hover: #d94a94;
+    --accent: #943E69;
+    --accent-hover: #622946;
+    --accent-brand: #FD68B3;
     --border: #e5e5e5;
     --code-bg: #f4f4f5;
   }
