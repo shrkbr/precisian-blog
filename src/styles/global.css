@@ -4,6 +4,12 @@
 @tailwind utilities;
 
 @layer base {
+  /* O header e sticky: sem isso, clicar num item do indice (ou num link de
+     heading) encosta o titulo em y=0, atras do header. */
+  html {
+    scroll-padding-top: 5rem;
+  }
+
   :root {
     --bg: #0a0a0a;
     --bg-elevated: #151515;

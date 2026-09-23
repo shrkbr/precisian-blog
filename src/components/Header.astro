@@ -25,7 +25,7 @@ const linkClass = 'text-fg-muted hover:text-fg transition-colors'
 <header class="sticky top-0 z-40 border-b border-border bg-bg-base/90 backdrop-blur supports-[backdrop-filter]:bg-bg-base/75">
   <div class="max-w-6xl mx-auto px-6 py-3 flex flex-wrap items-center gap-x-6 gap-y-3">
     <!-- Marca: "Precisian" leva ao produto, "Blog" leva a home do blog. -->
-    <div class="flex items-center gap-2 font-display text-xl font-bold mr-auto">
+    <div class="flex items-center gap-2 font-display text-lg sm:text-xl font-bold mr-auto">
       <a href={site.home} class="text-fg hover:text-accent transition-colors" title={t('nav.backToSite')}>
         Precisian
       </a>
@@ -36,16 +36,18 @@ const linkClass = 'text-fg-muted hover:text-fg transition-colors'
     <!-- CTA fica sempre visivel, inclusive no mobile. -->
     <a
       href={site.demo}
-      class="order-last sm:order-none rounded-md border border-accent px-3 py-1.5 text-sm font-semibold text-accent hover:bg-accent hover:text-bg-base transition-colors"
+      class="sm:order-last whitespace-nowrap rounded-md border border-accent px-2.5 sm:px-3 py-1.5 text-xs sm:text-sm font-semibold text-accent hover:bg-accent hover:text-bg-base transition-colors"
     >
       {t('nav.demo')}
     </a>
 
-    <nav aria-label={t('nav.home')} class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
+    <!-- No mobile a nav cai inteira para a segunda linha; marca e CTA ficam na
+         primeira. Sem isso o header vira 3 linhas (131px) numa tela de leitura. -->
+    <nav aria-label={t('nav.menu')} class="order-last sm:order-none w-full sm:w-auto flex flex-wrap items-center gap-x-5 gap-y-2 text-sm">
       <a href={blogHome} class={linkClass}>{t('nav.home')}</a>
       <a href={`/blog/${lang}/tags/`} class={linkClass}>{t('nav.tags')}</a>
       <span aria-hidden="true" class="hidden sm:inline h-4 w-px bg-border"></span>
-      <a href={site.home} class={linkClass}>{t('nav.site')}</a>
+      <a href={site.home} class:list={['hidden sm:inline', linkClass]}>{t('nav.site')}</a>
       <a href={site.pricing} class={linkClass}>{t('nav.pricing')}</a>
       <span aria-hidden="true" class="hidden sm:inline h-4 w-px bg-border"></span>
       <LanguageSwitcher alternateUrl={alternateUrl} />
