@@ -51,6 +51,8 @@ export default defineConfig({
         if (item.links) {
           item.links = item.links.filter((l) => l.url !== sitemapMeta.root)
         }
+        const tagLastmod = sitemapMeta.tagLastmod(item.url)
+        if (tagLastmod) item.lastmod = tagLastmod
         return item
       },
     }),

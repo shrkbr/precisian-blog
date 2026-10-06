@@ -24,6 +24,16 @@ function field(frontmatter, name) {
   return m ? m[1].replace(/^["']|["']$/g, '') : undefined
 }
 
+// As tags sao sempre um array inline (`tags: ["a", "b"]`), que e JSON valido.
+function tagsOf(frontmatter) {
+  try {
+    const parsed = JSON.parse(field(frontmatter, 'tags') ?? '[]')
+    return Array.isArray(parsed) ? parsed.map(String) : []
+  } catch {
+    return []
+  }
+}
+
 function readPosts() {
   const posts = []
   for (const entry of readdirSync(POSTS_DIR, { recursive: true, withFileTypes: true })) {
@@ -39,6 +49,7 @@ function readPosts() {
       slug,
       lang,
       translationKey: field(fm[1], 'translationKey'),
+      tags: tagsOf(fm[1]),
       frontmatterDate: field(fm[1], 'updatedAt') ?? field(fm[1], 'publishedAt'),
     })
   }
@@ -89,6 +100,9 @@ export function buildSitemapMeta(site, base) {
 
   const byUrl = new Map()
   const newestByLang = new Map()
+  // Chave `${lang}\0${tag}`: a pagina de tag lista os posts daquele idioma com
+  // aquela tag, entao muda quando o mais recente deles muda.
+  const newestByTag = new Map()
   for (const p of posts) {
     const lastmod = lastmodOf(p, dates, now)
     const siblings = byKey.get(p.translationKey) ?? []
@@ -97,7 +111,12 @@ export function buildSitemapMeta(site, base) {
       // hreflang so quando existe traducao: declaracao unilateral e ignorada.
       links: siblings.length > 1 ? siblings.map((s) => ({ lang: s.lang, url: postUrl(s) })) : [],
     })
-    if (lastmod && lastmod > (newestByLang.get(p.lang) ?? '')) newestByLang.set(p.lang, lastmod)
+    if (!lastmod) continue
+    if (lastmod > (newestByLang.get(p.lang) ?? '')) newestByLang.set(p.lang, lastmod)
+    for (const tag of p.tags) {
+      const key = `${p.lang}\0${tag}`
+      if (lastmod > (newestByTag.get(key) ?? '')) newestByTag.set(key, lastmod)
+    }
   }
 
   const langs = [...newestByLang.keys()]
@@ -108,5 +127,19 @@ export function buildSitemapMeta(site, base) {
     })
   }
 
-  return { root: prefix, byUrl }
+  // Tag tem espaco e acento ("atribuição marketing"), e a URL chega codificada:
+  // por isso casa pelo segmento decodificado em vez de montar a URL de antemao.
+  function tagLastmod(url) {
+    if (!url.startsWith(prefix)) return undefined
+    const [lang, section, tag, ...rest] = url.slice(prefix.length).split('/').filter(Boolean)
+    if (section !== 'tags' || rest.length > 0) return undefined
+    if (tag === undefined) return newestByLang.get(lang)
+    try {
+      return newestByTag.get(`${lang}\0${decodeURIComponent(tag)}`)
+    } catch {
+      return undefined
+    }
+  }
+
+  return { root: prefix, byUrl, tagLastmod }
 }
