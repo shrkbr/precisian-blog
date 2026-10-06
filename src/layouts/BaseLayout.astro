@@ -9,12 +9,30 @@ interface Props {
   title: string
   description: string
   image?: string
+  // A mesma pagina nos outros idiomas. Alimenta o seletor de idioma e, quando
+  // ha mais de um idioma, os <link rel="alternate" hreflang>.
   alternateUrl?: Partial<Record<'pt-BR' | 'en', string>>
+  // false = usa alternateUrl so no seletor, sem declarar hreflang. Para pagina
+  // cujo par existe mas nao deve ser indexado.
+  hreflang?: boolean
+  // Pagina rasa: sai com noindex (mantendo follow) e sem hreflang.
+  noindex?: boolean
 }
 
-const { title, description, image, alternateUrl } = Astro.props
+const { title, description, image, alternateUrl, hreflang = true, noindex = false } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const canonical = new URL(Astro.url.pathname, Astro.site).toString()
+
+// hreflang so com par de verdade: declaracao de um idioma so e ignorada.
+// x-default aponta pro pt-BR, mesma convencao do site institucional.
+const alternates = Object.entries(alternateUrl ?? {}).map(
+  ([l, url]) => [l, new URL(url, Astro.site).toString()] as const,
+)
+const emitHreflang = hreflang && !noindex && alternates.length > 1
+const xDefault = alternates.find(([l]) => l === 'pt-BR')?.[1]
+const robots = noindex
+  ? 'noindex, follow'
+  : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
 ---
 
 <!DOCTYPE html>
@@ -34,10 +52,11 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content={robots} />
+    <meta name="googlebot" content={robots} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/blog/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title={`Precisian Blog (${lang})`} href={`/blog/${lang}/rss.xml`} />
 
     <!-- Site-wide structured data -->
     <script type="application/ld+json" set:html={JSON.stringify(buildWebSiteJsonLd())} />
@@ -56,9 +75,10 @@ const canonical = new URL(Astro.url.pathname, Astro.site).toString()
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Sora:wght@400;600;700;800&display=swap"
     />
 
-    {alternateUrl && Object.entries(alternateUrl).map(([l, url]) => (
-      <link rel="alternate" hreflang={l} href={new URL(url, Astro.site).toString()} />
+    {emitHreflang && alternates.map(([l, url]) => (
+      <link rel="alternate" hreflang={l} href={url} />
     ))}
+    {emitHreflang && xDefault && <link rel="alternate" hreflang="x-default" href={xDefault} />}
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />

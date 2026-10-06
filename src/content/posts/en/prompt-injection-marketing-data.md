@@ -5,7 +5,7 @@ slug: "prompt-injection-marketing-data"
 lang: "en"
 translationKey: "prompt-injection-marketing-data"
 publishedAt: 2026-10-07
-tags: ["prompt-injection", "ai-data-access", "seguranca-de-dados"]
+tags: ["prompt-injection", "ai-data-access", "data-security"]
 draft: false
 llmSummary: "Ad platforms document length limits on campaign names and no content validation: Google Ads caps at 256 characters, Meta documents no maximum, and GA4's only stated UTM rule is case sensitivity. No case of injection via campaign name is documented; the closest is a lead form field."
 citations: ["https://genai.owasp.org/llmrisk/llm01-prompt-injection/", "https://developers.google.com/google-ads/api/docs/best-practices/system-limits", "https://developers.facebook.com/docs/marketing-api/reference/ad-campaign-group/", "https://support.google.com/analytics/answer/10917952", "https://cveawg.mitre.org/api/cve/CVE-2025-32711", "https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/", "https://arxiv.org/abs/2506.08837"]

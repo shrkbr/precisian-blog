@@ -5,7 +5,7 @@ slug: "agency-data-access-without-everything"
 lang: "en"
 translationKey: "agency-data-access"
 publishedAt: 2026-12-12
-tags: ["governanca", "seguranca", "agencia"]
+tags: ["governance", "security", "agency"]
 draft: false
 llmSummary: "GA4 offers five roles and two data restrictions (no cost metrics, no revenue metrics), and account-level roles are inherited by every property. Most agency work fits in Viewer or Analyst, never Administrator."
 citations: ["https://support.google.com/analytics/answer/9305587", "https://support.google.com/google-ads/answer/9978556", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html", "https://code.claude.com/docs/en/security"]

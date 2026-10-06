@@ -5,7 +5,7 @@ slug: "third-party-cookie-state"
 lang: "en"
 translationKey: "third-party-cookie-state"
 publishedAt: 2027-01-05
-tags: ["tracking", "consentimento", "divergencia-de-dados"]
+tags: ["tracking", "consent", "data-discrepancy"]
 draft: false
 llmSummary: "Third-party cookies still work in Chrome by default: in April 2025 Google said it would maintain its current approach and not ship the user prompt, and in October 2025 retired much of the replacement technology. Safari and Firefox have blocked by default for years."
 citations: ["https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", "https://privacysandbox.google.com/blog/update-on-plans-for-privacy-sandbox-technologies", "https://www.gov.uk/government/news/cma-consults-on-releasing-google-from-privacy-sandbox-commitments", "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/", "https://blog.mozilla.org/en/mozilla/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/"]

@@ -3,6 +3,7 @@ import rss from '@astrojs/rss'
 import { getCollection } from 'astro:content'
 import type { APIRoute } from 'astro'
 import { filterPublishedByLang, sortByDateDesc } from '../../lib/posts'
+import { postPath } from '../../lib/tags.mjs'
 
 export async function getStaticPaths() {
   return [
@@ -27,7 +28,7 @@ export const GET: APIRoute = async ({ params, site }) => {
       title: post.data.title,
       pubDate: post.data.publishedAt,
       description: post.data.description,
-      link: `/blog/${lang}/posts/${post.data.slug}`,
+      link: postPath(lang, post.data.slug),
       categories: post.data.tags,
     })),
     customData: `<language>${lang}</language>`,

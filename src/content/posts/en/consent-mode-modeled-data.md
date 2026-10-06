@@ -5,7 +5,7 @@ slug: "consent-mode-modeled-data"
 lang: "en"
 translationKey: "consent-mode-modeled-data"
 publishedAt: 2026-12-17
-tags: ["consentimento", "ga4", "divergencia-de-dados"]
+tags: ["consent", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4's interface and its BigQuery export disagree by design: Google documents that data export and the Data API do not support behavioural modelling, while standard reports and explorations do. The interface shows an estimate; the warehouse receives observed events."
 citations: ["https://support.google.com/analytics/answer/11161109", "https://support.google.com/analytics/answer/12856703", "https://support.google.com/google-ads/answer/10548233", "https://developers.google.com/tag-platform/security/concepts/consent-mode", "https://support.google.com/analytics/answer/14275483"]

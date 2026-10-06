@@ -1,6 +1,7 @@
 ---
 // precisian-blog/src/components/TagBadge.astro
 import { getLangFromUrl } from '../i18n/utils'
+import { tagPath } from '../lib/tags.mjs'
 
 interface Props {
   tag: string
@@ -9,7 +10,7 @@ interface Props {
 
 const { tag, href } = Astro.props
 const lang = getLangFromUrl(Astro.url)
-const url = href ?? `/blog/${lang}/tags/${tag}`
+const url = href ?? tagPath(lang, tag)
 ---
 
 <a

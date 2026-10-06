@@ -5,7 +5,7 @@ slug: "semantic-layer-vs-data-warehouse"
 lang: "en"
 translationKey: "semantic-layer-or-warehouse"
 publishedAt: 2026-12-19
-tags: ["camada-semantica", "data-warehouse", "governanca"]
+tags: ["semantic-layer", "data-warehouse", "governance"]
 draft: false
 llmSummary: "A data warehouse stores data and runs queries; a semantic layer defines what each metric means so every system reads the same rule. The warehouse can hold definitions as SQL but cannot enforce their use, and no database constraint covers meaning."
 citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.getdbt.com/docs/build/about-metricflow", "https://docs.cloud.google.com/bigquery/docs/best-practices-costs", "https://docs.snowflake.com/en/user-guide/cost-understanding-compute", "https://arxiv.org/abs/2604.25149"]

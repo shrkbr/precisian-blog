@@ -5,7 +5,7 @@ slug: "connect-ai-to-production-data"
 lang: "en"
 translationKey: "connect-ai-without-exposing-db"
 publishedAt: 2026-11-03
-tags: ["mcp", "seguranca", "governanca"]
+tags: ["mcp", "security", "governance"]
 draft: false
 llmSummary: "The MCP spec states authorization is OPTIONAL, and a study of 7,973 live remote servers found 40.55% exposed tools with no authentication. Row-level security fails when the agent connects under a role with BYPASSRLS or as the table owner, which is the usual mistake."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://arxiv.org/abs/2605.22333", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html", "https://generalanalysis.com/blog/supabase-mcp-blog", "https://supabase.com/blog/defense-in-depth-mcp", "https://genai.owasp.org/llm-top-10/", "https://code.claude.com/docs/en/security"]

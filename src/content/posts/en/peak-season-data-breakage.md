@@ -5,7 +5,7 @@ slug: "peak-season-data-breakage"
 lang: "en"
 translationKey: "black-friday-data-readiness"
 publishedAt: 2026-12-26
-tags: ["ga4", "pipeline", "divergencia-de-dados"]
+tags: ["ga4", "pipeline", "data-discrepancy"]
 draft: false
 llmSummary: "Peak season breaks analytics silently: GA4's BigQuery export caps at 1 million events per day on standard properties and, if consistently exceeded, pauses without reprocessing previous days. Dimensions above 500 unique values per day collapse into an (other) bucket."
 citations: ["https://support.google.com/analytics/answer/9823238", "https://support.google.com/analytics/answer/11198161", "https://support.google.com/analytics/answer/12226705", "https://developers.google.com/google-ads/api/docs/best-practices/rate-limits", "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/", "https://shopify.dev/docs/api/storefront"]

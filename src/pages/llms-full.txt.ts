@@ -21,7 +21,7 @@ export const GET: APIRoute = async ({ site }) => {
       sections.push(`## ${post.data.title}`)
       sections.push(``)
       sections.push(`**Language:** ${lang}`)
-      sections.push(`**URL:** ${baseUrl}/${lang}/posts/${post.data.slug}`)
+      sections.push(`**URL:** ${baseUrl}/${lang}/posts/${post.data.slug}/`)
       sections.push(`**Published:** ${post.data.publishedAt.toISOString()}`)
       sections.push(`**Tags:** ${post.data.tags.join(', ')}`)
       if (post.data.llmSummary) {

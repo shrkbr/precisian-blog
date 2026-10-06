@@ -21,6 +21,7 @@ const posts = sortByDateDesc(filterPublishedByLang(all, lang))
 <BaseLayout
   title={`Precisian Blog — ${lang === 'pt-BR' ? 'Início' : 'Home'}`}
   description={t('site.tagline')}
+  alternateUrl={{ 'pt-BR': '/blog/pt-BR/', en: '/blog/en/' }}
 >
   <div class="max-w-6xl mx-auto px-6 py-12">
     <div class="max-w-3xl">

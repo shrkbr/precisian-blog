@@ -6,6 +6,7 @@ import TagBadge from '../components/TagBadge.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { getCollection } from 'astro:content'
 import { findTranslation } from '../lib/posts'
+import { postPath } from '../lib/tags.mjs'
 import { buildBlogPostingJsonLd, countWords, buildBreadcrumbListJsonLd } from '../lib/schema'
 import type { CollectionEntry } from 'astro:content'
 import type { MarkdownHeading } from 'astro'
@@ -25,13 +26,13 @@ const otherLang = lang === 'pt-BR' ? 'en' : 'pt-BR'
 const translation = findTranslation(allPosts, post, otherLang)
 
 const alternateUrl: Partial<Record<'pt-BR' | 'en', string>> = {
-  [lang]: `/blog/${lang}/posts/${post.data.slug}/`,
+  [lang]: postPath(lang, post.data.slug),
 }
 if (translation) {
-  alternateUrl[otherLang] = `/blog/${otherLang}/posts/${translation.data.slug}/`
+  alternateUrl[otherLang] = postPath(otherLang, translation.data.slug)
 }
 
-const canonicalUrl = new URL(`/blog/${lang}/posts/${post.data.slug}/`, Astro.site).toString()
+const canonicalUrl = new URL(postPath(lang, post.data.slug), Astro.site).toString()
 const jsonLd = buildBlogPostingJsonLd({
   title,
   description,

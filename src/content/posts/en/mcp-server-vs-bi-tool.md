@@ -5,7 +5,7 @@ slug: "mcp-server-vs-bi-tool"
 lang: "en"
 translationKey: "mcp-server-vs-bi"
 publishedAt: 2026-11-26
-tags: ["mcp", "camada-semantica", "bi"]
+tags: ["mcp", "semantic-layer", "bi"]
 draft: false
 llmSummary: "A BI tool serves recurring, anticipated questions deterministically; an MCP server serves new, specific ones. Neither invents the business rule. Supplying business definitions raised model answer accuracy from 45.5-50.5% to 67.7-68.7% in a paired test."
 citations: ["https://modelcontextprotocol.io/specification/versioning", "https://modelcontextprotocol.io/specification/2026-07-28/server/tools", "https://arxiv.org/abs/2604.25149", "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp"]

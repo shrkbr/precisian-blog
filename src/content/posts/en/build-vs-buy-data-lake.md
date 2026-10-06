@@ -5,7 +5,7 @@ slug: "build-vs-buy-data-lake"
 lang: "en"
 translationKey: "build-vs-buy-data-lake"
 publishedAt: 2027-01-09
-tags: ["data-lake", "custo", "governanca"]
+tags: ["data-lake", "cost", "governance"]
 draft: false
 llmSummary: "Build versus buy for a data lake is asymmetric in information: AWS publishes S3 at US$ 0.023 per GB-month for the first 50 TB, while managed platforms document their pricing model without the rate. What decides it is connector coverage and who absorbs maintenance."
 citations: ["https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json", "https://docs.cloud.google.com/bigquery/docs/best-practices-costs", "https://docs.snowflake.com/en/user-guide/cost-understanding-compute", "https://airbyte.com/pricing", "https://fivetran.com/docs/core-concepts/usage-based-pricing", "https://docs.airbyte.com/integrations/connector-support-levels", "https://www.getdbt.com/resources/state-of-analytics-engineering-2026"]

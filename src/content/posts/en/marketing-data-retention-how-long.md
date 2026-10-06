@@ -5,7 +5,7 @@ slug: "marketing-data-retention-how-long"
 lang: "en"
 translationKey: "marketing-data-retention"
 publishedAt: 2026-11-28
-tags: ["governanca", "ga4", "divergencia-de-dados"]
+tags: ["governance", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4 standard properties retain user and event data for 2 or 14 months; 26, 38 and 50 months are 360 only, and large properties are limited to 2 months at event level. The setting does not affect standard aggregate reports, only explorations and funnels."
 citations: ["https://support.google.com/analytics/answer/7667196", "https://support.google.com/analytics/answer/10596866", "https://docs.getdbt.com/reference/resource-properties/freshness"]

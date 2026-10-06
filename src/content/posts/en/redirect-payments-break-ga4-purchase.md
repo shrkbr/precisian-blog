@@ -5,7 +5,7 @@ slug: "redirect-payments-break-ga4-purchase"
 lang: "en"
 translationKey: "pix-breaks-ga4-purchase"
 publishedAt: 2027-01-14
-tags: ["ga4", "pagamento", "divergencia-de-dados"]
+tags: ["ga4", "payments", "data-discrepancy"]
 draft: false
 llmSummary: "Redirect payment methods break the GA4 purchase event because the buyer may never return to the landing page where it fires. GA4 does not document a new session on return; that is a Universal Analytics behaviour. The documented fixes are the unwanted-referrals list and server-side webhooks."
 citations: ["https://support.google.com/analytics/answer/9191807", "https://support.google.com/analytics/answer/10327750", "https://support.google.com/analytics/answer/10071811", "https://docs.stripe.com/checkout/fulfillment", "https://docs.mollie.com/docs/triggering-fulfilment", "https://docs.adyen.com/online-payments/build-your-integration/payment-result-codes/", "https://docs.klarna.com/payments/web-payments/integrate-with-klarna-payments/other-actions/authorization-callback/", "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Referrer-Policy", "https://support.google.com/analytics/answer/2731565"]

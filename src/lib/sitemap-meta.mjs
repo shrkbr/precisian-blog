@@ -15,6 +15,7 @@ import { execFileSync } from 'node:child_process'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { MIN_POSTS_FOR_INDEXED_TAG, counterpartTag, postPath, tagPath } from './tags.mjs'
 
 const ROOT = fileURLToPath(new URL('../..', import.meta.url))
 const POSTS_DIR = join(ROOT, 'src/content/posts')
@@ -89,7 +90,13 @@ export function buildSitemapMeta(site, base) {
   const posts = readPosts()
   const dates = gitDates()
   const now = new Date()
-  const postUrl = (p) => `${prefix}${p.lang}/posts/${p.slug}/`
+  const abs = (path) => new URL(path, site).toString()
+  const postUrl = (p) => abs(postPath(p.lang, p.slug))
+  // x-default aponta pro pt-BR, mesma convencao do HTML e do site institucional.
+  const withXDefault = (links) => {
+    const pt = links.find((l) => l.lang === 'pt-BR')
+    return pt && links.length > 1 ? [...links, { lang: 'x-default', url: pt.url }] : links
+  }
 
   const byKey = new Map()
   for (const p of posts) {
@@ -103,43 +110,69 @@ export function buildSitemapMeta(site, base) {
   // Chave `${lang}\0${tag}`: a pagina de tag lista os posts daquele idioma com
   // aquela tag, entao muda quando o mais recente deles muda.
   const newestByTag = new Map()
+  const countByTag = new Map()
   for (const p of posts) {
     const lastmod = lastmodOf(p, dates, now)
     const siblings = byKey.get(p.translationKey) ?? []
     byUrl.set(postUrl(p), {
       lastmod,
       // hreflang so quando existe traducao: declaracao unilateral e ignorada.
-      links: siblings.length > 1 ? siblings.map((s) => ({ lang: s.lang, url: postUrl(s) })) : [],
+      links: siblings.length > 1 ? withXDefault(siblings.map((s) => ({ lang: s.lang, url: postUrl(s) }))) : [],
     })
-    if (!lastmod) continue
-    if (lastmod > (newestByLang.get(p.lang) ?? '')) newestByLang.set(p.lang, lastmod)
     for (const tag of p.tags) {
       const key = `${p.lang}\0${tag}`
-      if (lastmod > (newestByTag.get(key) ?? '')) newestByTag.set(key, lastmod)
+      countByTag.set(key, (countByTag.get(key) ?? 0) + 1)
+      if (lastmod && lastmod > (newestByTag.get(key) ?? '')) newestByTag.set(key, lastmod)
     }
+    if (lastmod && lastmod > (newestByLang.get(p.lang) ?? '')) newestByLang.set(p.lang, lastmod)
   }
 
   const langs = [...newestByLang.keys()]
   for (const lang of langs) {
     byUrl.set(`${prefix}${lang}/`, {
       lastmod: newestByLang.get(lang),
-      links: langs.map((l) => ({ lang: l, url: `${prefix}${l}/` })),
+      links: withXDefault(langs.map((l) => ({ lang: l, url: `${prefix}${l}/` }))),
     })
   }
 
-  // Tag tem espaco e acento ("atribuição marketing"), e a URL chega codificada:
-  // por isso casa pelo segmento decodificado em vez de montar a URL de antemao.
-  function tagLastmod(url) {
+  const indexable = (lang, tag) =>
+    (countByTag.get(`${lang}\0${tag}`) ?? 0) >= MIN_POSTS_FOR_INDEXED_TAG
+
+  // Paginas de tag e o indice de tags. Tag tem espaco e acento ("atribuição
+  // marketing") e a URL chega codificada, por isso casa pelo segmento
+  // decodificado em vez de montar a URL de antemao.
+  // Devolve undefined para o que nao e pagina de tag.
+  function tagPage(url) {
     if (!url.startsWith(prefix)) return undefined
-    const [lang, section, tag, ...rest] = url.slice(prefix.length).split('/').filter(Boolean)
+    const [lang, section, rawTag, ...rest] = url.slice(prefix.length).split('/').filter(Boolean)
     if (section !== 'tags' || rest.length > 0) return undefined
-    if (tag === undefined) return newestByLang.get(lang)
+    if (rawTag === undefined) {
+      return {
+        indexable: true,
+        lastmod: newestByLang.get(lang),
+        links: withXDefault(langs.map((l) => ({ lang: l, url: `${prefix}${l}/tags/` }))),
+      }
+    }
+    let tag
     try {
-      return newestByTag.get(`${lang}\0${decodeURIComponent(tag)}`)
+      tag = decodeURIComponent(rawTag)
     } catch {
       return undefined
     }
+    // O par da tag no outro idioma tem outro nome (governanca <-> governance):
+    // o casamento por caminho que a integracao faz nao serve aqui.
+    const links = [{ lang, url: abs(tagPath(lang, tag)) }]
+    for (const other of langs) {
+      if (other === lang) continue
+      const otherTag = counterpartTag(tag, lang)
+      if (indexable(other, otherTag)) links.push({ lang: other, url: abs(tagPath(other, otherTag)) })
+    }
+    return {
+      indexable: indexable(lang, tag),
+      lastmod: newestByTag.get(`${lang}\0${tag}`),
+      links: links.length > 1 ? withXDefault(links) : [],
+    }
   }
 
-  return { root: prefix, byUrl, tagLastmod }
+  return { root: prefix, byUrl, tagPage }
 }

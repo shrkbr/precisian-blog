@@ -5,7 +5,7 @@ slug: "product-not-showing-google-shopping"
 lang: "en"
 translationKey: "product-not-showing-google-shopping"
 publishedAt: 2026-12-10
-tags: ["google-shopping", "feed-de-produto", "divergencia-de-dados"]
+tags: ["google-shopping", "product-feed", "data-discrepancy"]
 draft: false
 llmSummary: "Products vanish from Google Shopping through preemptive item disapproval, which disapproves products Google suspects after detecting a price or availability mismatch between feed and landing page. GTIN is not required; brand is. Three Google pages give three different review durations."
 citations: ["https://support.google.com/merchants/answer/2948694", "https://support.google.com/merchants/answer/12488713", "https://support.google.com/merchants/answer/12159029", "https://support.google.com/merchants/answer/6150127", "https://support.google.com/merchants/answer/13585221", "https://support.google.com/merchants/answer/16989427", "https://support.google.com/merchants/answer/12157888"]

@@ -5,7 +5,7 @@ slug: "marketplace-attribution-blackhole"
 lang: "en"
 translationKey: "marketplace-data-blackhole"
 publishedAt: 2026-12-22
-tags: ["marketplace", "atribuicao", "divergencia-de-dados"]
+tags: ["marketplace", "attribution", "data-discrepancy"]
 draft: false
 llmSummary: "Marketplaces return traffic volume but no origin. Amazon's salesAndTraffic schema lists 28 traffic fields per product with no referrer, channel, campaign, UTM or search term. Marketplace attribution cannot be reconstructed from order data; it is modelled or absent."
 citations: ["https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/schemas/data-kiosk/analytics_salesAndTraffic_2024_04_24.graphql", "https://developer-docs.amazon/sp-api/docs/orders-api-rate-limits", "https://developer-docs.amazon/sp-api/docs/access-orders-pii", "https://developer-docs.amazon/sp-api/docs/orders-api-v0-reference"]

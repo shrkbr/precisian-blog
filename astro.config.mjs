@@ -37,23 +37,16 @@ export default defineConfig({
           en: 'en',
         },
       },
-      // /blog/ e so um redirect para /blog/pt-BR/ (canonical aponta pra la).
-      filter: (page) => page !== sitemapMeta.root,
+      // Ficam fora: /blog/ (so um redirect para /blog/pt-BR/, a canonical
+      // aponta pra la) e pagina de tag rasa, que sai com noindex.
+      filter: (page) =>
+        page !== sitemapMeta.root && sitemapMeta.tagPage(page)?.indexable !== false,
+      // lastmod e hreflang vem do conteudo (src/lib/sitemap-meta.mjs), nao do
+      // casamento por caminho da integracao: post e tag mudam de nome entre
+      // idiomas, entao pelo caminho os pares nunca se encontram.
       serialize(item) {
-        const meta = sitemapMeta.byUrl.get(item.url)
-        if (meta) {
-          // Post e indice de idioma: lastmod e hreflang vem do conteudo
-          // (ver src/lib/sitemap-meta.mjs), nao do casamento por caminho.
-          return { ...item, lastmod: meta.lastmod, links: meta.links }
-        }
-        // Demais paginas (tags): a integracao lista /blog/ como um segundo
-        // "pt-BR". Tira o redirect e fica so o par real.
-        if (item.links) {
-          item.links = item.links.filter((l) => l.url !== sitemapMeta.root)
-        }
-        const tagLastmod = sitemapMeta.tagLastmod(item.url)
-        if (tagLastmod) item.lastmod = tagLastmod
-        return item
+        const meta = sitemapMeta.byUrl.get(item.url) ?? sitemapMeta.tagPage(item.url)
+        return meta ? { ...item, lastmod: meta.lastmod, links: meta.links } : item
       },
     }),
     tailwind({ applyBaseStyles: false }),

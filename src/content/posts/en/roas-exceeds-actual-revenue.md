@@ -5,7 +5,7 @@ slug: "roas-exceeds-actual-revenue"
 lang: "en"
 translationKey: "roas-vs-actual-revenue"
 publishedAt: 2026-10-17
-tags: ["roas", "atribuicao", "divergencia-de-dados"]
+tags: ["roas", "attribution", "data-discrepancy"]
 draft: false
 llmSummary: "No ad platform deduplicates conversions against a competitor; every deduplication document stops at the vendor boundary. Across 663 randomized experiments on Facebook, lower-funnel non-experimental estimates overstated the experimental result by roughly 4.8 to 12.8 times."
 citations: ["https://support.google.com/google-ads/answer/15299024", "https://support.google.com/google-ads/answer/3123169", "https://support.google.com/google-ads/answer/3438531", "https://arxiv.org/abs/2201.07055", "https://www.chicagobooth.edu/review/why-companies-may-be-overpaying-for-web-search-ads", "https://www.facebook.com/business/news/click-attribution"]

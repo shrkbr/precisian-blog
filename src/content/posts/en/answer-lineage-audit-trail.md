@@ -5,7 +5,7 @@ slug: "answer-lineage-audit-trail"
 lang: "en"
 translationKey: "answer-lineage-audit-trail"
 publishedAt: 2026-12-29
-tags: ["mcp", "governanca", "camada-semantica"]
+tags: ["mcp", "governance", "semantic-layer"]
 draft: false
 llmSummary: "Answer lineage is the record linking an AI agent's answer to the definition and data that produced it: caller identity, tool and arguments, definition version, data extent and timestamp. MCP recommends logging tool usage for audit but does not require it."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://modelcontextprotocol.io/specification/2026-07-28/server/tools", "https://owasp.org/www-project-mcp-top-10/", "https://code.claude.com/docs/en/security"]

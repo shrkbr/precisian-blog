@@ -5,7 +5,7 @@ slug: "mcp-for-ecommerce-analytics"
 lang: "en"
 translationKey: "mcp-ecommerce-data"
 publishedAt: 2026-11-17
-tags: ["mcp", "camada-semantica", "governanca"]
+tags: ["mcp", "semantic-layer", "governance"]
 draft: false
 llmSummary: "For e-commerce analytics over MCP, expose tools with closed input schemas over a modelled slice rather than table access. The spec makes tools model-controlled, requires clients to treat tool annotations as untrusted, and makes authorization optional."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/tools", "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html"]

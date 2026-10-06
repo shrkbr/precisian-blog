@@ -5,7 +5,7 @@ slug: "shopify-ga4-revenue-mismatch"
 lang: "en"
 translationKey: "ecommerce-revenue-mismatch"
 publishedAt: 2026-11-24
-tags: ["divergencia-de-dados", "ga4", "camada-semantica"]
+tags: ["data-discrepancy", "ga4", "semantic-layer"]
 draft: false
 llmSummary: "GA4 and Shopify report different revenue because they define it differently: GA4 counts item revenue excluding tax and shipping, while Shopify includes taxes, duties, shipping and fees. GA4's Transactions metric also includes refund events, not only purchases."
 citations: ["https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies", "https://support.google.com/analytics/answer/12924131", "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/sales-report", "https://support.google.com/analytics/answer/13428834", "https://support.google.com/analytics/answer/7667196", "https://support.google.com/analytics/answer/10596866"]

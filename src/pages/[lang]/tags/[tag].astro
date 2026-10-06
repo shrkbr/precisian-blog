@@ -6,6 +6,7 @@ import ArticleCard from '../../../components/ArticleCard.astro'
 import { filterPublishedByLang, filterByTag, collectTags, sortByDateDesc } from '../../../lib/posts'
 import { useTranslations } from '../../../i18n/utils'
 import { buildBreadcrumbListJsonLd } from '../../../lib/schema'
+import { MIN_POSTS_FOR_INDEXED_TAG, counterpartTag, tagPath } from '../../../lib/tags.mjs'
 
 export async function getStaticPaths() {
   const all = await getCollection('posts')
@@ -27,17 +28,32 @@ const label = lang === 'pt-BR'
   ? `${posts.length} ${posts.length === 1 ? 'artigo' : 'artigos'}`
   : `${posts.length} ${posts.length === 1 ? 'article' : 'articles'}`
 
+// A mesma tag no outro idioma (o nome muda: governanca <-> governance).
+const otherLang = lang === 'pt-BR' ? 'en' : 'pt-BR'
+const otherTag = counterpartTag(tag, lang)
+const otherCount = filterByTag(filterPublishedByLang(all, otherLang), otherTag).length
+const alternateUrl: Partial<Record<'pt-BR' | 'en', string>> = { [lang]: tagPath(lang, tag) }
+if (otherCount > 0) alternateUrl[otherLang] = tagPath(otherLang, otherTag)
+
+// Tag com um post so e uma lista rasa: fica navegavel, mas fora do indice.
+// O hreflang so vale quando os DOIS lados sao indexaveis.
+const noindex = posts.length < MIN_POSTS_FOR_INDEXED_TAG
+const hreflang = !noindex && otherCount >= MIN_POSTS_FOR_INDEXED_TAG
+
 const siteOrigin = Astro.site?.toString().replace(/\/$/, '') ?? 'https://precisian.io'
 const breadcrumbs = buildBreadcrumbListJsonLd([
   { name: t('nav.home'), url: `${siteOrigin}/blog/${lang}/` },
   { name: t('nav.tags'), url: `${siteOrigin}/blog/${lang}/tags/` },
-  { name: `#${tag}`, url: `${siteOrigin}/blog/${lang}/tags/${tag}` },
+  { name: `#${tag}`, url: `${siteOrigin}${tagPath(lang, tag)}` },
 ])
 ---
 
 <BaseLayout
   title={`#${tag} — Precisian Blog`}
-  description={`${t('site.tagline')} — ${label} em #${tag}.`}
+  description={`${t('site.tagline')} — ${label} ${lang === 'pt-BR' ? 'em' : 'in'} #${tag}.`}
+  alternateUrl={alternateUrl}
+  hreflang={hreflang}
+  noindex={noindex}
 >
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(breadcrumbs)} />
   <div class="max-w-6xl mx-auto px-6 py-12">

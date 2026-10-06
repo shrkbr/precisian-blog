@@ -2,6 +2,7 @@
 // precisian-blog/src/components/ArticleCard.astro
 import { useTranslations, getLangFromUrl } from '../i18n/utils'
 import TagBadge from './TagBadge.astro'
+import { postPath } from '../lib/tags.mjs'
 import type { CollectionEntry } from 'astro:content'
 
 interface Props {
@@ -15,7 +16,7 @@ const { title, description, publishedAt, readingTimeMinutes, tags, slug } = post
 ---
 
 <article class="border-b border-border py-8 group">
-  <a href={`/blog/${lang}/posts/${slug}`} class="block">
+  <a href={postPath(lang, slug)} class="block">
     <h2 class="font-display text-2xl font-bold text-fg group-hover:text-accent transition mb-2">
       {title}
     </h2>

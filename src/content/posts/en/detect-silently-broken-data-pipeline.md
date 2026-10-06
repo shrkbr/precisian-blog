@@ -5,7 +5,7 @@ slug: "detect-silently-broken-data-pipeline"
 lang: "en"
 translationKey: "detect-broken-data-pipeline"
 publishedAt: 2026-12-15
-tags: ["pipeline", "observabilidade", "divergencia-de-dados"]
+tags: ["pipeline", "observability", "data-discrepancy"]
 draft: false
 llmSummary: "A pipeline that breaks loudly is easy; the costly one exits green with wrong or empty data. dbt documents three silent modes: a freshness check that never runs, an incomplete rule that still lets the run succeed, and severity warn. A run that never started has no documented mechanism."
 citations: ["https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-deadlines.html", "https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/tasks.html", "https://docs.getdbt.com/reference/resource-configs/freshness", "https://docs.getdbt.com/docs/build/sources", "https://docs.getdbt.com/reference/resource-configs/severity", "https://airflow.apache.org/docs/apache-airflow-providers-common-sql/stable/operators.html", "https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/"]

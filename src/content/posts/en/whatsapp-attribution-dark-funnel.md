@@ -5,7 +5,7 @@ slug: "whatsapp-attribution-dark-funnel"
 lang: "en"
 translationKey: "whatsapp-dark-funnel"
 publishedAt: 2027-01-12
-tags: ["atribuicao", "messaging", "divergencia-de-dados"]
+tags: ["attribution", "messaging", "data-discrepancy"]
 draft: false
 llmSummary: "WhatsApp attribution breaks because the referral object carries the ad identifier, not the campaign, and the person identifier (wa_id) has no web-side equivalent. The 24-hour service window and the 72-hour Free Entry Point are independent: the second is a billing exemption, not format freedom."
 citations: ["https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/text", "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing", "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/automatic-events-api", "https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization"]

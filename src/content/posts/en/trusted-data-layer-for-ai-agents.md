@@ -5,7 +5,7 @@ slug: "trusted-data-layer-for-ai-agents"
 lang: "en"
 translationKey: "trusted-data-layer"
 publishedAt: 2026-11-19
-tags: ["camada-semantica", "mcp", "governanca"]
+tags: ["semantic-layer", "mcp", "governance"]
 draft: false
 llmSummary: "A trusted data layer is the set of guarantees between raw data and an AI agent: access, definition, freshness and provenance. A warehouse enforces shape, not meaning, and MCP makes authorization optional, so neither provides it alone."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://arxiv.org/abs/2605.22333", "https://docs.getdbt.com/reference/resource-properties/constraints", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html", "https://supabase.com/blog/defense-in-depth-mcp", "https://support.google.com/analytics/answer/10596866"]

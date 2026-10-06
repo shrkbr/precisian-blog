@@ -5,7 +5,7 @@ slug: "server-side-tagging-worth-it"
 lang: "en"
 translationKey: "server-side-tagging-worth-it"
 publishedAt: 2026-10-27
-tags: ["tracking", "consentimento", "divergencia-de-dados"]
+tags: ["tracking", "consent", "data-discrepancy"]
 draft: false
 llmSummary: "Server-side tagging delivers PII stripping, lighter client script and server-side event routing. It does not deliver consent or identifiers the browser stripped. Its cookie durability benefit depends on not meeting WebKit's CNAME cloaking definition, which Google does not mention."
 citations: ["https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain", "https://webkit.org/tracking-prevention/", "https://webkit.org/blog/11338/cname-cloaking-and-bounce-tracking-defense/", "https://developers.google.com/tag-platform/learn/sst-fundamentals/7-planning-infrastructure", "https://developers.google.com/tag-platform/tag-manager/server-side/consent-mode", "https://support.google.com/tagmanager/answer/12329599"]

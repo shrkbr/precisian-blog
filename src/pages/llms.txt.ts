@@ -20,14 +20,14 @@ export const GET: APIRoute = async ({ site }) => {
   ]
 
   for (const post of ptPosts) {
-    const url = `${baseUrl}/pt-BR/posts/${post.data.slug}`
+    const url = `${baseUrl}/pt-BR/posts/${post.data.slug}/`
     const summary = post.data.llmSummary ?? post.data.description
     lines.push(`- [${post.data.title}](${url}): ${summary}`)
   }
 
   lines.push('', '## Articles in English', '')
   for (const post of enPosts) {
-    const url = `${baseUrl}/en/posts/${post.data.slug}`
+    const url = `${baseUrl}/en/posts/${post.data.slug}/`
     const summary = post.data.llmSummary ?? post.data.description
     lines.push(`- [${post.data.title}](${url}): ${summary}`)
   }

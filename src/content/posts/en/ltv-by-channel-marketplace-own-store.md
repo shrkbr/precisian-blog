@@ -5,7 +5,7 @@ slug: "ltv-by-channel-marketplace-own-store"
 lang: "en"
 translationKey: "dedupe-orders-marketplace"
 publishedAt: 2026-11-14
-tags: ["marketplace", "divergencia-de-dados", "governanca"]
+tags: ["marketplace", "data-discrepancy", "governance"]
 draft: false
 llmSummary: "LTV by acquisition channel cannot be computed across marketplace and own store: marketplaces return no stable customer key, and Amazon documents buyer email as anonymized. SalesChannel and MarketplaceId name the venue, not the origin, and traffic data exists only aggregated."
 citations: ["https://developer-docs.amazon/sp-api/reference/getorders", "https://developer-docs.amazon/sp-api/reference/getorderitems", "https://developer-docs.amazon/sp-api/docs/access-orders-pii", "https://developer-docs.amazon/sp-api/docs/report-type-values-analytics"]

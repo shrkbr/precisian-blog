@@ -5,7 +5,7 @@ slug: "marketing-finance-revenue-definition"
 lang: "en"
 translationKey: "same-revenue-definition"
 publishedAt: 2026-10-24
-tags: ["camada-semantica", "divergencia-de-dados", "governanca"]
+tags: ["semantic-layer", "data-discrepancy", "governance"]
 draft: false
 llmSummary: "Marketing and finance disagree on revenue because the accounting standard recognises revenue when the customer obtains control of the good, not when they pay. Different events, different dates. A data contract protects shape, not meaning: there is no NOT NULL for semantics."
 citations: ["https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/", "https://docs.getdbt.com/reference/resource-properties/constraints", "https://support.google.com/analytics/answer/10596866"]
