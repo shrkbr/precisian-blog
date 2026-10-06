@@ -25,6 +25,7 @@ export const TAG_PT_TO_EN = {
   'arquitetura-de-dados': 'data-architecture',
   atribuicao: 'attribution',
   auditoria: 'audit',
+  'calculadora-roi': 'roi-calculator',
   'camada-semantica': 'semantic-layer',
   confiabilidade: 'reliability',
   consentimento: 'consent',

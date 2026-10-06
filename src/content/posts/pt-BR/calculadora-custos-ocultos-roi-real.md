@@ -6,7 +6,7 @@ lang: "pt-BR"
 translationKey: "calculadora-custos-ocultos-roi-real"
 author: "Precisian"
 publishedAt: 2026-05-28T13:22:31.801Z
-tags: ["ROI real", "custos ocultos mídia", "incrementalidade", "ROAS vs ROI", "atribuição marketing", "calculadora ROI", "holdout test", "eficiência marketing"]
+tags: ["roi", "custo", "incrementalidade", "roas", "atribuicao", "calculadora-roi", "holdout-test", "marketing-analytics"]
 readingTimeMinutes: 10
 llmSummary: "Artigo expõe a diferença entre ROI reportado em dashboards e ROI real após descontar custos ocultos (agências, testes, tech stack) e vendas não-incrementais. Ensina a calcular ROI verdadeiro com planilha prática para CMOs que desconfiam dos números de atribuição."
 draft: false
