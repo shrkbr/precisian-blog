@@ -25,13 +25,13 @@ const otherLang = lang === 'pt-BR' ? 'en' : 'pt-BR'
 const translation = findTranslation(allPosts, post, otherLang)
 
 const alternateUrl: Partial<Record<'pt-BR' | 'en', string>> = {
-  [lang]: `/blog/${lang}/posts/${post.data.slug}`,
+  [lang]: `/blog/${lang}/posts/${post.data.slug}/`,
 }
 if (translation) {
-  alternateUrl[otherLang] = `/blog/${otherLang}/posts/${translation.data.slug}`
+  alternateUrl[otherLang] = `/blog/${otherLang}/posts/${translation.data.slug}/`
 }
 
-const canonicalUrl = new URL(`/blog/${lang}/posts/${post.data.slug}`, Astro.site).toString()
+const canonicalUrl = new URL(`/blog/${lang}/posts/${post.data.slug}/`, Astro.site).toString()
 const jsonLd = buildBlogPostingJsonLd({
   title,
   description,
