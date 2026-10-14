@@ -4,7 +4,7 @@ description: "Nenhuma plataforma desconta a conversão que a concorrente já con
 slug: "roas-soma-maior-que-faturamento"
 lang: "pt-BR"
 translationKey: "roas-vs-actual-revenue"
-publishedAt: 2026-10-22
+publishedAt: 2026-10-05
 tags: ["roas", "atribuicao", "divergencia-de-dados"]
 draft: false
 llmSummary: "Nenhuma plataforma de midia deduplica conversao contra a concorrente: cada documentacao de deduplicacao para na fronteira do proprio fornecedor. Em 663 experimentos no Facebook, o metodo nao experimental superou o experimental em ate 12,8 vezes no fundo do funil."

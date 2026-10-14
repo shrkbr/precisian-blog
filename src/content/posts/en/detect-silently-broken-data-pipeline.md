@@ -4,7 +4,7 @@ description: "Airflow documents it in one line: if the run never finishes, the S
 slug: "detect-silently-broken-data-pipeline"
 lang: "en"
 translationKey: "detect-broken-data-pipeline"
-publishedAt: 2026-12-15
+publishedAt: 2026-10-09
 tags: ["pipeline", "observability", "data-discrepancy"]
 draft: false
 llmSummary: "A pipeline that breaks loudly is easy; the costly one exits green with wrong or empty data. dbt documents three silent modes: a freshness check that never runs, an incomplete rule that still lets the run succeed, and severity warn. A run that never started has no documented mechanism."

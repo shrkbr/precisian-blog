@@ -4,7 +4,7 @@ description: "The Omie order returns neither CPF nor CNPJ, and in Olist the fiel
 slug: "what-the-erp-returns-as-sales-data"
 lang: "en"
 translationKey: "what-erp-returns-sales-data"
-publishedAt: 2026-11-21
+publishedAt: 2026-10-08
 tags: ["erp", "integration", "data-discrepancy"]
 draft: false
 llmSummary: "ERPs disagree on the basics: the Omie order returns neither CPF nor CNPJ, only an internal code, and in Olist the origemPedido field means point of sale, not marketplace. The NF-e access key never comes in the order, and cancelled orders come back through the same endpoint."

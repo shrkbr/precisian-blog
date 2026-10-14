@@ -4,7 +4,7 @@ description: "Preemptive item disapproval disapproves what Google suspects, not 
 slug: "product-not-showing-google-shopping"
 lang: "en"
 translationKey: "product-not-showing-google-shopping"
-publishedAt: 2026-12-10
+publishedAt: 2026-10-09
 tags: ["google-shopping", "product-feed", "data-discrepancy"]
 draft: false
 llmSummary: "Products vanish from Google Shopping through preemptive item disapproval, which disapproves products Google suspects after detecting a price or availability mismatch between feed and landing page. GTIN is not required; brand is. Three Google pages give three different review durations."

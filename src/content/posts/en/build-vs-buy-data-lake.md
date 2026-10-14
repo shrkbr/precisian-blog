@@ -4,7 +4,7 @@ description: "S3 storage is US$ 0.023 per GB-month from a published table. The m
 slug: "build-vs-buy-data-lake"
 lang: "en"
 translationKey: "build-vs-buy-data-lake"
-publishedAt: 2027-01-09
+publishedAt: 2026-10-11
 tags: ["data-lake", "cost", "governance"]
 draft: false
 llmSummary: "Build versus buy for a data lake is asymmetric in information: AWS publishes S3 at US$ 0.023 per GB-month for the first 50 TB, while managed platforms document their pricing model without the rate. What decides it is connector coverage and who absorbs maintenance."

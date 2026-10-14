@@ -4,7 +4,7 @@ description: "MCP makes authorization optional, and 40.55% of live remote server
 slug: "connect-ai-to-production-data"
 lang: "en"
 translationKey: "connect-ai-without-exposing-db"
-publishedAt: 2026-11-03
+publishedAt: 2026-10-06
 tags: ["mcp", "security", "governance"]
 draft: false
 llmSummary: "The MCP spec states authorization is OPTIONAL, and a study of 7,973 live remote servers found 40.55% exposed tools with no authentication. Row-level security fails when the agent connects under a role with BYPASSRLS or as the table owner, which is the usual mistake."

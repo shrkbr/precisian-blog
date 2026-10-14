@@ -4,7 +4,7 @@ description: "Both numbers are right. The accounting standard recognises revenue
 slug: "marketing-finance-revenue-definition"
 lang: "en"
 translationKey: "same-revenue-definition"
-publishedAt: 2026-10-24
+publishedAt: 2026-10-05
 tags: ["semantic-layer", "data-discrepancy", "governance"]
 draft: false
 llmSummary: "Marketing and finance disagree on revenue because the accounting standard recognises revenue when the customer obtains control of the good, not when they pay. Different events, different dates. A data contract protects shape, not meaning: there is no NOT NULL for semantics."

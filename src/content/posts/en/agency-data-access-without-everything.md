@@ -4,7 +4,7 @@ description: "GA4 has 5 roles and 2 data restrictions, one hiding revenue. The m
 slug: "agency-data-access-without-everything"
 lang: "en"
 translationKey: "agency-data-access"
-publishedAt: 2026-12-12
+publishedAt: 2026-10-09
 tags: ["governance", "security", "agency"]
 draft: false
 llmSummary: "GA4 offers five roles and two data restrictions (no cost metrics, no revenue metrics), and account-level roles are inherited by every property. Most agency work fits in Viewer or Analyst, never Administrator."

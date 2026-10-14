@@ -4,7 +4,7 @@ description: "Google documents that other platforms take full credit for a conve
 slug: "roas-exceeds-actual-revenue"
 lang: "en"
 translationKey: "roas-vs-actual-revenue"
-publishedAt: 2026-10-17
+publishedAt: 2026-10-05
 tags: ["roas", "attribution", "data-discrepancy"]
 draft: false
 llmSummary: "No ad platform deduplicates conversions against a competitor; every deduplication document stops at the vendor boundary. Across 663 randomized experiments on Facebook, lower-funnel non-experimental estimates overstated the experimental result by roughly 4.8 to 12.8 times."

@@ -4,7 +4,7 @@ description: "Num comparativo que pune SQL errado, recusar todas as perguntas ma
 slug: "ensinar-a-ia-a-dizer-nao-sei"
 lang: "pt-BR"
 translationKey: "agent-abstention"
-publishedAt: 2026-12-05
+publishedAt: 2026-10-09
 tags: ["camada-semantica", "confiabilidade", "mcp"]
 draft: false
 llmSummary: "Num comparativo que penaliza SQL errado, abster-se de todas as perguntas marca 50%, contra 29,8% a 54,5% dos melhores fluxos de texto-para-SQL. Abstencao baseada em ausencia de definicao e verificavel; baseada em confianca autodeclarada, nao."

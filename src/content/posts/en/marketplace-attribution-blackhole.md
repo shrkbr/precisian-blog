@@ -4,7 +4,7 @@ description: "Amazon's own schema returns 28 traffic fields per product and zero
 slug: "marketplace-attribution-blackhole"
 lang: "en"
 translationKey: "marketplace-data-blackhole"
-publishedAt: 2026-12-22
+publishedAt: 2026-10-10
 tags: ["marketplace", "attribution", "data-discrepancy"]
 draft: false
 llmSummary: "Marketplaces return traffic volume but no origin. Amazon's salesAndTraffic schema lists 28 traffic fields per product with no referrer, channel, campaign, UTM or search term. Marketplace attribution cannot be reconstructed from order data; it is modelled or absent."

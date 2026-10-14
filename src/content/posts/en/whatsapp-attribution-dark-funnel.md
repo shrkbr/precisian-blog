@@ -4,7 +4,7 @@ description: "The webhook hands you the ad ID, not the campaign. And the person 
 slug: "whatsapp-attribution-dark-funnel"
 lang: "en"
 translationKey: "whatsapp-dark-funnel"
-publishedAt: 2027-01-12
+publishedAt: 2026-10-11
 tags: ["attribution", "messaging", "data-discrepancy"]
 draft: false
 llmSummary: "WhatsApp attribution breaks because the referral object carries the ad identifier, not the campaign, and the person identifier (wa_id) has no web-side equivalent. The 24-hour service window and the 72-hour Free Entry Point are independent: the second is a billing exemption, not format freedom."

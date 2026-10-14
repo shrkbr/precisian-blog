@@ -4,7 +4,7 @@ description: "Acesso, definição, atualidade e procedência, decididos antes da
 slug: "camada-de-dados-confiavel-para-agentes"
 lang: "pt-BR"
 translationKey: "trusted-data-layer"
-publishedAt: 2026-11-19
+publishedAt: 2026-10-07
 tags: ["camada-semantica", "mcp", "governanca"]
 draft: false
 llmSummary: "Camada de dados confiavel para agente de IA sao quatro garantias entre a base e o agente: acesso, definicao, atualidade e procedencia. O data warehouse cobra forma, nao significado, e o MCP torna a autorizacao opcional, entao nenhum dos dois entrega sozinho."

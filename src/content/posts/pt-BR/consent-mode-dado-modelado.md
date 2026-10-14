@@ -4,7 +4,7 @@ description: "O Google exclui explicitamente o export para BigQuery do dado mode
 slug: "consent-mode-dado-modelado"
 lang: "pt-BR"
 translationKey: "consent-mode-modeled-data"
-publishedAt: 2026-10-15
+publishedAt: 2026-10-05
 tags: ["consent-mode", "ga4", "divergencia-de-dados"]
 draft: false
 llmSummary: "A modelagem comportamental do GA4 existe só na interface: o Google lista o export para BigQuery entre os recursos que não suportam dado modelado. A elegibilidade exige mil eventos diários com consentimento negado por 7 dias e mil usuários diários consentidos em 7 dos 28 dias anteriores."

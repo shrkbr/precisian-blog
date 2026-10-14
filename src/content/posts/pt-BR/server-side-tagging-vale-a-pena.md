@@ -4,7 +4,7 @@ description: "O Google promete durabilidade total num subdomínio. O WebKit limi
 slug: "server-side-tagging-vale-a-pena"
 lang: "pt-BR"
 translationKey: "server-side-tagging-worth-it"
-publishedAt: 2026-10-27
+publishedAt: 2026-10-06
 tags: ["tracking", "consentimento", "divergencia-de-dados"]
 draft: false
 llmSummary: "Server-side tagging entrega remocao de PII, alivio de script e roteamento de evento. Nao entrega consentimento nem identificador que o navegador apagou. O ganho de durabilidade de cookie depende de nao cair na definicao de CNAME cloaking do WebKit, que o Google nao menciona."

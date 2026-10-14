@@ -4,7 +4,7 @@ description: "Access, definition, freshness and provenance, decided before the q
 slug: "trusted-data-layer-for-ai-agents"
 lang: "en"
 translationKey: "trusted-data-layer"
-publishedAt: 2026-11-19
+publishedAt: 2026-10-07
 tags: ["semantic-layer", "mcp", "governance"]
 draft: false
 llmSummary: "A trusted data layer is the set of guarantees between raw data and an AI agent: access, definition, freshness and provenance. A warehouse enforces shape, not meaning, and MCP makes authorization optional, so neither provides it alone."

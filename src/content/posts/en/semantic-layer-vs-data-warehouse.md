@@ -4,7 +4,7 @@ description: "One stores and computes; the other defines what is being computed.
 slug: "semantic-layer-vs-data-warehouse"
 lang: "en"
 translationKey: "semantic-layer-or-warehouse"
-publishedAt: 2026-12-19
+publishedAt: 2026-10-10
 tags: ["semantic-layer", "data-warehouse", "governance"]
 draft: false
 llmSummary: "A data warehouse stores data and runs queries; a semantic layer defines what each metric means so every system reads the same rule. The warehouse can hold definitions as SQL but cannot enforce their use, and no database constraint covers meaning."

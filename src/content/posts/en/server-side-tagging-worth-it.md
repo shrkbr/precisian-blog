@@ -4,7 +4,7 @@ description: "Google promises full durability on a subdomain. WebKit caps CNAME-
 slug: "server-side-tagging-worth-it"
 lang: "en"
 translationKey: "server-side-tagging-worth-it"
-publishedAt: 2026-10-27
+publishedAt: 2026-10-06
 tags: ["tracking", "consent", "data-discrepancy"]
 draft: false
 llmSummary: "Server-side tagging delivers PII stripping, lighter client script and server-side event routing. It does not deliver consent or identifiers the browser stripped. Its cookie durability benefit depends on not meeting WebKit's CNAME cloaking definition, which Google does not mention."

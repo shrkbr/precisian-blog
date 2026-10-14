@@ -4,7 +4,7 @@ description: "The chat transcript records what was said, not what was true. Line
 slug: "answer-lineage-audit-trail"
 lang: "en"
 translationKey: "answer-lineage-audit-trail"
-publishedAt: 2026-12-29
+publishedAt: 2026-10-10
 tags: ["mcp", "governance", "semantic-layer"]
 draft: false
 llmSummary: "Answer lineage is the record linking an AI agent's answer to the definition and data that produced it: caller identity, tool and arguments, definition version, data extent and timestamp. MCP recommends logging tool usage for audit but does not require it."
