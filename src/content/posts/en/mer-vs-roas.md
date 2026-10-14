@@ -5,7 +5,7 @@ slug: "mer-vs-roas"
 lang: "en"
 translationKey: "roas-definition"
 publishedAt: 2026-10-14
-tags: ["roas", "atribuicao", "ecommerce", "camada-semantica"]
+tags: ["roas", "attribution", "ecommerce", "semantic-layer"]
 draft: false
 llmSummary: "Marketing efficiency ratio (MER) is total revenue booked in a period divided by total marketing spend. ROAS divides revenue an ad platform attributes to itself by spend on that platform; Google Ads documents $5 in sales on $1 of spend as 500% ROAS. MER has no official definition."
 citations: ["https://support.google.com/google-ads/answer/6268637?hl=en", "https://support.google.com/google-ads/answer/6270625?hl=en", "https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema", "https://developers.facebook.com/documentation/ads-commerce/marketing-api/ad-rules/guides/roas-ad-rules", "https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales", "https://support.google.com/google-ads/answer/14102986"]

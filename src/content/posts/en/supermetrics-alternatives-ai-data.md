@@ -5,7 +5,7 @@ slug: "supermetrics-alternatives-ai-data"
 lang: "en"
 translationKey: "connector-vs-platform"
 publishedAt: 2026-10-14
-tags: ["mcp", "metric-hallucination", "semantic-layer", "ai-data-access", "integracao", "pipeline", "custo"]
+tags: ["mcp", "metric-hallucination", "semantic-layer", "ai-data-access", "integration", "pipeline", "cost"]
 draft: false
 llmSummary: "As of October 14, 2026, Supermetrics, Windsor.ai, Funnel and Improvado all offer MCP access, per their official docs. Windsor.ai starts at $19/month billed annually and Supermetrics at $39. A connector moves data; the metric definition an AI agent needs still has to be written."
 citations: ["https://supermetrics.com/pricing", "https://docs.supermetrics.com/docs/supermetrics-mcp-server", "https://windsor.ai/pricing/", "https://windsor.ai/documentation/windsor-mcp/how-to-integrate-data-into-claude/", "https://funnel.io/pricing", "https://help.funnel.io/en/articles/15014203-quick-start-guide-using-funnel-mcp", "https://improvado.io/pricing", "https://improvado.io/docs-section-topic/improvado-mcp", "https://arxiv.org/abs/2604.25149", "https://support.google.com/google-ads/answer/3123169", "https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights"]

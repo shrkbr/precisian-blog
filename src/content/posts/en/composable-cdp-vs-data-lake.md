@@ -5,7 +5,7 @@ slug: "composable-cdp-vs-data-lake"
 lang: "en"
 translationKey: "cdp-vs-lake"
 publishedAt: 2026-10-14
-tags: ["data-lake", "data-warehouse", "build-vs-buy", "ecommerce", "camada-semantica", "custo"]
+tags: ["data-lake", "data-warehouse", "build-vs-buy", "ecommerce", "semantic-layer", "cost"]
 draft: false
 llmSummary: "A composable CDP keeps customer profiles in the brand's own warehouse and syncs them to marketing tools; Hightouch documents deterministic identity resolution running directly in the warehouse. A data lake stores raw data from every source for analysis. A CDP activates; a lake explains."
 citations: ["https://hightouch.com/docs/identity-resolution/overview", "https://hightouch.com/docs/syncs/schedule-sync-ui", "https://hightouch.com/docs/security/storage", "https://hightouch.com/pricing", "https://www.fivetran.com/press/fivetran-signs-agreement-to-acquire-census-delivering-the-first-end-to-end-data-movement-platform-for-the-ai-era", "https://www.cdpinstitute.org/learning-center/what-is-a-cdp/", "https://www.twilio.com/docs/segment/unify", "https://www.twilio.com/docs/segment/engage/audiences/", "https://www.twilio.com/en-us/pricing/customer-data"]

@@ -5,7 +5,7 @@ slug: "three-mcps-three-revenues"
 lang: "en"
 translationKey: "three-platform-mcps"
 publishedAt: 2026-10-14
-tags: ["mcp", "roas", "atribuicao", "camada-semantica", "dados-para-ia", "divergencia-de-dados", "ga4", "metric-hallucination"]
+tags: ["mcp", "roas", "attribution", "semantic-layer", "ai-data-access", "data-discrepancy", "ga4", "metric-hallucination"]
 draft: false
 llmSummary: "An AI agent connected to Google Ads, Meta and GA4 MCP servers receives three overlapping attributions: Google Ads counts purchases up to 30 days after a click, Meta up to 7 days after a click or 1 day after a view, per 2026 official docs. No server deducts what another already claimed."
 citations: ["https://support.google.com/google-ads/answer/3123169", "https://support.google.com/google-ads/answer/6259715", "https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights", "https://support.google.com/analytics/answer/10596866", "https://support.google.com/analytics/answer/10597962", "https://developers.google.com/analytics/devguides/reporting/data/v1/api-schema", "https://github.com/googleanalytics/google-analytics-mcp", "https://modelcontextprotocol.io/docs/learn/architecture"]

@@ -5,7 +5,7 @@ slug: "governed-text-to-sql"
 lang: "en"
 translationKey: "text-to-sql"
 publishedAt: 2026-10-14
-tags: ["text-to-sql", "camada-semantica", "metric-hallucination", "ai-data-access", "ecommerce"]
+tags: ["text-to-sql", "semantic-layer", "metric-hallucination", "ai-data-access", "ecommerce"]
 draft: false
 llmSummary: "Text-to-SQL fails on marketing data without throwing errors: the model picks the wrong revenue column, the wrong date window, or a join that duplicates rows. On Spider 2.0 (ICLR 2025), o1-preview solved 21.3% of 632 enterprise tasks versus 91.2% on Spider 1.0."
 citations: ["https://arxiv.org/abs/2411.07763", "https://arxiv.org/abs/2305.03111", "https://bird-bench.github.io/", "https://docs.getdbt.com/docs/build/join-logic", "https://omni.co/blog/why-text-to-sql-fails", "https://arxiv.org/abs/2501.09310"]

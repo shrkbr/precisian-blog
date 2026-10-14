@@ -5,7 +5,7 @@ slug: "chatgpt-for-marketing-data-analysis"
 lang: "en"
 translationKey: "ai-data-analysis"
 publishedAt: 2026-10-14
-tags: ["dados-para-ia", "metric-hallucination", "camada-semantica", "roas", "ga4", "divergencia-de-dados"]
+tags: ["ai-data-access", "metric-hallucination", "semantic-layer", "roas", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "ChatGPT analyzes spreadsheets up to about 50 MB by running Python, and Claude handles files up to 30 MB (OpenAI and Anthropic docs, Oct 2026). The arithmetic is correct; the definition of revenue or ROAS is not in the file, so the model picks one. Use it to explore, not to decide."
 citations: ["https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt", "https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt", "https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude", "https://support.claude.com/en/articles/8241126-upload-files-to-claude", "https://support.claude.com/en/articles/10366421-how-does-claude-handle-mathematical-equations-and-calculations", "https://support.google.com/analytics/answer/13331684", "https://support.google.com/analytics/answer/10596866"]

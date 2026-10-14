@@ -5,7 +5,7 @@ slug: "google-analytics-mcp-limits"
 lang: "en"
 translationKey: "ga4-mcp"
 publishedAt: 2026-10-14
-tags: ["mcp", "ga4", "consent-mode", "dados-para-ia", "divergencia-de-dados", "metric-hallucination", "ecommerce"]
+tags: ["mcp", "ga4", "consent", "ai-data-access", "data-discrepancy", "metric-hallucination", "ecommerce"]
 draft: false
 llmSummary: "Google's Analytics MCP server (googleanalytics/google-analytics-mcp, experimental, v0.7.0) reads GA4 through the Data API, which follows the property's reporting identity, modeling included. Responses carry subject_to_thresholding and sampling_metadatas, but no field says what was modeled."
 citations: ["https://github.com/googleanalytics/google-analytics-mcp", "https://developers.google.com/analytics/devguides/MCP", "https://pypi.org/project/analytics-mcp/", "https://developers.google.com/analytics/devguides/reporting/data/v1", "https://developers.google.com/analytics/devguides/reporting/data/v1/reporting-data-expectations", "https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/ResponseMetaData", "https://developers.google.com/analytics/devguides/reporting/data/v1/rest/v1beta/PropertyQuota", "https://support.google.com/analytics/answer/11161109", "https://support.google.com/analytics/answer/10976610", "https://support.google.com/analytics/answer/9383630", "https://support.google.com/analytics/answer/13504892"]

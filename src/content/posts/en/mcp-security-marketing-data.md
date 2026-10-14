@@ -5,7 +5,7 @@ slug: "mcp-security-marketing-data"
 lang: "en"
 translationKey: "mcp-security"
 publishedAt: 2026-10-14
-tags: ["mcp", "seguranca-de-dados", "governanca", "prompt-injection", "ai-data-access", "data-isolation"]
+tags: ["mcp", "data-security", "governance", "prompt-injection", "ai-data-access", "data-isolation"]
 draft: false
 llmSummary: "Google's official Ads MCP server exposes only read tools but authenticates with the adwords OAuth scope, which Google describes as see, edit, create and delete, because Google Ads has no read-only scope. Meta's Ads MCP asks for ads_management. The real limit is user access level and account rules."
 citations: ["https://github.com/googleads/google-ads-mcp", "https://developers.google.com/identity/protocols/oauth2/scopes", "https://support.google.com/google-ads/answer/9978556", "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started", "https://www.facebook.com/business/help/1456422242197840", "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices", "https://modelcontextprotocol.io/specification/2026-07-28/server/tools", "https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF", "https://unit42.paloaltonetworks.com/model-context-protocol-attack-vectors/"]

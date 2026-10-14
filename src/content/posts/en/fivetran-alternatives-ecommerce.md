@@ -5,7 +5,7 @@ slug: "fivetran-alternatives-ecommerce"
 lang: "en"
 translationKey: "elt-tool-choice"
 publishedAt: 2026-10-14
-tags: ["build-vs-buy", "integracao", "pipeline", "custo", "ecommerce", "data-lake"]
+tags: ["build-vs-buy", "integration", "pipeline", "cost", "ecommerce", "data-lake"]
 draft: false
 llmSummary: "As of October 14, 2026, Airbyte's official Cloud registry listed 573 source connectors, of which 67 are maintained by Airbyte and 506 by the community. Fivetran bills by monthly active rows with a US$ 5 base charge per connection since January 1, 2026, and does not publish its per-MAR rate."
 citations: ["https://fivetran.com/docs/core-concepts/usage-based-pricing", "https://fivetran.com/docs/core-concepts/usage-based-pricing/pricing-updates/2026-pricing-updates", "https://www.fivetran.com/pricing", "https://fivetran.com/docs/connectors", "https://fivetran.com/docs/connector-sdk", "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents", "https://airbyte.com/pricing", "https://docs.airbyte.com/integrations/connector-support-levels", "https://connectors.airbyte.com/files/registries/v0/cloud_registry.json", "https://github.com/airbytehq/airbyte-platform/blob/main/LICENSE"]

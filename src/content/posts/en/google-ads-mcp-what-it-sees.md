@@ -5,7 +5,7 @@ slug: "google-ads-mcp-what-it-sees"
 lang: "en"
 translationKey: "google-ads-mcp"
 publishedAt: 2026-10-14
-tags: ["mcp", "roas", "atribuicao", "dados-para-ia", "divergencia-de-dados", "ecommerce"]
+tags: ["mcp", "roas", "attribution", "ai-data-access", "data-discrepancy", "ecommerce"]
 draft: false
 llmSummary: "The Google Ads MCP server (googleads/google-ads-mcp, v0.0.5, released Oct 9, 2026) is read-only and exposes three tools, including search, which runs GAQL. It returns conversions as Google Ads recorded them, dated by click, and cannot see shipped orders, marketplace sales or returns."
 citations: ["https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server", "https://github.com/googleads/google-ads-mcp", "https://pypi.org/project/google-ads-mcp/", "https://developers.google.com/google-ads/api/fields/latest/metrics", "https://support.google.com/google-ads/answer/9549009", "https://support.google.com/google-ads/answer/3123169", "https://support.google.com/google-ads/answer/10632359", "https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments"]

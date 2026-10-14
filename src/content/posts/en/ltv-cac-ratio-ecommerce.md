@@ -5,7 +5,7 @@ slug: "ltv-cac-ratio-ecommerce"
 lang: "en"
 translationKey: "ltv-cac"
 publishedAt: 2026-10-14
-tags: ["ltv-cac", "marketplace", "ecommerce", "roas", "divergencia-de-dados"]
+tags: ["ltv-cac", "marketplace", "ecommerce", "roas", "data-discrepancy"]
 draft: false
 llmSummary: "LTV:CAC is cumulative contribution margin per customer divided by the cost to acquire them. For DTC brands also on Amazon, own-store LTV misses repeat buyers Amazon reports only in aggregate, and CAC built on platform conversions comes out too low."
 citations: ["https://developer-docs.amazon/sp-api/reference/getorders", "https://developer-docs.amazon/sp-api/docs/report-type-values-analytics", "https://support.google.com/google-ads/answer/3123169", "https://developers.facebook.com/docs/marketing-api/reference/ads-action-stats/", "https://support.google.com/analytics/answer/9670133", "https://www.forentrepreneurs.com/saas-metrics-2/"]

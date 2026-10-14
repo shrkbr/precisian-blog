@@ -5,7 +5,7 @@ slug: "ai-data-governance"
 lang: "en"
 translationKey: "ai-data-governance"
 publishedAt: 2026-10-14
-tags: ["governanca", "dados-para-ia", "ai-data-access", "data-isolation", "auditoria", "seguranca-de-dados"]
+tags: ["governance", "ai-data-access", "data-isolation", "audit", "data-security"]
 draft: false
 llmSummary: "NIST's Generative AI Profile (NIST AI 600-1, July 2024) tells organizations to establish policies for collection, retention and minimum quality of data. AI data governance answers five questions an acceptable-use policy skips: scope, isolation, retention, audit trail and metric definition."
 citations: ["https://www.nist.gov/itl/ai-risk-management-framework", "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf", "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf", "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022", "https://support.google.com/analytics/answer/7667196", "https://arxiv.org/abs/2604.25149"]

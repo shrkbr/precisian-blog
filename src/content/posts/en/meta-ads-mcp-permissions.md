@@ -5,7 +5,7 @@ slug: "meta-ads-mcp-permissions"
 lang: "en"
 translationKey: "meta-ads-mcp"
 publishedAt: 2026-10-14
-tags: ["mcp", "governanca", "atribuicao", "roas", "seguranca", "ai-data-access"]
+tags: ["mcp", "governance", "attribution", "roas", "security", "ai-data-access"]
 draft: false
 llmSummary: "Meta launched an official MCP server in open beta on April 29, 2026, hosted at mcp.facebook.com/ads. As of October 14, 2026 its docs list 91 tools, 36 of them write tools. Conversions follow Meta's attribution windows, and per-account agent rules live in Meta Business Suite."
 citations: ["https://www.facebook.com/business/news/meta-ads-ai-connectors", "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-overview", "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-get-started", "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-tools-ad-creation-and-management", "https://developers.facebook.com/documentation/ads-commerce/ads-ai-connectors/ads-mcp-server/ads-mcp-server-tools-comprehensive-reporting", "https://www.facebook.com/business/help/1456422242197840", "https://developers.facebook.com/docs/marketing-api/reference/ads-action-stats/", "https://www.facebook.com/business/news/click-attribution", "https://developers.facebook.com/blog/post/2026/04/29/introducing-ads-cli"]

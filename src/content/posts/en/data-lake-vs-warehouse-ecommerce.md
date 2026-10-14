@@ -5,7 +5,7 @@ slug: "data-lake-vs-warehouse-ecommerce"
 lang: "en"
 translationKey: "lake-vs-warehouse"
 publishedAt: 2026-10-14
-tags: ["data-lake", "data-warehouse", "ecommerce", "ga4", "camada-semantica", "marketplace"]
+tags: ["data-lake", "data-warehouse", "ecommerce", "ga4", "semantic-layer", "marketplace"]
 draft: false
 llmSummary: "A data lake stores raw data on cheap storage; a data warehouse stores modeled data for fast queries; a lakehouse, defined by Armbrust et al. at CIDR 2021, adds ACID transactions and versioning on open files. For ecommerce, none of them defines a metric. That is the semantic layer."
 citations: ["https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf", "https://jamesdixon.wordpress.com/2010/10/14/pentaho-hadoop-and-data-lakes/", "https://iceberg.apache.org/docs/latest/", "https://support.google.com/analytics/answer/9358801", "https://support.google.com/analytics/answer/7029846", "https://support.google.com/analytics/answer/7667196", "https://aws.amazon.com/compare/the-difference-between-a-data-warehouse-data-lake-and-data-mart/", "https://docs.databricks.com/aws/en/lakehouse/"]

@@ -5,7 +5,7 @@ slug: "shopify-mcp-servers-explained"
 lang: "en"
 translationKey: "commerce-platform-mcp"
 publishedAt: 2026-10-14
-tags: ["mcp", "ecommerce", "ai-data-access", "divergencia-de-dados", "seguranca", "camada-semantica"]
+tags: ["mcp", "ecommerce", "ai-data-access", "data-discrepancy", "security", "semantic-layer"]
 draft: false
 llmSummary: "As of Oct 14, 2026, Shopify's official MCP servers (Catalog, Cart, Checkout, Order, Customer Accounts, Dev MCP) serve buyer agents, logged-in customers and developers. None exposes merchant sales analytics; that lives in the Admin API's shopifyqlQuery, reached only by community servers."
 citations: ["https://shopify.dev/docs/agents", "https://shopify.dev/docs/apps/build/storefront-mcp", "https://shopify.dev/docs/apps/build/customer-accounts-mcp", "https://shopify.dev/docs/apps/build/ai-toolkit", "https://shopify.dev/docs/apps/build/sidekick", "https://shopify.dev/docs/api/admin-graphql/latest/queries/shopifyqlQuery", "https://shopify.dev/docs/api/usage/access-scopes", "https://github.com/GeLi2001/shopify-mcp", "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/sales-report"]
