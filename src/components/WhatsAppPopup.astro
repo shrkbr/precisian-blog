@@ -1,0 +1,363 @@
+---
+/**
+ * Botão flutuante do WhatsApp com o formulário de contato, igual ao do site
+ * institucional (precisian-io/site, `app/whatsapp-popup.tsx` +
+ * `app/contact-form.tsx` com variante "whatsapp"). Aqui em JS puro: o blog não
+ * tem React.
+ *
+ * O envio vai para o MESMO endpoint do site, `api.precisian.io/api/rd/conversion`
+ * com `formulario: "whatsapp"`: o servidor manda o lead para o RD
+ * (`precisian-popup-whatsapp`) e para a Brevo (lista Whatsapp), e devolve o
+ * `redirect` do WhatsApp. O número não está neste arquivo de propósito: o
+ * destino é a env `RD_WHATSAPP_REDIRECT` do precisian-api.
+ *
+ * 🔴 Copy copiada dos dicionários do site (`app/i18n/{pt-BR,en}.ts` →
+ * `whatsapp`, `components.{pt-BR,en}.ts` → `contactForm`). Mudou lá, muda aqui.
+ * Nas `opcoes`, só o RÓTULO é traduzido: o `valor` segue em português nos dois
+ * idiomas, porque é por ele que a segmentação do RD e o TIPO_NEGOCIO da Brevo
+ * batem.
+ */
+import { getLangFromUrl } from '../i18n/utils'
+import type { Lang } from '../i18n/ui'
+
+const opcoesValor = [
+  'Estou começando um e-commerce B2C',
+  'Tenho um e-commerce B2C consolidado',
+  'Tenho um e-commerce B2B consolidado',
+  'Estou começando um e-commerce B2B',
+  'Sou uma empresa B2B com equipe comercial',
+  'Sou uma indústria em transformação Digital',
+  'Sou uma empresa de tecnologia (SAAS/Software)',
+  'Outros',
+] as const
+
+const textos: Record<Lang, {
+  abrir: string; fechar: string; titulo: string; texto: string
+  nome: string; email: string; empresa: string; negocio: string; selecione: string
+  enviar: string; enviando: string; sucesso: string
+  erroNome: string; erroEmail: string; erroEmpresa: string; erroEnvio: string
+  opcoes: readonly string[]
+}> = {
+  'pt-BR': {
+    abrir: 'Falar no WhatsApp',
+    fechar: 'Fechar',
+    titulo: 'Falar no WhatsApp',
+    texto: 'Deixe seu contato e a conversa abre direto no WhatsApp.',
+    nome: 'Nome',
+    email: 'Email',
+    empresa: 'Empresa',
+    negocio: 'Como você descreve o seu negócio:',
+    selecione: 'Selecione',
+    enviar: 'Iniciar conversa',
+    enviando: 'Enviando...',
+    sucesso: 'Abrindo o WhatsApp...',
+    erroNome: 'Digite seu nome.',
+    erroEmail: 'Digite um email válido.',
+    erroEmpresa: 'Digite o nome da empresa.',
+    erroEnvio: 'Não foi possível enviar agora. Tente de novo em instantes.',
+    opcoes: opcoesValor,
+  },
+  en: {
+    abrir: 'Chat on WhatsApp',
+    fechar: 'Close',
+    titulo: 'Chat on WhatsApp',
+    texto: 'Leave your details and the conversation opens straight in WhatsApp.',
+    nome: 'Name',
+    email: 'Email',
+    empresa: 'Company',
+    negocio: 'How would you describe your business:',
+    selecione: 'Select',
+    enviar: 'Start the conversation',
+    enviando: 'Sending...',
+    sucesso: 'Opening WhatsApp...',
+    erroNome: 'Enter your name.',
+    erroEmail: 'Enter a valid email.',
+    erroEmpresa: 'Enter the company name.',
+    erroEnvio: 'We could not send it right now. Please try again in a moment.',
+    opcoes: [
+      'I am starting a B2C e-commerce',
+      'I run an established B2C e-commerce',
+      'I run an established B2B e-commerce',
+      'I am starting a B2B e-commerce',
+      'I am a B2B company with a sales team',
+      'I am a manufacturer going through digital transformation',
+      'I am a technology company (SaaS/software)',
+      'Other',
+    ],
+  },
+}
+
+const t = textos[getLangFromUrl(Astro.url)]
+// Mensagens que o script usa no navegador, no idioma da página.
+const mensagens = {
+  enviar: t.enviar, enviando: t.enviando, sucesso: t.sucesso, abrir: t.abrir, fechar: t.fechar,
+  erroNome: t.erroNome, erroEmail: t.erroEmail, erroEmpresa: t.erroEmpresa, erroEnvio: t.erroEnvio,
+}
+---
+
+<div class="zap" data-dl-location="popup-whatsapp" data-zap-msgs={JSON.stringify(mensagens)}>
+  <div class="zap-painel" id="zap-painel" hidden role="dialog" aria-modal="false" aria-label={t.titulo}>
+    <div class="zap-topo">
+      <div>
+        <strong>{t.titulo}</strong>
+        <p>{t.texto}</p>
+      </div>
+      <button type="button" class="zap-fechar" aria-label={t.fechar}>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <form class="zap-form" novalidate data-form-name="site-institucional-whatsapp" data-dl-manual>
+      <div class="zap-campo">
+        <label for="zap-name">{t.nome}<span aria-hidden="true">*</span></label>
+        <input id="zap-name" name="name" type="text" required autocomplete="name" maxlength="120" />
+      </div>
+      <div class="zap-campo">
+        <label for="zap-email">{t.email}<span aria-hidden="true">*</span></label>
+        <input id="zap-email" name="email" type="email" required autocomplete="email" maxlength="160" />
+      </div>
+      <div class="zap-campo">
+        <label for="zap-company">{t.empresa}<span aria-hidden="true">*</span></label>
+        <input id="zap-company" name="company_name" type="text" required autocomplete="organization" maxlength="160" />
+      </div>
+      <div class="zap-campo">
+        <label for="zap-negocio">{t.negocio}</label>
+        <select id="zap-negocio" name="cf_como_voce_descreve_o_seu_negocio">
+          <option value="">{t.selecione}</option>
+          {opcoesValor.map((valor, i) => <option value={valor}>{t.opcoes[i]}</option>)}
+        </select>
+      </div>
+
+      <!-- Honeypot, mesmo nome do campo-armadilha do embed do RD. -->
+      <input type="text" name="emP7yF13ld" tabindex="-1" autocomplete="off" aria-hidden="true" class="zap-hp" />
+
+      <p class="zap-erro" role="alert" hidden></p>
+      <button type="submit" class="zap-enviar">{t.enviar}</button>
+    </form>
+    <p class="zap-ok" role="status" hidden>{t.sucesso}</p>
+  </div>
+
+  <button
+    type="button"
+    class="zap-botao"
+    data-cta-whatsapp
+    data-cta-name="whatsapp-flutuante"
+    aria-expanded="false"
+    aria-controls="zap-painel"
+    aria-label={t.abrir}
+  >
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" focusable="false">
+      <path
+        fill="currentColor"
+        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24Zm-2.4 4.06c-.16-.36-.33-.37-.48-.37h-.4c-.14 0-.37.05-.56.26-.19.21-.73.72-.73 1.75s.75 2.03.85 2.17c.11.14 1.45 2.32 3.58 3.16 1.77.7 2.13.56 2.51.52.39-.03 1.24-.5 1.41-1 .18-.49.18-.91.13-1-.05-.09-.19-.14-.4-.24-.21-.11-1.24-.61-1.43-.68-.19-.07-.33-.1-.47.1-.14.21-.54.68-.66.82-.12.14-.24.16-.45.05-.21-.1-.89-.32-1.69-1.04-.62-.55-1.04-1.24-1.16-1.45-.12-.21-.01-.32.09-.42.09-.09.21-.24.31-.36.11-.12.14-.21.21-.35.07-.14.04-.26-.02-.36-.05-.1-.46-1.14-.64-1.56Z"
+      />
+    </svg>
+  </button>
+</div>
+
+<script>
+  const API = 'https://api.precisian.io/api/rd/conversion'
+
+  const raiz = document.querySelector<HTMLElement>('.zap')
+  if (raiz) iniciar(raiz)
+
+  function iniciar(raiz: HTMLElement) {
+    const msg = JSON.parse(raiz.dataset.zapMsgs || '{}') as Record<string, string>
+    const painel = raiz.querySelector<HTMLElement>('.zap-painel')!
+    const botao = raiz.querySelector<HTMLButtonElement>('.zap-botao')!
+    const fechar = raiz.querySelector<HTMLButtonElement>('.zap-fechar')!
+    const form = raiz.querySelector<HTMLFormElement>('.zap-form')!
+    const erro = raiz.querySelector<HTMLElement>('.zap-erro')!
+    const ok = raiz.querySelector<HTMLElement>('.zap-ok')!
+    const enviar = raiz.querySelector<HTMLButtonElement>('.zap-enviar')!
+    let enviando = false
+
+    function abrir(sim: boolean) {
+      painel.hidden = !sim
+      botao.setAttribute('aria-expanded', String(sim))
+      botao.setAttribute('aria-label', sim ? msg.fechar : msg.abrir)
+      if (sim) raiz.querySelector<HTMLInputElement>('#zap-name')?.focus()
+    }
+
+    botao.addEventListener('click', () => abrir(Boolean(painel.hidden)))
+    fechar.addEventListener('click', () => { abrir(false); botao.focus() })
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !painel.hidden) { abrir(false); botao.focus() }
+    })
+    // Clique fora fecha; o clique no próprio botão é do toggle.
+    document.addEventListener('mousedown', (e) => {
+      const alvo = e.target as Node
+      if (painel.hidden || painel.contains(alvo) || botao.contains(alvo)) return
+      abrir(false)
+    })
+
+    function mostrarErro(texto: string | null) {
+      erro.textContent = texto || ''
+      erro.hidden = !texto
+    }
+
+    // Cookies do RD: ou vão inteiros ou não vão (origem cortada chega quebrada
+    // no painel do RD; ver contact-form.tsx do site).
+    function cookie(nome: string) {
+      const c = document.cookie.split('; ').find((x) => x.startsWith(`${nome}=`))
+      return c ? c.split('=').slice(1).join('=') : ''
+    }
+    function inteiro(v: string, limite: number) {
+      try {
+        const t = decodeURIComponent(v)
+        return t.length <= limite ? t : ''
+      } catch {
+        return ''
+      }
+    }
+
+    function irParaWhatsApp(destino: string, espera: number) {
+      form.hidden = true
+      ok.hidden = false
+      window.setTimeout(() => window.location.assign(destino), espera)
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault()
+      if (enviando) return
+      const dados = new FormData(form)
+      const valor = (k: string) => String(dados.get(k) ?? '').trim()
+
+      // Conveniência; o servidor repete todas as checagens.
+      if (valor('name').length < 2) return mostrarErro(msg.erroNome)
+      if (!/^[^@\s]+@[^@\s.]+(\.[^@\s.]+)+$/.test(valor('email'))) return mostrarErro(msg.erroEmail)
+      if (valor('company_name').length < 2) return mostrarErro(msg.erroEmpresa)
+
+      mostrarErro(null)
+      enviando = true
+      enviar.disabled = true
+      enviar.textContent = msg.enviando
+
+      const corpo: Record<string, string> = { formulario: 'whatsapp' }
+      for (const [k, v] of dados.entries()) if (typeof v === 'string' && v) corpo[k] = v
+      corpo.conversion_url = window.location.href.slice(0, 300)
+      const trf = inteiro(cookie('__trf.src'), 4000)
+      if (trf) corpo.traffic_source = trf
+      const rdtrk = inteiro(cookie('rdtrk'), 500)
+      if (rdtrk) corpo.client_tracking_id = rdtrk
+
+      try {
+        const r = await fetch(API, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify(corpo),
+        })
+        const resposta = (await r.json().catch(() => ({}))) as { redirect?: string | null }
+
+        if (!r.ok) {
+          // RD fora: a conversa é o produto, o visitante vai pro WhatsApp do
+          // mesmo jeito e o lead fica no log do servidor. Sem `redirect`
+          // (teto por IP, validação), mostra o erro.
+          if (resposta.redirect) return irParaWhatsApp(resposta.redirect, 0)
+          throw new Error(String(r.status))
+        }
+
+        // generate_lead só depois do 200 (envio é AJAX). Mesmo formato do site.
+        const w = window as unknown as { dataLayer?: object[] }
+        w.dataLayer = w.dataLayer || []
+        w.dataLayer.push({
+          event: 'generate_lead',
+          form_name: 'site_institucional_whatsapp',
+          form_location: 'popup_whatsapp',
+          form_status: 'sucesso',
+          form_variant: 'whatsapp',
+          lead_email: corpo.email,
+          lead_name: corpo.name,
+        })
+
+        // 250ms de folga para a tag do GTM disparar antes de sair da página.
+        if (resposta.redirect) irParaWhatsApp(resposta.redirect, 250)
+        else { form.hidden = true; ok.hidden = false }
+      } catch {
+        enviando = false
+        enviar.disabled = false
+        enviar.textContent = msg.enviar
+        mostrarErro(msg.erroEnvio)
+      }
+    })
+  }
+</script>
+
+<style>
+  /* Mesmo desenho do popup do site, mas com os tokens do blog (que tem tema
+     claro e escuro). Só o botão redondo fica no verde do WhatsApp. */
+  .zap { position: fixed; right: 20px; bottom: 20px; z-index: 40; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+  /* No celular o .zap ocupa a largura toda (left+right); sem isto a faixa vazia
+     ao lado do botão engoliria cliques no texto do post. */
+  .zap { pointer-events: none; }
+  .zap > * { pointer-events: auto; }
+
+  .zap-botao {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 54px; height: 54px; padding: 0; border: 0; border-radius: 999px; cursor: pointer;
+    color: #fff; background: #25d366;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, .34);
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+  .zap-botao:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(0, 0, 0, .42); }
+  .zap-botao:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  .zap-painel {
+    width: min(310px, calc(100vw - 40px));
+    max-height: min(460px, calc(100vh - 120px));
+    display: flex; flex-direction: column; overflow: hidden;
+    border: 1px solid var(--border); border-radius: 16px;
+    background: var(--bg-elevated); color: var(--fg);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .35);
+  }
+  .zap-painel[hidden] { display: none; }
+  .zap-topo { display: flex; align-items: flex-start; gap: 10px; padding: 12px 12px 10px; border-bottom: 1px solid var(--border); }
+  .zap-topo strong { display: block; font-family: 'Sora', 'Inter', sans-serif; font-size: 14.5px; letter-spacing: -.02em; color: var(--fg); }
+  .zap-topo p { margin: 3px 0 0; font-size: 12.5px; line-height: 1.4; color: var(--fg-muted); }
+  .zap-fechar {
+    flex: none; margin-left: auto; display: inline-flex; padding: 6px; cursor: pointer;
+    border: 1px solid var(--border); border-radius: 8px; background: transparent; color: var(--fg-muted);
+  }
+  .zap-fechar:hover { color: var(--fg); }
+  .zap-fechar:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .zap-form { display: flex; flex-direction: column; gap: 9px; overflow-y: auto; padding: 10px 12px 12px; }
+  .zap-form[hidden] { display: none; }
+  .zap-campo { display: flex; flex-direction: column; gap: 4px; }
+  .zap-campo label { font-size: 12px; font-weight: 500; color: var(--fg-muted); }
+  .zap-campo label span { color: var(--accent); margin-left: 2px; }
+  .zap-campo input, .zap-campo select {
+    width: 100%; padding: 7px 10px; font: inherit; font-size: 13px; line-height: 1.3;
+    color: var(--fg); background: var(--bg); border: 1px solid var(--border); border-radius: 10px;
+  }
+  .zap-campo input:focus, .zap-campo select:focus { outline: none; border-color: var(--accent-brand); }
+
+  .zap-erro { margin: 0; font-size: 13px; line-height: 1.4; color: var(--accent); }
+  .zap-erro[hidden] { display: none; }
+  .zap-enviar {
+    width: 100%; margin-top: 2px; padding: 9px 14px; cursor: pointer;
+    font: inherit; font-size: 13.5px; font-weight: 650; color: #08080a;
+    border: 0; border-radius: 999px; background: var(--accent-brand);
+  }
+  .zap-enviar:hover { filter: brightness(1.08); }
+  .zap-enviar:disabled { cursor: progress; opacity: .7; }
+  .zap-enviar:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+  /* Honeypot: fora da tela, não display:none (alguns robôs pulam campo oculto). */
+  .zap-hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+  .zap-ok { margin: 0; padding: 28px 16px; text-align: center; font-size: 15px; color: var(--fg); }
+  .zap-ok[hidden] { display: none; }
+
+  @media (max-height: 700px) { .zap-painel { max-height: calc(100vh - 96px); } }
+  @media (max-width: 560px) {
+    .zap { right: 14px; bottom: 14px; left: 14px; }
+    .zap-painel { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .zap-botao { transition: none; }
+    .zap-botao:hover { transform: none; }
+  }
+</style>

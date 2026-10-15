@@ -3,6 +3,7 @@ import '../styles/global.css'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import WhatsAppPopup from '../components/WhatsAppPopup.astro'
 import { buildWebSiteJsonLd, buildOrganizationJsonLd } from '../lib/schema'
 
 interface Props {
@@ -101,5 +102,6 @@ const robots = noindex
       <slot />
     </main>
     <Footer />
+    <WhatsAppPopup />
   </body>
 </html>
