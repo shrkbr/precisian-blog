@@ -268,8 +268,10 @@ const mensagens = {
           form_location: 'popup_whatsapp',
           form_status: 'sucesso',
           form_variant: 'whatsapp',
+          // Só o e-mail, e só porque a tag da OpenAI no GTM (aceite de Marketing)
+          // manda o hash SHA-256 dele, como a Política de Privacidade declara.
+          // Nome, telefone e empresa não entram na dataLayer. Igual ao site (dl.ts).
           lead_email: corpo.email,
-          lead_name: corpo.name,
         })
 
         // 250ms de folga para a tag do GTM disparar antes de sair da página.
