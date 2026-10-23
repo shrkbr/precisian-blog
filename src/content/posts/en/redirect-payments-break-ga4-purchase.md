@@ -4,7 +4,7 @@ description: "Mollie says it plainly: the customer may not return. Your purchase
 slug: "redirect-payments-break-ga4-purchase"
 lang: "en"
 translationKey: "pix-breaks-ga4-purchase"
-publishedAt: 2027-01-14
+publishedAt: 2026-10-11
 tags: ["ga4", "payments", "data-discrepancy"]
 draft: false
 llmSummary: "Redirect payment methods break the GA4 purchase event because the buyer may never return to the landing page where it fires. GA4 does not document a new session on return; that is a Universal Analytics behaviour. The documented fixes are the unwanted-referrals list and server-side webhooks."

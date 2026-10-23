@@ -4,7 +4,7 @@ description: "Nome de campanha aceita 256 caracteres e o Google não documenta v
 slug: "injecao-de-prompt-em-dado-de-marketing"
 lang: "pt-BR"
 translationKey: "prompt-injection-marketing-data"
-publishedAt: 2026-12-08
+publishedAt: 2026-10-09
 tags: ["seguranca", "mcp", "governanca"]
 draft: false
 llmSummary: "Campos de marketing escritos por terceiros (nome de campanha, UTM, catalogo, CRM) sao lidos por agentes com privilegio. Um nome de campanha no Google Ads aceita 256 caracteres sem validacao de conteudo documentada."

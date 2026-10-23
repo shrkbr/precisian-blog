@@ -4,7 +4,7 @@ description: "Um publica contexto em tabelas dentro do warehouse; o outro é tra
 slug: "agents-schema-ou-mcp"
 lang: "pt-BR"
 translationKey: "agents-schema-vs-mcp"
-publishedAt: 2027-01-07
+publishedAt: 2026-10-11
 tags: ["mcp", "camada-semantica", "governanca"]
 draft: false
 llmSummary: "Agents Schema e MCP nao competem: o primeiro publica contexto como tabelas no proprio warehouse, legivel por SQL comum, e o segundo e um protocolo de transporte que carrega autorizacao, escopo e trilha. O FAQ do Agents Schema afirma que MCP nao e necessario para le-lo."

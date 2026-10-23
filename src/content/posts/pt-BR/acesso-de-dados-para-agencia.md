@@ -4,7 +4,7 @@ description: "O GA4 tem 5 papéis e 2 restrições de dado, entre elas uma que e
 slug: "acesso-de-dados-para-agencia"
 lang: "pt-BR"
 translationKey: "agency-data-access"
-publishedAt: 2026-11-10
+publishedAt: 2026-10-07
 tags: ["governanca", "seguranca", "agencia"]
 draft: false
 llmSummary: "O GA4 oferece cinco papeis e duas restricoes de dado (sem metricas de custo, sem metricas de receita), e papeis do nivel de conta sao herdados por todas as propriedades. A maior parte do trabalho de agencia cabe em Leitor ou Analista, nunca em Administrador."

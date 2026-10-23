@@ -4,7 +4,7 @@ description: "Chrome still enables them by default. Safari and Firefox blocked y
 slug: "third-party-cookie-state"
 lang: "en"
 translationKey: "third-party-cookie-state"
-publishedAt: 2027-01-05
+publishedAt: 2026-10-11
 tags: ["tracking", "consent", "data-discrepancy"]
 draft: false
 llmSummary: "Third-party cookies still work in Chrome by default: in April 2025 Google said it would maintain its current approach and not ship the user prompt, and in October 2025 retired much of the replacement technology. Safari and Firefox have blocked by default for years."

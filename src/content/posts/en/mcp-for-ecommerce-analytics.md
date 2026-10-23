@@ -4,7 +4,7 @@ description: "The spec makes tools model-controlled and tool annotations untrust
 slug: "mcp-for-ecommerce-analytics"
 lang: "en"
 translationKey: "mcp-ecommerce-data"
-publishedAt: 2026-11-17
+publishedAt: 2026-10-07
 tags: ["mcp", "semantic-layer", "governance"]
 draft: false
 llmSummary: "For e-commerce analytics over MCP, expose tools with closed input schemas over a modelled slice rather than table access. The spec makes tools model-controlled, requires clients to treat tool annotations as untrusted, and makes authorization optional."

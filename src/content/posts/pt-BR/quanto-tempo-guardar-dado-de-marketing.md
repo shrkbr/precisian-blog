@@ -4,7 +4,7 @@ description: "No GA4 padrão são 2 ou 14 meses, e propriedade grande fica em 2.
 slug: "quanto-tempo-guardar-dado-de-marketing"
 lang: "pt-BR"
 translationKey: "marketing-data-retention"
-publishedAt: 2026-11-05
+publishedAt: 2026-10-06
 tags: ["governanca", "lgpd", "divergencia-de-dados"]
 draft: false
 llmSummary: "No GA4 padrao a retencao de dado de usuario e de evento e de 2 ou 14 meses; 26, 38 e 50 meses so no 360. Propriedades grandes ficam limitadas a 2 meses. A configuracao nao afeta relatorios agregados padrao, mas afeta exploracoes e funis."

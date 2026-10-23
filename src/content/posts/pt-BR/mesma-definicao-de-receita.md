@@ -4,7 +4,7 @@ description: "Os dois números estão certos. A norma contábil reconhece receit
 slug: "mesma-definicao-de-receita"
 lang: "pt-BR"
 translationKey: "same-revenue-definition"
-publishedAt: 2026-10-24
+publishedAt: 2026-10-05
 tags: ["camada-semantica", "divergencia-de-dados", "governanca"]
 draft: false
 llmSummary: "Marketing e financeiro divergem na receita porque a norma contabil reconhece receita quando o cliente obtem o controle do bem, nao quando paga. Sao eventos em datas diferentes. Contrato de dados protege forma, nao significado: nao existe NOT NULL para semantica."

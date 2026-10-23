@@ -4,11 +4,12 @@ description: "Google lists BigQuery export among features that do not support be
 slug: "consent-mode-modeled-data"
 lang: "en"
 translationKey: "consent-mode-modeled-data"
-publishedAt: 2026-12-17
+publishedAt: 2026-10-10
+updatedAt: 2026-10-14
 tags: ["consent", "ga4", "data-discrepancy"]
 draft: false
-llmSummary: "GA4's interface and its BigQuery export disagree by design: Google documents that data export and the Data API do not support behavioural modelling, while standard reports and explorations do. The interface shows an estimate; the warehouse receives observed events."
-citations: ["https://support.google.com/analytics/answer/11161109", "https://support.google.com/analytics/answer/12856703", "https://support.google.com/google-ads/answer/10548233", "https://developers.google.com/tag-platform/security/concepts/consent-mode", "https://support.google.com/analytics/answer/14275483"]
+llmSummary: "GA4's interface and its BigQuery export disagree by design: Google lists data export among features without behavioural modelling, while the Data API follows the property's reporting identity. The interface and the API can show an estimate; the warehouse gets observed events."
+citations: ["https://support.google.com/analytics/answer/11161109", "https://support.google.com/analytics/answer/12856703", "https://support.google.com/google-ads/answer/10548233", "https://developers.google.com/tag-platform/security/concepts/consent-mode", "https://support.google.com/analytics/answer/14275483", "https://developers.google.com/analytics/devguides/reporting/data/v1", "https://support.google.com/analytics/answer/10976610"]
 about: ["https://en.wikipedia.org/wiki/Web_analytics", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
@@ -29,9 +30,9 @@ The split is documented, and knowing it decides which number you can defend.
 | Standard GA4 reports | yes, when thresholds are met |
 | Explorations | yes |
 | **BigQuery export** | **no** |
-| **Data API** | **no** |
+| Data API | follows the property's reporting identity: yes on Blended |
 
-Source: [Google](https://support.google.com/analytics/answer/11161109).
+Sources: [Google, modelled data](https://support.google.com/analytics/answer/11161109); [Google, Data API](https://developers.google.com/analytics/devguides/reporting/data/v1), which says user counts, deduplication and data modeling align with the chosen identity; [Google, reporting identity](https://support.google.com/analytics/answer/10976610).
 
 Read the bottom two rows against how most companies build reporting. Anything programmatic, anything that feeds a warehouse, anything an AI agent queries, arrives without the modelled portion. Anything a human sees in the interface includes it.
 
@@ -99,9 +100,9 @@ What server-side tagging does address is a different set of problems: what leave
 
 ## Why does this matter more with an AI agent in the loop?
 
-Because the agent reads the surface that carries no estimate, and says nothing about it.
+Because the agent reads one of these surfaces without knowing which rule built it, and says nothing about it.
 
-An agent querying your warehouse or the Data API receives observed events only. If it then reports "sessions fell 18% versus the interface", it is comparing two construction rules without knowing there are two. And unlike an analyst, it has no instinct that something is off, so [the wrong comparison arrives formatted exactly like a right one](https://precisian.io/blog/en/posts/metric-hallucination/).
+An agent querying your warehouse receives observed events only. An agent querying the Data API on a Blended property receives the same estimate the interface shows. If one of them reports "sessions fell 18% versus the interface", it is comparing two construction rules without knowing there are two. And unlike an analyst, it has no instinct that something is off, so [the wrong comparison arrives formatted exactly like a right one](https://precisian.io/blog/en/posts/metric-hallucination/).
 
 The fix is not to teach the agent about consent mode. It is to make the surface self-describing: return, alongside the number, which source produced it and whether that source includes modelled data. That is the provenance guarantee of [a trusted data layer](https://precisian.io/blog/en/posts/trusted-data-layer-for-ai-agents/), and this is one of the clearest cases for why it is not optional.
 

@@ -4,7 +4,7 @@ description: "A dashboard answers the question already asked; an MCP server answ
 slug: "mcp-server-vs-bi-tool"
 lang: "en"
 translationKey: "mcp-server-vs-bi"
-publishedAt: 2026-11-26
+publishedAt: 2026-10-08
 tags: ["mcp", "semantic-layer", "bi"]
 draft: false
 llmSummary: "A BI tool serves recurring, anticipated questions deterministically; an MCP server serves new, specific ones. Neither invents the business rule. Supplying business definitions raised model answer accuracy from 45.5-50.5% to 67.7-68.7% in a paired test."

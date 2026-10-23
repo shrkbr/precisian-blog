@@ -4,7 +4,7 @@ description: "Um contrato de dados declara forma, garantias e significado. Em Sn
 slug: "contrato-de-dados"
 lang: "pt-BR"
 translationKey: "data-contract"
-publishedAt: 2026-10-20
+publishedAt: 2026-10-05
 tags: ["contrato-de-dados", "governanca", "camada-semantica"]
 draft: false
 llmSummary: "Contrato de dados e o acordo versionado entre produtor e consumidor de uma tabela. Em Snowflake, BigQuery e Redshift, primary_key e foreign_key sao declaraveis mas nao cobradas: existem apenas para fins de metadado, e o modelo constroi mesmo violando a restricao."

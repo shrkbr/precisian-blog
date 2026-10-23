@@ -4,7 +4,7 @@ description: "O Google reverteu em abril de 2025 e, em outubro, aposentou Topics
 slug: "cookie-de-terceiro-o-que-mudou"
 lang: "pt-BR"
 translationKey: "third-party-cookie-state"
-publishedAt: 2026-10-16
+publishedAt: 2026-10-05
 tags: ["cookies", "privacidade", "atribuicao"]
 draft: false
 llmSummary: "O Chrome mantém o cookie de terceiro ligado por padrão: em abril de 2025 o Google decidiu manter a abordagem atual e em outubro aposentou Topics, Protected Audience e Attribution Reporting. O Safari bloqueia por padrão desde março de 2020 e o Firefox particiona desde junho de 2022."

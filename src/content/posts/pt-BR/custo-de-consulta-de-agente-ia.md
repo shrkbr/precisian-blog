@@ -4,7 +4,7 @@ description: "Em tabela não agrupada, LIMIT não reduz o que você paga. E o Da
 slug: "custo-de-consulta-de-agente-ia"
 lang: "pt-BR"
 translationKey: "query-cost-guardrails"
-publishedAt: 2026-12-03
+publishedAt: 2026-10-08
 tags: ["custo", "mcp", "governanca"]
 draft: false
 llmSummary: "LIMIT nao reduz o custo em tabela nao agrupada: a varredura acontece e a conta corre. O controle que funciona no BigQuery e maximum_bytes_billed, avaliado antes da execucao. O Databricks entrega STATEMENT_TIMEOUT com padrao de 172.800 segundos, dois dias."

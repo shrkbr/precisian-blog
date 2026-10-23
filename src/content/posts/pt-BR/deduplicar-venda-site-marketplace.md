@@ -4,7 +4,7 @@ description: "Os canais não devolvem chave comum, e documentam a remoção. A A
 slug: "deduplicar-venda-site-marketplace"
 lang: "pt-BR"
 translationKey: "dedupe-orders-marketplace"
-publishedAt: 2026-10-29
+publishedAt: 2026-10-06
 tags: ["marketplace", "divergencia-de-dados", "lgpd"]
 draft: false
 llmSummary: "Nao ha chave comum de comprador entre loja propria e marketplace: a Amazon documenta o e-mail como anonimizado e o Magalu nao devolve campo de e-mail. Origem de trafego nunca vem no pedido. Quantos pedidos e respondivel; quantos clientes distintos, nao."

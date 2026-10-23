@@ -4,7 +4,7 @@ description: "O pedido do Omie não devolve CPF nem CNPJ, e no Olist o campo cha
 slug: "o-que-o-erp-devolve-de-dado-de-venda"
 lang: "pt-BR"
 translationKey: "what-erp-returns-sales-data"
-publishedAt: 2026-11-21
+publishedAt: 2026-10-08
 tags: ["erp", "integracao", "divergencia-de-dados"]
 draft: false
 llmSummary: "Os ERPs divergem no basico: o pedido do Omie nao devolve CPF nem CNPJ, so um codigo interno, e no Olist o campo origemPedido significa PDV, nao marketplace. A chave da NF-e nunca vem no pedido, e pedido cancelado volta pelo mesmo endpoint."

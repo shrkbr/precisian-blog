@@ -4,7 +4,7 @@ description: "No Brasil o preço tem que incluir imposto; nos EUA, excluir. Segu
 slug: "produto-nao-aparece-google-shopping"
 lang: "pt-BR"
 translationKey: "product-not-showing-google-shopping"
-publishedAt: 2026-11-07
+publishedAt: 2026-10-06
 tags: ["google-shopping", "feed-de-produto", "divergencia-de-dados"]
 draft: false
 llmSummary: "No Brasil o preco enviado ao Merchant Center deve INCLUIR imposto, o inverso da regra dos EUA. Divergencia entre feed e pagina dispara reprovacao preventiva, que reprova por suspeita. GTIN nao e obrigatorio; brand e."

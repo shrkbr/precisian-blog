@@ -4,7 +4,7 @@ description: "A espec proíbe sessão para autenticação. E política de linha 
 slug: "isolamento-por-cliente-mcp"
 lang: "pt-BR"
 translationKey: "per-tenant-isolation"
-publishedAt: 2026-12-01
+publishedAt: 2026-10-08
 tags: ["mcp", "seguranca", "agencia"]
 draft: false
 llmSummary: "Isolamento por cliente em servidor MCP exige a identidade vinda do token, nunca de um argumento que o modelo preenche. A espec proibe usar sessoes para autenticacao, e politicas de linha sao contornadas por papel com BYPASSRLS ou pelo dono da tabela."

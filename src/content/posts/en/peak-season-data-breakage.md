@@ -4,7 +4,7 @@ description: "GA4's BigQuery export caps at 1 million events a day, and an excee
 slug: "peak-season-data-breakage"
 lang: "en"
 translationKey: "black-friday-data-readiness"
-publishedAt: 2026-12-26
+publishedAt: 2026-10-10
 tags: ["ga4", "pipeline", "data-discrepancy"]
 draft: false
 llmSummary: "Peak season breaks analytics silently: GA4's BigQuery export caps at 1 million events per day on standard properties and, if consistently exceeded, pauses without reprocessing previous days. Dimensions above 500 unique values per day collapse into an (other) bucket."

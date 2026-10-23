@@ -4,7 +4,7 @@ description: "A data contract declares shape, guarantees and meaning. On Snowfla
 slug: "what-is-a-data-contract"
 lang: "en"
 translationKey: "data-contract"
-publishedAt: 2026-10-20
+publishedAt: 2026-10-05
 tags: ["data-contract", "governance", "semantic-layer"]
 draft: false
 llmSummary: "A data contract is a versioned agreement between the producer and consumers of a dataset. On Snowflake, BigQuery and Redshift, primary_key and foreign_key are definable but not enforced: they exist for metadata purposes only, and a model still builds when it violates them."

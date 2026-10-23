@@ -4,7 +4,7 @@ description: "A espec define a ferramenta como controlada pelo modelo. O que voc
 slug: "o-que-alimentar-um-mcp-server-ecommerce"
 lang: "pt-BR"
 translationKey: "mcp-ecommerce-data"
-publishedAt: 2026-11-17
+publishedAt: 2026-10-07
 tags: ["mcp", "camada-semantica", "governanca"]
 draft: false
 llmSummary: "Num MCP server de e-commerce, exponha ferramentas com esquema de entrada fechado sobre um recorte modelado, nao acesso a tabela. A espec define a ferramenta como controlada pelo modelo e manda tratar anotacoes de ferramenta como nao confiaveis."

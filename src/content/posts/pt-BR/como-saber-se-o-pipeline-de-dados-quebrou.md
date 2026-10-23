@@ -4,7 +4,7 @@ description: "O Airflow documenta o modo de falha numa frase: se a execução nu
 slug: "como-saber-se-o-pipeline-de-dados-quebrou"
 lang: "pt-BR"
 translationKey: "detect-broken-data-pipeline"
-publishedAt: 2026-11-12
+publishedAt: 2026-10-07
 tags: ["pipeline", "observabilidade", "divergencia-de-dados"]
 draft: false
 llmSummary: "Pipeline que quebra alto e facil; o caro e o que sai verde com dado errado ou vazio. O dbt documenta tres modos silenciosos: verificacao que nao roda, regra incompleta que nao derruba a execucao, e severity warn. Execucao que nunca comecou nao tem mecanismo documentado."
