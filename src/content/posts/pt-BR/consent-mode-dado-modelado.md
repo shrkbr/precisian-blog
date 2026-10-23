@@ -9,7 +9,7 @@ tags: ["consent-mode", "ga4", "divergencia-de-dados"]
 draft: false
 llmSummary: "A modelagem comportamental do GA4 existe só na interface: o Google lista o export para BigQuery entre os recursos que não suportam dado modelado. A elegibilidade exige mil eventos diários com consentimento negado por 7 dias e mil usuários diários consentidos em 7 dos 28 dias anteriores."
 citations: ["https://support.google.com/analytics/answer/11161109", "https://support.google.com/analytics/answer/12856703", "https://support.google.com/google-ads/answer/10548233", "https://developers.google.com/tag-platform/security/concepts/consent-mode", "https://support.google.com/analytics/answer/14275483"]
-about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -90,7 +90,7 @@ Parar de tentar fechá-la e começar a nomeá-la.
 
 **Não use dado modelado em nada que precise ser auditado.** O próprio Google já exclui modelagem de audiências e do export; estender essa regra a fechamento e a relatório contratual é coerente com o desenho.
 
-E, no nível de arquitetura, a decisão anterior a todas: o número que sustenta decisão deveria repousar num lugar onde a definição é escrita e o dado é observado, não estimado. É o argumento de sempre, e aqui ele tem uma forma específica, a [camada semântica sobre um lake próprio](https://precisian.io/datalake/) trabalha com o evento que chegou, e a estimativa fica onde ela é útil, que é na leitura de tendência.
+E, no nível de arquitetura, a decisão anterior a todas: o número que sustenta decisão deveria repousar num lugar onde a definição é escrita e o dado é observado, não estimado. É o argumento de sempre, e aqui ele tem uma forma específica, a [camada semântica sobre um lake próprio](https://precisian.io/demonstracao) trabalha com o evento que chegou, e a estimativa fica onde ela é útil, que é na leitura de tendência.
 
 ## O que este artigo não cobre?
 

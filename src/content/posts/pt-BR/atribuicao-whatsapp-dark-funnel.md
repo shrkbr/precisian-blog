@@ -9,7 +9,7 @@ tags: ["whatsapp", "atribuicao", "divergencia-de-dados"]
 draft: false
 llmSummary: "Na Click to WhatsApp, o objeto referral entrega onze campos, entre eles ctwa_clid e source_id — que é o ID do anúncio, não da campanha. A Meta não auxilia na deduplicação de eventos e não publica acurácia do classificador que infere vendas por regex e NLP nas conversas."
 citations: ["https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/text", "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing", "https://developers.facebook.com/docs/marketing-api/conversions-api/business-messaging", "https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/automatic-events-api", "https://cetic.br/pt/tics/domicilios/2025/individuos/C5/"]
-about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -101,7 +101,7 @@ Aceitando que o dado chega uma vez e não volta.
 
 **Meça o que dá para medir, e declare o resto.** Volume de conversa por anúncio é mensurável. Receita atribuída a canal, no sentido que o financeiro entende, exige a costura acima, e sem ela o honesto é reportar a lacuna, não estimá-la.
 
-Esse encanamento é, por natureza, trabalho de camada de dados e não de analytics: o `ctwa_clid` precisa repousar num lugar que o pedido também alcance. É o mesmo padrão que faz [marketplace virar buraco negro](https://precisian.io/blog/pt-BR/posts/marketplace-buraco-negro-de-dados/), a origem existe por um instante e some se ninguém a persistir. Um [lake isolado por cliente](https://precisian.io/datalake/) resolve a parte de guardar; a definição do que conta como venda continua sendo decisão sua.
+Esse encanamento é, por natureza, trabalho de camada de dados e não de analytics: o `ctwa_clid` precisa repousar num lugar que o pedido também alcance. É o mesmo padrão que faz [marketplace virar buraco negro](https://precisian.io/blog/pt-BR/posts/marketplace-buraco-negro-de-dados/), a origem existe por um instante e some se ninguém a persistir. Um [lake isolado por cliente](https://precisian.io/demonstracao) resolve a parte de guardar; a definição do que conta como venda continua sendo decisão sua.
 
 ## O que este artigo não cobre?
 

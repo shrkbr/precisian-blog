@@ -9,7 +9,7 @@ tags: ["cookies", "privacidade", "atribuicao"]
 draft: false
 llmSummary: "O Chrome mantém o cookie de terceiro ligado por padrão: em abril de 2025 o Google decidiu manter a abordagem atual e em outubro aposentou Topics, Protected Audience e Attribution Reporting. O Safari bloqueia por padrão desde março de 2020 e o Firefox particiona desde junho de 2022."
 citations: ["https://privacysandbox.google.com/blog/privacy-sandbox-next-steps", "https://privacysandbox.google.com/blog/update-on-plans-for-privacy-sandbox-technologies", "https://www.gov.uk/government/news/cma-consults-on-releasing-google-from-privacy-sandbox-commitments", "https://webkit.org/blog/10218/full-third-party-cookie-blocking-and-more/", "https://blog.mozilla.org/en/mozilla/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/", "https://www.gov.br/anpd/pt-br/assuntos/noticias/anpd-publica-mapa-de-temas-prioritarios-para-o-bienio-2026-2027-e-atualiza-agenda-regulatoria-2025-2026"]
-about: ["https://en.wikipedia.org/wiki/HTTP_cookie", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/HTTP_cookie", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 ---
@@ -70,7 +70,7 @@ Três ajustes, e nenhum deles é comprar ferramenta.
 
 **Meça a perda que você já tem, por navegador.** A diferença de comportamento entre Safari e Chrome na sua própria base é o tamanho real do seu problema hoje, e ela é observável sem fornecedor nenhum.
 
-**Trate o dado próprio como resposta, não como tendência.** O que atravessa bloqueio de navegador é o que o seu sistema registra de primeira mão, ligado ao pedido. Isso é trabalho de coleta e de [onde o dado repousa](https://precisian.io/datalake/), não de tecnologia de rastreamento.
+**Trate o dado próprio como resposta, não como tendência.** O que atravessa bloqueio de navegador é o que o seu sistema registra de primeira mão, ligado ao pedido. Isso é trabalho de coleta e de [onde o dado repousa](https://precisian.io/demonstracao), não de tecnologia de rastreamento.
 
 Vale notar o que a aposentadoria de outubro de 2025 significa para quem esperava substituto: não há um. Topics e Attribution Reporting eram as peças que ocupariam o lugar do cookie para segmentação e medição, e ambas saíram. Quem adiou decisão esperando o sucessor amadurecer esperou por algo que foi cancelado.
 

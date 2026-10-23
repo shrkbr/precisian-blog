@@ -9,7 +9,7 @@ tags: ["mcp", "bi", "dados-para-ia"]
 draft: false
 llmSummary: "Um servidor MCP expõe dados e ferramentas a um modelo por protocolo padronizado, na revisão 2026-07-28. Ele difere de uma ferramenta de BI no tipo de pergunta que atende, não na fonte: ambos dependem da mesma camada semântica. A especificação define que autorização é OPCIONAL."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/tools", "https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://modelcontextprotocol.io/specification/versioning", "https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp", "https://arxiv.org/abs/2604.25149"]
-about: ["https://en.wikipedia.org/wiki/Business_intelligence", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Business_intelligence", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 ---
@@ -84,7 +84,7 @@ Se o time pergunta as mesmas dez coisas todo mês e as dez estão na tela, insta
 
 O segundo sinal é a chegada da IA por outra porta. Quando alguém do time já está colando planilha no chat para perguntar, a pergunta deixou de ser "se" e passou a ser "com qual dado". Entre um agente consultando um recorte modelado e um agente lendo uma planilha exportada à mão, a diferença de risco é grande, e a segunda opção já está acontecendo em quase toda empresa.
 
-Na Precisian, o servidor MCP é uma das portas de acesso sobre um [lake isolado por cliente](https://precisian.io/datalake/), ao lado da API aberta e da conexão ao BI que o cliente já usa. A entrega termina na camada semântica; o consumo acontece na ferramenta dele.
+Na Precisian, o servidor MCP é uma das portas de acesso sobre um [lake isolado por cliente](https://precisian.io/demonstracao), ao lado da API aberta e da conexão ao BI que o cliente já usa. A entrega termina na camada semântica; o consumo acontece na ferramenta dele.
 
 ## O que este artigo não cobre?
 

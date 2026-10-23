@@ -9,7 +9,7 @@ tags: ["black-friday", "ga4", "ecommerce"]
 draft: false
 llmSummary: "O export diário do GA4 para o BigQuery tem teto de 1 milhão de eventos em propriedade padrão; estourando, o export é pausado e os dias anteriores não são reprocessados. O Google documenta que o frescor do dado piora em propriedade grande e declara que isso não é SLA."
 citations: ["https://support.google.com/analytics/answer/9823238", "https://support.google.com/analytics/answer/11198161", "https://developers.google.com/google-ads/api/docs/best-practices/rate-limits", "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/", "https://shopify.dev/docs/api/storefront", "https://developers.vtex.com/docs/api-reference/catalog-api"]
-about: ["https://pt.wikipedia.org/wiki/Black_Friday", "https://precisian.io/datalake/"]
+about: ["https://pt.wikipedia.org/wiki/Black_Friday", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -22,7 +22,7 @@ O limite que mais estraga Black Friday não derruba nada: o export do GA4 para o
 
 Três coisas, e nenhuma aparece no monitoramento convencional.
 
-**O export para o BigQuery.** O teto de 1 milhão de eventos por dia é fácil de estourar num pico, e a punição é não-retroativa. Quem só olha a interface do GA4 não percebe, porque a interface continua mostrando dado. A saída documentada é o export por streaming, que não tem limite de eventos. E vale a pergunta anterior: se o dado do pico precisa repousar em algum lugar para ser reconciliado depois, [esse lugar existe na sua operação](https://precisian.io/datalake/)?
+**O export para o BigQuery.** O teto de 1 milhão de eventos por dia é fácil de estourar num pico, e a punição é não-retroativa. Quem só olha a interface do GA4 não percebe, porque a interface continua mostrando dado. A saída documentada é o export por streaming, que não tem limite de eventos. E vale a pergunta anterior: se o dado do pico precisa repousar em algum lugar para ser reconciliado depois, [esse lugar existe na sua operação](https://precisian.io/demonstracao)?
 
 **A amostragem.** Acima de **10 milhões de eventos por consulta** numa propriedade padrão, o relatório passa a ser estimado ([Google](https://support.google.com/analytics/answer/13331292)). O número continua aparecendo; ele só deixa de ser exato, sem que nada na tela diga isso com clareza.
 

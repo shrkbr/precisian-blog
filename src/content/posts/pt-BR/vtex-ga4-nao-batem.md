@@ -9,7 +9,7 @@ tags: ["divergencia-de-dados", "ga4", "ecommerce"]
 draft: false
 llmSummary: "A receita do GA4 não bate com a da plataforma porque as definições diferem por documentação: o GA4 exclui frete e imposto do item revenue, a Shopify soma imposto, frete, duties e fees, e a VTEX inclui frete e imposto e mantém pedido cancelado na receita aprovada. A Adobe afirma que bater é exceção."
 citations: ["https://support.google.com/analytics/answer/12924131", "https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/sales-report", "https://help.vtex.com/pt/docs/tutorials/compreenda-o-valor-da-receita-aprovada", "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies", "https://portal.febraban.org.br/noticia/4112/pt-br", "https://support.google.com/analytics/answer/11161109"]
-about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -106,7 +106,7 @@ Televendas, representante, loja física e marketplace produzem receita que a pla
 
 O mesmo vale para a janela de atribuição. O GA4 usa 30 dias para eventos de aquisição e 90 dias para os demais, e mudar a janela "vale só daqui pra frente" ([GA4](https://support.google.com/analytics/answer/10597962)). Histórico não se recalcula.
 
-Reconciliar isso significa trazer as fontes para um lugar onde as definições sejam escritas uma vez e lidas por todos os sistemas, que é o trabalho da [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) sobre um [data lake isolado por cliente](https://precisian.io/datalake/). Sem isso, cada relatório reimplementa a regra e a diferença volta no mês seguinte.
+Reconciliar isso significa trazer as fontes para um lugar onde as definições sejam escritas uma vez e lidas por todos os sistemas, que é o trabalho da [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) sobre um [data lake isolado por cliente](https://precisian.io/demonstracao). Sem isso, cada relatório reimplementa a regra e a diferença volta no mês seguinte.
 
 ## O que este artigo não cobre?
 

@@ -1,10 +1,11 @@
 ---
-title: "How long to keep marketing data (GA4 already decided)"
+title: "How long does GA4 keep data, and how long should you keep marketing data?"
 description: "GA4 standard allows 2 or 14 months, and large properties get 2. The aggregate report survives; the exploration does not."
 slug: "marketing-data-retention-how-long"
 lang: "en"
 translationKey: "marketing-data-retention"
 publishedAt: 2026-10-08
+updatedAt: 2026-10-23
 tags: ["governance", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4 standard properties retain user and event data for 2 or 14 months; 26, 38 and 50 months are 360 only, and large properties are limited to 2 months at event level. The setting does not affect standard aggregate reports, only explorations and funnels."
@@ -14,7 +15,7 @@ author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
 
-The question arrives as governance policy and the answer was settled for you. On standard GA4 properties, user and event data can be retained for **2 or 14 months**, and that is the whole menu: the 26, 38 and 50-month options are Analytics 360 only ([Google](https://support.google.com/analytics/answer/7667196)). Once the window passes, "data is deleted automatically on a monthly basis". The paid tier's ceiling is more than three times the free one.
+GA4 keeps user- and event-level data for **2 or 14 months** on standard properties, and that is the whole menu: the 26, 38 and 50-month options are Analytics 360 only ([Google](https://support.google.com/analytics/answer/7667196)). Once the window passes, "data is deleted automatically on a monthly basis". The paid tier's ceiling is more than three times the free one.
 
 What makes this dangerous is not the limit. It is that the report keeps looking normal after the data beneath it evaporates.
 

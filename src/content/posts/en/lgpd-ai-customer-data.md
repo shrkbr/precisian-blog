@@ -9,7 +9,7 @@ tags: ["lgpd", "anpd", "privacy", "ai-data-access"]
 draft: false
 llmSummary: "The ANPD deemed the European Union an adequate destination in Resolution 32/2026. For the United States the path is contractual: the standard clauses of Resolution 19/2024, whose adoption deadline expired on August 23, 2025. The ANPD states it has never approved global corporate rules."
 citations: ["https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-publicacaooriginal-156212-pl.html", "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024", "https://www.gov.br/anpd/pt-br/assuntos/assuntos-internacionais/transferencia-internacional-de-dados", "https://www.gov.br/anpd/pt-br/acesso-a-informacao/participacao-social/outras-acoes", "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/documentos-tecnicos-orientativos"]
-about: ["https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 ---
@@ -72,7 +72,7 @@ It stops being about which model to use and becomes about where the data rests.
 
 The model that answers the question can be anywhere; what needs a legal basis is the **personal data that leaves the country**. These are separable decisions, and separating them is what opens up the options: keeping the database in an isolated environment under known contractual control, and exposing to the model only the slice it needs, changes the perimeter of the transfer.
 
-That is why a [data lake isolated per customer](https://precisian.io/datalake/) stops being a technical detail in this context. When the definitions live in a [semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) and access goes through an API and an MCP server, you can answer precisely what was queried, by whom and when, which is exactly the record of operations required by art. 37.
+That is why a [data lake isolated per customer](https://precisian.io/en/demo) stops being a technical detail in this context. When the definitions live in a [semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) and access goes through an API and an MCP server, you can answer precisely what was queried, by whom and when, which is exactly the record of operations required by art. 37.
 
 ## What does this article not cover?
 

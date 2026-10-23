@@ -9,7 +9,7 @@ tags: ["lgpd", "anpd", "dados-para-ia"]
 draft: false
 llmSummary: "A ANPD considerou a União Europeia destino adequado pela Resolução 32/2026. Para os Estados Unidos, o caminho é contratual: as cláusulas-padrão da Resolução 19/2024, com prazo de adequação vencido em 23/08/2025. A ANPD declara nunca ter aprovado normas corporativas globais."
 citations: ["https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-publicacaooriginal-156212-pl.html", "https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024", "https://www.gov.br/anpd/pt-br/assuntos/assuntos-internacionais/transferencia-internacional-de-dados", "https://www.gov.br/anpd/pt-br/acesso-a-informacao/participacao-social/outras-acoes", "https://www.gov.br/anpd/pt-br/centrais-de-conteudo/documentos-tecnicos-orientativos"]
-about: ["https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_Pessoais", "https://precisian.io/datalake/"]
+about: ["https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_Pessoais", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 ---
@@ -72,7 +72,7 @@ Ela deixa de ser sobre qual modelo usar e passa a ser sobre onde o dado repousa.
 
 O modelo que responde a pergunta pode estar em qualquer lugar; o que precisa de base legal é o **dado pessoal que sai do país**. São decisões separáveis, e separá-las é o que abre as opções: manter a base num ambiente isolado e sob controle contratual conhecido, e expor ao modelo apenas o recorte necessário, muda o perímetro da transferência.
 
-É por isso que um [data lake isolado por cliente](https://precisian.io/datalake/) deixa de ser detalhe técnico nesse contexto. Quando as definições vivem numa [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) e o acesso passa por API e servidor MCP, dá para responder com precisão o que foi consultado, por quem e quando, que é exatamente o registro das operações exigido pelo art. 37.
+É por isso que um [data lake isolado por cliente](https://precisian.io/demonstracao) deixa de ser detalhe técnico nesse contexto. Quando as definições vivem numa [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) e o acesso passa por API e servidor MCP, dá para responder com precisão o que foi consultado, por quem e quando, que é exatamente o registro das operações exigido pelo art. 37.
 
 ## O que este artigo não cobre?
 

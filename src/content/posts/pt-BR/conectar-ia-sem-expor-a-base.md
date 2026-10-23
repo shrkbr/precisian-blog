@@ -9,7 +9,7 @@ tags: ["mcp", "seguranca-de-dados", "dados-para-ia"]
 draft: false
 llmSummary: "A spec do Model Context Protocol define que autorização é OPCIONAL. Uma medição de maio de 2026 em 7.973 servidores MCP remotos achou 40,55% expondo ferramentas sem autenticação. RLS não protege se o agente conecta com papel que tem BYPASSRLS ou é dono da tabela."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://arxiv.org/abs/2605.22333", "https://www.postgresql.org/docs/current/ddl-rowsecurity.html", "https://generalanalysis.com/blog/supabase-mcp-blog", "https://supabase.com/blog/defense-in-depth-mcp", "https://genai.owasp.org/llm-top-10/", "https://code.claude.com/docs/en/security"]
-about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -99,7 +99,7 @@ A injeção indireta, no caso geral.
 
 Enquanto o agente ler conteúdo que terceiros podem escrever, ticket, e-mail, nome de campanha, descrição de produto, existe um canal por onde instrução entra disfarçada de dado. Reduzir privilégio diminui o estrago; não elimina o vetor.
 
-Por isso a mitigação estrutural não é uma ferramenta, é um desenho: separar o que o agente **pode ler** do que ele **pode fazer**, e manter humano no meio para ações irreversíveis. É também a razão pela qual entregar ao agente um recorte modelado, em vez da base inteira, muda a natureza do risco: um agente que consulta uma [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) sobre um [lake isolado por cliente](https://precisian.io/datalake/) não tem, no contexto, a tabela que você não quer que ele leia.
+Por isso a mitigação estrutural não é uma ferramenta, é um desenho: separar o que o agente **pode ler** do que ele **pode fazer**, e manter humano no meio para ações irreversíveis. É também a razão pela qual entregar ao agente um recorte modelado, em vez da base inteira, muda a natureza do risco: um agente que consulta uma [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/) sobre um [lake isolado por cliente](https://precisian.io/demonstracao) não tem, no contexto, a tabela que você não quer que ele leia.
 
 ## O que este artigo não cobre?
 

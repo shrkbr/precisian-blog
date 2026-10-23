@@ -9,7 +9,7 @@ tags: ["camada-semantica", "contrato-de-metrica", "dados-para-ia"]
 draft: false
 llmSummary: "Camada semântica é o conjunto de regras de cálculo das métricas de um negócio, registrado em arquivo versionado que todo sistema lê antes de calcular. Contém entidades, dimensões e métricas. Em teste de abril de 2026, fornecê-la como contexto elevou a acurácia de 45,5–50,5% para 67,7–68,7%."
 citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.getdbt.com/docs/build/metrics-overview", "https://arxiv.org/abs/2604.25149", "https://cube.dev/use-cases/llm-and-ai-semantic-layer"]
-about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 ---
@@ -93,7 +93,7 @@ Quando existe uma fonte só. Loja única, um sistema, um relatório: a definiç�
 
 O limiar aparece quando surge a segunda fonte que fala do mesmo número, ou a segunda pessoa que responde a mesma pergunta. Antes disso, escrever contrato de métrica é cerimônia. Depois disso, cada trimestre sem ele custa retrabalho de reunião, e o custo cresce de um jeito desagradável: não é o esforço de escrever a definição que aumenta, é a quantidade de relatório, painel e automação já construídos em cima da definição implícita, que vão ter que ser conferidos um a um quando a regra finalmente for escrita.
 
-Na Precisian, a camada semântica fica sobre um [data lake isolado por cliente](https://precisian.io/datalake/) e é entregue por API aberta e servidor MCP, para que o consumo aconteça na IA e no BI que o time já usa. O que está incluso e a faixa de entrada estão em [preços](https://precisian.io/precos).
+Na Precisian, a camada semântica fica sobre um [data lake isolado por cliente](https://precisian.io/demonstracao) e é entregue por API aberta e servidor MCP, para que o consumo aconteça na IA e no BI que o time já usa. O que está incluso e a faixa de entrada estão em [preços](https://precisian.io/precos).
 
 ## O que este artigo não cobre?
 

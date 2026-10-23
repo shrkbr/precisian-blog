@@ -5,6 +5,7 @@ slug: "what-is-a-data-contract"
 lang: "en"
 translationKey: "data-contract"
 publishedAt: 2026-10-05
+updatedAt: 2026-10-23
 tags: ["data-contract", "governance", "semantic-layer"]
 draft: false
 llmSummary: "A data contract is a versioned agreement between the producer and consumers of a dataset. On Snowflake, BigQuery and Redshift, primary_key and foreign_key are definable but not enforced: they exist for metadata purposes only, and a model still builds when it violates them."
@@ -57,11 +58,31 @@ Read that against what people believe they have. On Snowflake, BigQuery and Reds
 
 On Snowflake and BigQuery, `unique` is not even definable. The guarantee most teams assume they have is the one least likely to exist.
 
-## Then what does a dbt contract enforce?
+## What does `contract: enforced: true` do in dbt?
 
 One thing, and it does it well.
 
 With `contract: {enforced: true}`, dbt validates each column's name and data type at build time and fails the model if it diverges from the declaration ([dbt](https://docs.getdbt.com/reference/resource-configs/contract)). That is real protection. It is what stops someone renaming `order_total` to `total` on a Tuesday and the finance dashboard finding out on Friday.
+
+```yaml
+models:
+  - name: fct_orders
+    config:
+      materialized: table
+      contract:
+        enforced: true
+    columns:
+      - name: order_id
+        data_type: string
+      - name: order_total
+        data_type: numeric(38, 2)
+```
+
+When the check fails, the build stops with "This model has an enforced contract that failed" ([dbt](https://docs.getdbt.com/reference/resource-configs/contract)). Three limits, all from the same page, checked on October 23, 2026:
+
+- **Materialization.** Contracts apply to `table`, `view` and `incremental` models. Views check names and types but not constraints, and incremental models need `on_schema_change: append_new_columns` or `fail`.
+- **What is excluded.** Materialized views, ephemeral models, custom materializations (unless their author added support) and, on BigQuery, models with recursive CTEs cannot carry a contract.
+- **Other resources.** Sources, seeds and snapshots have no model contract at all, so the raw tables feeding your models are outside the check.
 
 What the mechanism does not do is guarantee contents. Shape is enforced at build. On the platforms above, content is not.
 
