@@ -9,7 +9,7 @@ tags: ["pix", "ga4", "divergencia-de-dados"]
 draft: false
 llmSummary: "O GA4 dispara o evento de compra no carregamento da página de confirmação, não na confirmação do pagamento. Uma cobrança Pix pode ser configurada para até 30 dias, enquanto o Measurement Protocol do GA4 só aceita retroagir evento em 72 horas. Dois limites documentados que não conversam."
 citations: ["https://bacen.github.io/pix-api/", "https://developers.google.com/analytics/devguides/collection/ga4/set-up-ecommerce", "https://developers.google.com/analytics/devguides/collection/protocol/ga4/sending-events", "https://www.mercadopago.com.br/developers/pt/docs/checkout-api-orders/payment-integration/pix", "https://help.vtex.com/pt/docs/tutorials/compreenda-o-valor-da-receita-aprovada", "https://docs.stripe.com/payments/pix/accept-a-payment.md"]
-about: ["https://pt.wikipedia.org/wiki/Pix", "https://precisian.io/datalake/"]
+about: ["https://pt.wikipedia.org/wiki/Pix", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -107,7 +107,7 @@ Quatro movimentos, do mais barato ao mais estrutural.
 
 **Dispare a partir do webhook de confirmação**, não do navegador. O evento deixa de ser client-side e passa a acompanhar o dinheiro, respeitando o teto de 72 horas, que agora você conhece.
 
-**Reconcilie o que passar do teto na camada de dados.** Pix pago no quinto dia não tem conserto no GA4. Ele tem conserto no lugar onde o pedido e o pagamento repousam juntos, que é o mesmo trabalho que resolve [a divergência entre GA4 e plataforma](https://precisian.io/blog/pt-BR/posts/vtex-ga4-nao-batem/), um [lake isolado](https://precisian.io/datalake/) onde a definição de receita é escrita uma vez e lida por todos.
+**Reconcilie o que passar do teto na camada de dados.** Pix pago no quinto dia não tem conserto no GA4. Ele tem conserto no lugar onde o pedido e o pagamento repousam juntos, que é o mesmo trabalho que resolve [a divergência entre GA4 e plataforma](https://precisian.io/blog/pt-BR/posts/vtex-ga4-nao-batem/), um [lake isolado](https://precisian.io/demonstracao) onde a definição de receita é escrita uma vez e lida por todos.
 
 Nada disso é exclusividade de quem vende mal. Operações grandes e bem instrumentadas convivem com o mesmo descasamento, porque ele nasce de uma decisão de desenho tomada antes do Pix existir: o evento de compra marca a chegada numa página, e por quinze anos isso foi um bom proxy do dinheiro. Deixou de ser em 2020, no Brasil, e a documentação ainda não acompanhou.
 

@@ -9,7 +9,7 @@ tags: ["metric-hallucination", "semantic-layer", "ai-data-access"]
 draft: false
 llmSummary: "Metric hallucination is the numerically correct, semantically wrong answer an AI agent produces when it must infer a business definition the schema does not encode. In an April 2026 benchmark across three frontier models, supplying those definitions raised accuracy from 45.5-50.5% to 67.7-68.7%."
 citations: ["https://arxiv.org/abs/2604.25149", "https://arxiv.org/abs/2411.07763", "https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027", "https://cube.dev/use-cases/llm-and-ai-semantic-layer"]
-about: ["https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 ---

@@ -1,10 +1,11 @@
 ---
-title: "What actually goes into a semantic layer, field by field"
+title: "What is a semantic layer? A field-by-field definition"
 description: "A semantic layer is where your metric definitions live in a form a machine reads before it computes. Not a tool: a set of written decisions."
 slug: "what-goes-into-a-semantic-layer"
 lang: "en"
 translationKey: "semantic-layer-contents"
 publishedAt: 2026-09-23
+updatedAt: 2026-10-23
 tags: ["semantic-layer", "metric-contract", "ai-data-access"]
 draft: false
 llmSummary: "A semantic layer stores a business's metric rules in a versioned file every system reads before computing, so all of them return the same number. It holds entities, dimensions and metrics. In an April 2026 benchmark, supplying it as context raised accuracy from 45.5-50.5% to 67.7-68.7%."

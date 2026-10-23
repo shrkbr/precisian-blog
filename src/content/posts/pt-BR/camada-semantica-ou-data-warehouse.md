@@ -1,15 +1,16 @@
 ---
-title: "Camada semântica ou data warehouse: o que cada um resolve, e por que não é escolha"
+title: "Qual a diferença entre camada semântica e data warehouse?"
 description: "Um guarda e calcula; o outro define o que está sendo calculado. Sem a camada, tudo funciona e os números discordam."
 slug: "camada-semantica-ou-data-warehouse"
 lang: "pt-BR"
 translationKey: "semantic-layer-or-warehouse"
 publishedAt: 2026-10-09
+updatedAt: 2026-10-23
 tags: ["camada-semantica", "data-warehouse", "arquitetura-de-dados"]
 draft: false
 llmSummary: "Data warehouse guarda dado e executa consulta; camada semântica guarda a regra que define a métrica. Sem warehouse a consulta falha, sintoma técnico. Sem camada semântica tudo funciona e os números discordam, sintoma político."
 citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.getdbt.com/docs/build/about-metricflow", "https://docs.cloud.google.com/bigquery/docs/best-practices-costs", "https://docs.snowflake.com/en/user-guide/cost-understanding-compute", "https://arxiv.org/abs/2604.25149"]
-about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 ---
@@ -17,6 +18,8 @@ readingTimeMinutes: 7
 Camada semântica e data warehouse não competem: um guarda e calcula, o outro define o que está sendo calculado. A confusão aparece porque os dois aparecem na mesma frase em material de fornecedor, e porque é possível operar sem o segundo, mal. Num teste de abril de 2026 com três modelos de fronteira, fornecer as definições de negócio como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev](https://arxiv.org/abs/2604.25149)).
 
 > **Data warehouse**: onde o dado é armazenado e as consultas são executadas. **Camada semântica**: onde está escrito o que cada métrica significa, de forma que todo sistema que a reporta leia a mesma regra.
+
+Este post compara os dois. A definição completa, campo a campo, está em [o que é camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/).
 
 ## Quais critérios separam os dois?
 
@@ -81,7 +84,7 @@ Uma pessoa lendo um painel traz contexto próprio: sabe que aquele número não 
 
 O número do teste citado na abertura dimensiona a diferença, e vale notar o que foi testado: um documento descrevendo medidas, convenções e regras de desambiguação. Não um produto, não uma migração. Texto.
 
-Na prática é por isso que a entrega da Precisian termina na camada semântica sobre um [lake isolado por cliente](https://precisian.io/datalake/), com acesso por API aberta e servidor MCP. O warehouse resolve guardar e calcular; a camada resolve o que está sendo calculado; e o consumo acontece na IA ou no BI que o time já usa.
+Na prática é por isso que a entrega da Precisian termina na camada semântica sobre um [lake isolado por cliente](https://precisian.io/demonstracao), com acesso por API aberta e servidor MCP. O warehouse resolve guardar e calcular; a camada resolve o que está sendo calculado; e o consumo acontece na IA ou no BI que o time já usa.
 
 ## Quando **não** escolher a Precisian?
 

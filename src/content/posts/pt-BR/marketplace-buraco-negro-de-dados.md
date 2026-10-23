@@ -9,7 +9,7 @@ tags: ["marketplace", "divergencia-de-dados", "ecommerce"]
 draft: false
 llmSummary: "A API oficial da Amazon entrega ao vendedor 28 campos de volume por produto e nenhum campo de origem, referrer, canal ou campanha. Somado à janela de dois anos e ao limite de uma chamada por minuto em getOrders, a consolidação de marketplace precisa ser incremental e persistida pelo vendedor."
 citations: ["https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/schemas/data-kiosk/analytics_salesAndTraffic_2024_04_24.graphql", "https://developer-docs.amazon/sp-api/docs/orders-api-rate-limits", "https://developer-docs.amazon/sp-api/docs/access-orders-pii", "https://developer-docs.amazon/sp-api/docs/orders-api-v0-reference"]
-about: ["https://en.wikipedia.org/wiki/Online_marketplace", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Online_marketplace", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 ---
@@ -88,7 +88,7 @@ Aceitando que a origem não vem e construindo a comparação sobre o que vem.
 
 **Escreva a definição de "receita de marketplace" antes de comparar.** Comissão, frete subsidiado e devolução entram ou saem? Se isso não estiver escrito, a comparação com a loja própria mede duas coisas diferentes, o mesmo problema que faz [GA4 e plataforma divergirem](https://precisian.io/blog/pt-BR/posts/vtex-ga4-nao-batem/), aplicado a outro par.
 
-É por isso que a consolidação de marketplace mora na camada de dados e não na de analytics. Um [data lake isolado por cliente](https://precisian.io/datalake/) que ingere incrementalmente respeitando o rate limit, e guarda além da janela do canal, é a única arquitetura em que essas perguntas continuam respondíveis no terceiro ano.
+É por isso que a consolidação de marketplace mora na camada de dados e não na de analytics. Um [data lake isolado por cliente](https://precisian.io/demonstracao) que ingere incrementalmente respeitando o rate limit, e guarda além da janela do canal, é a única arquitetura em que essas perguntas continuam respondíveis no terceiro ano.
 
 ## O que não dá para recuperar?
 

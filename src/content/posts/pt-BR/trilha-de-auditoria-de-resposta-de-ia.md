@@ -9,7 +9,7 @@ tags: ["auditoria", "mcp", "dados-para-ia"]
 draft: false
 llmSummary: "Trilha de auditoria de resposta liga o número entregue por um agente à definição e aos dados que o produziram. A spec do MCP proíbe repasse de token justamente por quebrar a prestação de contas, e o art. 37 da LGPD obriga controlador e operador a manter registro das operações de tratamento."
 citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization", "https://modelcontextprotocol.io/specification/2026-07-28/server/tools", "https://owasp.org/www-project-mcp-top-10/", "https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-publicacaooriginal-156212-pl.html", "https://code.claude.com/docs/en/security"]
-about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io/datalake/"]
+about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 ---
@@ -86,7 +86,7 @@ Agente usado para exploração, rascunho ou primeira aproximação não precisa 
 
 O limiar aparece em três situações, e basta uma: a resposta vira decisão sem revisão humana; o dado consultado é pessoal, o que aciona o artigo 37; ou existe terceiro no meio, como agência ou cliente, caso em que a pergunta "o que exatamente eles viram" vai aparecer mais cedo ou mais tarde.
 
-Na Precisian, esse registro é uma propriedade do [lake isolado por cliente](https://precisian.io/datalake/): como o acesso passa por API e servidor MCP sobre uma camada semântica versionada, dá para reconstruir qual definição respondeu o quê. É a mesma arquitetura resolvendo um problema diferente, e é por isso que ela aparece nestas duas conversas.
+Na Precisian, esse registro é uma propriedade do [lake isolado por cliente](https://precisian.io/demonstracao): como o acesso passa por API e servidor MCP sobre uma camada semântica versionada, dá para reconstruir qual definição respondeu o quê. É a mesma arquitetura resolvendo um problema diferente, e é por isso que ela aparece nestas duas conversas.
 
 ## O que este artigo não cobre?
 
