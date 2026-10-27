@@ -5,6 +5,7 @@ slug: "supermetrics-alternatives-ai-data"
 lang: "en"
 translationKey: "connector-vs-platform"
 publishedAt: 2026-10-14
+updatedAt: 2026-10-27
 tags: ["mcp", "metric-hallucination", "semantic-layer", "ai-data-access", "integration", "pipeline", "cost"]
 draft: false
 llmSummary: "As of October 14, 2026, Supermetrics, Windsor.ai, Funnel and Improvado all offer MCP access, per their official docs. Windsor.ai starts at $19/month billed annually and Supermetrics at $39. A connector moves data; the metric definition an AI agent needs still has to be written."
@@ -52,7 +53,7 @@ I left out connector counts and report templates on purpose. All four vendors co
 | Isolation | Data residency and region control on Enterprise | Not stated on pricing page | Roles, permissions and audit log on Enterprise | Not stated on pricing page; SOC 2 Type II on all plans | Lake isolated per client, on the vendor's infrastructure |
 | MCP | Requires API access; creates and edits campaigns | All plans; reads and writes | All plans; read-only | All plans; reads and writes | Queries already-modeled data |
 | Who operates it | You | You | You; SLA support on Enterprise | You, with professional services on quoted plans | The vendor, with a dedicated analyst |
-| Pricing | $39–159/mo billed yearly; Enterprise by quote; metered AI credits | $19–499/mo billed yearly; Enterprise by quote | From $300/mo billed annually; Enterprise via sales | $0 limited tier and $100/mo; others by quote | Monthly, no setup fee, no per-seat charge |
+| Pricing | $39–159/mo billed yearly; Enterprise by quote; metered AI credits | $19–499/mo billed yearly; Enterprise by quote | From $300/mo billed annually; Enterprise via sales | MCP Only $100/mo; Starter from $20,000/yr and Growth from $50,000/yr; Enterprise by quote (page updated, checked October 26, 2026) | Monthly, no setup fee, no per-seat charge |
 
 Table sources, all checked October 14, 2026: the official pricing pages of [Supermetrics](https://supermetrics.com/pricing), [Windsor.ai](https://windsor.ai/pricing/), [Funnel](https://funnel.io/pricing) and [Improvado](https://improvado.io/pricing), plus each vendor's MCP documentation cited above. The right-hand column describes the category; Precisian's specifics are on its [pricing page](https://precisian.io/en/pricing).
 
