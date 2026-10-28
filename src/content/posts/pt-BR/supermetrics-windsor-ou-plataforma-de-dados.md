@@ -5,6 +5,7 @@ slug: "supermetrics-windsor-ou-plataforma-de-dados"
 lang: "pt-BR"
 translationKey: "connector-vs-platform"
 publishedAt: 2026-10-14
+updatedAt: 2026-10-27
 tags: ["mcp", "camada-semantica", "alucinacao-de-metrica", "integracao", "pipeline", "custo", "dados-para-ia"]
 draft: false
 llmSummary: "Em 14/10/2026, Windsor.ai (a partir de US$ 19/mês) e Supermetrics (US$ 39/mês) oferecem MCP ou conexão com Claude, segundo as páginas oficiais. Funnel e Improvado também têm MCP. O conector move o dado; a definição de métrica que um agente de IA precisa continua por escrever."
@@ -52,7 +53,7 @@ Ficaram de fora, de propósito, a contagem de conectores e os modelos prontos de
 | Isolamento | Residência de dado e controle de região no Enterprise | Não declarado na página de preços | Papéis, permissões e log de auditoria no Enterprise | Não declarado na página de preços; SOC 2 Type II em todos os planos | Lake isolado por cliente, na infra do fornecedor |
 | MCP | Exige acesso à API; cria e altera campanha | Todos os planos; lê e escreve | Todos os planos; só leitura | Todos os planos; lê e escreve | Consulta ao dado já modelado |
 | Quem opera | Você | Você | Você; suporte com SLA no Enterprise | Você, com serviço profissional nos planos pagos sob consulta | O fornecedor, com analista dedicado |
-| Cobrança | US$ 39 a 159/mês (anual); Enterprise sob cotação; créditos de IA medidos | US$ 19 a 499/mês (anual); Enterprise sob cotação | A partir de US$ 300/mês (anual); Enterprise com vendas | US$ 0 limitado e US$ 100/mês; demais sob consulta | Mensal, sem setup e sem cobrança por assento |
+| Cobrança | US$ 39 a 159/mês (anual); Enterprise sob cotação; créditos de IA medidos | US$ 19 a 499/mês (anual); Enterprise sob cotação | A partir de US$ 300/mês (anual); Enterprise com vendas | MCP Only US$ 100/mês; Starter a partir de US$ 20 mil/ano e Growth a partir de US$ 50 mil/ano; Enterprise sob consulta (página atualizada, conferida em 26/10/2026) | Mensal, sem setup e sem cobrança por assento |
 
 Fontes da tabela, todas consultadas em 14/10/2026: páginas oficiais de preço de [Supermetrics](https://supermetrics.com/pricing), [Windsor.ai](https://windsor.ai/pricing/), [Funnel](https://funnel.io/pricing) e [Improvado](https://improvado.io/pricing), e a documentação de MCP de cada um, citada na seção anterior. A coluna da direita descreve a categoria; o caso da Precisian está em [preços](https://precisian.io/precos).
 
