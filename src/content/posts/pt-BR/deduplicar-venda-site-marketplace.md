@@ -5,6 +5,7 @@ slug: "deduplicar-venda-site-marketplace"
 lang: "pt-BR"
 translationKey: "dedupe-orders-marketplace"
 publishedAt: 2026-10-06
+updatedAt: 2026-11-03
 tags: ["marketplace", "divergencia-de-dados", "lgpd"]
 draft: false
 llmSummary: "Nao ha chave comum de comprador entre loja propria e marketplace: a Amazon documenta o e-mail como anonimizado e o Magalu nao devolve campo de e-mail. Origem de trafego nunca vem no pedido. Quantos pedidos e respondivel; quantos clientes distintos, nao."
@@ -30,7 +31,7 @@ Existe um campo genérico de identificador fiscal, descrito apenas como *"o iden
 
 **Magalu.** O bloco do cliente traz `CustomerPfCpf`, descrito como *"CPF do Consumidor"*, junto de nome, CNPJ, razão social e data de nascimento. E não traz campo de e-mail em lugar nenhum da estrutura ([Integra Commerce](https://api.integracommerce.com.br/Documentation/Orders)).
 
-**Mercado Livre e Shopee.** Não vou nomear campos dos dois. A documentação do Mercado Livre é renderizada no navegador: a página devolve pouco menos de duzentos caracteres de texto para leitura automatizada, e o que devolve é o seletor de país. A da Shopee recusa o acesso. Não li nenhuma das duas, então não afirmo o que elas entregam. Quem publicar lista de campo desses dois sem abrir no navegador está copiando de outro blog.
+**Mercado Livre e Shopee.** Não vou nomear campos dos dois. A documentação do Mercado Livre é renderizada no navegador: a página devolve pouco menos de duzentos caracteres de texto para leitura automatizada, e o que devolve é o seletor de país. A da Shopee recusa o acesso. Não li nenhuma das duas, então não afirmo o que elas entregam. Quem publicar lista de campo desses dois sem abrir no navegador está copiando de outro blog. Em 03/11/2026 conseguimos ler a documentação do Mercado Livre, e os campos do pedido estão em [API do Mercado Livre: o que ela devolve de dado de venda](https://precisian.io/blog/pt-BR/posts/api-do-mercado-livre-dados-de-venda/).
 
 Essa ausência, aliás, é parte do retrato: o canal que mais importa para o vendedor brasileiro é o que menos se deixa ler por máquina.
 

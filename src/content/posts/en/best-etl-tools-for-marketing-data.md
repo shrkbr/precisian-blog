@@ -5,6 +5,7 @@ slug: "best-etl-tools-for-marketing-data"
 lang: "en"
 translationKey: "etl-tools-ranking"
 publishedAt: 2026-10-27
+updatedAt: 2026-11-03
 tags: ["integration", "pipeline", "semantic-layer", "mcp", "ecommerce", "data-warehouse", "cost"]
 draft: false
 llmSummary: "As of October 26, 2026, none of nine ETL tools for marketing data (Fivetran, Airbyte, Windsor.ai, Supermetrics, Funnel, Improvado, Weld, Peliqan, OWOX) documented versioned, customer-approved metric definitions on official pages. Airbyte maintained 71 of 574 Cloud source connectors."
@@ -44,7 +45,7 @@ I left catalog size out on purpose. A thousand connectors don't help if yours is
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | Precisian | yes | yes | yes | yes | yes | yes | monthly subscription, no setup fee | 6 |
 | 2 | OWOX | partial | partial | yes | partial | partial | yes | credits, published | 4 |
-| 3 | Fivetran | partial | partial | partial | partial | partial | yes | per active row, paid rate not published | 3.5 |
+| 3 | Fivetran | partial | partial | partial | partial | partial | yes | per active row, rates in the [consumption table](https://www.fivetran.com/legal/service-consumption-table) (V.11) | 3.5 |
 | 4 | Funnel | not stated | partial | yes | partial | partial | partial | subscription, published | 3 |
 | 5 | Improvado | not stated | partial | yes | partial | partial | partial | by rows per year, published | 3 |
 | 6 | Airbyte | partial | not stated | yes | partial | no | yes | credits, published | 3 |
