@@ -5,9 +5,10 @@ slug: "fivetran-alternatives-ecommerce"
 lang: "en"
 translationKey: "elt-tool-choice"
 publishedAt: 2026-10-14
+updatedAt: 2026-11-03
 tags: ["build-vs-buy", "integration", "pipeline", "cost", "ecommerce", "data-lake"]
 draft: false
-llmSummary: "As of October 14, 2026, Airbyte's official Cloud registry listed 573 source connectors, of which 67 are maintained by Airbyte and 506 by the community. Fivetran bills by monthly active rows with a US$ 5 base charge per connection since January 1, 2026, and does not publish its per-MAR rate."
+llmSummary: "As of October 14, 2026, Airbyte's official Cloud registry listed 573 source connectors, of which 67 are maintained by Airbyte and 506 by the community. Fivetran bills each connection by monthly active rows, with per-MAR rates in its Service Consumption Table (V.11)."
 citations: ["https://fivetran.com/docs/core-concepts/usage-based-pricing", "https://fivetran.com/docs/core-concepts/usage-based-pricing/pricing-updates/2026-pricing-updates", "https://www.fivetran.com/pricing", "https://fivetran.com/docs/connectors", "https://fivetran.com/docs/connector-sdk", "https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents", "https://airbyte.com/pricing", "https://docs.airbyte.com/integrations/connector-support-levels", "https://connectors.airbyte.com/files/registries/v0/cloud_registry.json", "https://github.com/airbytehq/airbyte-platform/blob/main/LICENSE"]
 about: ["https://en.wikipedia.org/wiki/Extract%2C_load%2C_transform", "https://precisian.io/en"]
 author: "Gabriel Sorato"
@@ -41,7 +42,7 @@ Two 2026 changes belong in your model ([Fivetran 2026 pricing updates](https://f
 - **A minimum per connection.** Every standard connection with 1 to 1 million MAR in a month carries a US$ 5 base charge on the Standard plan, from January 1, 2026 on monthly pay-as-you-go and at renewal for annual contracts. A Shopify brand running 12 small connections starts at US$ 60 a month before a single paid row.
 - **Inserts, updates and deletes all count toward paid MAR**, each row once per month, also from January 1, 2026.
 
-The Free plan covers 500,000 MAR a month ([Fivetran pricing](https://www.fivetran.com/pricing)). Above that, the per-MAR rate is still not published: the page says cost is usage multiplied by a rate that depends on volume and plan, and stops there. That is the same predictability gap [the build-vs-buy piece](https://precisian.io/blog/en/posts/build-vs-buy-data-lake/) found on the architecture side.
+The Free plan covers 500,000 MAR a month ([Fivetran pricing](https://www.fivetran.com/pricing)). Above that, the pricing page only gives the formula; the per-MAR rates are in Fivetran's legal [Service Consumption Table](https://www.fivetran.com/legal/service-consumption-table). In V.11, effective November 1, 2026, the Standard plan charges a $5 base plus $495 per million MAR for a connection's first million rows, and each connection runs on its own curve. The full breakdown is in [Fivetran pricing in 2026](https://precisian.io/blog/en/posts/fivetran-pricing/).
 
 Since **June 1, 2026**, Fivetran also owns dbt: the [merger with dbt Labs closed](https://www.fivetran.com/press/fivetran-dbt-labs-complete-merger-to-create-the-data-infrastructure-for-trusted-ai-agents), so one vendor now sells extraction and the most common modeling tool that runs after it. The release keeps dbt Core open source. The agent context layer they shipped afterwards is compared with MCP in [Agents Schema and MCP](https://precisian.io/blog/en/posts/agents-schema-vs-mcp/).
 
@@ -86,7 +87,7 @@ Monitoring is the most underestimated line, because the common failure is a part
 | Criterion | Fivetran | Airbyte Cloud | Airbyte Core (self-hosted) | Managed service |
 |---|---|---|---|---|
 | Billing unit | MAR + US$ 5 base per connection | credits or capacity | no license; infra and people | service fee |
-| Predictability | low: per-MAR rate unpublished | medium: credit price published | high on infra, low on people | high, if the contract fixes scope |
+| Predictability | medium: per-MAR rate published, priced per connection | medium: credit price published | high on infra, low on people | high, if the contract fixes scope |
 | Long-tail ecommerce sources | listed; check the badge | often community-maintained | community code or yours | depends: ask which ones they maintain |
 | Who fixes breakage | Fivetran on its connectors; you on the SDK | Airbyte on 67 connectors; community or you on the rest | you | the vendor, if it is in the contract |
 | Who models | you (dbt, now the same company) | you | you | depends: ask whether a semantic layer is included |
@@ -116,7 +117,7 @@ Precisian is a managed service: ingestion, a data lake isolated per client on ou
 
 ## What does this article not cover?
 
-It does not evaluate Stitch, Hevo, Matillion, Portable or the dlt library. It does not quote Fivetran's per-MAR rate, because it is not published. It does not cover data engineer salaries, for the reason given in the [build-vs-buy piece](https://precisian.io/blog/en/posts/build-vs-buy-data-lake/). And it does not discuss storage architecture.
+It does not evaluate Stitch, Hevo, Matillion, Portable or the dlt library. Fivetran's per-MAR rates are covered in [Fivetran pricing in 2026](https://precisian.io/blog/en/posts/fivetran-pricing/). It does not cover data engineer salaries, for the reason given in the [build-vs-buy piece](https://precisian.io/blog/en/posts/build-vs-buy-data-lake/). And it does not discuss storage architecture.
 
 ---
 

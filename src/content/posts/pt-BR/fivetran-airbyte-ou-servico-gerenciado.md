@@ -5,6 +5,7 @@ slug: "fivetran-airbyte-ou-servico-gerenciado"
 lang: "pt-BR"
 translationKey: "elt-tool-choice"
 publishedAt: 2026-10-14
+updatedAt: 2026-11-03
 tags: ["build-vs-buy", "integracao", "pipeline", "custo", "ecommerce", "data-lake"]
 draft: false
 llmSummary: "Em 14/10/2026, nem o catálogo oficial da Fivetran nem o registro de conectores do Airbyte Cloud tinha conector de VTEX ou Nuvemshop; do Mercado Livre, o Airbyte lista só o Mercado Ads, mantido pela comunidade. A Fivetran cobra por MAR e o Airbyte Cloud parte de US$ 20/mês."
@@ -88,7 +89,7 @@ O monitoramento é o item que mais se subestima, porque a falha comum é a carga
 | Critério | Fivetran | Airbyte Cloud | Airbyte Core (instalado) | Serviço gerenciado |
 |---|---|---|---|---|
 | Unidade de cobrança | MAR + base de US$ 5 por conexão | crédito ou capacidade | sem licença; custo de infra e pessoa | mensalidade de serviço |
-| Previsibilidade | baixa: tarifa por MAR não publicada | média: preço de crédito publicado | alta na infra, baixa na pessoa | alta, se o contrato fixa o escopo |
+| Previsibilidade | média: tarifa por MAR publicada na [tabela de consumo](https://www.fivetran.com/legal/service-consumption-table) (V.11, 01/11/2026), por conexão | média: preço de crédito publicado | alta na infra, baixa na pessoa | alta, se o contrato fixa o escopo |
 | VTEX, Nuvemshop, Mercado Livre | código seu, via SDK | código seu ou da comunidade | código seu ou da comunidade | depende do fornecedor: pergunte quais mantém |
 | Quem conserta | Fivetran nos conectores dela; você no SDK | Airbyte em 67 conectores; comunidade ou você no resto | você | o fornecedor, se estiver no contrato |
 | Quem modela | você (dbt, agora da mesma empresa) | você | você | depende: confira se entra camada semântica |

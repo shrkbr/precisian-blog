@@ -5,6 +5,7 @@ slug: "marketplace-buraco-negro-de-dados"
 lang: "pt-BR"
 translationKey: "marketplace-data-blackhole"
 publishedAt: 2026-09-26
+updatedAt: 2026-11-03
 tags: ["marketplace", "divergencia-de-dados", "ecommerce"]
 draft: false
 llmSummary: "A API oficial da Amazon entrega ao vendedor 28 campos de volume por produto e nenhum campo de origem, referrer, canal ou campanha. Somado à janela de dois anos e ao limite de uma chamada por minuto em getOrders, a consolidação de marketplace precisa ser incremental e persistida pelo vendedor."
@@ -60,7 +61,7 @@ Some os dois. Uma chamada por minuto significa que reconstruir um ano de pedidos
 
 Aqui a resposta honesta inclui o que não consegui verificar.
 
-A documentação de desenvolvedor do **Mercado Livre** respondeu com erro de acesso proibido à verificação automatizada em todos os endereços que testei, incluindo as páginas de dados de faturamento e de acesso a dados de cliente. Existe material indexado sugerindo que o dado pessoal do comprador saiu da resposta de pedidos com o Mercado Envios 2 e que o acesso a dado de cliente é vinculado ao Mercado Shops com processo de certificação, mas como não consegui abrir as páginas, **não afirmo nenhuma das duas coisas aqui**. Quem precisar decidir com base nisso deve abrir a documentação logado.
+A documentação de desenvolvedor do **Mercado Livre** respondeu com erro de acesso proibido à verificação automatizada em todos os endereços que testei, incluindo as páginas de dados de faturamento e de acesso a dados de cliente. Existe material indexado sugerindo que o dado pessoal do comprador saiu da resposta de pedidos com o Mercado Envios 2 e que o acesso a dado de cliente é vinculado ao Mercado Shops com processo de certificação, mas como não consegui abrir as páginas, **não afirmo nenhuma das duas coisas aqui**. Quem precisar decidir com base nisso deve abrir a documentação logado. A leitura que fizemos depois, em 03/11/2026, com os endpoints de pedido, frete e devolução, está em [API do Mercado Livre: o que ela devolve de dado de venda](https://precisian.io/blog/pt-BR/posts/api-do-mercado-livre-dados-de-venda/).
 
 A **Shopee** é um caso diferente e mais simples de descrever: não encontrei a documentação do Open Platform acessível publicamente sem conta de desenvolvedor, e as referências a limites de consulta que circulam vêm de SDKs mantidos pela comunidade, não de documentação oficial. Isso é, por si só, informação útil para quem planeja: **a integração da Shopee não pode ser dimensionada antes de ter conta.**
 
@@ -104,6 +105,6 @@ Não traz a participação de marketplace no e-commerce brasileiro, e a ausênci
 
 Esse último ponto merece registro, porque é o mesmo erro que este artigo descreve: confundir um proxy com o dado. Preferi não ter número a ter um que não sobrevive à conferência.
 
-Também não cobre integração técnica passo a passo, nem a API do Mercado Livre em detalhe, pelo motivo declarado acima.
+Também não cobre integração técnica passo a passo, nem a API do Mercado Livre em detalhe, que ficou para [um post próprio](https://precisian.io/blog/pt-BR/posts/api-do-mercado-livre-dados-de-venda/).
 
 Se você vende em marketplace e loja própria e não consegue comparar os dois, o primeiro passo é escrever a definição de receita de cada canal. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).

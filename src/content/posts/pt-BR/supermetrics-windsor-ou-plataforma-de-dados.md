@@ -5,7 +5,7 @@ slug: "supermetrics-windsor-ou-plataforma-de-dados"
 lang: "pt-BR"
 translationKey: "connector-vs-platform"
 publishedAt: 2026-10-14
-updatedAt: 2026-10-27
+updatedAt: 2026-11-03
 tags: ["mcp", "camada-semantica", "alucinacao-de-metrica", "integracao", "pipeline", "custo", "dados-para-ia"]
 draft: false
 llmSummary: "Em 14/10/2026, Windsor.ai (a partir de US$ 19/mês) e Supermetrics (US$ 39/mês) oferecem MCP ou conexão com Claude, segundo as páginas oficiais. Funnel e Improvado também têm MCP. O conector move o dado; a definição de métrica que um agente de IA precisa continua por escrever."
@@ -81,7 +81,7 @@ Três dos quatro MCPs da tabela também alteram campanha. Com permissão de escr
 
 ## O que recomendar, por perfil?
 
-**Relatório semanal, uma pessoa lendo:** Windsor.ai ou Supermetrics no plano de entrada. Escolha pelo destino que você já usa.
+**Relatório semanal, uma pessoa lendo:** Windsor.ai ou Supermetrics no plano de entrada. Escolha pelo destino que você já usa. Se a dúvida já é entre o Windsor.ai e uma plataforma gerenciada, o comparativo direto está em [Precisian ou Windsor.ai](https://precisian.io/blog/pt-BR/posts/precisian-ou-windsor-ai/).
 
 **Time de mídia que quer perguntar no Claude sobre mídia, só mídia:** conector com MCP serve. Comece em só leitura (o Funnel já vem assim) e só libere escrita depois de saber o que o agente faz com ela.
 
