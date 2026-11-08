@@ -12,8 +12,9 @@ citations: ["https://www.facebook.com/business/news/meta-ads-ai-connectors", "ht
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 The Meta Ads MCP server is Meta's official connector between an AI agent and a Meta ad account. Meta announced it in open beta on April 29, 2026 ([Meta](https://www.facebook.com/business/news/meta-ads-ai-connectors)). It is hosted at `https://mcp.facebook.com/ads`, and when I counted on October 14, 2026, its developer docs listed 91 tools. It reads and writes, and the conversions it reports are the ones Meta credits to its own ads.
 
 > **Meta Ads MCP server**: a Model Context Protocol server built and hosted by Meta, part of its "ads AI connectors," that exposes reporting, campaign creation and editing, catalog, signal, experiment and change-history tools to an AI agent, authenticated through Meta login and limited by the permissions granted.
@@ -111,4 +112,4 @@ It does not promise availability for every account. The Help Center warns that n
 
 ---
 
-If your team's agent already adds Meta conversions to Google's and calls the result revenue, the first step is measuring the gap between that sum and what your store booked in the same month. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your team's agent already adds Meta conversions to Google's and calls the result revenue, the first step is measuring the gap between that sum and what your store booked in the same month. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=meta-ads-mcp-permissions&utm_content=texto) over an isolated lake, with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/cu
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 The most useful difference between building and buying is not price. It is that only one side publishes one. You can compute the cost of your own lake from open official tables: S3 storage in North Virginia costs **US$ 0.023 per GB-month** for the first 50 TB, from a price file published 18 September 2026 ([AWS Price List API](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json)).
 
 On the managed side, Fivetran does not publish its per-MAR rate on the pages that describe the model, Snowflake refers credit value to a separate document, and Databricks serves its pricing page as JavaScript with no figures in the HTML.
@@ -99,3 +100,7 @@ It does not quote managed-platform rates, because the pages describing their mod
 It does not compare specific warehouses on price. The two billing models described here are structurally different enough that a per-unit comparison is meaningless without a workload, and your workload is the input nobody else has.
 
 And it does not tell you which to choose. The decision turns on connector coverage for your sources and who absorbs maintenance, both of which are facts about your stack rather than about the products.
+
+---
+
+What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=build-vs-buy-data-lake&utm_content=texto), with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://developers.google.com/google-ads/api/docs/developer-toolkit
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Google_Ads", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O MCP do Google Ads é um servidor que deixa um assistente de IA consultar sua conta de anúncios em linguagem natural, só em leitura. Na documentação do Google atualizada em 14/10/2026, ele expõe três ferramentas, e a principal, `search`, executa consultas GAQL ([Google Ads API](https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server)). Ele responde com precisão o que o Google Ads registrou como conversão. Quanto isso virou de pedido faturado, ele não tem como saber.
 
 > **MCP do Google Ads**: servidor que implementa o Model Context Protocol sobre a Google Ads API e entrega a um modelo de linguagem os dados da conta (campanhas, gasto, conversões, orçamentos) por meio de consultas GAQL, sem permissão para alterar nada.
@@ -109,4 +110,4 @@ Não é um tutorial de instalação; o passo a passo está no [README](https://g
 
 ---
 
-Se o assistente conectado ao Google Ads diz um ROAS e o financeiro fecha outro, o primeiro passo é medir a distância entre a conversão da plataforma e o pedido faturado, mês a mês. [Veja como isso funciona na prática](https://precisian.io/demonstracao) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o assistente conectado ao Google Ads diz um ROAS e o financeiro fecha outro, o primeiro passo é medir a distância entre a conversão da plataforma e o pedido faturado, mês a mês. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=mcp-do-google-ads&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

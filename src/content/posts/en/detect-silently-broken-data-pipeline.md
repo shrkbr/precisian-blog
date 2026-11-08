@@ -12,8 +12,9 @@ citations: ["https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-
 about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Airflow's own migration guide states the failure mode in one line: "**If the Dag run never finishes, the SLA is never checked**" ([Airflow](https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-deadlines.html)). In a CHI 2021 study of 53 interviewed practitioners, cascading data problems showed a **92% prevalence**, characterised as "invisible, delayed, but often avoidable" ([CHI 2021](https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/)).
 
 A monitor that only fires at completion cannot see a job that never completed. And that is the easy version of the problem.
@@ -111,3 +112,7 @@ It publishes no configuration example for the dbt-utils recency macro. The file 
 It does not claim that Snowflake's last-altered column lies because of DDL. dbt's documentation states only that source freshness uses that column on that platform; the consequence is plausible, widely repeated, and unverified by me against the platform's own docs.
 
 And a note on method, because it is the third in this series: while sourcing the CHI paper, an automated extractor returned an **entirely wrong author list**, belonging to a different paper by the same researcher. The names above came from the proceedings pages. A number with a citation attached is not a checked number, and neither is a name.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=detect-silently-broken-data-pipeline&utm_content=texto), with no contract commitment.

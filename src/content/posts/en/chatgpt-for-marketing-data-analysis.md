@@ -12,8 +12,9 @@ citations: ["https://help.openai.com/en/articles/8437071-data-analysis-with-chat
 about: ["https://en.wikipedia.org/wiki/Data_analysis", "https://en.wikipedia.org/wiki/Large_language_model", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 ChatGPT data analysis is reliable for exploring marketing data and unreliable for making decisions with it. ChatGPT accepts spreadsheets of roughly 50 MB and writes and runs Python in a Jupyter notebook to do the math ([OpenAI](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt), checked October 14, 2026); Claude does the same with files up to 30 MB ([Anthropic](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)). The arithmetic comes out right. What never ships with the CSV is your definition of revenue, ROAS or new customer, so the model picks one.
 
 > **The triage rule**: when the answer depends on a business definition that is not written in the file, the AI will not make up the number. It will make up the definition, then compute the number correctly on top of it.
@@ -127,4 +128,4 @@ And it doesn't address the privacy question of uploading customer records into a
 
 ---
 
-If your team has already moved budget on a ROAS that came out of a GA4 export in an AI chat, the first step is measuring how far that export's revenue sits from the revenue finance closed for the same period. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your team has already moved budget on a ROAS that came out of a GA4 export in an AI chat, the first step is measuring how far that export's revenue sits from the revenue finance closed for the same period. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=chatgpt-for-marketing-data-analysis&utm_content=texto) over an isolated lake, with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://support.google.com/adspolicy/answer/6299717?hl=en", "https:
 about: ["https://en.wikipedia.org/wiki/First-party_data", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 First-party data is customer information your business records in a direct relationship with the customer: the order, the account, the site event, the support conversation. Google draws the line the same way in its Customer Match policy: advertisers may only upload customer information "collected in the first-party context," such as data from "your websites, apps, physical stores" or situations where customers shared it directly with you ([Google](https://support.google.com/adspolicy/answer/6299717?hl=en), checked October 23, 2026).
 
 > **First-party data**: information about a customer that a business recorded firsthand, in a direct interaction with that customer, and whose use, retention and destination the business controls.
@@ -107,4 +108,4 @@ It isn't legal advice on US state privacy laws, and it doesn't compare collectio
 
 ---
 
-If your budget decisions run on the platform's conversion column instead of fulfilled orders, the first step is measuring the gap between the two. [See how first-party data is stored and queried in practice](https://precisian.io/en/demo) — no contract commitment, and no promise of an answer in 30 minutes either.
+If your budget decisions run on the platform's conversion column instead of fulfilled orders, the first step is measuring the gap between the two. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=first-party-data-ecommerce&utm_content=texto).

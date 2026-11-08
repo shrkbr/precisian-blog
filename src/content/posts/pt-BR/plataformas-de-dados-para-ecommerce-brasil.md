@@ -12,11 +12,14 @@ citations: ["https://www.nekt.com/", "https://www.nekt.com/pricing", "https://ww
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Para um e-commerce brasileiro de médio porte, sem time de dados, que quer usar Claude ou ChatGPT sobre o próprio faturamento, a ordem pelos sete critérios deste ranking começa com Precisian, ROQT, Nekt e Solomon. Quem quer painel pronto ou autosserviço barato começa pela Kondado, pela Prax ou pela Biglink. Entre 26 e 27/10/2026, cinco das nove plataformas de terceiros avaliadas declaravam MCP para Claude e ChatGPT, entre elas a [Kondado](https://kondado.com.br/mcp/) e a [Nekt](https://www.nekt.com/), e nenhuma declarava definição de métrica versionada e aprovada pelo cliente.
 
 > **Plataforma de dados para e-commerce**: serviço que tira o dado da loja, do marketplace, do ERP e da mídia, guarda num lugar só e entrega esse dado a quem pergunta, seja um BI, uma automação ou a IA da empresa. O que muda de uma para outra é onde o dado mora, quem define a métrica e quem cuida da coleta quando ela quebra.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=plataformas-de-dados-para-ecommerce-brasil&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 ## Quem escreveu este ranking e com quais critérios?
 
@@ -131,4 +134,4 @@ Não testei nenhuma das dez em conta real; tudo vem do que cada empresa publica,
 
 ---
 
-Se a plataforma que você usa hoje mostra um faturamento e o ERP mostra outro, o primeiro passo é medir essa distância antes de pôr uma IA para ler o número. O que a Precisian inclui para fechar essa conta, e como cobra, está em [preços](https://precisian.io/precos), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a plataforma que você usa hoje mostra um faturamento e o ERP mostra outro, o primeiro passo é medir essa distância antes de pôr uma IA para ler o número. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=plataformas-de-dados-para-ecommerce-brasil&utm_content=texto), sem compromisso de contrato.

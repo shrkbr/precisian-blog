@@ -12,8 +12,9 @@ citations: ["https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp", "htt
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/BigQuery", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 The BigQuery MCP server lets an AI agent list datasets, read table schemas and run SQL in your Google Cloud project, but it has no idea what any column means to your business. Google's remote server at `https://bigquery.googleapis.com/mcp` exposes nine tools, cancels queries after three minutes and returns at most 3,000 rows ([Google Cloud](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp), page updated October 29, 2026). Its SQL tool accepts no per-query byte cap, and the agent rewrites the definition of "revenue" every time someone asks.
 
 > **BigQuery MCP server**: a server that implements the Model Context Protocol on top of the BigQuery API, giving a language model tools to discover metadata and run GoogleSQL in a Google Cloud project, under the IAM permissions of whatever identity the agent uses.
@@ -153,4 +154,4 @@ It isn't an install guide: per-client setup lives in [Google's documentation](ht
 
 ---
 
-If the agent connected to BigQuery answers "revenue yesterday" and the number moves by Wednesday, the first step is to compare the GA4 export total with booked orders in Shopify, day by day, with refunds and Amazon included. [Book a call about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — no contract commitment, but no promise of an answer in 30 minutes either.
+If the agent connected to BigQuery answers "revenue yesterday" and the number moves by Wednesday, the first step is to compare the GA4 export total with booked orders in Shopify, day by day, with refunds and Amazon included. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=bigquery-mcp-server&utm_content=texto) over an isolated lake, with no contract commitment.

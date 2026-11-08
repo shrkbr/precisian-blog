@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/9744275", "https://sup
 about: ["https://en.wikipedia.org/wiki/Google_Ads", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 `gclid` (Google Click Identifier) is the parameter Google Ads auto-tagging appends to the landing URL of every clicked ad, as in `www.example.com/?gclid=123xyz` ([Google Ads Help](https://support.google.com/google-ads/answer/3095550), accessed November 3, 2026). Google's tag writes it to a cookie on your domain and uses it to tie a conversion back to the click. When the sale closes somewhere other than that page, someone has to store the `gclid` with the order.
 
 > **gclid** (Google Click Identifier): "a URL parameter passed with ad clicks" that identifies the campaign and other attributes of the click, turned on by the auto-tagging setting and required for Google Ads website conversion tracking ([Google Ads Help](https://support.google.com/google-ads/answer/9744275), accessed November 3, 2026).
@@ -105,4 +106,4 @@ It doesn't confirm whether Safari strips `gclid` specifically. WebKit describes 
 
 It doesn't cover app campaigns, which Google says "don't respect auto-tagging features," or Campaign Manager's `dclid`.
 
-If you buy Google Ads and a share of your sales closes by phone, invoice or hosted checkout, the first step is to check whether the `gclid` reaches the order record or dies in the browser cookie. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — no contract commitment, and no promise of an answer in 30 minutes either.
+If you buy Google Ads and a share of your sales closes by phone, invoice or hosted checkout, the first step is to check whether the `gclid` reaches the order record or dies in the browser cookie. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=what-is-gclid&utm_content=texto).

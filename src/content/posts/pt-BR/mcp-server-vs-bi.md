@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/too
 about: ["https://en.wikipedia.org/wiki/Business_intelligence", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Um servidor MCP é um processo que expõe dados e ferramentas a um modelo de linguagem por um protocolo padronizado, de forma que a IA que o time já usa consiga perguntar sem que alguém construa uma integração nova a cada vez. A especificação corrente é a revisão **2026-07-28**, versionada por data e incrementada apenas quando há quebra de compatibilidade ([modelcontextprotocol.io](https://modelcontextprotocol.io/specification/versioning)).
 
 > **Servidor MCP**: componente que publica ferramentas e recursos para um modelo consumir, definindo como a conversa acontece — e não quem tem direito de iniciá-la.
@@ -92,4 +93,4 @@ Não compara implementações de servidor MCP, não avalia ferramentas de BI esp
 
 Também não afirma nada sobre comportamento particular do Power BI ou de qualquer outro produto de BI nomeado: as características descritas aqui são as de painel como categoria, e checar o comportamento da sua instalação é trabalho de quem a opera.
 
-Se a sua fila de pedidos ad hoc cresce mais rápido do que o time consegue atender, o primeiro passo não é escolher um servidor MCP: é verificar se as definições que ele leria já existem escritas. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se a sua fila de pedidos ad hoc cresce mais rápido do que o time consegue atender, o primeiro passo não é escolher um servidor MCP: é verificar se as definições que ele leria já existem escritas. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=mcp-server-vs-bi&utm_content=texto), sem compromisso de contrato.

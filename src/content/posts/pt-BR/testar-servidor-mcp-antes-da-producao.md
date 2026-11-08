@@ -12,8 +12,9 @@ citations: ["https://github.com/modelcontextprotocol/inspector", "https://modelc
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Smoke_testing_(software)", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O MCP Inspector, a ferramenta oficial de teste do Model Context Protocol, prova que o servidor fala o protocolo: aperto de mão, lista de ferramentas, chamada e código de saída. Ele não prova que o número devolvido está certo. A documentação do próprio projeto, lida em 03/11/2026, chama o teste de fumaça de "deliberately not a conformance suite" ([modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector/blob/main/docs/cli-smoke-testing.md)). Antes de liberar o dado de produção faltam quatro passos: cópia anonimizada, perguntas de resposta conhecida, checagem de escopo e teto de custo.
 
 > **MCP Inspector**: cliente de teste e depuração de servidores MCP, publicado como o pacote `@modelcontextprotocol/inspector` (versão `2.13.0`, de 28/10/2026, no [npm](https://www.npmjs.com/package/@modelcontextprotocol/inspector)). Tem interface web, linha de comando (`--cli`) e terminal (`--tui`), e conversa com o servidor sem nenhum modelo de linguagem no meio.
@@ -149,4 +150,4 @@ Não ensina a construir um servidor MCP nem compara implementações; o mercado 
 
 ---
 
-Se o seu agente já respondeu um faturamento que ninguém conseguiu reproduzir em SQL, o primeiro passo é montar o gabarito e descobrir em qual das três camadas o número muda. [Veja como a Precisian entrega dado modelado ao agente](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o seu agente já respondeu um faturamento que ninguém conseguiu reproduzir em SQL, o primeiro passo é montar o gabarito e descobrir em qual das três camadas o número muda. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=testar-servidor-mcp-antes-da-producao&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

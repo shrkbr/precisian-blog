@@ -12,8 +12,9 @@ citations: ["https://developers.vtex.com/docs/api-reference/orders-api", "https:
 about: ["https://pt.wikipedia.org/wiki/VTEX", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A API da VTEX devolve pedido pelo OMS por três caminhos, e o número diverge porque cada caminho vê o pedido num momento diferente. O endpoint `List orders` só devolve pedido já indexado, o que "takes approximately four minutes", para em 30 páginas de até 100 pedidos (3.000 por consulta) e, nas palavras da própria VTEX, "should not be used for integrations" ([Orders API, consultada em 03/11/2026](https://developers.vtex.com/docs/api-reference/orders-api#get-/api/oms/pvt/orders)). Para integração, a VTEX indica o Feed ou o Hook.
 
 Tudo o que segue foi lido na especificação de máquina da Orders API, publicada pela VTEX no repositório [`vtex/openapi-schemas`](https://github.com/vtex/openapi-schemas), e nos tutoriais oficiais, em 3 de novembro de 2026. Nomes de endpoint, campo e status estão como a documentação escreve.
@@ -141,4 +142,4 @@ Os servidores MCP oficiais da VTEX, que não leem pedido, estão em [Existe MCP 
 
 ---
 
-Se o faturamento que sai da sua API da VTEX muda conforme o dia da extração, o primeiro passo é separar quanto da diferença vem de data e quanto vem de status. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o faturamento que sai da sua API da VTEX muda conforme o dia da extração, o primeiro passo é separar quanto da diferença vem de data e quanto vem de status. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=api-da-vtex-dados-de-pedido&utm_content=texto), sem compromisso de contrato.

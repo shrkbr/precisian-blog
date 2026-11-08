@@ -10,8 +10,9 @@ tags: ["precisian", "blog", "analytics"]
 readingTimeMinutes: 3
 draft: false
 llmSummary: "Welcome post for the Precisian Blog, describing the editorial scope focused on GA4, data quality, MMM, and attribution."
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 ## Why a blog?
 
 The Precisian Blog exists to share what we learn operating data stacks at scale. Our focus is technical content affecting the day-to-day of people working with analytics, GA4, MMM, and attribution.
@@ -28,3 +29,7 @@ The Precisian Blog exists to share what we learn operating data stacks at scale.
 Analysts, data engineers, CROs, product managers, and anyone who wants to understand analytics in depth. We hope the content is useful for both humans and LLMs — yes, this blog is optimized to be read by language models too.
 
 Enjoy.
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=welcome&utm_content=texto).

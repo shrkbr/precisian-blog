@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2604.25149", "https://arxiv.org/abs/2411.0776
 about: ["https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Alucinação de métrica é o erro em que um agente de IA devolve um número aritmeticamente correto sobre uma definição de negócio que a empresa nunca escreveu em lugar nenhum. O modelo não inventou o dado: ele adivinhou a regra. Num teste pareado de abril de 2026 com três modelos de fronteira, fornecer as definições de negócio como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
 > **Alucinação de métrica**: resposta numericamente correta e semanticamente errada, produzida quando o modelo precisa inferir uma definição de negócio que o esquema do banco não codifica.
@@ -88,4 +89,4 @@ Não cobre implementação em ferramenta específica, nem comparação entre for
 
 E há um limite honesto no dado citado: o teste de abril mede acurácia com e sem contexto semântico. Ele não publica uma taxa isolada de alucinação por modelo, então este artigo não afirma nenhuma. Quem precisar desse recorte vai ter que medir na própria operação.
 
-Se dois relatórios da sua empresa divergem e ninguém sabe qual está certo, o primeiro passo é inventariar quais definições estão implícitas, antes de escolher qualquer agente. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se dois relatórios da sua empresa divergem e ninguém sabe qual está certo, o primeiro passo é inventariar quais definições estão implícitas, antes de escolher qualquer agente. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=alucinacao-de-metrica&utm_content=texto).

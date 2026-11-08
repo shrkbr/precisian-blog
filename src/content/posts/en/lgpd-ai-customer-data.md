@@ -12,8 +12,9 @@ citations: ["https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2
 about: ["https://en.wikipedia.org/wiki/General_Personal_Data_Protection_Law", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 If you send customer data to an LLM hosted outside Brazil, today there are two live legal paths under the LGPD (Brazil's General Data Protection Law), not three. Either the data stays in the European Union, deemed adequate by the ANPD (Brazil's national data protection authority) since January 2026, or the contract incorporates the standard clauses of [Resolution 19/2024](https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024), whose adoption deadline **has already expired**. The third way out that every vendor offers, global corporate rules (the LGPD's counterpart to binding corporate rules), is not available: the ANPD states in writing that it has never approved any.
 
 > **International data transfer**: sending personal data out of the country, allowed by art. 33 of the LGPD only in the cases the law lists, among them a country with an adequate level of protection and a contract with standard clauses approved by the authority.
@@ -80,4 +81,4 @@ It is not a legal opinion, and the decision on legal basis and contract belongs 
 
 Three honest limits on what was cited. I do not reproduce the analytical content of NT 12/2025 beyond its nature and the participation numbers, because the substance of the contributions does not fit in a summary. I do not cite enforcement numbers that circulate in the trade press and do not appear on the official pages I opened. And the reference text of the LGPD here points to the publication by the Chamber of Deputies, not to the Planalto (the presidency's legislation portal), because it was the one that responded during verification.
 
-If you are deciding right now whether you can connect an AI agent to your customer database, the first step is not choosing a vendor: it is knowing in which country the data rests and what the contract says about training. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If you are deciding right now whether you can connect an AI agent to your customer database, the first step is not choosing a vendor: it is knowing in which country the data rests and what the contract says about training. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=lgpd-ai-customer-data&utm_content=texto) over an isolated lake, with no contract commitment.

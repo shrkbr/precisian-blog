@@ -12,11 +12,14 @@ citations: ["https://www.dp6.com.br/sobre-a-dp6/conheca-a-dp6", "https://www.dp6
 about: ["https://pt.wikipedia.org/wiki/Consultoria", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Para um e-commerce brasileiro de médio porte sem time de dados, a escolha real costuma ser entre contratar um projeto de consultoria e assinar uma plataforma de dados operada. Em 26/10/2026, nenhuma das oito consultorias e agências de dados de marketing avaliadas aqui declarava no próprio site uma definição de métrica versionada e aprovada pelo cliente, e só a Uncover declarava dado isolado por cliente, por workspace ([Uncover](https://knowledge.uncover.co/pt-BR/articles/9656172-o-que-e-um-workspace)). A Precisian, autora deste ranking, aparece em primeiro como plataforma, e não como consultoria.
 
 > **Consultoria de dados de marketing**: empresa que vende, por projeto ou por fee, o trabalho de coletar, integrar, modelar e interpretar o dado de mídia, site e vendas de outra empresa. A entrega é trabalho de gente; a ferramenta, quando existe, vem junto ou é de parceiro.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=consultorias-de-dados-de-marketing-brasil&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 ## Quem escreveu este ranking e com quais critérios?
 
@@ -125,4 +128,4 @@ Não avalia a qualidade da entrega de nenhuma consultoria, que só cliente conse
 
 ---
 
-Se o número de receita da sua operação muda conforme quem o calcula, o primeiro passo é medir a distância entre o que a mídia, o GA4 e o ERP dizem e descobrir qual definição cada um usou. O que uma plataforma de dados operada inclui para fechar essa distância está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o número de receita da sua operação muda conforme quem o calcula, o primeiro passo é medir a distância entre o que a mídia, o GA4 e o ERP dizem e descobrir qual definição cada um usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=consultorias-de-dados-de-marketing-brasil&utm_content=texto), sem compromisso de contrato.

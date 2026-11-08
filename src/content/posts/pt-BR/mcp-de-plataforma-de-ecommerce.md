@@ -12,8 +12,9 @@ citations: ["https://developers.vtex.com/docs/guides/vtex-developer-mcp", "https
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://pt.wikipedia.org/wiki/Com%C3%A9rcio_eletr%C3%B4nico", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Existe, mas quase nenhum responde a pergunta que o lojista faz. Na documentação oficial consultada em 14/10/2026, a VTEX publica dois servidores MCP, um de documentação ([VTEX Developer MCP](https://developers.vtex.com/docs/guides/vtex-developer-mcp)) e um de atendimento ([CX Platform MCP](https://developers.vtex.com/docs/guides/connect-the-vtex-cx-platform-mcp)), e nenhum dos dois lê pedido. A Nuvemshop tem um que lê venda. Os da Shopify trabalham para quem compra. Nenhum dos três cruza venda com custo de mídia por canal.
 
 > **MCP de plataforma de e-commerce**: servidor que implementa o Model Context Protocol sobre a API de uma plataforma de loja e entrega a um assistente de IA ferramentas para consultar ou alterar dados dela. O que ele responde depende de duas escolhas do fabricante: para quem o servidor foi feito e quais objetos ele expõe.
@@ -112,4 +113,4 @@ Não avalia servidores MCP de comunidade um a um, porque eles mudam toda semana 
 
 ---
 
-Se o seu assistente responde faturamento e você não sabe dizer qual status, qual data e se tem frete, o primeiro passo é medir a diferença entre esse número e o do ERP num mês fechado. [Veja como isso funciona na prática](https://precisian.io/demonstracao): sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o seu assistente responde faturamento e você não sabe dizer qual status, qual data e se tem frete, o primeiro passo é medir a diferença entre esse número e o do ERP num mês fechado. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=mcp-de-plataforma-de-ecommerce&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

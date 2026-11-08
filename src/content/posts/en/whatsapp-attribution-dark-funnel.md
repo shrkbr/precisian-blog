@@ -12,8 +12,9 @@ citations: ["https://developers.facebook.com/documentation/business-messaging/wh
 about: ["https://en.wikipedia.org/wiki/Conversational_commerce", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 When someone clicks an ad and lands in your WhatsApp conversation, the API hands you the identifier of the **ad**, not the campaign, not the ad set, not a UTM. In Meta's published webhook reference, the `referral` object carries **11 fields**, among them `source_id` and `ctwa_clid`, and appears only "if message via a Click to WhatsApp ad" ([Meta for Developers](https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/text)).
 
 Everything after that is conversation, and conversation has no fields.
@@ -112,3 +113,7 @@ It does not cover messaging platforms other than WhatsApp. The mechanism differs
 It does not describe pricing rates. The billing model is documented; the per-message rates vary by country and category, and quoting one would date this article immediately.
 
 And it makes no claim about the Automatic Events classifier's accuracy in either direction. Meta does not publish it. Treating the absence of a published metric as evidence of poor accuracy would be the same error, in the opposite direction, as treating it as evidence of good accuracy. What is knowable is that you cannot audit it, and that is enough to decide with.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=whatsapp-attribution-dark-funnel&utm_content=texto), with no contract commitment.

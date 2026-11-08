@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/6268637?hl=en", "https
 about: ["https://en.wikipedia.org/wiki/Return_on_investment", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Marketing efficiency ratio (MER) is the total revenue a business booked in a period divided by its total marketing spend in that period. ROAS divides only the revenue an ad platform attributes to itself by the spend on that platform; Google's own target ROAS example is "$5 USD in sales ÷ $1 USD in ad spend x 100% = 500%" ([Google Ads Help](https://support.google.com/google-ads/answer/6268637?hl=en)). In a round-number example, $400,000 booked on $50,000 of total spend is an MER of 8.
 
 > **Marketing efficiency ratio (MER)**: total revenue recorded by the business's system of record for a period, divided by total marketing spend for the same period, with no attribution step. Also called *blended ROAS*.
@@ -119,4 +120,4 @@ What a good MER is for your category. No primary source publishes a benchmark, t
 
 ---
 
-If your platform ROAS looks healthy and your MER is falling, the first step is to write down which revenue and which spend go into each ratio and measure the gap between them. [Book a conversation about your numbers](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), no contract commitment.
+If your platform ROAS looks healthy and your MER is falling, the first step is to write down which revenue and which spend go into each ratio and measure the gap between them. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=mer-vs-roas&utm_content=texto), with no contract commitment.

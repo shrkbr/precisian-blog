@@ -12,8 +12,9 @@ citations: ["https://support.google.com/merchants/answer/6324371", "https://supp
 about: ["https://pt.wikipedia.org/wiki/Google_Shopping", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A regra brasileira de preço é o **inverso** da americana, e cada revisão perdida custa de 3 a 5 dias úteis ([Google](https://support.google.com/merchants/answer/12488713)). A maior parte do material em português sobre o assunto é traduzida de lá. O Google manda informar o preço *"incluindo qualquer imposto sobre valor agregado"* numa lista de países que inclui o Brasil, e manda *"não incluir nenhum imposto"* ao segmentar Estados Unidos ou Canadá ([Google](https://support.google.com/merchants/answer/6324371)). Quem segue o tutorial errado cria uma divergência entre o feed e o próprio checkout, que é exatamente o gatilho da reprovação em bloco.
 
 Antes de mexer em qualquer coisa, descubra em qual dos estados você está. Eles não são o mesmo problema.
@@ -140,4 +141,4 @@ Não afirma que "Pendente" e "Em análise" são o mesmo estado. Os dois termos a
 
 E não traz data de atualização das páginas citadas. Nenhuma delas expõe data visível de publicação. Tudo aqui está datado por **quando eu li**, em setembro de 2026, que é a única afirmação honesta possível sobre a atualidade dessas fontes.
 
-Se o seu feed reprova em bloco sem ninguém ter mexido nele, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o número da plataforma e o do financeiro não batem na sua operação, o primeiro passo é medir a distância entre os dois, mês a mês. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=produto-nao-aparece-google-shopping&utm_content=texto), sem compromisso de contrato.

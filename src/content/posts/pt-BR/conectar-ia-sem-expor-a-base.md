@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 A especificação do Model Context Protocol não obriga ninguém a autenticar. O texto é literal: "Authorization is OPTIONAL for MCP implementations" ([spec MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). Conectar um agente de IA aos dados da empresa com segurança, portanto, não é seguir o protocolo, é acrescentar o que o protocolo deixou de fora.
 
 > **Servidor MCP**: processo que expõe ferramentas e dados a um modelo de linguagem por um protocolo padronizado. O padrão define como a conversa acontece, não quem tem direito de iniciá-la.
@@ -109,4 +110,4 @@ Deixei de fora, de propósito, três coisas que seriam tentadoras. Uma taxonomia
 
 Nenhum dos três entra aqui. A regra é a mesma que torna este texto útil: se não dá para abrir a fonte, não dá para citar.
 
-Se um agente de IA está prestes a ganhar acesso à sua base, o primeiro passo não é escolher o servidor MCP, é conferir com que papel ele vai se conectar. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se um agente de IA está prestes a ganhar acesso à sua base, o primeiro passo não é escolher o servidor MCP, é conferir com que papel ele vai se conectar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=conectar-ia-sem-expor-a-base&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

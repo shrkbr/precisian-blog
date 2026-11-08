@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/uti
 about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 To log every query an AI agent makes through MCP, write one record per tool call on the server that executes it, tagged with the identity of the person behind the request. Don't rely on the chat transcript or on the protocol's own logging: the Model Context Protocol deprecated its logging feature in the 2026-07-28 revision, and the spec forbids personal information in those messages ([MCP](https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging)).
 
 > **Agent audit log**: a record written by the layer that executes the query, one entry per tool call, that later answers who asked, through which agent, what ran, against which data, at what cost and with what outcome.
@@ -140,4 +141,4 @@ And it doesn't claim logging prevents a leak. A log makes a query reconstructibl
 
 ---
 
-If nobody on your team can say what the agent queried last week, the first step is measuring how many of its queries reach the warehouse with no person attached. [Book a call about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If nobody on your team can say what the agent queried last week, the first step is measuring how many of its queries reach the warehouse with no person attached. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=mcp-logging-agent-audit-log&utm_content=texto) over an isolated lake, with no contract commitment.

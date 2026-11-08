@@ -12,8 +12,9 @@ citations: ["https://raw.githubusercontent.com/amzn/selling-partner-api-models/m
 about: ["https://en.wikipedia.org/wiki/Attribution_(marketing)", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 In the `salesAndTraffic` schema dated 24 April 2024, published by Amazon itself, the API returns **28 traffic fields per product and not one origin field**. The official Data Kiosk schema lists sessions, B2B sessions, browser sessions, app sessions, page views and buy box percentage, and contains no referrer, no channel, no campaign, no UTM and no search term ([Amazon's schema on GitHub](https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/schemas/data-kiosk/analytics_salesAndTraffic_2024_04_24.graphql)).
 
 You receive the denominator of the conversion and never the provenance. It is the difference between knowing how many people walked into the store and having no idea which street they came from.
@@ -121,3 +122,7 @@ It gives no figure for what share of e-commerce runs through marketplaces. That 
 It does not evaluate integration platforms. They can move the data; none of them can create an origin field that the source does not emit, and any that implies otherwise is selling a model as a measurement.
 
 And it makes no claim about what marketplaces intend. The schema is a fact. The reasoning behind it is not published, and inferring motive from an absent field would be exactly the kind of confident overreach this article is about.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=marketplace-attribution-blackhole&utm_content=texto), with no contract commitment.

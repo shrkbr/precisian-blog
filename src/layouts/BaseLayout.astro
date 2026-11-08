@@ -50,6 +50,24 @@ const robots = noindex
       } catch (e) {}
     </script>
     <meta charset="UTF-8" />
+    <!-- Google Tag Manager: o mesmo contêiner do site institucional (GTM-5K4XJR2G,
+         GA4 G-X9N0PRFJ39). Sem ele o generate_lead do popup e os cta_view/cta_click
+         do PostCta morriam na dataLayer. A guarda evita carregar duas vezes se a
+         borda (Cloudflare) já injetar o mesmo contêiner. -->
+    <script is:inline>
+      ;(function (w, d, s, l, i) {
+        if (d.querySelector('script[src*="' + i + '"]')) return
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-5K4XJR2G')
+    </script>
+    <!-- End Google Tag Manager -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -97,6 +115,14 @@ const robots = noindex
     <slot name="head" />
   </head>
   <body class="bg-bg-base text-fg font-sans antialiased min-h-screen flex flex-col">
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5K4XJR2G"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+        title="Google Tag Manager"></iframe
+    ></noscript>
     <Header alternateUrl={alternateUrl} />
     <main class="flex-1 w-full">
       <slot />

@@ -12,8 +12,9 @@ citations: ["https://www.twilio.com/en-us/segment", "https://www.twilio.com/en-u
 about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 If you're buying a CDP to activate customers, your shortlist depends on your stack: Hightouch or RudderStack if you already run a warehouse and a data team, Salesforce Data 360 or Adobe Real-Time CDP if you live in either suite, Segment if engineering instruments events. Scored on the seven data criteria below, the order starts with Precisian, RudderStack, Hightouch and Dito, and Precisian is not an activation CDP. As of October 26, 2026, none of the 13 CDPs documented versioned, customer-approved metric definitions on their official pages ([Salesforce](https://developer.salesforce.com/docs/data/semantic-layer/guide/tableau-semantics-concepts.html) comes closest).
 
 > **CDP (customer data platform)**: software that merges data about the same customer from many sources into one persistent profile and hands that profile to other systems, usually email, ads and support tools. How a CDP differs from a data lake, and which one comes first, is covered in [composable CDP vs data lake](https://precisian.io/blog/en/posts/composable-cdp-vs-data-lake/).
@@ -145,4 +146,4 @@ I didn't test any of the 14 in a live account; everything comes from what each v
 
 ---
 
-If your CDP fires on time and nobody can still say how much a campaign sold, the first step is measuring the gap between what the ad platforms report and what your books show. What Precisian includes to close that gap, and how it charges, is on the [pricing page](https://precisian.io/en/pricing), with no contract commitment to look.
+If your CDP fires on time and nobody can still say how much a campaign sold, the first step is measuring the gap between what the ad platforms report and what your books show. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=best-cdp-for-ecommerce&utm_content=texto), with no contract commitment.

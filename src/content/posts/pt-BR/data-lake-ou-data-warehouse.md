@@ -12,8 +12,9 @@ citations: ["https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf", "http
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wiki/Data_warehouse", "https://precisian.io/demonstracao"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Data lake guarda o dado bruto, no formato em que ele chegou, em armazenamento barato. Data warehouse guarda o dado já modelado, pronto para consulta rápida. Lakehouse é a tentativa de fazer as duas coisas sobre os mesmos arquivos abertos, como definiram Armbrust, Ghodsi, Xin e Zaharia no CIDR de janeiro de 2021 ([paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). Para um e-commerce, a ordem é guardar cru primeiro e modelar depois. E nenhum dos três define o que é receita.
 
 > **Data lake**: repositório que recebe o dado como a fonte entrega, sem esquema imposto na escrita; o esquema é aplicado na leitura.
@@ -112,4 +113,4 @@ E a tabela de perguntas reflete o padrão de uso mais comum de cada arquitetura.
 
 ---
 
-Se a receita de setembro tem um número diferente em cada relatório da empresa, a arquitetura não é o primeiro suspeito. O primeiro passo é medir quantas definições de receita existem hoje e em quais sistemas cada uma vive. [Veja como o lake da Precisian organiza isso](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a receita de setembro tem um número diferente em cada relatório da empresa, a arquitetura não é o primeiro suspeito. O primeiro passo é medir quantas definições de receita existem hoje e em quais sistemas cada uma vive. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=data-lake-ou-data-warehouse&utm_content=texto), sem compromisso de contrato.

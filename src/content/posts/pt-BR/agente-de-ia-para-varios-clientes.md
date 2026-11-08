@@ -12,8 +12,9 @@ citations: ["https://openai.com/index/march-20-chatgpt-outage/", "https://develo
 about: ["https://pt.wikipedia.org/wiki/Multilocat%C3%A1rio", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Uma agência que usa o mesmo agente de IA para vários clientes mistura dados por três caminhos operacionais, e nenhum deles exige atacante: o contexto de um cliente que sobra na conversa do outro, um cache que guarda resposta sem o cliente na chave, e uma credencial única que alcança todas as contas. Em março de 2023, um cache compartilhado expôs dados de pagamento de 1,2% dos assinantes do ChatGPT Plus a outros usuários ([OpenAI](https://openai.com/index/march-20-chatgpt-outage/)).
 
 A arquitetura de dados isolada por cliente resolve uma parte, e eu já escrevi sobre ela em [isolar dados por cliente num servidor MCP](https://precisian.io/blog/pt-BR/posts/isolamento-por-cliente-mcp/). Este texto trata do resto: a operação de quem atende dez marcas com um agente só.
@@ -106,4 +107,4 @@ E não substitui o contrato. O que o acordo com cada cliente deve dizer sobre us
 
 ---
 
-Se o seu agente roda com o token da MCC e você não sabe qual cliente ele consultou ontem, o primeiro passo é medir quantas credenciais e quantos projetos ele realmente usa. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o seu agente roda com o token da MCC e você não sabe qual cliente ele consultou ontem, o primeiro passo é medir quantas credenciais e quantos projetos ele realmente usa. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=agente-de-ia-para-varios-clientes&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

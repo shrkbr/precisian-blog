@@ -22,6 +22,9 @@ const posts = defineCollection({
     about: z.array(z.string().url()).optional(),
     citations: z.array(z.string().url()).optional(),
     lastReviewed: z.coerce.date().optional(),
+    // Escada de CTA (src/lib/cta.ts). Sem `cta`, vale o padrão por tag/slug.
+    cta: z.enum(['regua', 'ficha', 'demo', 'newsletter', 'conversa']).optional(),
+    ctaHook: z.string().max(160).optional(),
   }),
 })
 

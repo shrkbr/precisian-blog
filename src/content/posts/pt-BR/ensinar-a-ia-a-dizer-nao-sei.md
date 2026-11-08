@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2403.15879", "https://arxiv.org/abs/2506.0903
 about: ["https://pt.wikipedia.org/wiki/Alucina%C3%A7%C3%A3o_(intelig%C3%AAncia_artificial)", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Num comparativo que pune SQL errado, um sistema que se recusa a responder **todas** as perguntas marca 50%, e os melhores fluxos reais de texto-para-SQL marcam entre **29,8% e 54,5%**, dependendo de quão duramente o erro é cobrado ([TrustSQL](https://arxiv.org/abs/2403.15879)). A recusa universal, que é um sistema completamente inútil, bate a maioria deles.
 
 Ou seja: não responder nada supera a maior parte dos sistemas em produção, assim que a resposta errada passa a custar alguma coisa. O problema inteiro cabe nesse número.
@@ -117,3 +118,7 @@ Não recomenda limiar de confiança. Qualquer número que eu sugerisse seria a c
 Cita os estudos de calibração pelo que eles medem, não como veredito geral. Calibração varia por tarefa e por modelo, e tratar um resultado como propriedade universal seria exatamente o tipo de generalização que este texto critica.
 
 E não resolve o caso em que a resposta certa depende de dado que a empresa não coleta. Abstenção bem feita revela essa lacuna com clareza, o que já é um serviço: transforma "o sistema não respondeu" em "esse dado não existe na empresa", que é uma conversa com dono e prazo. Mas não a preenche, e nenhuma configuração de modelo vai preencher.
+
+---
+
+Se um agente de IA já lê dado de produção na sua empresa, o primeiro passo é saber exatamente o que ele consegue, e não consegue, alcançar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=ensinar-a-ia-a-dizer-nao-sei&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

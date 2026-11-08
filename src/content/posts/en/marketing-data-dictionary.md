@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2604.25149", "https://help.shopify.com/en/man
 about: ["https://en.wikipedia.org/wiki/Data_dictionary", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 A data dictionary is the record that states, for every field and metric in a dataset, its name, what it means, where it comes from, who owns it, how it is calculated and what it leaves out. For AI, it is the floor: in an April 2026 benchmark, a 4 KB definitions file raised the accuracy of three frontier models by 17 to 23 percentage points ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
 > **Data dictionary**: a document, maintained alongside the data, that records each field or metric's canonical name, plain-language definition, source, owner, formula and exclusions, so that any person or system reading the number knows what it contains.
@@ -126,4 +127,4 @@ It does not compare catalog or documentation tools. It does not walk through a f
 
 ---
 
-If your AI answers "revenue" and nobody can say which revenue it used, the first step is to count how many definitions of that number are circulating today. [See how a written definition reaches the AI through a semantic layer](https://precisian.io/en/demo), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your AI answers "revenue" and nobody can say which revenue it used, the first step is to count how many definitions of that number are circulating today. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=marketing-data-dictionary&utm_content=texto).

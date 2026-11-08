@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28", "https:/
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/API", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 MCP (Model Context Protocol) é um protocolo aberto pelo qual um servidor descreve ferramentas para um modelo de IA, e o modelo decide quando usá-las. Ele não substitui a API: quase todo servidor MCP chama uma API por baixo. A diferença está em quem escreve a chamada. Na revisão atual da especificação, a 2026-07-28, as ferramentas são definidas como "controladas pelo modelo" ([MCP, lido em 03/11/2026](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 
 > **MCP (Model Context Protocol)**: especificação aberta, sobre mensagens JSON-RPC 2.0, que padroniza como uma aplicação de IA descobre e chama ferramentas, lê dados e usa modelos de prompt expostos por um servidor. Mantida como "Model Context Protocol a Series of LF Projects, LLC", sob licença Apache 2.0.
@@ -94,4 +95,4 @@ Não compara servidores MCP específicos nem clientes (Claude, ChatGPT, Copilot)
 
 ---
 
-Se o seu time já ligou um assistente de IA ao GA4 ou à mídia e recebeu números que não fecham com o financeiro, o primeiro passo é comparar a definição que a ferramenta aplica com a que a empresa usa. [Veja como a camada semântica chega ao seu MCP na prática](https://precisian.io/demonstracao): sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o seu time já ligou um assistente de IA ao GA4 ou à mídia e recebeu números que não fecham com o financeiro, o primeiro passo é comparar a definição que a ferramenta aplica com a que a empresa usa. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=o-que-e-mcp&utm_content=texto).

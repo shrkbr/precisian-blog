@@ -12,8 +12,9 @@ citations: ["https://help.openai.com/en/articles/8437071-data-analysis-with-chat
 about: ["https://en.wikipedia.org/wiki/Data_analysis", "https://en.wikipedia.org/wiki/Large_language_model", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Usar IA para análise de dados de marketing funciona para explorar e falha para decidir. O ChatGPT lê planilhas de até cerca de 50 MB e escreve e roda Python num notebook Jupyter para fazer as contas ([OpenAI](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt), consultado em 14/10/2026); o Claude faz o mesmo com arquivos de até 30 MB ([Anthropic](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)). A aritmética sai certa. O que não vem junto com o CSV é a definição de receita, de ROAS ou de cliente novo, e sem ela o modelo escolhe uma sozinho.
 
 > **A regra de triagem**: se a resposta depende de uma definição de negócio que não está escrita no arquivo, a IA não vai inventar o número. Vai inventar a definição, e calcular o número certo em cima dela.
@@ -133,4 +134,4 @@ E não trata da questão de privacidade de subir base de cliente num chat de IA,
 
 ---
 
-Se a sua equipe já tomou decisão de verba com um ROAS que saiu de um export do GA4 numa conversa de IA, o primeiro passo é medir quanto a receita daquele export diverge da receita que o financeiro fechou no mesmo período. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua equipe já tomou decisão de verba com um ROAS que saiu de um export do GA4 numa conversa de IA, o primeiro passo é medir quanto a receita daquele export diverge da receita que o financeiro fechou no mesmo período. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=ia-para-analise-de-dados&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

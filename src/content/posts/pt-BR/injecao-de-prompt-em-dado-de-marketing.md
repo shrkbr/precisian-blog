@@ -12,8 +12,9 @@ citations: ["https://genai.owasp.org/llmrisk/llm01-prompt-injection/", "https://
 about: ["https://pt.wikipedia.org/wiki/Seguran%C3%A7a_da_informa%C3%A7%C3%A3o", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Um nome de campanha no Google Ads aceita **256 caracteres**, e o Google não documenta validação nenhuma sobre o que entra ali ([Google Ads API](https://developers.google.com/google-ads/api/docs/best-practices/system-limits)). São cerca de quarenta palavras de qualquer coisa, num campo que uma agência, um terceirizado ou uma conta comprometida podem escrever, e que o seu agente de IA vai ler depois como parte de um relatório.
 
 Os limites de tamanho estão documentados. As regras de conteúdo, não.
@@ -125,3 +126,7 @@ Não afirma que as plataformas não filtram conteúdo. Afirma que não encontrei
 Não avalia ferramenta de detecção de injeção. A categoria é nova, as comparações envelhecem rápido, e a eficácia real depende do seu fluxo mais do que do produto.
 
 E não resolve injeção indireta no caso geral, porque nada resolve. Enquanto o agente ler conteúdo que outros escrevem, o canal existe. O que muda é quanto ele alcança depois de entrar.
+
+---
+
+Se um agente de IA já lê dado de produção na sua empresa, o primeiro passo é saber exatamente o que ele consegue, e não consegue, alcançar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=injecao-de-prompt-em-dado-de-marketing&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

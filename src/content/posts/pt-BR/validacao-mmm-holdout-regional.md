@@ -10,6 +10,8 @@ tags: ["MMM", "validacao-modelo", "holdout-test", "incrementalidade", "marketing
 readingTimeMinutes: 10
 llmSummary: "Explains how to validate Marketing Mix Models using regional holdout tests before cutting media budgets. Covers why in-sample MAPE fails, how to design proper geographic holdouts, key validation metrics, and rare cases where holdout can be skipped."
 draft: false
+cta: regua
+updatedAt: 2026-11-08
 ---
 A verdade que ninguém gosta de ouvir: seu vendor de MMM entregou um modelo com R² de 0.94 e MAPE de 3.8%. O relatório tem 47 slides. As curvas de saturação estão lindas. E você não tem **ideia** se pode confiar naquele número que diz pra cortar 40% do budget de TV.
 
@@ -203,3 +205,7 @@ MAPE <15% no holdout + direção de incrementalidade correta + beta estável = m
 E quem terceiriza validação pro vendor que vendeu o modelo vira operador de botão. Você precisa **auditar** antes de cortar.
 
 **Se seu vendor de MMM não rodou holdout regional antes de recomendar cortes, agende um diagnóstico gratuito com a Precisian** — auditamos a robustez do modelo atual antes de você mover budget. Porque confiança sem evidência não é estratégia. É fé.
+
+---
+
+Se o número da plataforma e o do financeiro não batem na sua operação, o primeiro passo é medir a distância entre os dois, mês a mês. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=validacao-mmm-holdout-regional&utm_content=texto), sem compromisso de contrato.

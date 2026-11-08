@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/9744275", "https://sup
 about: ["https://en.wikipedia.org/wiki/Google_Ads", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 O `gclid` (Google Click Identifier) é o parâmetro que o auto-tagging do Google Ads acrescenta à URL de destino de cada anúncio clicado, no formato `www.exemplo.com/?gclid=123xyz` ([Ajuda do Google Ads](https://support.google.com/google-ads/answer/3095550), consultada em 03/11/2026). A tag do Google o grava num cookie do seu domínio e o usa para ligar a conversão ao clique. Se a venda acontece longe dessa página, alguém precisa guardar o `gclid` com o pedido.
 
 > **gclid** (Google Click Identifier): "um parâmetro de URL passado com os cliques em anúncios", que identifica a campanha e outros atributos do clique, ativado pela configuração de auto-tagging e exigido pelo acompanhamento de conversões de site do Google Ads ([Ajuda do Google Ads](https://support.google.com/google-ads/answer/9744275), consultada em 03/11/2026).
@@ -105,4 +106,4 @@ Não confirma se o Safari remove o `gclid` especificamente. O WebKit descreve a 
 
 Não trata de campanhas de app, que, segundo o Google, "não respeitam" o auto-tagging, nem do `dclid` do Campaign Manager.
 
-Se a sua operação compra Google Ads e vende por Pix, boleto ou WhatsApp, o primeiro passo é verificar se o `gclid` chega até o registro do pedido ou morre no cookie do navegador. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua operação compra Google Ads e vende por Pix, boleto ou WhatsApp, o primeiro passo é verificar se o `gclid` chega até o registro do pedido ou morre no cookie do navegador. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=gclid&utm_content=texto).

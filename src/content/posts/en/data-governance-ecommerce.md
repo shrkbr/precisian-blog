@@ -12,8 +12,9 @@ citations: ["https://cppa.ca.gov/regulations/pdf/cppa_act.pdf", "https://dama.or
 about: ["https://en.wikipedia.org/wiki/Data_governance", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Data governance is the set of recorded decisions about who owns each dataset, how each metric is defined, who can access it, how long it is kept and who approves a change. For US ecommerce, one of those decisions is already a legal duty: under the California Consumer Privacy Act, a covered business must disclose "the length of time the business intends to retain each category of personal information" ([Cal. Civ. Code §1798.100(a)(3), CPPA text effective July 15, 2024](https://cppa.ca.gov/regulations/pdf/cppa_act.pdf)).
 
 > **Data governance**: the decisions about a company's data (owner, definition, access, retention and change), written down in one place that every person and system checks before using the data, instead of living in the memory of whoever was in the meeting.
@@ -95,4 +96,4 @@ It is not legal advice. Whether CCPA or another state privacy law applies to you
 
 It does not compare catalog or data quality tools, and it does not summarize the DMBOK. The scope is the minimum for a mid-sized ecommerce operation. A regulated business, such as a bank or a healthcare company, needs more than this.
 
-If marketing and finance bring different numbers to the same meeting, the first step is to pick the most contested metric and write its five records. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment attached.
+If marketing and finance bring different numbers to the same meeting, the first step is to pick the most contested metric and write its five records. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=data-governance-ecommerce&utm_content=texto) over an isolated lake, with no contract commitment.

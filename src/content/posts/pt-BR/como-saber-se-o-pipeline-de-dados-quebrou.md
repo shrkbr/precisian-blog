@@ -12,8 +12,9 @@ citations: ["https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-
 about: ["https://pt.wikipedia.org/wiki/Pipeline_de_dados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A documentação do Airflow descreve o modo de falha em uma frase: *"se o Dag run nunca termina, o SLA nunca é verificado"*. Foi um dos motivos para o recurso ser **removido na versão 3.0** e substituído por alertas de prazo na 3.1, que passam a ser calculados quando a execução **começa** e conferidos a cada 5 segundos ([Airflow](https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-deadlines.html)).
 
 Um monitor que só dispara no fim não enxerga o processo que não terminou. E essa é a versão fácil. Num estudo do CHI 2021 com 53 profissionais entrevistados, problemas de dado em cascata apareceram com 92% de prevalência, caracterizados como *"invisíveis, atrasados, mas frequentemente evitáveis"* ([CHI 2021](https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/)).
@@ -106,4 +107,4 @@ Não afirma que a coluna de última alteração do Snowflake mente por causa de 
 
 E um registro de método, porque é o segundo desta série: ao levantar o artigo do CHI, um extrator automático devolveu uma **lista de autores inteiramente errada**, de outro trabalho da mesma pesquisadora. A lista acima veio das páginas de anais. Número com citação colada não é número conferido, e nome com citação colada também não.
 
-Se o seu relatório de ontem estava verde e o número de hoje não fecha, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o número da plataforma e o do financeiro não batem na sua operação, o primeiro passo é medir a distância entre os dois, mês a mês. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=como-saber-se-o-pipeline-de-dados-quebrou&utm_content=texto), sem compromisso de contrato.

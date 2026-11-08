@@ -12,11 +12,14 @@ citations: ["https://www.triplewhale.com/pricing", "https://apps.shopify.com/tri
 about: ["https://www.triplewhale.com", "https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Para uma marca que vende em Shopify, opera em inglês e quer painel pronto com atribuição por pixel, a Triple Whale é a escolha natural. Para um e-commerce brasileiro em VTEX ou Magento, com marketplace e ERP no meio, a conta muda. Em 27/10/2026, a Shopify App Store lista o plano Foundation da Triple Whale a US$ 219 por mês, cobrado em dólar, e o app só em inglês ([Shopify App Store](https://apps.shopify.com/triplewhale-1)). A VTEX não aparece entre as integrações nativas ([Triple Whale](https://www.triplewhale.com/our-integrations)).
 
 > **Triple Whale**: plataforma americana de analytics e atribuição para e-commerce, fundada em 2021, que se descreve como "the AI operating system for ecommerce" ([pricing](https://www.triplewhale.com/pricing); [about](https://www.triplewhale.com/about)). Junta pixel próprio, atribuição multi-touch, warehouse gerenciado, painéis, um agente de IA que age nas contas de anúncio (Moby) e um servidor MCP.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-triple-whale&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Triple Whale, e não a Precisian?", abaixo.
 
 ## Quais critérios usei para comparar?
 
@@ -106,4 +109,4 @@ Não testei a Triple Whale numa conta real nem medi a precisão do pixel dela. N
 
 ---
 
-Se o número que a sua IA devolve sobre receita não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada fonte usou. O que a Precisian inclui para fechar essa distância, e como ela cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o número que a sua IA devolve sobre receita não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada fonte usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-triple-whale&utm_content=texto), sem compromisso de contrato.

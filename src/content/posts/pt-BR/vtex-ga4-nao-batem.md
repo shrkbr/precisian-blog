@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/12924131", "https://hel
 about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A receita do GA4 não bate com a da sua plataforma de e-commerce porque as duas medem coisas diferentes, de propósito, e nenhuma das duas está errada. A Adobe responde à pergunta de forma direta na própria documentação: se os dois números deveriam ser iguais, "a resposta é 'não' em quase todos os casos" ([Adobe Commerce, atualizado em 28/08/2026](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)).
 
 > **Divergência de receita**: diferença entre o valor reportado pelo analytics e o reportado pelo sistema de origem, produzida por definições distintas de receita, momentos distintos de reconhecimento e perdas distintas de coleta.
@@ -114,4 +115,4 @@ Não dá uma magnitude típica de divergência, e isso é deliberado. Procurei e
 
 Também não cobre implementação de server-side, nem o caso específico de marketplace, que tem uma causa própria: a plataforma do marketplace não devolve origem de venda em nenhum campo de API.
 
-Se seus dois painéis divergem e ninguém sabe qual está certo, comece escrevendo as três definições de receita antes de abrir qualquer ferramenta. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se seus dois painéis divergem e ninguém sabe qual está certo, comece escrevendo as três definições de receita antes de abrir qualquer ferramenta. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=vtex-ga4-nao-batem&utm_content=texto), sem compromisso de contrato.

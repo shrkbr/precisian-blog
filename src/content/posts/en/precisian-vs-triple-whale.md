@@ -12,8 +12,9 @@ citations: ["https://www.triplewhale.com/pricing", "https://apps.shopify.com/tri
 about: ["https://www.triplewhale.com", "https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 If you run a Shopify brand selling in the US, Triple Whale is probably the right tool, and Precisian is not a real alternative: Precisian serves e-commerce operating in Brazil. As of October 27, 2026, Triple Whale's Foundation plan lists at $219 a month on the [Shopify App Store](https://apps.shopify.com/triplewhale-1), with native Shopify, WooCommerce and BigCommerce integrations ([Triple Whale](https://www.triplewhale.com/our-integrations)). Precisian becomes the alternative when part of your business runs in Brazil, on VTEX or Magento.
 
 > **Triple Whale**: a US e-commerce analytics and attribution platform, founded in 2021, that calls itself "the AI operating system for ecommerce" ([pricing](https://www.triplewhale.com/pricing); [about](https://www.triplewhale.com/about)). It combines its own pixel, multi-touch attribution, a managed data warehouse, dashboards, an AI agent that acts on ad accounts (Moby) and an MCP server.
@@ -112,4 +113,4 @@ I didn't test Triple Whale on a live account or measure its pixel accuracy. I do
 
 ---
 
-If you run a store in Brazil and your AI's revenue number doesn't match your books, the first step is measuring the gap and finding out which definition each source used. What Precisian includes to close that gap, and how it charges, is on [Precisian's pricing page](https://precisian.io/en/pricing), with no contract commitment to look.
+If you run a store in Brazil and your AI's revenue number doesn't match your books, the first step is measuring the gap and finding out which definition each source used. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=precisian-vs-triple-whale&utm_content=texto), with no contract commitment.

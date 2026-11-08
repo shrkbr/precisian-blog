@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/9823238", "https://supp
 about: ["https://pt.wikipedia.org/wiki/Black_Friday", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 O limite que mais estraga Black Friday não derruba nada: o export do GA4 para o BigQuery tem teto de **1 milhão de eventos por dia** em propriedade padrão e, se você estourar de forma consistente, a documentação do Google diz que "o export diário será pausado e os dias anteriores não serão reprocessados" ([Google](https://support.google.com/analytics/answer/9823238)). O site fica de pé, o relatório abre, e o dado do dia mais importante do ano simplesmente não existe depois.
 
 > **Falha silenciosa**: limite cujo estouro não gera erro visível para quem opera, produzindo ausência de dado em vez de alerta.
@@ -109,4 +110,4 @@ Não cobre infraestrutura de site, que é outra disciplina, e não cobre estrat�
 
 Deixei de fora um limite muito citado de linhas em explorações do GA4, porque não o encontrei em documentação do Google — apenas em material secundário. Deixei de fora o conteúdo da cartilha de Black Friday da VTEX, que fica atrás de login e não pude verificar. E deixei de fora limites de outras APIs da VTEX além do Catalog, porque só esse tem número publicado, e extrapolar de um endpoint para os outros seria invenção.
 
-Se a sua operação triplica em novembro, a verificação de maior retorno é comparar o volume diário de eventos com o teto do export. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se a sua operação triplica em novembro, a verificação de maior retorno é comparar o volume diário de eventos com o teto do export. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=black-friday-o-que-quebra-no-dado&utm_content=texto), sem compromisso de contrato.

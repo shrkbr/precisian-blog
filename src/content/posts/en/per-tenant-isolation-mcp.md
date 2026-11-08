@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Multitenancy", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Giving an agency, a client, or a partner access to your data through an AI agent is a tenancy problem before it is an AI problem. The Model Context Protocol has one normative sentence about it, and it rules out the pattern most implementations reach for first: "MCP servers MUST NOT use sessions for authentication" ([MCP spec, 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
 > **Per-tenant isolation**: a design where each consumer of a shared service can only reach its own data, enforced by the system rather than by the correctness of the caller's request.
@@ -118,4 +119,4 @@ It does not compare MCP server implementations, and it does not cover the networ
 
 It also does not quantify how many production deployments get this wrong. The two measurements cited here are preprints with published samples, and I label them as such; the percentages that circulate from security vendors without a sample size or method are not included, because a round number without a denominator is not evidence.
 
-If you are about to give an agency access to your data through an agent, the first question is not which server to run. It is which role the connection uses. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If you are about to give an agency access to your data through an agent, the first question is not which server to run. It is which role the connection uses. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=per-tenant-isolation-mcp&utm_content=texto) over an isolated lake, with no contract commitment.

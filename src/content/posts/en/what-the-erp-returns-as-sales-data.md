@@ -12,8 +12,9 @@ citations: ["https://api-docs.erp.olist.com/api-reference/pedidos/obter-pedido",
 about: ["https://pt.wikipedia.org/wiki/Nota_fiscal_eletr%C3%B4nica", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 ERPs do not agree even on the most basic question, and 2 of the 3 I tried to read answer "who bought" in incompatible ways. The Omie order returns the customer only as `codigo_cliente`, an internal integer, **with neither CPF nor CNPJ** (the Brazilian tax IDs for individuals and companies) ([Omie](https://app.omie.com.br/api/v1/produtos/pedido/)). The Olist order returns `cpfCnpj`, but marked as nullable in the specification itself ([Olist](https://api-docs.erp.olist.com/api-reference/pedidos/obter-pedido)). Whoever builds the integration assuming that "the ERP returns the customer's tax ID" finds out the difference in production.
 
 Verified on September 23, 2026, reading the machine specification and not the documentation page, for a reason that becomes clear below.
@@ -118,4 +119,4 @@ Omie's design deserves some praise: the listing accepts `filtrar_apenas_alteraca
 
 And a note on method that recurs in this series: on the first pass, an automatic extractor returned the field name `cnpjPagamento`. The raw specification says `cnpjPagamentoInstituicao`. The same extractor presented `origemPedido` with no description, which invited reading it as the sales channel. Both would have become wrong claims with the appearance of precision. That is why everything here was read in the machine specification, not on a documentation page.
 
-If your ERP integration was built by matching field names, [it is worth a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=what-the-erp-returns-as-sales-data&utm_content=texto), with no contract commitment.

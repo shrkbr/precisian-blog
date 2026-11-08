@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/3123169", "https://sup
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Attribution_(marketing)", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Connecting the Google Ads, Meta and GA4 MCP servers to one Claude gives the agent three attribution rules that overlap. Google Ads counts a purchase up to 30 days after a click by default ([Google Ads](https://support.google.com/google-ads/answer/3123169)). Meta's default counts it up to 7 days after a click or 1 day after a view ([Meta](https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights)). The same order fits inside both, and the agent adds them up.
 
 Every one of those servers is faithful to its own platform, which is precisely why the total runs past your actual revenue. Nothing is broken. What's missing is the one place where your company wrote down what counts as revenue from paid media.
@@ -129,4 +130,4 @@ And it doesn't tell you how large the overlap is in your business. The figures i
 
 ---
 
-If your agent, with Google Ads, Meta and GA4 connected, says paid media drove nearly everything the store sold, the first step is to run one closed week against your order system and measure the overlap. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your agent, with Google Ads, Meta and GA4 connected, says paid media drove nearly everything the store sold, the first step is to run one closed week against your order system and measure the overlap. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=three-mcps-three-revenues&utm_content=texto) over an isolated lake, with no contract commitment.

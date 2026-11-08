@@ -12,8 +12,9 @@ citations: ["https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp", "htt
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/BigQuery", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O MCP do BigQuery deixa um agente de IA listar datasets, ler o esquema das tabelas e rodar SQL no seu projeto, mas não sabe o que cada coluna significa para o negócio. O servidor remoto do Google, em `https://bigquery.googleapis.com/mcp`, expõe nove ferramentas, corta a consulta em três minutos e devolve no máximo 3.000 linhas ([Google Cloud](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp), página atualizada em 29/10/2026). O esquema de entrada da ferramenta de SQL não aceita teto de bytes por consulta, e a definição de "receita" continua sendo escrita pelo agente, a cada pergunta.
 
 > **MCP do BigQuery**: servidor que implementa o Model Context Protocol sobre a API do BigQuery e entrega a um modelo de linguagem ferramentas para descobrir metadados e executar GoogleSQL num projeto do Google Cloud, com a permissão de IAM da identidade que o agente usa.
@@ -153,4 +154,4 @@ Não é tutorial de instalação: a configuração de cada cliente está na [doc
 
 ---
 
-Se o agente ligado ao BigQuery responde "faturamento de ontem" e o número muda na quarta, o primeiro passo é comparar a soma do export do GA4 com o pedido faturado no ERP, dia a dia, com cancelamento e marketplace na conta. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o agente ligado ao BigQuery responde "faturamento de ontem" e o número muda na quarta, o primeiro passo é comparar a soma do export do GA4 com o pedido faturado no ERP, dia a dia, com cancelamento e marketplace na conta. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=mcp-do-bigquery&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

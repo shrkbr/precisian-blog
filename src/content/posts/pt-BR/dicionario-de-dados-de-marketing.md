@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2604.25149", "https://developers.google.com/a
 about: ["https://en.wikipedia.org/wiki/Data_dictionary", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Dicionário de dados é o registro que diz, para cada campo e cada métrica de uma base, o nome, o que significa, de onde vem, quem responde por ele, como se calcula e o que fica de fora. Para a IA, ele é o mínimo: num teste de abril de 2026, um documento de definições de 4 KB elevou a acurácia de três modelos em 17 a 23 pontos percentuais ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
 > **Dicionário de dados**: documento, mantido junto com a base, que registra para cada campo ou métrica o nome canônico, a definição em linguagem de negócio, a fonte, o dono, a fórmula e as exclusões, de modo que qualquer pessoa ou sistema que leia o número saiba o que ele contém.
@@ -124,4 +125,4 @@ Não compara ferramentas de catálogo nem de documentação. Não mostra a imple
 
 ---
 
-Se a IA da sua empresa responde "receita" e ninguém sabe dizer qual das receitas ela usou, o primeiro passo é medir quantas definições do mesmo número circulam hoje. [Veja na prática como a definição chega à IA pela camada semântica](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a IA da sua empresa responde "receita" e ninguém sabe dizer qual das receitas ela usou, o primeiro passo é medir quantas definições do mesmo número circulam hoje. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=dicionario-de-dados-de-marketing&utm_content=texto).

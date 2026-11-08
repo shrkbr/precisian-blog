@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/API_management", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Um gateway MCP é um proxy que fica entre os agentes de IA e os servidores MCP da empresa e concentra num ponto só a autenticação, o registro das chamadas e o limite de uso. A especificação do MCP, na revisão 2026-07-28, determina que um servidor *"MUST NOT accept or transit any other tokens"* ([MCP, Autorização](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization), lida em 03/11/2026): o gateway tem que guardar credencial própria para cada servidor de trás. O que ele não resolve é a definição da métrica.
 
 > **Gateway MCP:** ponto único de entrada que recebe as chamadas de ferramenta dos clientes MCP, valida quem está chamando, aplica política (escopo, limite, filtro de ferramenta), injeta a credencial do servidor de destino e registra a chamada. Ele governa o acesso. Não governa o significado do que volta.
@@ -105,4 +106,4 @@ Não ranqueia gateways nem compara preço: o mercado muda rápido demais para um
 
 ---
 
-Se o agente da sua operação responde "receita" com um número diferente do financeiro, o primeiro passo é medir quantas definições de receita estão expostas hoje às ferramentas dele. [Veja como a camada semântica funciona na prática](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o agente da sua operação responde "receita" com um número diferente do financeiro, o primeiro passo é medir quantas definições de receita estão expostas hoje às ferramentas dele. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=gateway-mcp&utm_content=texto).

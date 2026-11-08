@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/too
 about: ["https://pt.wikipedia.org/wiki/Com%C3%A9rcio_eletr%C3%B4nico", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 A especificação define a ferramenta como **controlada pelo modelo**: *"o modelo de linguagem pode descobrir e invocar ferramentas automaticamente com base no entendimento contextual e nos prompts do usuário"* ([spec MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)). Isso muda a pergunta de projeto. O que você expõe não é uma conveniência: **é a fronteira de segurança**, porque quem escolhe o que chamar não é você.
 
 A resposta curta para o que alimentar, então, é: perguntas, não tabelas.
@@ -112,4 +113,4 @@ Não descreve estado de sessão do protocolo, porque ele não existe: a própria
 
 E não trata da camada jurídica de dado pessoal, que incide sobre tudo isso e merece o próprio texto.
 
-Se o seu plano é conectar um agente ao banco e ver no que dá, [vale uma conversa antes](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se um agente de IA já lê dado de produção na sua empresa, o primeiro passo é saber exatamente o que ele consegue, e não consegue, alcançar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=o-que-alimentar-um-mcp-server-ecommerce&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

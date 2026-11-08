@@ -12,8 +12,9 @@ citations: ["https://openlineage.io/docs/", "https://openlineage.io/docs/spec/ob
 about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Data lineage is the record of the path a number took: which source tables it came from, which transformations it passed through, and which rule produced it. The open [OpenLineage](https://openlineage.io/docs/) specification, a graduated LF AI & Data Foundation project at version 1.54.0 in October 2026, models that path with three entities: dataset, job and run. For a marketing metric, lineage is what answers "which orders is this ROAS built on?"
 
 > **Data lineage**: a machine-maintained map of the dependencies between sources, transformations and outputs, which lets you start from a published number and work back to the rows and rules that produced it.
@@ -105,4 +106,4 @@ It doesn't compare lineage tools or catalogs. It doesn't walk through implementi
 
 And the ROAS example here is synthetic. The four values show the mechanism; they don't estimate the gap at any real business.
 
-If the ROAS in your report doesn't match what finance sees and nobody can say at which stage the two split, the first step is to trace one number back to its source orders, filter by filter. [See how that works in practice](https://precisian.io/en/demo): no contract commitment, but no promise of an answer in 30 minutes either.
+If the ROAS in your report doesn't match what finance sees and nobody can say at which stage the two split, the first step is to trace one number back to its source orders, filter by filter. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=data-lineage-marketing-metrics&utm_content=texto).

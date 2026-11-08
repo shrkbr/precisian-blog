@@ -12,8 +12,9 @@ citations: ["https://developers.google.com/tag-platform/tag-manager/server-side/
 about: ["https://en.wikipedia.org/wiki/Google_Tag_Manager", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Two vendor documents describe the same setup and reach opposite conclusions. Google's domain table says pointing a **subdomain** at your tagging server grants "full access to security and durability benefits" ([Google](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain)). WebKit says a first-party subresource resolving through a CNAME that differs from the first-party domain gets its HTTP-response cookies "capped to 7 days" ([WebKit](https://webkit.org/tracking-prevention/)).
 
 Both statements are current. Only one of them appears in the sales deck.
@@ -126,3 +127,7 @@ It gives no data-recovery percentage. The figures in circulation range from roug
 It quotes no statute text. Legal citation requires the statute open in front of you, not recalled from memory.
 
 And it does not claim Google's endpoint trips WebKit's cloaking detector. It claims the published definition describes the architecture, and that Google does not address it. The distance between those two sentences is the distance between an article that holds up and one that ages badly.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=server-side-tagging-worth-it&utm_content=texto), with no contract commitment.

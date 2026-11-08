@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Trilha de auditoria de resposta é o registro que permite reconstruir, depois, qual definição e quais dados produziram um número que um agente de IA entregou. Não é o log da conversa nem o histórico do chat: é a ligação entre a resposta e a origem dela. A especificação do Model Context Protocol recomenda que clientes registrem o uso de ferramentas "for audit purposes" ([MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 
 > **Trilha de auditoria de resposta**: conjunto de registros que permite responder, sobre uma resposta já entregue, quem perguntou, qual definição foi aplicada, quais dados foram lidos e quando.
@@ -96,4 +97,4 @@ Também não trata de auditoria de modelo, que é outra disciplina: aqui a pergu
 
 Um limite honesto: a lista de riscos de MCP citada está em versão beta e pode mudar, e a especificação do protocolo recomenda o registro sem prescrever formato. Não existe, hoje, padrão consolidado de trilha de auditoria para resposta de agente. O que existe é a obrigação legal e a mecânica; o formato ainda é escolha de cada casa.
 
-Se um agente responde perguntas sobre dado de cliente na sua empresa, a pergunta para hoje é se dá para reconstruir uma resposta de ontem. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se um agente responde perguntas sobre dado de cliente na sua empresa, a pergunta para hoje é se dá para reconstruir uma resposta de ontem. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=trilha-de-auditoria-de-resposta-de-ia&utm_content=texto).

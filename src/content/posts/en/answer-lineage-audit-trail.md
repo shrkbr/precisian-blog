@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Answer lineage is the record that lets you reconstruct, afterwards, which definition and which data produced a number an AI agent delivered. It is not the conversation log and not the chat history: it is the link between an answer and its origin. The Model Context Protocol recommends that clients log tool usage "for audit purposes" ([MCP, revision 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)), which is a recommendation rather than a requirement, and almost nobody implements it.
 
 > **Answer lineage**: the set of records that can answer, about an answer already given, who asked, which definition was applied, which data was read, and when.
@@ -103,3 +104,7 @@ It gives no incident statistic for agent deployments. What exists measures confi
 It does not address regulatory retention requirements, which vary by jurisdiction and by data category, and which your counsel answers from the instrument rather than from an article.
 
 And it does not claim lineage prevents anything. It makes an answer reconstructible after the fact. Preventing the wrong answer is [a different guarantee](https://precisian.io/blog/en/posts/trusted-data-layer-for-ai-agents/), and confusing the two produces a system that can explain its failures beautifully.
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=answer-lineage-audit-trail&utm_content=texto).

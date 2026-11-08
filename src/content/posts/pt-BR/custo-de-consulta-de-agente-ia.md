@@ -12,8 +12,9 @@ citations: ["https://docs.cloud.google.com/bigquery/docs/best-practices-costs", 
 about: ["https://pt.wikipedia.org/wiki/Data_warehouse", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O Databricks entrega `STATEMENT_TIMEOUT` com padrão de sistema de **172.800 segundos**, ou seja, dois dias ([Databricks](https://docs.databricks.com/aws/en/sql/language-manual/parameters/statement_timeout)). Esse padrão foi escrito para gente, que percebe. Um agente de IA consultando o mesmo warehouse não percebe nada: ele produz SQL válido, envia, lê o resultado e envia o próximo.
 
 E a proteção que a maior parte dos times acredita ter não protege. Em tabela não agrupada, o `LIMIT` não reduz nada do que você paga.
@@ -129,3 +130,7 @@ Não converte a multiplicação de tokens em conta de warehouse. São medidores 
 Não compara preço entre fornecedores. Tabela de preço de nuvem muda e comparação envelhece; o que não envelhece é a diferença entre ter e não ter teto antes da execução.
 
 E cita o estudo de custo como preprint, porque é. Está aqui pelo desenho e pelos números declarados, não pela autoridade de um periódico que ele ainda não atravessou.
+
+---
+
+Se um agente de IA já lê dado de produção na sua empresa, o primeiro passo é saber exatamente o que ele consegue, e não consegue, alcançar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=custo-de-consulta-de-agente-ia&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

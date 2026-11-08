@@ -12,8 +12,9 @@ citations: ["https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709
 about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Governança de dados é o conjunto de decisões registradas sobre quem é dono de cada dado, como ele é definido, quem pode acessá-lo, por quanto tempo é guardado e quem aprova uma mudança. A LGPD não obriga um programa formal: o art. 50 diz que o controlador "poderá" implementá-lo, adaptado "à estrutura, à escala e ao volume de suas operações". Mas o art. 52 lista "a adoção de política de boas práticas e governança" entre os critérios para dosar a sanção, cuja multa simples chega a 2% do faturamento no Brasil, limitada a R$ 50 milhões por infração ([Lei 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm)).
 
 > **Governança de dados**: as decisões sobre o dado de uma empresa (dono, definição, acesso, retenção e mudança), registradas num lugar que qualquer pessoa ou sistema consulta antes de usar o dado, e não na memória de quem estava na reunião.
@@ -96,4 +97,4 @@ Não é parecer jurídico. Base legal, relatório de impacto e contrato com forn
 
 Não compara ferramentas de catálogo nem de qualidade de dado, e não resume o DMBOK. O recorte é o mínimo para uma operação de e-commerce de porte médio. Uma empresa regulada, como um banco ou uma operadora de saúde, precisa de mais do que isto.
 
-Se marketing e financeiro levam números diferentes para a mesma reunião, o primeiro passo é escolher a métrica mais disputada e escrever os cinco registros dela. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato.
+Se marketing e financeiro levam números diferentes para a mesma reunião, o primeiro passo é escolher a métrica mais disputada e escrever os cinco registros dela. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=governanca-de-dados-ecommerce&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

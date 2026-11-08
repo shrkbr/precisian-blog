@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/7667196", "https://www2
 about: ["https://pt.wikipedia.org/wiki/Reten%C3%A7%C3%A3o_de_dados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 A pergunta chega como política de governança e a resposta já está tomada por você. No GA4 padrão, dado de usuário e de evento pode ser retido por **2 ou 14 meses**, e só isso: as opções de 26, 38 e 50 meses são exclusivas do Analytics 360 ([Google](https://support.google.com/analytics/answer/7667196)). Passado o prazo, *"o dado é excluído automaticamente em base mensal"*.
 
 São 2 ou 14 meses no plano padrão contra até 50 meses no Analytics 360, ou seja, a janela do plano pago é mais de três vezes maior que a do gratuito. O que torna isso perigoso, porém, não é o prazo em si. É o fato de o relatório continuar parecendo normal depois que o dado embaixo dele evaporou, sem erro, sem aviso e sem nenhuma marca visível de que a série ficou mais curta do que o eixo sugere.
@@ -126,4 +127,4 @@ Não dá prazo legal. A LGPD fixa princípio, não número de meses, e quem tran
 
 E não cita o texto de outros artigos da lei além dos citados. Só entra aqui o que li na fonte, aberta na frente.
 
-Se a sua série histórica é mais curta do que você imagina, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=quanto-tempo-guardar-dado-de-marketing&utm_content=texto).

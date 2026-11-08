@@ -12,8 +12,9 @@ citations: ["https://developers.facebook.com/documentation/business-messaging/wh
 about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 O `ctwa_clid` é o identificador do clique num anúncio Click to WhatsApp. A Meta o entrega dentro do objeto `referral` do webhook de mensagens da WhatsApp Business Platform, campo que entrou na Cloud API em 27 de setembro de 2023 ([changelog da Meta](https://developers.facebook.com/docs/whatsapp/business-platform/changelog)). A empresa precisa guardá-lo junto com a conversa e devolvê-lo pela Conversions API quando a venda acontece. Se ninguém o grava, a venda chega ao financeiro sem origem.
 
 > **ctwa_clid** (Click-to-WhatsApp Click ID): identificador pessoal, único por clique, que a Meta expõe à empresa quando a conversa começa num anúncio que leva ao WhatsApp, e que deve voltar para a Meta na chamada da Conversions API ([Meta for Developers](https://developers.facebook.com/docs/marketing-api/conversions-api/business-messaging), consultada em 23/10/2026).
@@ -132,4 +133,4 @@ Não trata de Messenger nem de Instagram Direct, que usam outros identificadores
 
 Não descreve o que acontece para quem atende só pelo aplicativo WhatsApp Business no celular. A documentação que li trata do webhook da plataforma.
 
-Se a sua operação vende pelo WhatsApp e não consegue dizer qual anúncio gerou cada pedido, o primeiro passo é verificar onde o `ctwa_clid` está sendo gravado e se ele chega ao registro da venda. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua operação vende pelo WhatsApp e não consegue dizer qual anúncio gerou cada pedido, o primeiro passo é verificar onde o `ctwa_clid` está sendo gravado e se ele chega ao registro da venda. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=ctwa-clid&utm_content=texto).

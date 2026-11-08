@@ -12,11 +12,14 @@ citations: ["https://windsor.ai/", "https://windsor.ai/pricing/", "https://winds
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Semantic_layer", "https://windsor.ai/", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha o Windsor.ai se quem lê o número é uma pessoa que conhece as plataformas e quer o relatório de mídia no Looker Studio, na planilha ou no Claude pagando pouco. Escolha a Precisian se você é um e-commerce médio sem time de dados e precisa que a IA responda a receita com a definição do seu financeiro. Em 03/11/2026, o Windsor.ai cobra a partir de US$ 19 por mês no plano anual, com todos os conectores e o Windsor MCP em todos os planos ([Windsor.ai, preços](https://windsor.ai/pricing/)).
 
 > **Windsor.ai**: conector de dados de marketing da Windsor Group AG, empresa suíça, que puxa dados de mais de 350 plataformas e os entrega em ferramenta de BI, planilha, data warehouse e assistente de IA via MCP. O dado processado fica no Windsor só como cache; o histórico permanente mora no destino que o cliente escolher ([Windsor.ai](https://windsor.ai/); [segurança](https://windsor.ai/security/)).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-windsor-ai&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher o Windsor.ai e não a Precisian?", abaixo.
 
 Quem escreveu este texto fui eu, da Precisian, então os critérios estão declarados abaixo para você poder discordar deles. Se a sua dúvida ainda é de categoria, se basta um conector ou se você precisa de uma plataforma de dados, ela está respondida em [Supermetrics, Windsor.ai ou plataforma de dados](https://precisian.io/blog/pt-BR/posts/supermetrics-windsor-ou-plataforma-de-dados/). Aqui a comparação é um a um.
 
@@ -106,4 +109,4 @@ Não testei o Windsor.ai em uso; tudo o que está aqui sobre ele vem do site, da
 
 ---
 
-Se o Claude ligado ao seu conector já devolve uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui para fechar essa distância, e como ela cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o Claude ligado ao seu conector já devolve uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-windsor-ai&utm_content=texto), sem compromisso de contrato.

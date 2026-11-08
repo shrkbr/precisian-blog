@@ -12,12 +12,15 @@ citations: ["https://www.cdpinstitute.org/learning-center/what-is-a-cdp/", "http
 about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io/precos"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 CDP (customer data platform) é, pela definição de 2026 do CDP Institute, "software que cria e mantém um registro unificado e persistente do cliente, acessível a outros sistemas" (tradução livre, como as demais citações deste texto; [CDP Institute](https://www.cdpinstitute.org/learning-center/what-is-a-cdp/), consultado em 14/10/2026). Data lake guarda o dado bruto de todas as fontes para análise. CDP serve para **ativar** o cliente; data lake serve para **entender** a operação.
 
 > **CDP (customer data platform)**: software que junta os dados de um mesmo cliente vindos de várias fontes num perfil único e persistente, e entrega esse perfil a outros sistemas, normalmente ferramentas de e-mail, mídia e atendimento.
 > **Data lake**: repositório que recebe o dado como a fonte entrega, de todas as fontes, sem esquema imposto na escrita, para análise posterior.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=cdp-ou-data-lake&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 O CDP Institute lista o que um produto precisa fazer para merecer o nome: ingerir dado de qualquer fonte, capturar o detalhe completo, construir perfis unificados e persistentes e disponibilizar esse dado a qualquer outro sistema ([CDP Institute](https://www.cdpinstitute.org/learning-center/what-is-a-cdp/)). O sujeito de tudo isso é o **cliente**. O sujeito de um data lake é a **operação**: pedido, gasto de mídia, devolução, frete, estoque. Essa diferença decide a compra.
 
@@ -106,4 +109,4 @@ Não traz preço de CDP empacotado nem composable: nem a [Twilio](https://www.tw
 
 ---
 
-Se a pergunta na sua operação é "quanto essa campanha vendeu de verdade", e não "para quem eu mando a próxima mensagem", o primeiro passo é medir a distância entre o que as plataformas declaram e o que o ERP faturou. O que a Precisian inclui para fazer essa conta, e como cobra, está em [preços](https://precisian.io/precos).
+Se a pergunta na sua operação é "quanto essa campanha vendeu de verdade", e não "para quem eu mando a próxima mensagem", o primeiro passo é medir a distância entre o que as plataformas declaram e o que o ERP faturou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=cdp-ou-data-lake&utm_content=texto), sem compromisso de contrato.

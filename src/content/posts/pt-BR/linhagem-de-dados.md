@@ -12,8 +12,9 @@ citations: ["https://openlineage.io/docs/", "https://openlineage.io/docs/spec/ob
 about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Linhagem de dados é o registro do caminho que um número percorreu: de quais tabelas de origem ele saiu, por quais transformações passou e qual regra o produziu. A especificação aberta [OpenLineage](https://openlineage.io/docs/), projeto graduado da LF AI & Data Foundation e na versão 1.54.0 em outubro de 2026, descreve esse caminho com três entidades: dataset, job e execução. Para uma métrica de marketing, é a linhagem que responde "esse ROAS veio de quais pedidos?".
 
 > **Linhagem de dados**: o mapa, mantido por máquina, das dependências entre fontes, transformações e resultados, que permite partir de um número publicado e chegar às linhas e às regras que o produziram.
@@ -105,4 +106,4 @@ Não compara ferramentas de linhagem nem catálogos. Não detalha a implementaç
 
 E o exemplo de ROAS deste texto é sintético. Os quatro valores servem para mostrar o mecanismo, não para estimar a divergência de nenhuma operação real.
 
-Se o ROAS do seu relatório não bate com o que o financeiro vê e ninguém consegue dizer em qual etapa os dois se separaram, o primeiro passo é rastrear um único número até os pedidos de origem, filtro por filtro. [Veja como isso funciona na prática](https://precisian.io/demonstracao): sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o ROAS do seu relatório não bate com o que o financeiro vê e ninguém consegue dizer em qual etapa os dois se separaram, o primeiro passo é rastrear um único número até os pedidos de origem, filtro por filtro. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=linhagem-de-dados&utm_content=texto).

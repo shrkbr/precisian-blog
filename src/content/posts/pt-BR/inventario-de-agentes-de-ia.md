@@ -12,8 +12,9 @@ citations: ["https://developers.google.com/identity/protocols/oauth2", "https://
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Principle_of_least_privilege", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Nenhum painel único mostra quais agentes de IA alcançam o seu dado, porque cada autorização fica registrada na plataforma que a concedeu. E elas duram: o Google só invalida sozinho um refresh token depois de 6 meses sem uso ([Google](https://developers.google.com/identity/protocols/oauth2)), e a Meta oferece token de usuário do sistema que nunca expira ([Meta for Developers](https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens)). O inventário mínimo de permissões tem sete colunas: agente, dono, servidor MCP, escopo do token, ferramentas de escrita, dado alcançável e data da última revisão.
 
 > **Inventário de agentes de IA** é a lista, mantida por uma pessoa com nome, de todo agente que consulta ou altera dado da empresa: por qual servidor MCP ele passa, com qual credencial, o que essa credencial permite e quando alguém conferiu isso pela última vez.
@@ -140,4 +141,4 @@ Não compara gateways nem plataformas comerciais de gestão de agentes, que muda
 
 ---
 
-Se hoje ninguém consegue dizer quantos agentes alcançam as suas contas de mídia e a sua loja, o primeiro passo é preencher as sete colunas para os agentes que você já conhece e cruzar com a lista de apps acessados do seu Workspace. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se hoje ninguém consegue dizer quantos agentes alcançam as suas contas de mídia e a sua loja, o primeiro passo é preencher as sete colunas para os agentes que você já conhece e cruzar com a lista de apps acessados do seu Workspace. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=inventario-de-agentes-de-ia&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

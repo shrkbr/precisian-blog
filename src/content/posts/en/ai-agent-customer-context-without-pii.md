@@ -12,8 +12,9 @@ citations: ["https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication8
 about: ["https://en.wikipedia.org/wiki/Personal_data", "https://en.wikipedia.org/wiki/Pseudonymization", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 An AI agent answering a business question almost never needs a customer's name, email, phone number or shipping address. Cohorts, segments and lifetime value all come from a pseudonymous customer ID, and the identifying columns can stay out of the model's context entirely. NIST SP 800-122 gives the working definition: PII is information that can "distinguish or trace an individual's identity," plus anything "linked or linkable" to one ([NIST SP 800-122, April 2010](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf)).
 
 > **Pseudonymization** replaces direct identifiers with a code that can be linked back to the person only through separate information, such as a secret key or a lookup table, kept under its own access controls. Pseudonymous data is still personal data to whoever holds the key.
@@ -122,4 +123,4 @@ The re-identification studies cited measure the US population. They show how lit
 
 ---
 
-If your AI agent reads the full customer table today, the first step is to measure which personal columns it can reach and which of its questions actually need them. [Let's talk through your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If your AI agent reads the full customer table today, the first step is to measure which personal columns it can reach and which of its questions actually need them. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=ai-agent-customer-context-without-pii&utm_content=texto) over an isolated lake, with no contract commitment.

@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro'
 import TableOfContents from '../components/TableOfContents.astro'
 import ReadingProgress from '../components/ReadingProgress.astro'
 import TagBadge from '../components/TagBadge.astro'
+import PostCta from '../components/PostCta.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils'
 import { getCollection } from 'astro:content'
 import { findTranslation } from '../lib/posts'
@@ -90,6 +91,8 @@ const breadcrumbs = buildBreadcrumbListJsonLd([
         <slot />
       </div>
 
+      <PostCta post={post} position="fim" />
+
       <footer class="mt-12 pt-6 border-t border-border">
         <div class="flex flex-wrap gap-2">
           {tags.map((tag) => <TagBadge tag={tag} />)}
@@ -100,6 +103,7 @@ const breadcrumbs = buildBreadcrumbListJsonLd([
     <aside class="hidden lg:block">
       <div class="sticky top-24">
         <TableOfContents headings={headings} />
+        <PostCta post={post} position="lateral" />
       </div>
     </aside>
   </div>

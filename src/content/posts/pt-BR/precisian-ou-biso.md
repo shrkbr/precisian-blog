@@ -12,9 +12,12 @@ citations: ["https://www.biso.digital/", "https://www.biso.digital/conecte", "ht
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha a Biso se você quer um painel pronto e um agente de IA que mora dentro da plataforma, com conectores brasileiros de ERP já prontos. Escolha a Precisian se a IA que vai perguntar é a sua (Claude, ChatGPT, Copilot ou agente próprio) e você precisa que "receita" tenha uma definição escrita, versionada e aprovada antes de alguém perguntar. Em 27/10/2026, a página de integrações da Biso lista mais de 30 conectores, entre eles VTEX, Magento, Linx, TOTVS, Bling e Tiny ([Biso](https://www.biso.digital/conecte)).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-biso&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Biso, e não a Precisian?", abaixo.
 
 Este comparativo foi escrito pela Precisian, que é uma das duas opções. Por isso os critérios vêm declarados antes da tabela, cada célula sobre a Biso tem fonte no site dela, e há uma seção inteira sobre quando a Biso é a escolha certa.
 
@@ -92,4 +95,4 @@ Não testei a plataforma da Biso nem o Agente Biso; tudo o que está aqui sobre 
 
 ---
 
-Se a sua IA já devolve uma receita que não bate com o ERP, o primeiro passo é medir a distância entre os dois e descobrir qual definição cada lado usou. O que a Precisian inclui para fechar essa distância, e como cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se a sua IA já devolve uma receita que não bate com o ERP, o primeiro passo é medir a distância entre os dois e descobrir qual definição cada lado usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-biso&utm_content=texto), sem compromisso de contrato.

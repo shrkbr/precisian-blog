@@ -12,8 +12,9 @@ citations: ["https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709
 about: ["https://pt.wikipedia.org/wiki/Pseudonimiza%C3%A7%C3%A3o", "https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_Pessoais", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Para responder pergunta de negócio, um agente de IA quase nunca precisa de nome, CPF, e-mail ou telefone. Coorte, segmento e LTV saem de um identificador pseudonimizado, e o dado que identifica a pessoa fica fora do contexto do modelo. A LGPD dá o vocabulário: pelo art. 12, dado anonimizado deixa de ser dado pessoal; pelo art. 13, §4º, o pseudonimizado continua sendo, porque existe uma chave que o religa à pessoa ([Lei 13.709/2018, Planalto](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm)).
 
 > **Pseudonimização**, na definição do art. 13, §4º, da LGPD, é *"o tratamento por meio do qual um dado perde a possibilidade de associação, direta ou indireta, a um indivíduo, senão pelo uso de informação adicional mantida separadamente pelo controlador em ambiente controlado e seguro"*.
@@ -122,4 +123,4 @@ Dois limites declarados. A ANPD levou à sociedade em 2024 um estudo preliminar 
 
 ---
 
-Se o seu agente de IA hoje lê a tabela de clientes inteira, o primeiro passo é medir quais colunas pessoais ele alcança e quais perguntas de fato precisam delas. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o seu agente de IA hoje lê a tabela de clientes inteira, o primeiro passo é medir quais colunas pessoais ele alcança e quais perguntas de fato precisam delas. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=agente-de-ia-e-dado-pessoal-do-cliente&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

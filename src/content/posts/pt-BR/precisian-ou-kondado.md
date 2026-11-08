@@ -12,11 +12,14 @@ citations: ["https://kondado.com.br/", "https://kondado.com.br/pricing.html", "h
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Data_integration", "https://kondado.com.br/", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha a Kondado se a sua loja é pequena, roda em Bling, Nuvemshop ou Mercado Livre e tem alguém disposto a configurar o próprio dado; escolha a Precisian se você é um e-commerce médio sem time de dados e quer a operação e a definição de métrica inclusas. Em 27/10/2026, os planos da Kondado "começam em R$ 99/mês incluindo acesso a todos os conectores MCP", com pagamento mensal e sem fidelidade ([Kondado, MCP](https://kondado.com.br/mcp/); [Kondado, preços](https://kondado.com.br/pricing.html)).
 
 > **Kondado**: plataforma brasileira de integração de dados em autosserviço (Kondado Inteligência em Informação Ltda.), que copia dado de mais de 80 fontes para o destino escolhido pelo cliente, com modelos SQL, servidor MCP e templates de dashboard. Cobra em real, por volume de registros e número de integrações ([Kondado](https://kondado.com.br/); [termos de uso](https://kondado.com.br/wiki/a/nossos-termos-de-uso)).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-kondado&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Kondado e não a Precisian?", abaixo.
 
 As duas levam o dado do e-commerce até a IA. A diferença está em quem escreve o que cada número significa e em quem cuida do dado quando ele quebra. Quem escreveu este texto fui eu, da Precisian; por isso os critérios vêm declarados abaixo, para você poder discordar deles.
 
@@ -110,4 +113,4 @@ Não testei a Kondado em uso; tudo o que está aqui sobre ela vem do [site](http
 
 ---
 
-Se o agente da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui para fechar essa distância, e como ela cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o agente da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-kondado&utm_content=texto), sem compromisso de contrato.

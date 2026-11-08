@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/9305587", "https://supp
 about: ["https://en.wikipedia.org/wiki/Access_control", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 GA4 ships **5 roles and 2 data restrictions** that almost nobody uses, one of which hides revenue metrics and another of which hides cost metrics ([Google](https://support.google.com/analytics/answer/9305587)). The market default, regardless, is to grant Administrator and move on, which hands over user management along with the data.
 
 The problem is not the agency. It is that "give them access" became a binary decision inside systems that were never binary.
@@ -127,3 +128,7 @@ It does not address contract clauses. What a services agreement should say about
 It does not claim Google Ads roles have narrative definitions. The page I read presents permissions as a checkmark table rather than closed per-level descriptions, and the phrases quoted here are specific permissions, not official definitions of each role.
 
 And it leaves aside data-protection roles, controller and processor, which sit as an entire legal layer on top of this one and deserve their own article.
+
+---
+
+If an AI agent already reads production data in your company, the first step is knowing exactly what it can, and cannot, reach. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=agency-data-access-without-everything&utm_content=texto) over an isolated lake, with no contract commitment.

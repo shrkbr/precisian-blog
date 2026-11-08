@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2604.25149", "https://arxiv.org/abs/2411.0776
 about: ["https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Metric hallucination is what happens when an AI agent returns an arithmetically correct number based on a business definition your company never wrote down. The model did not invent the data. It guessed the rule. In a paired benchmark published in April 2026 across three frontier models, supplying those business definitions as context raised answer accuracy from 45.5–50.5% to 67.7–68.7% ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
 > **Metric hallucination**: a numerically correct and semantically wrong answer, produced when a model has to infer a business definition that the database schema does not encode.
@@ -88,4 +89,4 @@ This article does not cover implementation in any specific tool, and it does not
 
 One honest limit on the data cited: the April benchmark measures accuracy with and without semantic context. It does not publish an isolated hallucination rate per model, so this article does not claim one. Anyone who needs that cut will have to measure it in their own operation.
 
-If two reports inside your company disagree and nobody can say which is right, start by inventorying which definitions are implicit, before picking any agent. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If two reports inside your company disagree and nobody can say which is right, start by inventorying which definitions are implicit, before picking any agent. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=metric-hallucination&utm_content=texto).

@@ -5,7 +5,7 @@ slug: "marketplace-buraco-negro-de-dados"
 lang: "pt-BR"
 translationKey: "marketplace-data-blackhole"
 publishedAt: 2026-09-26
-updatedAt: 2026-11-03
+updatedAt: 2026-11-08
 tags: ["marketplace", "divergencia-de-dados", "ecommerce"]
 draft: false
 llmSummary: "A API oficial da Amazon entrega ao vendedor 28 campos de volume por produto e nenhum campo de origem, referrer, canal ou campanha. Somado à janela de dois anos e ao limite de uma chamada por minuto em getOrders, a consolidação de marketplace precisa ser incremental e persistida pelo vendedor."
@@ -13,8 +13,8 @@ citations: ["https://raw.githubusercontent.com/amzn/selling-partner-api-models/m
 about: ["https://en.wikipedia.org/wiki/Online_marketplace", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
 ---
-
 No schema `salesAndTraffic` de 24 de abril de 2024, publicado pela Amazon, a API devolve ao vendedor 28 campos de tráfego por produto e nenhum campo de origem. O schema oficial do Data Kiosk lista sessões, sessões B2B, sessões de navegador, sessões de aplicativo, page views e percentual de buy box, e não tem referrer, canal, campanha, UTM nem termo de busca ([schema oficial da Amazon no GitHub](https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/schemas/data-kiosk/analytics_salesAndTraffic_2024_04_24.graphql)). Você recebe o denominador da conversão e nunca a procedência. É a diferença entre saber quantas pessoas entraram na loja e não ter ideia de qual rua elas vieram.
 
 > **Buraco negro de marketplace**: conjunto de vendas cuja origem não é recuperável por nenhuma API oficial do canal, tornando a atribuição impossível por construção, não por falta de configuração.
@@ -107,4 +107,4 @@ Esse último ponto merece registro, porque é o mesmo erro que este artigo descr
 
 Também não cobre integração técnica passo a passo, nem a API do Mercado Livre em detalhe, que ficou para [um post próprio](https://precisian.io/blog/pt-BR/posts/api-do-mercado-livre-dados-de-venda/).
 
-Se você vende em marketplace e loja própria e não consegue comparar os dois, o primeiro passo é escrever a definição de receita de cada canal. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se você vende em marketplace e loja própria e não consegue comparar os dois, o primeiro passo é escrever a definição de receita de cada canal. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=marketplace-buraco-negro-de-dados&utm_content=texto), sem compromisso de contrato.

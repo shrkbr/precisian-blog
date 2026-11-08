@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/10917952", "https://sup
 about: ["https://pt.wikipedia.org/wiki/Par%C3%A2metros_UTM", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 UTM são parâmetros que você acrescenta ao fim de um link (`?utm_source=...&utm_medium=...&utm_campaign=...`) para dizer ao Google Analytics de onde veio a visita. O número não bate porque o GA4 compara texto exato: a [Ajuda do Google Analytics](https://support.google.com/analytics/answer/10917952) diz que `utm_source=google` e `utm_source=Google` são valores diferentes. Sem convenção escrita, cada pessoa grafa a mesma origem de um jeito, e a campanha se espalha em várias linhas do relatório.
 
 > **UTM** (Urchin Tracking Module): conjunto de parâmetros de URL que o Google Analytics lê na chegada da visita para preencher origem, mídia, campanha e conteúdo. O GA4 documenta nove: `utm_id`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_source_platform`, `utm_term`, `utm_content`, `utm_creative_format` e `utm_marketing_tactic` ([Ajuda do Google Analytics](https://support.google.com/analytics/answer/10917952), consultada em 03/11/2026).
@@ -151,4 +152,4 @@ Não trata de UTM em app Android, que usa outro construtor (o Play Campaign URL 
 
 Não detalha a importação de dados de custo pelo `utm_id`, que tem documentação própria.
 
-Se a sua campanha aparece em cinco linhas e ninguém sabe qual é a certa, o primeiro passo é medir quantas grafias diferentes cada origem e cada mídia têm hoje. [Veja como a Precisian organiza essa normalização na prática](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua campanha aparece em cinco linhas e ninguém sabe qual é a certa, o primeiro passo é medir quantas grafias diferentes cada origem e cada mídia têm hoje. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=o-que-e-utm&utm_content=texto).

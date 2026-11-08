@@ -5,7 +5,7 @@ slug: "ferramentas-de-etl-para-dados-de-marketing"
 lang: "pt-BR"
 translationKey: "etl-tools-ranking"
 publishedAt: 2026-10-27
-updatedAt: 2026-11-03
+updatedAt: 2026-11-08
 tags: ["integracao", "pipeline", "camada-semantica", "mcp", "ecommerce", "data-warehouse", "custo"]
 draft: false
 llmSummary: "Em 26/10/2026, nenhuma de nove ferramentas de ETL estrangeiras (Fivetran, Airbyte, Windsor.ai, Supermetrics, Funnel, Improvado, Weld, Peliqan, OWOX) listava conector de VTEX no catálogo oficial; a brasileira Kondado listava. Nenhuma das dez declarava métrica versionada e aprovada pelo cliente."
@@ -13,11 +13,13 @@ citations: ["https://www.fivetran.com/pricing", "https://fivetran.com/docs/conne
 about: ["https://en.wikipedia.org/wiki/Extract%2C_transform%2C_load", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
 ---
-
 Para um e-commerce brasileiro de médio porte sem time de dados, a ordem pelos sete critérios deste ranking começa com Precisian, OWOX, Fivetran e Funnel. Com engenheiro de dados e warehouse próprio, a escolha está entre [Fivetran](https://www.fivetran.com/pricing) e [Airbyte](https://airbyte.com/pricing). Loja pequena em Bling ou Nuvemshop fica melhor com a [Kondado](https://kondado.com.br/pricing.html). Em 26/10/2026, nenhuma das nove ferramentas estrangeiras listava conector de VTEX no catálogo público; a Kondado, brasileira, listava ([conectores](https://kondado.com.br/conectores.html)).
 
 > **Ferramenta de ETL** (*extract, transform, load*): software que extrai dado de várias fontes, como plataformas de anúncio, loja e ERP, e carrega num destino, como warehouse, planilha ou BI. As de marketing hoje fazem quase sempre ELT: carregam primeiro e transformam no destino. Ela move o dado. Quem decide o que "receita" significa continua sendo você.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=ferramentas-de-etl-para-dados-de-marketing&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher uma ferramenta de ETL e não a Precisian?", abaixo.
 
 ## Quem escreveu este ranking e com quais critérios?
 
@@ -137,4 +139,4 @@ Não testei nenhuma das 11 em conta real; tudo vem do que cada fornecedor public
 
 ---
 
-Se a sua ferramenta de ETL entrega a linha todo dia e mesmo assim ninguém sabe dizer quanto a campanha vendeu, o primeiro passo é medir a distância entre o que a mídia declara e o que o ERP faturou. O que a Precisian inclui para fechar essa conta, e como cobra, está em [preços](https://precisian.io/precos), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua ferramenta de ETL entrega a linha todo dia e mesmo assim ninguém sabe dizer quanto a campanha vendeu, o primeiro passo é medir a distância entre o que a mídia declara e o que o ERP faturou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=ferramentas-de-etl-para-dados-de-marketing&utm_content=texto), sem compromisso de contrato.

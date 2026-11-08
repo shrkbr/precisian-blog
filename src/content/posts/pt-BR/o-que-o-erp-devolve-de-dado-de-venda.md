@@ -12,8 +12,9 @@ citations: ["https://api-docs.erp.olist.com/api-reference/pedidos/obter-pedido",
 about: ["https://pt.wikipedia.org/wiki/Nota_fiscal_eletr%C3%B4nica", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Os ERPs não concordam nem na pergunta mais básica, e 2 dos 3 que tentei ler respondem "quem comprou" de formas incompatíveis. O pedido do Omie devolve o cliente só por `codigo_cliente`, um inteiro interno, **sem CPF nem CNPJ** ([Omie](https://app.omie.com.br/api/v1/produtos/pedido/)). O do Olist devolve `cpfCnpj`, mas marcado como anulável na própria especificação ([Olist](https://api-docs.erp.olist.com/api-reference/pedidos/obter-pedido)). Quem monta a integração assumindo que "o ERP devolve o documento do cliente" descobre a diferença em produção.
 
 Verificado em 23 de setembro de 2026, lendo a especificação de máquina e não a página de documentação, por um motivo que fica claro abaixo.
@@ -118,4 +119,4 @@ Vale um elogio ao desenho do Omie: a listagem aceita `filtrar_apenas_alteracao`,
 
 E um registro de método que se repete nesta série: na primeira passagem, um extrator automático devolveu o nome de campo `cnpjPagamento`. A especificação crua diz `cnpjPagamentoInstituicao`. O mesmo extrator apresentou `origemPedido` sem descrição, o que convidava a lê-lo como canal de venda. Os dois teriam virado afirmação errada com aparência de precisão. Por isso tudo aqui foi lido em especificação de máquina, não em página de documentação.
 
-Se a sua integração de ERP foi montada casando nome de campo, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o número da plataforma e o do financeiro não batem na sua operação, o primeiro passo é medir a distância entre os dois, mês a mês. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=o-que-o-erp-devolve-de-dado-de-venda&utm_content=texto), sem compromisso de contrato.

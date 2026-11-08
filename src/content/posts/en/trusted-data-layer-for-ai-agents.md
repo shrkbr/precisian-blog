@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 A trusted data layer is the set of guarantees that sit between your raw data and an AI agent, so that an answer can be reproduced and defended rather than merely produced. The need is not theoretical: a measurement of 7,973 live remote MCP servers found **40.55% exposing tools with no authentication at all** ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint), and the protocol itself states that "Authorization is OPTIONAL for MCP implementations" ([MCP spec](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
 Connection is solved. Trust is the part nobody shipped.
@@ -102,3 +103,7 @@ It cites two measurement studies as preprints, because that is what they are. Ne
 It offers no breach statistic for agent deployments. Those studies measure configuration exposure, not realized incidents, and treating one as the other would overstate what anyone knows.
 
 And it does not solve indirect prompt injection, because nothing does. Narrowing what the agent can reach shrinks the blast radius. It does not remove the vector, and a layer that claims otherwise is selling comfort.
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=trusted-data-layer-for-ai-agents&utm_content=texto).

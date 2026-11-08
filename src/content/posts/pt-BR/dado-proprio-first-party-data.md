@@ -12,8 +12,9 @@ citations: ["https://support.google.com/adspolicy/answer/6299717?hl=pt-BR", "htt
 about: ["https://en.wikipedia.org/wiki/First-party_data", "https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_Pessoais", "https://precisian.io/demonstracao"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Dado próprio (first-party data) é a informação que a empresa coleta diretamente da relação com o próprio cliente: o pedido, o cadastro, o evento no site, a conversa de atendimento. O Google usa o mesmo critério na política de Segmentação por lista de clientes: só é possível enviar informações "coletadas em contexto próprio", ou seja, em sites, apps, lojas físicas ou situações em que o cliente compartilhou o dado diretamente com o anunciante ([Google](https://support.google.com/adspolicy/answer/6299717?hl=pt-BR), consultado em 23/10/2026).
 
 > **Dado próprio (first-party data)**: informação sobre o cliente que a empresa registrou em primeira mão, numa interação direta com ele, e sobre a qual ela decide o uso, a retenção e o destino.
@@ -107,4 +108,4 @@ Não é orientação jurídica sobre base legal de tratamento, e não compara fe
 
 ---
 
-Se a sua operação toma decisão de verba com a coluna de conversões da plataforma e não com o pedido faturado, o primeiro passo é medir a distância entre os dois. [Veja na prática como o dado próprio fica guardado e consultável](https://precisian.io/demonstracao) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua operação toma decisão de verba com a coluna de conversões da plataforma e não com o pedido faturado, o primeiro passo é medir a distância entre os dois. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=dado-proprio-first-party-data&utm_content=texto).

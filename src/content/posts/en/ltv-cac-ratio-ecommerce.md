@@ -12,8 +12,9 @@ citations: ["https://developer-docs.amazon/sp-api/reference/getorders", "https:/
 about: ["https://en.wikipedia.org/wiki/Customer_lifetime_value", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 LTV:CAC is the ratio between the contribution margin a customer generates over a set horizon (LTV) and what it cost to acquire that customer (CAC). For a DTC brand that also sells on Amazon, both halves drift. Amazon's Repeat Purchase report counts repeat customers per ASIN by week, month or quarter, but never says who they are ([Amazon SP-API](https://developer-docs.amazon/sp-api/docs/report-type-values-analytics)). And CAC built on platform conversions inherits attribution windows of up to 90 days in Google Ads ([Google](https://support.google.com/google-ads/answer/3123169)).
 
 > **LTV:CAC**: cumulative contribution margin per customer in an acquisition cohort, over a stated horizon, divided by the fully loaded cost of acquiring that cohort. Without a horizon and without margin, the ratio has no meaning.
@@ -133,4 +134,4 @@ It does not say whether the Repeat Purchase report is available in every Amazon 
 
 And it does not cover predictive LTV models. They are legitimate, but they depend on clean order data, which is what this article is about.
 
-If your LTV:CAC looks healthy and cash flow disagrees, the first step is recomputing CAC with new customers from your own order data instead of platform conversions. [See how Precisian's data lake joins store orders, Amazon and ad spend](https://precisian.io/en/demo), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your LTV:CAC looks healthy and cash flow disagrees, the first step is recomputing CAC with new customers from your own order data instead of platform conversions. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=ltv-cac-ratio-ecommerce&utm_content=texto), with no contract commitment.
