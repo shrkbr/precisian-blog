@@ -12,11 +12,14 @@ citations: ["https://dadosfera.ai/", "https://dadosfera.ai/plataforma-saas/", "h
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://dadosfera.ai/", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha a Dadosfera se você é uma empresa média ou grande, de qualquer setor, com área de TI ou disposição para contratar o squad dela; escolha a Precisian se você é um e-commerce médio sem time de dados e quer a IA da casa lendo números com definição aprovada. Em 27/10/2026, a documentação da Dadosfera lista o conector VTEX como Beta, hospeda os planos Basic Professional, Standard e Advanced na AWS `us-east-1` e não menciona MCP ([Dadosfera, coleta](https://docs.dadosfera.ai/docs/coleta); [infraestrutura](https://docs.dadosfera.ai/docs/infraestrutura-da-dadosfera); [índice da documentação](https://docs.dadosfera.ai/llms.txt)).
 
 > **Dadosfera**: plataforma brasileira de dados, IA e analytics, de Belo Horizonte, operada pela Data Sprints Processamento de Dados Ltda. Reúne coleta, data warehouse sobre Snowflake, transformação em Python, catálogo com linhagem, BI em Metabase, notebooks e data apps, com assistente de IA embutido e serviços profissionais vendidos à parte. Nasceu em 2019 como a consultoria DataSprints ([Dadosfera, quem somos](https://dadosfera.ai/quem-somos/)).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-dadosfera&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Dadosfera e não a Precisian?", abaixo.
 
 Das plataformas brasileiras, a Dadosfera é a mais parecida com a Precisian na arquitetura: as duas juntam fontes, guardam o dado num ambiente gerenciado, põem IA em cima e vendem gente junto com software. A diferença está em quem compra, em quais fontes chegam prontas e em como a IA do cliente chega ao dado. Quem escreveu este texto fui eu, da Precisian, por isso os critérios vêm declarados antes da comparação.
 
@@ -102,4 +105,4 @@ Não testei a Dadosfera em uso. Tudo o que está aqui sobre ela vem do site, da 
 
 ---
 
-Se a IA da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui para fechar essa distância, e como ela cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se a IA da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-dadosfera&utm_content=texto), sem compromisso de contrato.

@@ -12,8 +12,9 @@ citations: ["https://developers.facebook.com/docs/marketing-api/conversions-api/
 about: ["https://pt.wikipedia.org/wiki/Meta_Platforms", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A API de Conversões da Meta envia à Meta o evento que o seu servidor registrou, sem depender do navegador do visitante. Com isso ela recupera parte do que o Pixel perde, e não faz mais que isso. A documentação da Meta para desenvolvedores (consultada em 23/10/2026) diz que um evento do Pixel e um do servidor só viram a mesma compra quando chegam com `event_id` e `event_name` iguais, em até 48 horas ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/)). Fora dessa regra, a venda é contada duas vezes.
 
 > **API de Conversões (CAPI)** é a conexão servidor a servidor pela qual o anunciante manda à Meta os eventos que o próprio sistema registrou. Segundo a Meta, esses eventos *"são vinculados a um ID de conjunto de dados e processados como eventos enviados pelo Pixel da Meta"* ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api)).
@@ -139,4 +140,4 @@ Não cobre eventos de aplicativo, porque a Event Match Quality hoje só existe p
 
 E não diz quantas conversões a API vai recuperar na sua loja. A Meta não publica esse número fora do exemplo de payload citado acima, e o que circula vem de quem vende a implantação.
 
-Se as compras do Gerenciador de Anúncios passaram dos pedidos aprovados depois que a API de Conversões entrou, o primeiro passo é medir quantos eventos chegam sem `event_id` igual nos dois lados. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se as compras do Gerenciador de Anúncios passaram dos pedidos aprovados depois que a API de Conversões entrou, o primeiro passo é medir quantos eventos chegam sem `event_id` igual nos dois lados. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=api-de-conversoes-da-meta&utm_content=texto), sem compromisso de contrato.

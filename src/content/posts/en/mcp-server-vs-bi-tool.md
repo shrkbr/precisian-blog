@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/versioning", "https:/
 about: ["https://en.wikipedia.org/wiki/Business_intelligence", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A paired test across three frontier models, published in April 2026, measured what happens when you hand a model your business definitions: answer accuracy rose from **45.5–50.5% to 67.7–68.7%** ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)). The intervention was a document describing measures, conventions and disambiguation rules. Not a product.
 
 That result decides the MCP-versus-BI argument before it starts, because it says the bottleneck is underneath both of them.
@@ -113,3 +114,7 @@ It cites the accuracy study as a preprint, which is what it is. It is here for i
 It gives no cost-per-query figure for agent-based analytics. That depends on model, prompt size, data volume and how many retries a bad definition causes, and any published number is someone's configuration rather than a rate card.
 
 And it does not claim a trend toward one surface winning. The evidence here supports a split by question type, not a succession, and the honest version of this article ends with a workload log rather than a recommendation.
+
+---
+
+What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=mcp-server-vs-bi-tool&utm_content=texto), with no contract commitment.

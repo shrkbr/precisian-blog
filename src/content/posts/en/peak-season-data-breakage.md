@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/9823238", "https://supp
 about: ["https://en.wikipedia.org/wiki/Black_Friday_(shopping)", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 The limit that ruins peak season does not take anything down. GA4's BigQuery export caps at **1 million events per day** on a standard property, and if you exceed it consistently, Google's documentation states that "the daily export will be paused and previous days will not be reprocessed" ([Google](https://support.google.com/analytics/answer/9823238)).
 
 The site stays up. The dashboard opens. The data for the most important day of your year simply does not exist afterward, and no alert fired, because nothing failed.
@@ -109,3 +110,7 @@ It names no specific limit for platforms whose documentation I could not read at
 It also does not tell you which tier your property is on, which decides whether the first limit applies to you at all. That is a two-minute check in your own account and a guess in any article.
 
 And it does not claim these limits are unreasonable. Every one of them exists for a defensible engineering reason. The point is that they were sized for normal operation, and the day you most need the data is the day you are least like normal.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=peak-season-data-breakage&utm_content=texto), with no contract commitment.

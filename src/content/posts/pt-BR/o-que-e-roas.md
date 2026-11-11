@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/6268637?hl=pt-BR", "ht
 about: ["https://pt.wikipedia.org/wiki/Retorno_sobre_investimento", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 ROAS (retorno sobre o investimento em anúncios) é a receita atribuída a uma campanha dividida pelo valor gasto nela. Num exemplo com números redondos, R$ 20.000 de mídia que geram R$ 100.000 de receita atribuída dão ROAS de 5, ou 500%. É a mesma conta que o Google Ads usa para o ROAS desejado: "R$ 5 em vendas ÷ R$ 1 em gastos com publicidade x 100% = 500%" ([Google Ads, Ajuda](https://support.google.com/google-ads/answer/6268637?hl=pt-BR)). O ROAS mede receita, não lucro.
 
 > **ROAS**: receita atribuída a um conjunto de anúncios dividida pelo custo desses anúncios, no mesmo período e pelas regras de atribuição de quem fez a conta. Expresso como múltiplo (5) ou como percentual (500%).
@@ -115,4 +116,4 @@ Não diz qual é o ROAS certo para o seu segmento, porque a resposta depende da 
 
 ---
 
-Se o ROAS que o time comemora não fecha com a margem que o financeiro enxerga, o primeiro passo é escrever qual receita e qual gasto entram em cada conta e medir a distância entre os dois números. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato.
+Se o ROAS que o time comemora não fecha com a margem que o financeiro enxerga, o primeiro passo é escrever qual receita e qual gasto entram em cada conta e medir a distância entre os dois números. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=o-que-e-roas&utm_content=texto).

@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Camada de dados confiável é o conjunto de garantias entre a sua base e o agente de IA, para que uma resposta possa ser **reproduzida e defendida**, não apenas produzida. A urgência é mensurável: um levantamento de 7.973 servidores MCP remotos ativos encontrou **40,55% expondo ferramentas sem autenticação nenhuma** ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint), e o próprio protocolo afirma que *"a autorização é OPCIONAL para implementações de MCP"* ([spec MCP](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
 Conectar está resolvido. Confiar é a parte que ninguém entregou.
@@ -104,3 +105,7 @@ Cita os dois levantamentos como preprints, porque é o que são. Nenhum passou p
 Não traz estatística de vazamento em implantações com agente. Os estudos medem exposição de configuração, não incidente consumado, e tratar um como o outro exageraria o que se sabe.
 
 E não resolve injeção indireta, porque nada resolve. Estreitar o que o agente alcança reduz o estrago. Não elimina o vetor, e camada que promete o contrário está vendendo conforto.
+
+---
+
+O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=camada-de-dados-confiavel-para-agentes&utm_content=texto).

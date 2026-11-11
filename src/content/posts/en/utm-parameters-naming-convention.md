@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/10917952", "https://sup
 about: ["https://en.wikipedia.org/wiki/UTM_parameters", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 UTM parameters are tags appended to a link (`?utm_source=...&utm_medium=...&utm_campaign=...`) that tell Google Analytics where a visit came from. They only add up when every team spells them the same way, because GA4 compares values as exact text: [Google Analytics Help](https://support.google.com/analytics/answer/10917952) states that `utm_source=google` is different from `utm_source=Google`. One campaign tagged by five teams and three agencies ends up as several rows nobody can reconcile.
 
 > **UTM parameters** (Urchin Tracking Module): URL query parameters that Google Analytics reads when a visit lands, to fill in source, medium, campaign and content. GA4 documents nine: `utm_id`, `utm_source`, `utm_medium`, `utm_campaign`, `utm_source_platform`, `utm_term`, `utm_content`, `utm_creative_format` and `utm_marketing_tactic` ([Google Analytics Help](https://support.google.com/analytics/answer/10917952), accessed November 3, 2026).
@@ -153,4 +154,4 @@ It doesn't cover UTM tagging for Android app campaigns, which uses a different b
 
 It doesn't walk through cost-data import keyed on `utm_id`, which has its own documentation.
 
-If your campaign shows up on five rows and nobody knows which one is right, the first step is to count how many spellings each source and medium has today. [See how Precisian handles that normalization in practice](https://precisian.io/en/demo), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your campaign shows up on five rows and nobody knows which one is right, the first step is to count how many spellings each source and medium has today. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=utm-parameters-naming-convention&utm_content=texto).

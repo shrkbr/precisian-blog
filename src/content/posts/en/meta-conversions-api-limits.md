@@ -12,8 +12,9 @@ citations: ["https://developers.facebook.com/docs/marketing-api/conversions-api/
 about: ["https://en.wikipedia.org/wiki/Meta_Platforms", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Meta's Conversions API sends Meta the events your own server recorded, without depending on the shopper's browser, so it recovers part of what the Pixel loses, and nothing more. Meta's developer documentation (checked October 23, 2026) says a Pixel event and a server event are treated as one purchase only when they share the same `event_id` and `event_name` and arrive within 48 hours of each other ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/)). Miss any of those and the order counts twice.
 
 > **Conversions API (CAPI)** is the server-to-server connection an advertiser uses to send Meta the events its own systems recorded. In Meta's words, those events "are linked to a dataset ID and are processed like events sent using the Meta Pixel" ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api)).
@@ -139,4 +140,4 @@ It doesn't cover app events, since Event Match Quality currently exists only for
 
 And it doesn't say how many conversions CAPI will recover for your store. Meta doesn't publish that number outside the sample payload cited above, and the figures in circulation come from the people selling the implementation.
 
-If Ads Manager purchases climbed past your completed orders after CAPI went live, the first step is measuring how many events arrive without a matching `event_id` on both sides. [Let's talk about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If Ads Manager purchases climbed past your completed orders after CAPI went live, the first step is measuring how many events arrive without a matching `event_id` on both sides. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=meta-conversions-api-limits&utm_content=texto), with no contract commitment.

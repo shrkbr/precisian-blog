@@ -12,8 +12,9 @@ citations: ["https://docs.getdbt.com/reference/resource-properties/constraints",
 about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Um contrato de dados é um acordo versionado entre quem produz e quem consome uma tabela, declarando nomes de colunas, tipos e garantias de qualidade. No padrão aberto mais usado hoje, apenas 4 dos 23 campos de topo são obrigatórios ([ODCS v3.2.0](https://github.com/bitol-io/open-data-contract-standard)). E na maioria dos data warehouses, a parte do contrato que as pessoas mais confiam não é cobrada por ninguém.
 
 Antes de qualquer coisa, duas desambiguações. Este artigo não trata do **contrato de tratamento de dados** da LGPD, o documento jurídico entre controlador e operador. E não trata do `[DataContract]` do .NET, um atributo de serialização. O assunto aqui é engenharia de dados.
@@ -113,4 +114,4 @@ Também não afirma que um padrão concorrente foi descontinuado em favor do ODC
 
 E não recomenda ferramenta. A matriz acima muda conforme as plataformas evoluem, e a própria documentação do dbt avisa que ela vai mudar. A pergunta que não muda é outra: o que no seu contrato trava o build hoje, e o que só está escrito?
 
-Se a resposta for "quase tudo só está escrito", [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=contrato-de-dados&utm_content=texto).

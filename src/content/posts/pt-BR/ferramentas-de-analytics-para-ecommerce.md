@@ -12,8 +12,9 @@ citations: ["https://www.triplewhale.com/pricing", "https://apps.shopify.com/tri
 about: ["https://en.wikipedia.org/wiki/Web_analytics", "https://en.wikipedia.org/wiki/Attribution_(marketing)", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A melhor ferramenta de analytics para e-commerce depende da pergunta que você quer responder. Para saber qual anúncio trouxe a venda, as de atribuição (Triple Whale, Northbeam, Solomon) resolvem. Para ver lucro e LTV num painel pronto, servem Lifetimely, Peel e BeProfit. Para pôr a IA da empresa sobre números confiáveis, pesa onde o dado vive e quem define a métrica. Em 26/10/2026, 11 das 17 ferramentas de terceiros desta lista (65%) ofereciam MCP para Claude ou ChatGPT. Só a Polar declarava banco dedicado por cliente em todos os planos ([Polar](https://www.polaranalytics.com/data-warehouse)), e nenhuma publicava definição de métrica versionada e aprovada pelo cliente.
 
 > **Ferramenta de analytics para e-commerce**: software que junta pedidos da loja, custo de mídia e dados de navegação para responder quanto se vendeu, de onde veio a venda e quanto sobrou de lucro. Algumas entregam painel pronto, outras atribuição de anúncio, outras uma base de dados que a IA do cliente consulta.
@@ -163,4 +164,4 @@ Não testei a precisão da atribuição nem a qualidade dos painéis, e não com
 
 ---
 
-Se a IA da sua empresa já devolve um faturamento diferente do que o financeiro fecha, o primeiro passo é medir essa diferença e descobrir qual definição cada número usou. O que a Precisian inclui para fechar essa conta, e a partir de quanto, está em [preços](https://precisian.io/precos), sem compromisso de contrato para olhar.
+Se a IA da sua empresa já devolve um faturamento diferente do que o financeiro fecha, o primeiro passo é medir essa diferença e descobrir qual definição cada número usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=ferramentas-de-analytics-para-ecommerce&utm_content=texto), sem compromisso de contrato.

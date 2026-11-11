@@ -12,9 +12,12 @@ citations: ["https://www.prax.ai", "https://prax.ai/legal/termos-de-uso", "https
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Para a loja pequena ou média em Nuvemshop, Tray ou Yampi que quer painel pronto e preço de entrada baixo, a Prax é a melhor escolha. Para o varejo de médio porte com VTEX ou Magento, ERP e vários canais, que quer a própria IA consultando métricas com definição aprovada, a Precisian é. As duas ligam o Claude e o ChatGPT ao dado da loja por MCP. A Prax declara atender "mais de 2.600 lojas no Brasil" e deixar o dado disponível cerca de 3 horas depois da integração ([Prax, consultado em 27/10/2026](https://www.prax.ai)).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-prax&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Prax, e não a Precisian?", abaixo.
 
 A diferença está no que fica antes do MCP. Na Prax, as métricas chegam prontas, definidas pelo produto, e o centro da oferta são os painéis e o CRM de WhatsApp. Na Precisian, não há painel: a entrega termina numa camada semântica em que "receita", "pedido" e "ROAS" estão escritos com o seu time, versionados e aprovados, sobre um data lake isolado por cliente.
 
@@ -104,4 +107,4 @@ Não testei o produto da Prax: tudo o que está aqui é o que ela publica no [si
 
 ---
 
-Se o Claude da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir a distância entre os dois números e descobrir qual definição cada lado usou. O que a Precisian inclui para fechar essa distância, e como cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o Claude da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir a distância entre os dois números e descobrir qual definição cada lado usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-prax&utm_content=texto), sem compromisso de contrato.

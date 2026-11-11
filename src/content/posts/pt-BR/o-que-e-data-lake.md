@@ -12,8 +12,9 @@ citations: ["https://learn.microsoft.com/en-us/azure/architecture/data-guide/sce
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Data lake é um repositório que guarda o dado no formato em que a fonte o entregou e só aplica estrutura na hora da leitura, abordagem que a Microsoft chama de *schema-on-read* ([Microsoft Learn](https://learn.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake), revisão de 16/04/2026). Num e-commerce, a função prática é guardar o histórico que as fontes apagam: a API de pedidos da VTEX só devolve pedidos criados nos últimos dois anos ([VTEX](https://developers.vtex.com/docs/api-reference/orders-api#get-/api/oms/pvt/orders)).
 
 > **Data lake**: repositório central que recebe dado estruturado, semiestruturado e não estruturado, de várias fontes, sem esquema imposto na escrita. A transformação acontece quando alguém consulta, e o dado original continua guardado como chegou.
@@ -121,4 +122,4 @@ E o Mercado Livre não declara, na [página consultada](https://developers.merca
 
 ---
 
-Se a sua operação vende em loja própria e marketplace, o primeiro passo é medir quantos meses de pedido cada fonte ainda guarda hoje e quantos a sua análise precisa. [Veja como o lake da Precisian organiza isso na prática](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua operação vende em loja própria e marketplace, o primeiro passo é medir quantos meses de pedido cada fonte ainda guarda hoje e quantos a sua análise precisa. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=o-que-e-data-lake&utm_content=texto).

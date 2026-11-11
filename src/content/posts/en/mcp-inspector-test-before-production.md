@@ -12,8 +12,9 @@ citations: ["https://github.com/modelcontextprotocol/inspector", "https://modelc
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Smoke_testing_(software)", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 MCP Inspector, the reference testing tool for the Model Context Protocol, tells you whether your server speaks the protocol: the handshake completes, the tools list, a call returns, and the exit code is stable. It does not tell you whether the number that came back is correct. The project's own smoke-testing guide, read on November 3, 2026, calls the workflow "deliberately not a conformance suite" ([modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector/blob/main/docs/cli-smoke-testing.md)). Four checks sit between a green Inspector run and production data: a scrubbed copy, an answer key, a scope check and a cost ceiling.
 
 > **MCP Inspector**: a client for testing and debugging MCP servers, shipped as the npm package `@modelcontextprotocol/inspector` (version `2.13.0`, published October 28, 2026, per [npm](https://www.npmjs.com/package/@modelcontextprotocol/inspector)). It has a web UI, a CLI (`--cli`) and a terminal UI (`--tui`), and it talks to your server with no language model in between.
@@ -156,4 +157,4 @@ It does not explain how to build an MCP server or compare implementations; the f
 
 ---
 
-If your agent has already reported a revenue figure nobody could reproduce in SQL, the first step is building the answer key and finding which of the three layers changes the number. [See how Precisian hands modeled data to your agent](https://precisian.io/en/demo), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your agent has already reported a revenue figure nobody could reproduce in SQL, the first step is building the answer key and finding which of the three layers changes the number. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=mcp-inspector-test-before-production&utm_content=texto) over an isolated lake, with no contract commitment.

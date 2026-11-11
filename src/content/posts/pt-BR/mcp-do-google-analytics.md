@@ -12,8 +12,9 @@ citations: ["https://github.com/googleanalytics/google-analytics-mcp", "https://
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O MCP do Google Analytics devolve o número que o GA4 já carrega, com modelagem, limiar e `(not set)` incluídos, e o assistente responde como se fosse contagem. O servidor oficial lê o GA4 pela Data API, e a documentação do Google, atualizada em 13/10/2026, diz que essa API respeita a identidade de relatório da propriedade, e que contagem de usuários, deduplicação e modelagem de dados seguem essa configuração ([Google Analytics Data API](https://developers.google.com/analytics/devguides/reporting/data/v1)). Se a propriedade usa a identidade combinada, parte do número é estimativa, e nada na resposta avisa.
 
 > **MCP do Google Analytics**: servidor que implementa o Model Context Protocol sobre a Admin API e a Data API do GA4, só em leitura, e entrega a um modelo de linguagem os relatórios da propriedade com as mesmas regras de identidade, limiar e amostragem da interface.
@@ -133,4 +134,4 @@ Não é tutorial de instalação; o passo a passo está no [README](https://gith
 
 ---
 
-Se o assistente ligado ao GA4 responde "vendas" e o número não fecha com a VTEX, o primeiro passo é medir a diferença entre a receita do GA4 e o pedido faturado, mês a mês, com marketplace e WhatsApp na conta. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o assistente ligado ao GA4 responde "vendas" e o número não fecha com a VTEX, o primeiro passo é medir a diferença entre a receita do GA4 e o pedido faturado, mês a mês, com marketplace e WhatsApp na conta. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=mcp-do-google-analytics&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

@@ -12,8 +12,9 @@ citations: ["https://developer-docs.amazon/sp-api/reference/getorders", "https:/
 about: ["https://en.wikipedia.org/wiki/Customer_lifetime_value", "https://precisian.io/demonstracao"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 LTV/CAC é a razão entre a margem que um cliente deixa ao longo do relacionamento (LTV) e o custo de adquiri-lo (CAC). Quando parte da venda acontece no marketplace, as duas pontas se distorcem. A Amazon documenta o e-mail do comprador como *"anonimizado"* ([Amazon SP-API](https://developer-docs.amazon/sp-api/reference/getorders)), então quem recompra lá some do LTV da loja. E o CAC calculado com conversões de plataforma herda janelas de atribuição de até 90 dias no Google Ads ([Google](https://support.google.com/google-ads/answer/3123169)), que contam o mesmo cliente mais de uma vez.
 
 > **LTV/CAC**: margem de contribuição acumulada por cliente de uma safra, num horizonte declarado, dividida pelo custo total de aquisição dessa safra. Sem horizonte e sem margem, o número não tem significado.
@@ -135,4 +136,4 @@ Não descreve campos da API do Mercado Livre nem da Shopee. A documentação dos
 
 E não trata de LTV preditivo com modelo estatístico. É assunto legítimo, mas depende de uma base de pedidos limpa, que é o que este texto descreve.
 
-Se o seu LTV/CAC parece saudável e o caixa não confirma, o primeiro passo é recalcular o CAC com clientes novos da sua base de pedidos, e não com conversões de plataforma. [Veja como o data lake da Precisian junta pedido, marketplace e mídia](https://precisian.io/demonstracao), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o seu LTV/CAC parece saudável e o caixa não confirma, o primeiro passo é recalcular o CAC com clientes novos da sua base de pedidos, e não com conversões de plataforma. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=ltv-cac-ecommerce&utm_content=texto), sem compromisso de contrato.

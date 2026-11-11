@@ -5,7 +5,7 @@ slug: "supermetrics-windsor-ou-plataforma-de-dados"
 lang: "pt-BR"
 translationKey: "connector-vs-platform"
 publishedAt: 2026-10-14
-updatedAt: 2026-11-03
+updatedAt: 2026-11-08
 tags: ["mcp", "camada-semantica", "alucinacao-de-metrica", "integracao", "pipeline", "custo", "dados-para-ia"]
 draft: false
 llmSummary: "Em 14/10/2026, Windsor.ai (a partir de US$ 19/mês) e Supermetrics (US$ 39/mês) oferecem MCP ou conexão com Claude, segundo as páginas oficiais. Funnel e Improvado também têm MCP. O conector move o dado; a definição de métrica que um agente de IA precisa continua por escrever."
@@ -13,11 +13,13 @@ citations: ["https://supermetrics.com/pricing", "https://docs.supermetrics.com/d
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
 ---
-
 O conector basta quando quem lê o número é uma pessoa diante de uma planilha, e deixa de bastar quando quem lê é um agente de IA. Em 14/10/2026, o Windsor.ai cobra a partir de US$ 19 por mês no plano anual ([Windsor.ai](https://windsor.ai/pricing/)) e o Supermetrics a partir de US$ 39 ([Supermetrics](https://supermetrics.com/pricing)), e os dois já entregam o dado ao Claude e ao ChatGPT. O conector move o dado. Escrever o que "receita" significa na sua empresa fica fora do trabalho dele, e é dessa lacuna que nasce a alucinação de métrica.
 
 > **Conector de dados de marketing**: ferramenta que extrai métricas das APIs de plataformas (Google Ads, Meta, GA4, TikTok) e as entrega num destino, como planilha, Looker Studio, data warehouse ou, desde 2026, um assistente de IA via MCP. Ele copia a definição de cada plataforma; não cria uma definição da empresa.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=supermetrics-windsor-ou-plataforma-de-dados&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 ## Quais critérios importam nessa escolha?
 
@@ -95,4 +97,4 @@ Não compara qualidade de conector fonte a fonte; isso depende das suas contas e
 
 ---
 
-Se o agente da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir a distância entre os dois e descobrir qual definição cada um usou. O que uma plataforma de dados gerenciada inclui para fechar essa distância, e a faixa de entrada, estão em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o agente da sua operação já devolve uma receita que não bate com o ERP, o primeiro passo é medir a distância entre os dois e descobrir qual definição cada um usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=supermetrics-windsor-ou-plataforma-de-dados&utm_content=texto), sem compromisso de contrato.

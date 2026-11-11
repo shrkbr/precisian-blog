@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28", "https:/
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/API", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 MCP and APIs are not competing options: most MCP servers call an API underneath. What changes is who writes the call. With an API, a developer decides at build time which endpoint, fields and filters to use. With MCP, the model decides at runtime. The current Model Context Protocol spec, revision 2026-07-28, defines tools as "model-controlled," meaning the model "can discover and invoke tools automatically" ([MCP spec, read Nov 3, 2026](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 
 > **MCP (Model Context Protocol)**: an open specification, built on JSON-RPC 2.0 messages, that standardizes how an AI application discovers and calls tools, reads data and uses prompt templates exposed by a server. It is stewarded as "Model Context Protocol a Series of LF Projects, LLC" under the Apache 2.0 license.
@@ -94,4 +95,4 @@ It doesn't compare specific MCP servers or clients. It skips the features deprec
 
 ---
 
-If your team already connected an AI assistant to GA4 or your ad accounts and got numbers finance doesn't recognize, start by comparing the definition the tool applies with the one your business uses. [See how a semantic layer reaches your MCP client in practice](https://precisian.io/en/demo). No contract commitment, and no promise of an answer in 30 minutes either.
+If your team already connected an AI assistant to GA4 or your ad accounts and got numbers finance doesn't recognize, start by comparing the definition the tool applies with the one your business uses. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=mcp-vs-api&utm_content=texto), with no contract commitment.

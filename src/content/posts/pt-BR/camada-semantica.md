@@ -12,8 +12,9 @@ citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Camada semântica é o lugar onde ficam escritas, em formato que a máquina lê, as regras de cálculo das métricas do seu negócio. Não é ferramenta nem dashboard: é um conjunto de decisões registradas e versionadas. Num teste de abril de 2026 com três modelos de fronteira, entregar essas regras como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
 > **Camada semântica**: a tradução das regras do negócio para o dado, registrada em arquivo versionado e consultável por máquina, de modo que todo sistema que reporta uma métrica leia a mesma definição.
@@ -101,4 +102,4 @@ Não compara fornecedores de camada semântica, e não entra em implementação 
 
 E um limite honesto no número citado: o teste de abril mede acurácia de resposta com e sem contexto semântico, num benchmark. Ele não mede retorno financeiro, e este artigo não afirma nenhum.
 
-Se duas áreas da sua empresa reportam números diferentes para a mesma métrica, o primeiro passo não é escolher ferramenta: é escrever um contrato de métrica para a métrica mais disputada e achar o dono dela. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se duas áreas da sua empresa reportam números diferentes para a mesma métrica, o primeiro passo não é escolher ferramenta: é escrever um contrato de métrica para a métrica mais disputada e achar o dono dela. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=camada-semantica&utm_content=texto).

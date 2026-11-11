@@ -12,8 +12,9 @@ citations: ["https://www.opendatainfrastructure.com/agents-schema", "https://git
 about: ["https://en.wikipedia.org/wiki/Data_warehouse", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Agents Schema, at version 0.0.11, and the Model Context Protocol, at revision 2026-07-28, are not competing for the same job, and the clearest statement of that comes from Fivetran's own FAQ, which asks "Do I need MCP?" and answers: "No. `AGENTS.*` is just tables, so any agent that can run SQL can read it. MCP is one option; a CLI and a skill work too" ([Agents Schema](https://www.opendatainfrastructure.com/agents-schema)). One publishes context inside the warehouse. The other is a transport for tools. The real difference between them is governance, not function.
 
 > **Agents Schema**: a specification for metadata tables written into a standard `AGENTS` schema inside your own warehouse, so an agent can read context with plain SQL next to the data it reasons over.
@@ -103,4 +104,4 @@ Two limits on what is asserted here. The MCP project's documentation makes no re
 
 There is also no practitioner counter-perspective in this article. I looked for one, and the two independent analyses I found were unreachable. A comparison built only from the parties' own documentation has that limitation by construction, and you should weigh it accordingly.
 
-If your agents disagree about a number, neither of these standards is your first move. Write the definition down first. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If your agents disagree about a number, neither of these standards is your first move. Write the definition down first. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=agents-schema-vs-mcp&utm_content=texto), with no contract commitment.

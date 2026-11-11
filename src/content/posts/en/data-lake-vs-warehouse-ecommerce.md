@@ -12,8 +12,9 @@ citations: ["https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf", "http
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wiki/Data_lakehouse", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A data lake stores raw data exactly as the source sends it, on cheap object storage. A data warehouse stores data that has already been modeled into tables built for fast queries. A data lakehouse puts warehouse features (ACID transactions, versioning, indexing) on top of open lake files, a design Armbrust, Ghodsi, Xin and Zaharia defined at CIDR in January 2021 ([paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). For an ecommerce brand, raw comes first. And none of the three decides what "net revenue" means.
 
 > **Data lake**: a repository that accepts data in the shape the source delivers, with no schema enforced on write; structure is applied when the data is read.
@@ -112,4 +113,4 @@ And the question table reflects the most common usage of each architecture. A we
 
 ---
 
-If September revenue has a different number in every report your company produces, the architecture is not the first suspect. The first step is counting how many definitions of revenue exist today and which system each one lives in. [See how Precisian's data lake handles that](https://precisian.io/en/demo), no contract commitment, and no promise of an answer in 30 minutes either.
+If September revenue has a different number in every report your company produces, the architecture is not the first suspect. The first step is counting how many definitions of revenue exist today and which system each one lives in. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=data-lake-vs-warehouse-ecommerce&utm_content=texto), with no contract commitment.

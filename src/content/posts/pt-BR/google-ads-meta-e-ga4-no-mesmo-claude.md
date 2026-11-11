@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/3123169", "https://sup
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://pt.wikipedia.org/wiki/Retorno_sobre_investimento", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Ligar os MCPs de Google Ads, Meta e GA4 no mesmo Claude dá ao agente três réguas que se sobrepõem. A janela padrão do Google Ads conta uma compra até 30 dias depois do clique ([Google Ads](https://support.google.com/google-ads/answer/3123169)); a da Meta, até 7 dias depois do clique ou 1 dia depois da visualização ([Meta](https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights)). O mesmo pedido cabe nas duas, e o agente soma.
 
 Cada MCP é fiel à própria plataforma, e é exatamente por isso que a soma passa do faturamento. Nenhum servidor está com defeito. Falta o lugar onde a empresa escreveu, uma vez, o que conta como venda de mídia.
@@ -129,4 +130,4 @@ E não diz quanto é a sobreposição na sua operação. Os números da tabela d
 
 ---
 
-Se o agente com Google Ads, Meta e GA4 conectados diz que a mídia vendeu quase tudo que a loja faturou, o primeiro passo é rodar a semana contra o ERP e medir a sobreposição. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o agente com Google Ads, Meta e GA4 conectados diz que a mídia vendeu quase tudo que a loja faturou, o primeiro passo é rodar a semana contra o ERP e medir a sobreposição. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=google-ads-meta-e-ga4-no-mesmo-claude&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

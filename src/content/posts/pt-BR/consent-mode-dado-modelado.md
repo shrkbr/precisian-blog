@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/11161109", "https://sup
 about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 O relatório do GA4 e o export para o BigQuery não batem, e não é erro de configuração: a documentação do Google lista explicitamente "Data export, for example, BigQuery export" entre os recursos que **não suportam dado comportamental modelado** ([Google](https://support.google.com/analytics/answer/11161109)). A interface mostra estimativa; o warehouse recebe evento observado. Reconciliar os dois é perseguir uma diferença que foi construída de propósito.
 
 > **Modelagem comportamental**: estimativa que o Google produz para usuários que negaram consentimento, usando o comportamento dos que consentiram, e que existe apenas na interface do Analytics.
@@ -102,4 +103,4 @@ Também deixei de fora a data comumente citada como prazo de exigência do Conse
 
 Vale uma nota de calendário: essa divergência tende a crescer, não a encolher. Cada ajuste de banner que melhora a conformidade aumenta a taxa de recusa, e cada ponto de recusa aumenta a fatia estimada na interface sem mudar nada no warehouse. Quem tratou isso como ruído em 2024 vai encontrar um número maior em 2027, pelo funcionamento normal do sistema.
 
-Se o seu GA4 e o seu BigQuery divergem, o primeiro passo não é investigar a tag. É verificar se você está comparando estimativa com observação. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o seu GA4 e o seu BigQuery divergem, o primeiro passo não é investigar a tag. É verificar se você está comparando estimativa com observação. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=consent-mode-dado-modelado&utm_content=texto), sem compromisso de contrato.

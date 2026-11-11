@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2411.07763", "https://arxiv.org/abs/2305.0311
 about: ["https://en.wikipedia.org/wiki/Natural-language_user_interface", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Text-to-SQL fails on marketing data precisely when the query runs: the model picks the wrong revenue column, the wrong date window, joins a table that multiplies rows, or adds up the same order under two channels, and hands back a clean number with no error message. Getting it right is hard even under test conditions: on Spider 2.0, presented at ICLR 2025, o1-preview solved 21.3% of 632 enterprise tasks, against 91.2% on Spider 1.0 ([Lei et al., 2024](https://arxiv.org/abs/2411.07763)).
 
 The fix is giving the model defined metrics instead of tables. Switching models removes none of the four failures described below.
@@ -192,4 +193,4 @@ It does not cover security: prompt injection and row-level permissions are a sep
 
 Omni's post lists other figures on the topic, which I used only as pointers. One of them shows why a number with a citation attached is not a checked number: Shen et al.'s taxonomy of text-to-SQL errors reported 29 error types in its first version, from January 2025, and the abstract of the current version, from June 2026, reports 27 ([arXiv 2501.09310](https://arxiv.org/abs/2501.09310)). Benchmark leaderboards move every week too, which is why every figure above carries a date.
 
-If your agent returns revenue without saying which column it used, the first step is to measure the gap between its answers and finance's close on a handful of golden questions. [See how querying by metric works in practice](https://precisian.io/en/demo), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your agent returns revenue without saying which column it used, the first step is to measure the gap between its answers and finance's close on a handful of golden questions. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=governed-text-to-sql&utm_content=texto) over an isolated lake, with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://help.shopify.com/en/manual/reports-and-analytics/shopify-re
 about: ["https://en.wikipedia.org/wiki/Performance_indicator", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Ecommerce KPIs are the handful of numbers a store runs on: revenue, AOV, conversion rate, CAC, ROAS, MER, LTV, refund rate and contribution margin. Each one has a formula and at least one choice that changes the result. Shopify alone computes average order value as `(gross sales - discounts) / orders`, before returns ([ShopifyQL reference, version 2026-10](https://shopify.dev/docs/api/shopifyql/2026-10/schemas/sales_revenue/sales), read November 3, 2026), while finance usually nets returns out first.
 
 > **Ecommerce KPI definition**: a written rule for one business number that fixes its formula, its source system, the date that governs it (order, payment, fulfillment or refund) and every inclusion or exclusion (shipping, tax, discounts, cancellations, returns, attribution window), so that two teams computing it get the same result.
@@ -109,4 +110,4 @@ It gives no benchmark values for any KPI, because a benchmark without a stated d
 
 ---
 
-If your teams bring different revenue, AOV or ROAS numbers to the same meeting, the first step is to list every definition in circulation and find the one choice that separates them. [Book a conversation about your KPI definitions](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If your teams bring different revenue, AOV or ROAS numbers to the same meeting, the first step is to list every definition in circulation and find the one choice that separates them. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=ecommerce-kpis-definitions&utm_content=texto).

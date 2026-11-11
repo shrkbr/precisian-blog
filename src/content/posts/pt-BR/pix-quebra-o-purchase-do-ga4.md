@@ -12,8 +12,9 @@ citations: ["https://bacen.github.io/pix-api/", "https://developers.google.com/a
 about: ["https://pt.wikipedia.org/wiki/Pix", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 O Pix liquida em no máximo 40 segundos, limite que o Banco Central impõe no [Manual de Tempos do Pix](https://www.bcb.gov.br/estabilidadefinanceira/pix), e transações que passam dele são rejeitadas. O que quebra a receita do GA4 não é a liquidação: é a **cobrança**, que nasce ativa e pode ficar assim por horas ou dias antes de alguém pagar. O GA4 dispara o evento de compra no carregamento da página de confirmação, não na chegada do dinheiro.
 
 > **Cobrança Pix (`cob`)**: objeto criado antes do pagamento, que nasce com status `ATIVA` e só vira `CONCLUIDA` quando a liquidação acontece. A notificação ao lojista é assíncrona, por webhook.
@@ -121,4 +122,4 @@ Vale registrar o que isso significa: nem o Banco Central sabe quantos Pix gerado
 
 Também não trago o recorte de Pix por finalidade de compra. O campo existe na base aberta do Banco Central, confirmei o schema, e as consultas à entidade devolveram erro de servidor em todas as variações que tentei. O dado existe e está publicado; eu não consegui extraí-lo, e prefiro dizer isso a estimar.
 
-Se o seu GA4 fecha o mês acima da plataforma, separe por meio de pagamento antes de investigar qualquer outra coisa. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o seu GA4 fecha o mês acima da plataforma, separe por meio de pagamento antes de investigar qualquer outra coisa. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=pix-quebra-o-purchase-do-ga4&utm_content=texto), sem compromisso de contrato.

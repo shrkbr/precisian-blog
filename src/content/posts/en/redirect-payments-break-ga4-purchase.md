@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/9191807", "https://supp
 about: ["https://en.wikipedia.org/wiki/Payment_service_provider", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Mollie states it in two sentences that should end the debate: "Your customer may not always return to your website. Always make sure to listen to webhooks as a back-up" ([Mollie](https://docs.mollie.com/docs/triggering-fulfilment)). Stripe says the same thing differently, warning that "you can't rely on triggering fulfillment only from your checkout landing page, because it's not guaranteed customers visit that page" ([Stripe](https://docs.stripe.com/checkout/fulfillment)).
 
 Your `purchase` event lives on that landing page. If the buyer never arrives, it never fires, and the order exists only in the payment provider. There are 2 failures hiding in this, and most teams only fix the visible one.
@@ -113,3 +114,7 @@ It does not attribute the "customer may not return" warning to every provider. S
 It does not resolve the `ignore_referrer` conflict. Two Google pages disagree about how a false value behaves, I did not test it, and reporting the conflict is more useful than picking a side.
 
 And it does not cover locally-specific deferred payment methods, where confirmation can arrive days later and shift revenue across a month boundary. That is [a separate article](https://precisian.io/blog/pt-BR/posts/pix-quebra-o-purchase-do-ga4/) (in Portuguese), and the mechanism there compounds everything described here.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=redirect-payments-break-ga4-purchase&utm_content=texto), with no contract commitment.

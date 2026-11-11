@@ -12,8 +12,9 @@ citations: ["https://developers.google.com/google-ads/api/docs/developer-toolkit
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Google_Ads", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 The Google Ads MCP server lets an AI assistant query your ad account in plain English, with read-only access. According to Google's documentation, last updated October 14, 2026, it exposes three tools, and the main one, `search`, runs Google Ads Query Language (GAQL) queries ([Google Ads API](https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server)). It answers precisely what Google Ads recorded as a conversion. How much of that became a shipped, paid order is something it has no way to know.
 
 > **Google Ads MCP server**: a server that implements the Model Context Protocol on top of the Google Ads API, giving a language model your account data (campaigns, spend, conversions, budgets) through GAQL queries, with no permission to change anything.
@@ -109,4 +110,4 @@ It is not an installation guide; the steps are in the [README](https://github.co
 
 ---
 
-If the assistant connected to Google Ads reports one ROAS and finance closes the month on another, the first step is measuring the gap between platform conversions and paid orders, month by month. [See how that works in practice](https://precisian.io/demonstracao). No contract commitment, and no promise of an answer in 30 minutes either.
+If the assistant connected to Google Ads reports one ROAS and finance closes the month on another, the first step is measuring the gap between platform conversions and paid orders, month by month. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=google-ads-mcp-what-it-sees&utm_content=texto) over an isolated lake, with no contract commitment.

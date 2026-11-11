@@ -12,8 +12,9 @@ citations: ["https://developers.facebook.com/documentation/business-messaging/wh
 about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 `ctwa_clid` is the click identifier for a Click-to-WhatsApp ad. Meta delivers it inside the `referral` object of the WhatsApp Business Platform messages webhook, a field added to the Cloud API on September 27, 2023 ([Meta changelog](https://developers.facebook.com/docs/whatsapp/business-platform/changelog)). You store it with the conversation and send it back through the Conversions API when the sale happens. If nothing stores it, the revenue reaches your books with no source.
 
 > **ctwa_clid** (Click-to-WhatsApp Click ID): a personal identifier, unique per click, that Meta exposes to the business when a conversation starts from an ad that opens WhatsApp, and that needs to be sent back to Meta in the Conversions API call ([Meta for Developers](https://developers.facebook.com/docs/marketing-api/conversions-api/business-messaging), accessed October 23, 2026).
@@ -132,4 +133,4 @@ It doesn't cover Messenger or Instagram Direct, which use other identifiers in t
 
 It doesn't describe what happens for teams answering only from the WhatsApp Business app on a phone. The documentation I read covers the platform webhook.
 
-If you sell over WhatsApp and can't say which ad produced each order, the first step is to check where `ctwa_clid` is being written and whether it reaches the sales record. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — no contract commitment, and no promise of an answer in 30 minutes either.
+If you sell over WhatsApp and can't say which ad produced each order, the first step is to check where `ctwa_clid` is being written and whether it reaches the sales record. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=ctwa-clid-explained&utm_content=texto).

@@ -12,8 +12,9 @@ citations: ["https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-rev
 about: ["https://pt.wikipedia.org/wiki/Receita_(contabilidade)", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 O marketing fecha o mês com um número de receita, o financeiro fecha com outro, e a reunião vira uma caça ao erro que não existe. Os dois estão certos. O financeiro segue uma norma de cinco etapas em vigor desde 2018 que diz quando a receita pode ser reconhecida ([IFRS Foundation](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/)). O marketing mede no checkout. São eventos diferentes, em datas diferentes, por motivos legítimos dos dois lados.
 
 A tentativa de "alinhar os times" falha porque trata como descuido o que é diferença de definição. Ninguém vai convencer o contador a reconhecer receita mais cedo.
@@ -123,4 +124,4 @@ Também não traz estatística de quantas empresas convivem com definições div
 
 E não recomenda ferramenta. O problema é de definição e de dono antes de ser de tecnologia, e nenhuma compra resolve a parte que é acordo entre pessoas.
 
-Se a sua reunião de fechamento ainda começa com a conferência de qual número está certo, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=mesma-definicao-de-receita&utm_content=texto).

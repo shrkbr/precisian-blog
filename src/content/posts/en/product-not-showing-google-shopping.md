@@ -12,8 +12,9 @@ citations: ["https://support.google.com/merchants/answer/2948694", "https://supp
 about: ["https://en.wikipedia.org/wiki/Google_Shopping", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 The symptom almost nobody can explain: nothing changed in the feed, and hundreds of SKUs were disapproved overnight. Google has a name for that and documents the mechanism. **Preemptive item disapproval** happens when price or availability disagree between your feed and your landing pages, and when it is in force, "we err on the side of caution and disapprove products that are likely to violate our requirements" ([Google](https://support.google.com/merchants/answer/2948694)). A review takes 3 to 5 business days to undo.
 
 Read that second clause again. Google is not only disapproving what it checked. It is disapproving what it **suspects**, by association, after detecting a discrepancy somewhere. Which is why the first useful question is never "what did we change", but which of the 5 documented product states you are actually in.
@@ -118,8 +119,6 @@ Merchant Center is simply the first place where that becomes visible as a conseq
 
 So the reading is worth inverting. A price-mismatch disapproval is not an integration problem with Google. It is a symptom that the definition of price is not written anywhere both systems read, which is [the same failure that separates marketing from finance](https://precisian.io/blog/en/posts/marketing-finance-revenue-definition/). Fixing the feed resolves this week's disapproval. Writing the definition resolves the category.
 
-If your feed disapproves in bulk with nobody having touched it, [book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
-
 ## What changes in 2027?
 
 An image rule that already issues warnings but does not yet disapprove.
@@ -137,3 +136,7 @@ It gives no price-mismatch tolerance. I looked for a percentage threshold by nam
 It does not assert that "Pending" and "Under review" are the same state. Both terms appear on different pages and I found no document reconciling them. It looks like terminology drift, and I treat it as that.
 
 And it carries no last-updated date for the pages cited, because none of them exposes one. Everything here is dated by when I read it, in September of this year, which is the only honest claim available about the currency of these sources.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=product-not-showing-google-shopping&utm_content=texto), with no contract commitment.

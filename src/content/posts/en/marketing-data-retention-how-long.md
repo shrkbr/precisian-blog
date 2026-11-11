@@ -5,7 +5,7 @@ slug: "marketing-data-retention-how-long"
 lang: "en"
 translationKey: "marketing-data-retention"
 publishedAt: 2026-10-08
-updatedAt: 2026-10-23
+updatedAt: 2026-11-08
 tags: ["governance", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4 standard properties retain user and event data for 2 or 14 months; 26, 38 and 50 months are 360 only, and large properties are limited to 2 months at event level. The setting does not affect standard aggregate reports, only explorations and funnels."
@@ -13,8 +13,8 @@ citations: ["https://support.google.com/analytics/answer/7667196", "https://supp
 about: ["https://en.wikipedia.org/wiki/Data_retention", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: newsletter
 ---
-
 GA4 keeps user- and event-level data for **2 or 14 months** on standard properties, and that is the whole menu: the 26, 38 and 50-month options are Analytics 360 only ([Google](https://support.google.com/analytics/answer/7667196)). Once the window passes, "data is deleted automatically on a monthly basis". The paid tier's ceiling is more than three times the free one.
 
 What makes this dangerous is not the limit. It is that the report keeps looking normal after the data beneath it evaporates.
@@ -126,3 +126,7 @@ It does not cover retention on advertising platforms. Each has its own rules and
 It gives no legal retention period. Data protection law generally sets principles rather than a number of months, and whoever turns a principle into a policy for a specific business is that business's counsel, not an article.
 
 And it does not treat attribution modelling as retention, though the two interact. GA4 states that "all attribution models exclude direct visits from receiving attribution credit, unless the path to key event consists entirely of direct visits" ([GA4](https://support.google.com/analytics/answer/10596866)), which means the historical series you keep is already modelled before you store it.
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=marketing-data-retention-how-long&utm_content=texto).

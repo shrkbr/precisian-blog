@@ -12,8 +12,9 @@ citations: ["https://support.google.com/analytics/answer/9305587", "https://supp
 about: ["https://pt.wikipedia.org/wiki/Controle_de_acesso", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O GA4 oferece 5 papéis e 2 restrições de dado que quase ninguém usa, entre elas uma que esconde métrica de receita e outra que esconde métrica de custo ([Google](https://support.google.com/analytics/answer/9305587)). O padrão de mercado, mesmo assim, é conceder Administrador e seguir a vida.
 
 O problema não é a agência. É que "dar acesso" virou uma decisão binária num sistema que nunca foi binário.
@@ -122,4 +123,4 @@ Não afirma que os papéis do Google Ads têm definições narrativas. A página
 
 E não trata de acesso a dado pessoal sob a ótica de operador e controlador, que é uma camada jurídica inteira em cima desta, e merece o próprio texto.
 
-Se você não sabe de cabeça quem tem Administrador nas suas contas, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se um agente de IA já lê dado de produção na sua empresa, o primeiro passo é saber exatamente o que ele consegue, e não consegue, alcançar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=acesso-de-dados-para-agencia&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

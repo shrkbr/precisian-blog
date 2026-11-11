@@ -12,8 +12,9 @@ citations: ["https://openai.com/index/march-20-chatgpt-outage/", "https://develo
 about: ["https://en.wikipedia.org/wiki/Multitenancy", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 To give your product's AI agent access to customer data without exposing one tenant to another, close three paths, none of which needs an attacker: context from one tenant left in the conversation about the next, a cache that stores answers without the tenant in its key, and one credential that reaches every account. In March 2023, a shared cache exposed payment details of 1.2% of ChatGPT Plus subscribers to other users ([OpenAI](https://openai.com/index/march-20-chatgpt-outage/)).
 
 Per-tenant data architecture handles part of this, and I covered it in [per-tenant isolation for MCP](https://precisian.io/blog/en/posts/per-tenant-isolation-mcp/). This article is about the rest: the runtime of an agent that works for many customers, whether you are a SaaS company shipping an assistant inside your product or an agency running one across forty client accounts.
@@ -102,4 +103,4 @@ And it does not replace your customer agreements. What your contracts and DPAs s
 
 ---
 
-If your agent runs on one platform-wide token and you cannot say which tenant it queried yesterday, the first step is counting how many credentials and scopes it actually uses. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of a 30-minute answer either.
+If your agent runs on one platform-wide token and you cannot say which tenant it queried yesterday, the first step is counting how many credentials and scopes it actually uses. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=one-ai-agent-many-client-accounts&utm_content=texto) over an isolated lake, with no contract commitment.

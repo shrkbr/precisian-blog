@@ -1,0 +1,99 @@
+---
+/**
+ * PostCta.astro — cartão de CTA por intenção do post.
+ *
+ * O degrau (regua | ficha | demo | newsletter | conversa) vem do front-matter
+ * `cta`, ou do padrão por tag em `src/lib/cta.ts`. Copy e destinos vivem lá.
+ *
+ * Mede-se sozinho: empurra `cta_view` (50% do cartão visível, uma vez) e
+ * `cta_click` na dataLayer, com cta_name / cta_position / post_slug / post_lang.
+ * Quem encaminha para o GA4 é o GTM do BaseLayout. `generate_lead` continua
+ * sendo o evento-chave, disparado no destino; `cta_click` não vira conversão.
+ *
+ * Uso (ArticleLayout):
+ *   <PostCta post={post} position="fim" />      antes do <footer> de tags
+ *   <PostCta post={post} position="lateral" />  no <aside>, abaixo do índice
+ */
+import type { CollectionEntry } from 'astro:content'
+import { getLangFromUrl } from '../i18n/utils'
+import { resolveCta, type CtaPosition } from '../lib/cta'
+
+interface Props {
+  post: CollectionEntry<'posts'>
+  position: CtaPosition
+}
+
+const { post, position } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const cta = resolveCta(post.data, lang, position)
+---
+
+<aside
+  class:list={[
+    'cta-card not-prose rounded-xl border border-border bg-bg-elevated p-5',
+    position === 'fim' && 'mt-10',
+    position === 'lateral' && 'mt-8 text-sm',
+  ]}
+  data-cta
+  data-cta-name={cta.name}
+  data-cta-position={position}
+  data-post-slug={post.data.slug}
+  data-post-lang={lang}
+  aria-label={cta.title}
+>
+  <p class="font-display font-bold text-fg leading-snug mb-2">{cta.title}</p>
+  <p class="text-fg-muted mb-4">{cta.line}</p>
+  <div class="flex flex-wrap gap-2">
+    {cta.buttons.map((b) => (
+      <a
+        href={b.href}
+        class="inline-block rounded-lg px-3 py-2 font-semibold border border-accent text-accent hover:bg-accent hover:text-bg-base transition"
+        data-cta-button={b.key}
+        rel={b.external ? 'noopener' : undefined}
+        target={b.external ? '_blank' : undefined}
+      >
+        {b.label}
+      </a>
+    ))}
+  </div>
+  {cta.secondary && <p class="mt-3 text-fg-muted" set:html={cta.secondary} />}
+</aside>
+
+<script>
+  // Um listener por página, independente de quantos cartões existam.
+  type DL = Record<string, unknown>[]
+  const w = window as Window & { dataLayer?: DL; __ctaBound?: boolean }
+  if (!w.__ctaBound) {
+    w.__ctaBound = true
+    w.dataLayer = w.dataLayer || []
+    const push = (event: string, el: HTMLElement, extra: Record<string, unknown> = {}) =>
+      w.dataLayer!.push({
+        event,
+        cta_name: el.dataset.ctaName,
+        cta_position: el.dataset.ctaPosition,
+        post_slug: el.dataset.postSlug,
+        post_lang: el.dataset.postLang,
+        ...extra,
+      })
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-cta]'))
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              push('cta_view', e.target as HTMLElement)
+              io.unobserve(e.target)
+            }
+          }
+        },
+        { threshold: 0.5 },
+      )
+      cards.forEach((c) => io.observe(c))
+    }
+    document.addEventListener('click', (ev) => {
+      const a = (ev.target as HTMLElement).closest<HTMLAnchorElement>('[data-cta-button]')
+      const card = a?.closest<HTMLElement>('[data-cta]')
+      if (a && card) push('cta_click', card, { cta_button: a.dataset.ctaButton, cta_href: a.href })
+    })
+  }
+</script>

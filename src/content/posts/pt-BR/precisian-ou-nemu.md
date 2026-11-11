@@ -12,11 +12,14 @@ citations: ["https://usenemu.com/br", "https://usenemu.com/pricing", "https://us
 about: ["https://usenemu.com/br", "https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha a Nemu se a pergunta é "qual campanha, criativo ou influenciador trouxe esta venda" e você quer a resposta num painel pronto, com o pixel montado pelo time dela. Escolha a Precisian se a pergunta é "qual foi a receita, a margem e o ROAS", feita pela IA da diretoria sobre loja, marketplace e ERP. Em 27/10/2026, a [Nemu](https://usenemu.com/br) declara mais de 300 e-commerces clientes e modelos de atribuição first-click, last-click e linear. Uma é painel de atribuição; a outra, base de dado governada que a sua IA consome.
 
 > **Nemu**: plataforma brasileira de atribuição para e-commerce (Nemu Tecnologia Ltda, São Paulo, segundo os [termos de uso](https://usenemu.com/br/termos-de-uso)), com pixel first-party próprio, atribuição em tempo real, painéis e envio de conversões às plataformas de anúncio ([usenemu.com/br](https://usenemu.com/br), consultado em 27/10/2026). Captou R$ 1,3 milhão em rodada pré-seed em março de 2024 ([Bloomberg Línea, 23/03/2024](https://www.bloomberglinea.com.br/startups/rodadas-da-semana-startups-de-marketing-digital-e-rh-recebem-aportes/)). O domínio antigo, nemu.com.br, redireciona para usenemu.com/br.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-nemu&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Nemu e não a Precisian?", abaixo.
 
 ## O que cada uma faz?
 
@@ -114,4 +117,4 @@ Não avalia a precisão do pixel nem dos modelos de atribuição da Nemu; não t
 
 ---
 
-Se o ROAS que a sua IA devolve não fecha com a receita do ERP, o primeiro passo é medir a distância entre os dois e descobrir que definição cada um usou. O que a plataforma inclui para fechar essa distância, e como ela é cobrada, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o ROAS que a sua IA devolve não fecha com a receita do ERP, o primeiro passo é medir a distância entre os dois e descobrir que definição cada um usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-nemu&utm_content=texto), sem compromisso de contrato.

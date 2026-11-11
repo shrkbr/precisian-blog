@@ -12,8 +12,9 @@ citations: ["https://www.opendatainfrastructure.com/agents-schema", "https://git
 about: ["https://pt.wikipedia.org/wiki/Metadados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 O Agents Schema, na versão **0.0.11**, e o Model Context Protocol, na revisão **2026-07-28**, não disputam a mesma função. A declaração mais clara disso vem do próprio FAQ do Agents Schema, que pergunta "preciso de MCP?" e responde: *"Não. `AGENTS.*` são apenas tabelas, então qualquer agente que consiga rodar SQL pode lê-lo. MCP é uma opção; uma CLI e uma skill também funcionam"* ([Agents Schema](https://www.opendatainfrastructure.com/agents-schema)).
 
 Um publica contexto dentro do warehouse. O outro é transporte para ferramentas. A diferença real entre eles é de governança, não de função.
@@ -103,3 +104,7 @@ Não traz número de adoção de nenhum dos dois. Não encontrei levantamento co
 Não descreve a lista completa de tabelas do Agents Schema. A especificação está abaixo de 1.0 e em movimento; reproduzir um esquema que muda entre versões produziria um artigo errado em poucos meses, que é exatamente o erro que este texto está tentando evitar.
 
 E não afirma que um dos dois vencerá. Eles resolvem camadas diferentes, e o desfecho mais provável é os dois coexistirem, com a escolha real sendo sobre definição, que nenhum dos dois entrega.
+
+---
+
+O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=agents-schema-ou-mcp&utm_content=texto), sem compromisso de contrato.

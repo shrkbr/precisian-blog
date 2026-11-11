@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2411.07763", "https://arxiv.org/abs/2305.0311
 about: ["https://en.wikipedia.org/wiki/Natural-language_user_interface", "https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Text-to-SQL erra em dado de marketing justamente quando a consulta roda: o modelo escolhe a coluna de receita errada, a janela de datas errada, junta uma tabela que duplica linhas ou soma o mesmo pedido em dois canais, e devolve um número limpo, sem mensagem de erro. Acertar é difícil mesmo em teste controlado: no Spider 2.0, apresentado no ICLR 2025, o o1-preview resolveu 21,3% de 632 tarefas corporativas, contra 91,2% no Spider 1.0 ([Lei et al., 2024](https://arxiv.org/abs/2411.07763)).
 
 O conserto é dar ao modelo métricas definidas em vez de tabelas. Trocar de modelo não elimina nenhum dos quatro erros descritos abaixo.
@@ -192,4 +193,4 @@ Não cobre segurança: injeção de prompt e permissão por linha são outro mod
 
 O texto da Omni lista outros números sobre o tema que usei só como ponteiro. Um deles mostra por que número com citação colada não é número conferido: a taxonomia de erros de text-to-SQL de Shen et al. falava em 29 tipos de erro na primeira versão, de janeiro de 2025, e o resumo da versão atual, de junho de 2026, fala em 27 ([arXiv 2501.09310](https://arxiv.org/abs/2501.09310)). Os placares de benchmark também mudam toda semana; os valores acima têm data por isso.
 
-Se o agente da sua operação devolve receita sem dizer qual coluna usou, o primeiro passo é medir a distância entre a resposta dele e o fechamento do financeiro em algumas perguntas de ouro. [Veja como uma consulta por métrica funciona na prática](https://precisian.io/demonstracao): sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o agente da sua operação devolve receita sem dizer qual coluna usou, o primeiro passo é medir a distância entre a resposta dele e o fechamento do financeiro em algumas perguntas de ouro. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=text-to-sql-dado-de-marketing&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

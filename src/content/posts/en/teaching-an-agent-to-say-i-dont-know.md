@@ -12,8 +12,9 @@ citations: ["https://arxiv.org/abs/2403.15879", "https://arxiv.org/abs/2506.0903
 about: ["https://en.wikipedia.org/wiki/Uncertainty_quantification", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 On a benchmark that penalizes wrong SQL, a system that abstains from every single question scores 50%, and the best real text-to-SQL pipelines score between 29.8% and 54.5% depending on how harshly errors are priced ([TrustSQL](https://arxiv.org/abs/2403.15879)). Answering nothing beats most production systems once a wrong answer costs something. That is the whole problem in one number.
 
 > **Abstention**: a system declining to answer when it lacks the grounding to answer correctly, instead of producing its best guess.
@@ -110,4 +111,4 @@ It does not benchmark models, and it does not cover retrieval-augmented generati
 
 Three things were deliberately excluded for lack of verifiable sourcing. A vendor's widely cited text-to-SQL accuracy figure, reported from an internal 40-question test with the model unnamed and no established benchmark. A table of abstention rates from a provider blog that could not be retrieved at source and does not appear in the corresponding paper. And a national standards framework whose document would not parse, and which I will not paraphrase from a summary.
 
-If you are evaluating a data agent, ask the vendor what happens when the answer does not exist. The response tells you more than any accuracy number. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If you are evaluating a data agent, ask the vendor what happens when the answer does not exist. The response tells you more than any accuracy number. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=teaching-an-agent-to-say-i-dont-know&utm_content=texto) over an isolated lake, with no contract commitment.

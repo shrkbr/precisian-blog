@@ -12,8 +12,9 @@ citations: ["https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-ag
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Snowflake_Inc.", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 The Snowflake-managed MCP server shows an AI agent only the tools you list in one `CREATE MCP SERVER` statement, and each tool runs under the role of the person who connected. Snowflake's documentation, read November 3, 2026, lists six tool types, from `CORTEX_ANALYST_MESSAGE` to raw `SYSTEM_EXECUTE_SQL` ([Snowflake](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp)). The server reached general availability on November 4, 2025. Whether the agent's revenue number is right still depends on a semantic view your team writes, tests and keeps current.
 
 > **Snowflake-managed MCP server**: a schema-level object, created with SQL, that implements the Model Context Protocol inside your Snowflake account and exposes Cortex Analyst, Cortex Search, Cortex Agents, SQL execution and custom functions as tools to clients such as Claude, ChatGPT or Cursor, under Snowflake role-based access control.
@@ -117,4 +118,4 @@ It isn't an installation guide; the [Snowflake documentation](https://docs.snowf
 
 ---
 
-If the agent connected to Snowflake answers "revenue" and the number doesn't tie to what finance closed, the first step is listing which channels and adjustments the semantic view leaves out, month by month. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io). No contract commitment, and no promise of an answer in 30 minutes either.
+If the agent connected to Snowflake answers "revenue" and the number doesn't tie to what finance closed, the first step is listing which channels and adjustments the semantic view leaves out, month by month. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=snowflake-mcp-server&utm_content=texto) over an isolated lake, with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A semantic layer and a data warehouse do not compete: one stores and computes, the other defines what is being computed. The confusion exists because vendor material puts both in the same sentence, and because you can operate without the second, badly. In an April 2026 test across three frontier models, supplying business definitions as context raised answer accuracy from **45.5–50.5% to 67.7–68.7%** ([Rumiantsau and Fokeev](https://arxiv.org/abs/2604.25149)).
 
 > **Data warehouse**: where data is stored and queries execute. **Semantic layer**: where it is written down what each metric means, so that every system reporting it reads the same rule.
@@ -109,3 +110,7 @@ It cites the accuracy study as a preprint, which it is. It is here for its paire
 It gives no cost figure for adopting a semantic layer. That depends on your warehouse pricing model, your query mix and how much definitional rework you are carrying, and any published number describes somebody else's configuration.
 
 And it does not claim a semantic layer resolves disagreements about what a metric *should* be. It makes the current answer explicit and consistent. Deciding that answer is an organisational act with an owner, and no tool performs it.
+
+---
+
+What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=semantic-layer-vs-data-warehouse&utm_content=texto), with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://developer-docs.amazon/sp-api/reference/getorders", "https:/
 about: ["https://en.wikipedia.org/wiki/Customer_lifetime_value", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Lifetime value by acquisition channel needs one thing: knowing that 2 orders came from the same person. Amazon documents its buyer email as "the anonymized email address of the buyer", and the order payload carries no customer key at all ([Amazon](https://developer-docs.amazon/sp-api/reference/getorders)). There is no shared key between your marketplace orders and your own store, and the marketplace documents its absence rather than hiding it.
 
 This is not an integration gap somebody forgot to close. It is the design. The order status list holds 8 values, and 2 of them, `Canceled` and `Unfulfillable`, are not sales at all, yet they sit in the same enum as `Shipped` ([Amazon](https://developer-docs.amazon/sp-api/reference/getorders)).
@@ -111,3 +112,7 @@ It carries no duplicate-order statistic. I looked for primary research with a st
 It does not mix Amazon API versions. The "anonymized" wording is documented for the version I read. A newer version exists with different field names and different access rules, and carrying an adjective across versions is exactly the error this article is about.
 
 And it makes no claim about which regions release buyer email under which conditions. The redaction rules vary by marketplace and by fulfillment method, and that is a table to read in your own account rather than a sentence to take from an article.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=ltv-by-channel-marketplace-own-store&utm_content=texto), with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://docs.cloud.google.com/bigquery/docs/best-practices-costs", 
 about: ["https://en.wikipedia.org/wiki/Data_warehouse", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 An AI agent querying your warehouse can cost more than a human analyst doing the same work, and the reason is not that it asks more questions. It is that nothing in the default configuration stops one query from scanning everything. Databricks ships `STATEMENT_TIMEOUT` with a system default of 172,800 seconds, which is two days ([Databricks docs](https://docs.databricks.com/aws/en/sql/language-manual/parameters/statement_timeout)). That default was written for humans who notice.
 
 ## What does an agent actually do to your bill?
@@ -106,4 +107,4 @@ One deliberate omission: there is a widely circulated anecdote about a multi-age
 
 There is also a real gap in the record. No Tier 1 source has published incident data on runaway agent warehouse cost. The strongest available evidence is indirect and, I would argue, sufficient: vendors do not hard-code a three-minute timeout and a 3,000-row cap against a hypothetical problem.
 
-If an agent is about to get access to your warehouse, the first step is reading your current defaults rather than picking a tool. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If an agent is about to get access to your warehouse, the first step is reading your current defaults rather than picking a tool. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=query-cost-guardrails&utm_content=texto) over an isolated lake, with no contract commitment.

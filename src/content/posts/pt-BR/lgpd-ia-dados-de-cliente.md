@@ -12,8 +12,9 @@ citations: ["https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2
 about: ["https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_Pessoais", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Se você manda dado de cliente para um LLM hospedado fora do Brasil, hoje existem dois caminhos legais vivos, e não três. Ou o dado fica na União Europeia, considerada adequada pela ANPD desde janeiro de 2026, ou o contrato incorpora as cláusulas-padrão da [Resolução 19/2024](https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024), cujo prazo de adequação **já venceu**. A terceira saída que todo fornecedor oferece, normas corporativas globais, não está disponível: a ANPD declara por escrito que nunca aprovou nenhuma.
 
 > **Transferência internacional de dados**: envio de dado pessoal para fora do país, permitido pelo art. 33 da LGPD apenas nas hipóteses que a lei lista, entre elas país com grau de proteção adequado e contrato com cláusulas-padrão aprovadas pela autoridade.
@@ -80,4 +81,4 @@ Não é parecer jurídico, e a decisão sobre base legal e contrato é do seu ju
 
 Três limites honestos no que foi citado. Não reproduzo o conteúdo analítico da NT 12/2025 além de sua natureza e dos números de participação, porque o mérito das contribuições não cabe em resumo. Não cito números de fiscalização que circulam na imprensa setorial e não constam das páginas oficiais que abri. E a norma de referência da LGPD aqui aponta para a publicação da Câmara dos Deputados, não para o Planalto, porque foi a que respondeu na verificação.
 
-Se você está decidindo agora se pode conectar um agente de IA à base de clientes, o primeiro passo não é escolher fornecedor: é saber em que país o dado repousa e o que o contrato diz sobre treino. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se você está decidindo agora se pode conectar um agente de IA à base de clientes, o primeiro passo não é escolher fornecedor: é saber em que país o dado repousa e o que o contrato diz sobre treino. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=lgpd-ia-dados-de-cliente&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

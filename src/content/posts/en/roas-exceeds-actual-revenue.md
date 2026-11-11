@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/15299024", "https://su
 about: ["https://en.wikipedia.org/wiki/Attribution_(marketing)", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Google Ads documents what its competitors do, in writing: "Other advertising platforms get full credit for an ad even if there are other touchpoints in the conversion path" ([Google Ads](https://support.google.com/google-ads/answer/15299024)). It says this while introducing a column built to match that behavior, and its own default window counts a purchase up to 30 days after the click. If you run three platforms, the same order can appear in three sets of books, and nothing in any of them subtracts the others.
 
 > **Reported ROAS**: revenue a platform claims for itself divided by spend on that platform, calculated under that platform's own attribution rules. It is not incremental revenue, and no platform claims it is.
@@ -113,4 +114,4 @@ Three figures were deliberately excluded. A widely repeated ROI reduction attrib
 
 I also do not assert Meta's current default attribution setting. Its help pages did not render to retrieval, and a default that cannot be read at source should not be reported as fact.
 
-If your platforms report more revenue than your ERP, the first step is to stop adding them together. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If your platforms report more revenue than your ERP, the first step is to stop adding them together. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=roas-exceeds-actual-revenue&utm_content=texto), with no contract commitment.

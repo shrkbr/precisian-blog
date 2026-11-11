@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://pt.wikipedia.org/wiki/Multilocat%C3%A1rio", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Dar acesso aos seus dados a uma agência, a um parceiro ou a outra marca do grupo por meio de um agente de IA é um problema de locatário antes de ser um problema de IA. A especificação do MCP tem **1 frase normativa** sobre isso, e ela elimina justamente o padrão que a maioria das implementações tenta primeiro: *"servidores MCP NÃO DEVEM usar sessões para autenticação"* ([spec MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
 Sessão é conveniente e é exatamente por isso que a espec a proíbe: ela transforma identidade em estado de conexão, e estado de conexão vaza.
@@ -125,3 +126,7 @@ Não traz estatística de incidente em ambiente multilocatário com agente. O ca
 Não descreve os mecanismos equivalentes em todos os bancos. Citei os dois que consegui ler na documentação oficial; outros têm nomes e pegadinhas próprias, e escrever de memória sobre política de acesso é exatamente o tipo de erro que custa caro.
 
 E não trata da camada contratual. O que um contrato com agência deve prever sobre acesso a dado é assunto do jurídico da empresa, e o desenho técnico acima não substitui cláusula nenhuma.
+
+---
+
+Se um agente de IA já lê dado de produção na sua empresa, o primeiro passo é saber exatamente o que ele consegue, e não consegue, alcançar. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=isolamento-por-cliente-mcp&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

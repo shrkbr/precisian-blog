@@ -12,8 +12,9 @@ citations: ["https://developers.google.com/tag-platform/tag-manager/server-side/
 about: ["https://pt.wikipedia.org/wiki/Google_Tag_Manager", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A conta começa em torno de **US$ 40 a 50 por instância por mês**, e o Google recomenda no mínimo três para produção ([Google](https://developers.google.com/tag-platform/tag-manager/server-side/app-engine-setup)). Antes de aprovar isso, vale saber que o principal benefício vendido pelo produto tem uma condição que a documentação do Google não menciona, e que o motivo mais citado para comprá-lo é um texto de 2019 que o próprio WebKit já reescreveu.
 
 Server-side tagging resolve problemas reais. Só não os que aparecem na apresentação.
@@ -120,3 +121,7 @@ Não descreve o funcionamento do cookie `FPID`. **Não encontrei página oficial
 Não cita o texto da LGPD nem o corpo do guia da ANPD. O site do Planalto recusou a leitura automatizada e o PDF do guia veio com o texto comprimido e ilegível. Citação de norma se faz com a norma aberta na frente, não de memória.
 
 E não afirma que o endpoint do Google dispara o detector de cloaking do WebKit. Afirma que a definição publicada descreve a arquitetura e que o Google não menciona o assunto. A diferença entre essas duas frases é a diferença entre um artigo confiável e um que envelhece mal.
+
+---
+
+Se o número da plataforma e o do financeiro não batem na sua operação, o primeiro passo é medir a distância entre os dois, mês a mês. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=server-side-tagging-vale-a-pena&utm_content=texto), sem compromisso de contrato.

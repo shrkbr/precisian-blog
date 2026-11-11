@@ -12,8 +12,9 @@ citations: ["https://github.com/googleads/google-ads-mcp", "https://developers.g
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Principle_of_least_privilege", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 O servidor MCP oficial do Google Ads só oferece ferramentas de leitura, mas a credencial que ele usa carrega o escopo OAuth `adwords`, que o próprio Google descreve como permissão para *"ver, editar, criar e apagar"* contas de anúncio ([Google](https://developers.google.com/identity/protocols/oauth2/scopes)). Não existe escopo só de leitura no Google Ads; o código do servidor diz isso em comentário ([googleads/google-ads-mcp](https://github.com/googleads/google-ads-mcp), versão de 09/10/2026). Em dado de marketing, o risco do MCP mora no escopo do token, e não no protocolo.
 
 > **Segurança de servidor MCP**, em dado de marketing, é o conjunto de limites que decide o que um agente de IA consegue fazer na sua conta de mídia: os escopos do token, as ferramentas que o servidor expõe, o nível de acesso de quem autorizou e o registro do que foi executado.
@@ -111,4 +112,4 @@ Não compara servidores MCP de comunidade para Google Ads ou Meta, porque eles m
 
 ---
 
-Se você não sabe dizer hoje quais escopos o agente conectado à sua conta de mídia carrega, o primeiro passo é preencher a tabela de seis verificações acima, conta por conta. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io) — sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se você não sabe dizer hoje quais escopos o agente conectado à sua conta de mídia carrega, o primeiro passo é preencher a tabela de seis verificações acima, conta por conta. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=seguranca-de-servidor-mcp&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

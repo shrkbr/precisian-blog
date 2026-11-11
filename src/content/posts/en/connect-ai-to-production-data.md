@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 The Model Context Protocol does not require anyone to authenticate. The text is explicit: "Authorization is OPTIONAL for MCP implementations" ([MCP spec, revision 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). A measurement of 7,973 live remote MCP servers found **40.55% exposing tools with no authentication at all** ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint).
 
 So connecting an agent to your data safely is not a matter of following the protocol. It is a matter of adding what the protocol left out.
@@ -110,3 +111,7 @@ It gives no breach statistic for MCP deployments. The two studies cited measure 
 It does not evaluate specific MCP server implementations. The field moves faster than any published comparison stays accurate, and a list of names would be stale before it was useful.
 
 And it treats both measurement studies as preprints, because they are. Neither has been through peer review. They are cited here for their method and sample, which are stated, rather than for the authority of a journal they have not passed through.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=connect-ai-to-production-data&utm_content=texto), with no contract commitment.

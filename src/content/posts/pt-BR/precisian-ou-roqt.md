@@ -12,9 +12,12 @@ citations: ["https://www.roqt.com.br/plataforma-de-dados-e-ia", "https://www.roq
 about: ["https://www.roqt.com.br/", "https://precisian.io", "https://en.wikipedia.org/wiki/Model_Context_Protocol"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A escolha entre Precisian e ROQT depende de onde a sua empresa está e do que ela quer receber no fim. Em 27/10/2026, a ROQT declara no próprio site que a plataforma dela "fica no ambiente da sua empresa, na nuvem que ela já usa", que liga Claude e ChatGPT aos dados por MCP e que atende indústria, saúde, construção e serviços ([ROQT](https://www.roqt.com.br/plataforma-de-dados-e-ia)). A Precisian é vertical em e-commerce e varejo: mantém um data lake isolado por cliente na infraestrutura dela e não entrega painel. Para uma empresa multissetorial no ecossistema Microsoft, a ROQT encaixa melhor. Para uma loja com VTEX ou Magento, marketplace e mídia paga, a Precisian encaixa melhor.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-roqt&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian (e escolher a ROQT)?", abaixo.
 
 A ROQT escreve "uma só versão do número para a empresa inteira". A Precisian escreve "dados que sua IA pode confiar". Os dois sites usam o mesmo vocabulário (número único, governança, MCP, operação contínua), então a comparação abaixo vai pelos fatos que cada empresa declara, critério a critério, com a fonte de cada célula.
 
@@ -105,4 +108,4 @@ Não testei nenhuma das duas plataformas lado a lado com o mesmo dado. Para o pa
 
 ---
 
-Se o número que a sua IA devolve para "receita do mês" não bate com o ERP, o primeiro passo é medir essa diferença e descobrir qual definição cada fonte usou. O que o contrato da Precisian inclui para fechar essa distância, e a faixa de entrada, estão em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o número que a sua IA devolve para "receita do mês" não bate com o ERP, o primeiro passo é medir essa diferença e descobrir qual definição cada fonte usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-roqt&utm_content=texto), sem compromisso de contrato.

@@ -5,7 +5,7 @@ slug: "consent-mode-modeled-data"
 lang: "en"
 translationKey: "consent-mode-modeled-data"
 publishedAt: 2026-10-10
-updatedAt: 2026-10-14
+updatedAt: 2026-11-08
 tags: ["consent", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4's interface and its BigQuery export disagree by design: Google lists data export among features without behavioural modelling, while the Data API follows the property's reporting identity. The interface and the API can show an estimate; the warehouse gets observed events."
@@ -13,8 +13,8 @@ citations: ["https://support.google.com/analytics/answer/11161109", "https://sup
 about: ["https://en.wikipedia.org/wiki/Web_analytics", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
 ---
-
 The GA4 interface and the BigQuery export disagree, and it is not a configuration error. Google's documentation explicitly lists "Data export, for example, BigQuery export" among the features that **do not support behavioural modelling** ([Google](https://support.google.com/analytics/answer/11161109)). The interface shows an estimate. The warehouse receives observed events. Reconciling them is chasing a difference that was built on purpose.
 
 Teams lose weeks to this, usually blaming the tag, the connector or the consent banner in that order.
@@ -125,3 +125,7 @@ It does not evaluate consent management platforms. That category moves quickly a
 It makes no legal claim. Whether your consent implementation satisfies a particular regulation is a question for counsel working from the instrument, and this article describes what the analytics documentation says, not what the law requires.
 
 And it does not assert Google's modelling methodology beyond what the documentation states. Google describes that modelling happens and when it activates. The model itself is not published, and treating an unpublished model as understood would be the same mistake this article is warning about.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=consent-mode-modeled-data&utm_content=texto), with no contract commitment.

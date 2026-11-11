@@ -12,8 +12,9 @@ citations: ["https://genai.owasp.org/llmrisk/llm01-prompt-injection/", "https://
 about: ["https://en.wikipedia.org/wiki/Prompt_engineering", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 A Google Ads campaign name accepts 256 characters and Google documents no validation of what goes in them ([Google Ads API system limits](https://developers.google.com/google-ads/api/docs/best-practices/system-limits)). That is roughly forty words of anything, sitting in a field that an agency, a contractor or a compromised account can write, and that your AI agent will later read as part of a report. The length limits are documented. The content rules are not.
 
 > **Indirect prompt injection**: an attack where instructions reach a model through content it ingests rather than through the user's prompt. OWASP defines it as occurring "when an LLM accepts input from external sources, such as websites or files."
@@ -114,4 +115,4 @@ It deliberately omits NIST's taxonomy. The publication exists and is authoritati
 
 It also omits a widely repeated benchmark figure for one defensive pattern, which traced only to secondary sources, and any list of "safe UTM characters," which is convention rather than documented platform policy.
 
-If your agent reads campaign metadata, the first question is not which filter to add. It is whether that same agent can take an action. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If your agent reads campaign metadata, the first question is not which filter to add. It is whether that same agent can take an action. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=prompt-injection-marketing-data&utm_content=texto) over an isolated lake, with no contract commitment.

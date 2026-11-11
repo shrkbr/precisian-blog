@@ -12,8 +12,9 @@ citations: ["https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-rev
 about: ["https://en.wikipedia.org/wiki/Revenue_recognition", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Two teams export revenue for the same month and the numbers differ. Neither made a mistake. Finance follows a five-step model, effective for annual reporting periods beginning on or after 1 January 2018, that governs when revenue may be recognised ([IFRS Foundation](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/)). Marketing measures at checkout. Different events, different dates, both defensible.
 
 Most attempts to fix this fail at the first move, because they treat a definitional difference as carelessness. Nobody is going to talk the controller into recognising revenue earlier.
@@ -128,3 +129,7 @@ It offers no accounting guidance. Recognition depends on the contract, the deliv
 It quotes [IFRS 15](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/) rather than the US codification for a specific reason: the FASB site refuses automated retrieval outright, so I could not read its exact wording at source. Rather than quote a converged standard secondhand, I quoted the one I could verify, and I am telling you which one it is.
 
 It also carries no statistic on how many companies run conflicting definitions. I found no survey with a stated methodology, and an invented number inside an article about invented numbers would be an expensive irony.
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=marketing-finance-revenue-definition&utm_content=texto).

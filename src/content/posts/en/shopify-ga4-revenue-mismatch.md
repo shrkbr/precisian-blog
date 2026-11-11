@@ -12,8 +12,9 @@ citations: ["https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/
 about: ["https://en.wikipedia.org/wiki/Web_analytics", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Adobe answers this in its own troubleshooting documentation, without hedging. Asked whether the two numbers should be equal, it says "the answer is 'no' in almost every case" ([Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)). The gap is not a broken tag. It is 3 different definitions of the word revenue, each documented by its own vendor.
 
 Most teams spend weeks auditing tracking before anyone reads the definitions. The definitions take ten minutes.
@@ -114,3 +115,7 @@ It gives no expected percentage for the gap. The size depends on your shipping s
 It does not cover Brazil-specific payment timing, where deferred methods shift recognition by days and split a month's orders across two closes. That is [a separate article](https://precisian.io/blog/pt-BR/posts/pix-quebra-o-purchase-do-ga4/) (in Portuguese).
 
 And it names no third-party reconciliation tool. The gap described here is definitional, so a tool that reports both numbers side by side has restated the problem rather than solved it. What closes it is deciding which figure answers which question, and that decision has an owner rather than a vendor.
+
+---
+
+If the platform's number and finance's number don't match in your operation, the first step is measuring the gap between them, month by month. [See this article's question answered on a real lake](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=shopify-ga4-revenue-mismatch&utm_content=texto), with no contract commitment.

@@ -12,8 +12,9 @@ citations: ["https://developers.facebook.com/documentation/business-messaging/wh
 about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Quando alguém clica num anúncio e cai na sua conversa de WhatsApp, a API entrega o identificador do **anúncio**, não da campanha, não do conjunto, não da UTM. Na referência de webhook publicada pela Meta e vigente em setembro de 2026, o objeto `referral` traz 11 campos, entre eles `source_id` e `ctwa_clid`, e só aparece "if message via a Click to WhatsApp ad" ([Meta for Developers](https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/text)). Todo o resto da jornada é conversa, e conversa não tem campo.
 
 > **Dark funnel**: parte do processo de compra que acontece fora de qualquer sistema que a empresa mede, produzindo receita cuja origem não é reconstruível com os dados disponíveis.
@@ -113,4 +114,4 @@ Três afirmações técnicas muito repetidas também ficaram de fora por não te
 
 A primeira é a mais importante, porque é a premissa de qualquer arquitetura de captura, e é testável em uma hora, com um anúncio barato e três mensagens seguidas. Vale mais fazer o teste do que copiar a afirmação.
 
-Se a sua operação vende por WhatsApp e não consegue dizer qual anúncio gerou a venda, o primeiro passo é verificar se alguém está guardando o `ctwa_clid`. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se a sua operação vende por WhatsApp e não consegue dizer qual anúncio gerou a venda, o primeiro passo é verificar se alguém está guardando o `ctwa_clid`. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=atribuicao-whatsapp-dark-funnel&utm_content=texto), sem compromisso de contrato.

@@ -12,8 +12,9 @@ citations: ["https://github.com/googleads/google-ads-mcp", "https://developers.g
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Principle_of_least_privilege", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Google's official Ads MCP server only offers read tools, but the credential behind it carries the `adwords` OAuth scope, which Google itself describes as permission to *"see, edit, create, and delete"* your Google Ads accounts and data ([Google](https://developers.google.com/identity/protocols/oauth2/scopes)). Google Ads publishes no read-only scope, and the server's own source code says so in a comment ([googleads/google-ads-mcp](https://github.com/googleads/google-ads-mcp), release of October 9, 2026). For marketing data, MCP security comes down to the token's scope far more than the protocol.
 
 > **MCP security**, for marketing data, is the set of limits that decides what an AI agent can actually do in your ad accounts: the token's scopes, the tools the server exposes, the access level of whoever authorized it, and the record of what ran.
@@ -111,4 +112,4 @@ It doesn't compare community MCP servers for Google Ads or Meta, because they ch
 
 ---
 
-If you can't say today which scopes the agent connected to your ad accounts carries, the first step is filling in the six-check table above, one account at a time. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If you can't say today which scopes the agent connected to your ad accounts carries, the first step is filling in the six-check table above, one account at a time. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=mcp-security-marketing-data&utm_content=texto) over an isolated lake, with no contract commitment.

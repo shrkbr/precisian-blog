@@ -10,6 +10,8 @@ tags: ["roi", "custo", "incrementalidade", "roas", "atribuicao", "calculadora-ro
 readingTimeMinutes: 10
 llmSummary: "Artigo expõe a diferença entre ROI reportado em dashboards e ROI real após descontar custos ocultos (agências, testes, tech stack) e vendas não-incrementais. Ensina a calcular ROI verdadeiro com planilha prática para CMOs que desconfiam dos números de atribuição."
 draft: false
+cta: ficha
+updatedAt: 2026-11-08
 ---
 # Calculadora de custos ocultos: descubra se seu ROI é real ou fantasia
 
@@ -324,3 +326,7 @@ E o que separa um gestor médio de um excepcional não é quantos canais ele ati
 **Baixe a calculadora e descubra: seu ROI é 5x ou 0.5x?**
 
 Quer validar seu ROI com holdout regional e parar de confiar em atribuição inflada? [Fale com a gente.](#)
+
+---
+
+O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=calculadora-custos-ocultos-roi-real&utm_content=texto), sem compromisso de contrato.

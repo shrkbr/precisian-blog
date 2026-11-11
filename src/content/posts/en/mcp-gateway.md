@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/basic/auth
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/API_management", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 An MCP gateway is a proxy that sits between your AI agents and your MCP servers and puts authentication, call logging and usage limits in one place. The MCP specification, revision 2026-07-28, says a server *"MUST NOT accept or transit any other tokens"* ([MCP Authorization](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization), read November 3, 2026), so a compliant gateway holds its own credential for every upstream server. What it can't do is decide what your metrics mean.
 
 > **MCP gateway:** a single entry point that receives tool calls from MCP clients, verifies who is calling, applies policy (scopes, limits, tool filtering), injects the credential for the target server, and logs the call. It governs access. It does not govern the meaning of what comes back.
@@ -105,4 +106,4 @@ It doesn't rank gateways or compare pricing. The market moves too fast for a dur
 
 ---
 
-If your agent answers "revenue" with a different number than finance, the first step is to count how many revenue definitions its tools expose today. [See how a semantic layer works in practice](https://precisian.io/en/demo). No contract commitment, and no promise of an answer in 30 minutes either.
+If your agent answers "revenue" with a different number than finance, the first step is to count how many revenue definitions its tools expose today. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=mcp-gateway&utm_content=texto).

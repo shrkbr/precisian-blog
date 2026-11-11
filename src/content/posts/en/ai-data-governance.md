@@ -12,8 +12,9 @@ citations: ["https://www.nist.gov/itl/ai-risk-management-framework", "https://nv
 about: ["https://en.wikipedia.org/wiki/Data_governance", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 AI data governance is the part of an AI policy that decides what a model may read, not only who may use it and for what. Most policies stop before that line. NIST's Generative AI Profile, released on July 26, 2024, tells organizations to "establish policies for collection, retention, and minimum quality of data" (action MP-4.1-005), which is a data question, not a usage question ([NIST AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)).
 
 > **AI data governance**: the recorded decisions about which data an AI system can reach, under whose definitions, for how long and with what record, so that any answer it gives can be explained later by someone who was not in the conversation.
@@ -128,4 +129,4 @@ The AI RMF is under revision, so subcategory numbers quoted here may move in the
 
 And it leaves model training and cross-border transfers aside. For the Brazilian side of that question, see the post on [LGPD and AI with customer data](https://precisian.io/blog/pt-BR/posts/lgpd-ia-dados-de-cliente/) (in Portuguese).
 
-If your AI policy says who may use the agent but not what it may read, the first step is to list what it reaches today, table by table, and compare that with what it should reach. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment.
+If your AI policy says who may use the agent but not what it may read, the first step is to list what it reaches today, table by table, and compare that with what it should reach. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=ai-data-governance&utm_content=texto) over an isolated lake, with no contract commitment.

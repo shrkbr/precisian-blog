@@ -5,7 +5,7 @@ slug: "deduplicar-venda-site-marketplace"
 lang: "pt-BR"
 translationKey: "dedupe-orders-marketplace"
 publishedAt: 2026-10-06
-updatedAt: 2026-11-03
+updatedAt: 2026-11-08
 tags: ["marketplace", "divergencia-de-dados", "lgpd"]
 draft: false
 llmSummary: "Nao ha chave comum de comprador entre loja propria e marketplace: a Amazon documenta o e-mail como anonimizado e o Magalu nao devolve campo de e-mail. Origem de trafego nunca vem no pedido. Quantos pedidos e respondivel; quantos clientes distintos, nao."
@@ -13,8 +13,8 @@ citations: ["https://developer-docs.amazon/sp-api/reference/getorders", "https:/
 about: ["https://pt.wikipedia.org/wiki/Marketplace", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: regua
 ---
-
 Você vende o mesmo produto no site e em três marketplaces e quer saber quantos clientes distintos comprou. A resposta honesta é que os canais não devolvem chave comum, e dois deles documentam isso por escrito. A Amazon descreve o campo como *"o endereço de e-mail anonimizado do comprador"* ([Amazon](https://developer-docs.amazon/sp-api/reference/getorders)). O Magalu não devolve campo de e-mail nenhum, e devolve CPF ([Integra Commerce](https://api.integracommerce.com.br/Documentation/Orders)). A Lei 13.709/2018 classifica CPF como dado pessoal ([Lei Geral de Proteção de Dados](https://www2.camara.leg.br/legin/fed/lei/2018/lei-13709-14-agosto-2018-787077-publicacaooriginal-156212-pl.html)), o que muda o que você pode fazer com a única chave que sobrou.
 
 Não é falha de integração. É o desenho do canal.
@@ -103,4 +103,4 @@ Não cita o texto do Código de Defesa do Consumidor. O site do Planalto recusou
 
 E não mistura versões de API. As citações da Amazon vêm da versão que li, e a palavra *anonimizado* está documentada nela. Uma versão mais nova existe, com nomes de campo e regras de acesso diferentes, e carregar o adjetivo de uma para a outra seria exatamente o tipo de erro que este artigo está evitando.
 
-Se o seu relatório soma loja própria e marketplace numa linha só, [vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o número da plataforma e o do financeiro não batem na sua operação, o primeiro passo é medir a distância entre os dois, mês a mês. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=deduplicar-venda-site-marketplace&utm_content=texto), sem compromisso de contrato.

@@ -5,7 +5,7 @@ slug: "fivetran-airbyte-ou-servico-gerenciado"
 lang: "pt-BR"
 translationKey: "elt-tool-choice"
 publishedAt: 2026-10-14
-updatedAt: 2026-11-03
+updatedAt: 2026-11-08
 tags: ["build-vs-buy", "integracao", "pipeline", "custo", "ecommerce", "data-lake"]
 draft: false
 llmSummary: "Em 14/10/2026, nem o catálogo oficial da Fivetran nem o registro de conectores do Airbyte Cloud tinha conector de VTEX ou Nuvemshop; do Mercado Livre, o Airbyte lista só o Mercado Ads, mantido pela comunidade. A Fivetran cobra por MAR e o Airbyte Cloud parte de US$ 20/mês."
@@ -13,11 +13,13 @@ citations: ["https://fivetran.com/docs/core-concepts/usage-based-pricing", "http
 about: ["https://en.wikipedia.org/wiki/Extract%2C_load%2C_transform", "https://precisian.io/precos"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
 ---
-
 Para um e-commerce brasileiro, a escolha entre Fivetran e Airbyte costuma ser decidida antes da tabela de preço: em 14/10/2026, nem o [catálogo oficial da Fivetran](https://fivetran.com/docs/connectors) nem o [registro de conectores do Airbyte Cloud](https://connectors.airbyte.com/files/registries/v0/cloud_registry.json) tinha conector de VTEX ou Nuvemshop. Onde não há conector pronto, alguém escreve e mantém um. Esse alguém é o custo maior, e ele não aparece em nenhuma das duas páginas de preço.
 
 > **Ferramenta de ELT**: software que extrai dado das fontes (plataformas de mídia, loja, ERP), carrega num destino (data lake ou data warehouse) e deixa a transformação para depois do carregamento.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=fivetran-airbyte-ou-servico-gerenciado&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 Esta peça decide **ferramenta**. Se a dúvida ainda é de arquitetura, montar com peças ou contratar o conjunto, ela foi tratada em [construir ou contratar um data lake](https://precisian.io/blog/pt-BR/posts/construir-ou-contratar-data-lake/), e não repito aqui a conta de armazenamento e consulta.
 
@@ -68,7 +70,6 @@ Não. Conferi em 14/10/2026 no [catálogo da Fivetran](https://fivetran.com/docs
 | Mercado Livre (vendas) | não consta | não consta |
 | Mercado Livre (Mercado Ads) | não consta | consta, nível Marketplace, versão 0.0.47 |
 | Shopify | consta | consta, mantido pelo Airbyte |
-
 
 A lista também não diz quem mantém cada conector. No registro do Airbyte Cloud, **67 de 573 conectores de origem** são mantidos pelo próprio Airbyte; os outros 506 são de nível Marketplace, que a documentação descreve como "not maintained by Airbyte", fora dos SLAs de suporte, e sujeitos a "backward-incompatible, breaking changes with no notice" ([Airbyte](https://docs.airbyte.com/integrations/connector-support-levels)).
 
@@ -123,4 +124,4 @@ Não compara Stitch, Hevo, Matillion nem a biblioteca dlt. Não traz a tarifa po
 
 ---
 
-Se a sua dúvida é quanto custa ter VTEX, Mercado Livre e mídia modelados sem montar um time para isso, o primeiro passo é listar quais conectores você precisaria manter. O que entra na mensalidade da Precisian está em [preços](https://precisian.io/precos), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se a sua dúvida é quanto custa ter VTEX, Mercado Livre e mídia modelados sem montar um time para isso, o primeiro passo é listar quais conectores você precisaria manter. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=fivetran-airbyte-ou-servico-gerenciado&utm_content=texto), sem compromisso de contrato.

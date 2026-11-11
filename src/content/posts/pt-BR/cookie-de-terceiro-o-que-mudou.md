@@ -12,8 +12,9 @@ citations: ["https://privacysandbox.google.com/blog/privacy-sandbox-next-steps",
 about: ["https://en.wikipedia.org/wiki/HTTP_cookie", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 O cookie de terceiro continua funcionando no Chrome, ligado por padrão. Em abril de 2025 o Google declarou que vai "manter nossa abordagem atual" e que **não** lançaria o aviso que perguntaria ao usuário ([Privacy Sandbox](https://privacysandbox.google.com/blog/privacy-sandbox-next-steps)). Em outubro de 2025 foi além e aposentou boa parte da tecnologia que substituiria o cookie. Quem planejou medição em cima do fim do cookie planejou para um evento que não aconteceu.
 
 > **Cookie de terceiro**: arquivo gravado por um domínio diferente daquele que o usuário está visitando, historicamente a base do rastreamento entre sites.
@@ -88,4 +89,4 @@ Não cobre implementação de coleta própria nem comparação de fornecedores d
 
 Dois limites de verificação, declarados. Encontrei referência a texto desatualizado sobre a depreciação em domínio do próprio Google, descrevendo um plano de aumento gradual que não se concretizou; não consegui fixar qual página ainda o carrega, e por isso não o cito nem como exemplo. E não fixei a data exata em que o Firefox atingiu a totalidade dos usuários de desktop, porque a implantação foi gradual e a própria comunicação da Mozilla varia entre "todos" e "mais usuários".
 
-Se o seu planejamento de medição ainda tem um marco chamado "fim do cookie", ele está datado de um evento que não ocorreu. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se o seu planejamento de medição ainda tem um marco chamado "fim do cookie", ele está datado de um evento que não ocorreu. O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=cookie-de-terceiro-o-que-mudou&utm_content=texto).

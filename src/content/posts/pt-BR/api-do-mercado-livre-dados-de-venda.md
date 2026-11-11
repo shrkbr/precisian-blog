@@ -12,8 +12,9 @@ citations: ["https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-venda
 about: ["https://pt.wikipedia.org/wiki/Mercado_Livre", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 A API do Mercado Livre devolve o pedido em `GET /orders/$ORDER_ID` com preço, quantidade e a comissão de cada item no campo `sale_fee`, mas não devolve o custo do frete do vendedor: esse exige uma segunda chamada, a `/shipments/$SHIPMENT_ID/costs`. A devolução fica em outro recurso, o `/post-purchase`, e os pedidos ficam salvos por até 12 meses ([documentação de Orders](https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-vendas), atualizada em 21/09/2026 e lida em 3 de novembro de 2026).
 
 Em dois posts anteriores desta série eu disse que não tinha conseguido ler essa documentação. Desta vez li. Tudo abaixo tem o nome do campo como está na doc, com o link e a data de atualização que a página mostra.
@@ -151,4 +152,4 @@ Quando a Precisian não é a resposta: se você vende só no Mercado Livre e o f
 
 Registro de método: o portal developers.mercadolivre.com.br responde 403 a `curl` direto, então li cada página por um leitor que renderiza o HTML e conferi os nomes de campo no JSON de exemplo da própria página. As páginas de autenticação, de reclamações e de boas práticas de faturamento não exibiram data de atualização; para elas vale a data da leitura, 3 de novembro de 2026.
 
-Se o faturamento do Mercado Livre na sua planilha não fecha com o repasse, o primeiro passo é medir a diferença entre `total_amount` e o que sobra depois de comissão, frete e devolução. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o faturamento do Mercado Livre na sua planilha não fecha com o repasse, o primeiro passo é medir a diferença entre `total_amount` e o que sobra depois de comissão, frete e devolução. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=api-do-mercado-livre-dados-de-venda&utm_content=texto), sem compromisso de contrato.

@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/uti
 about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 Para registrar tudo o que um agente de IA consultou, grave o log no servidor que executa a consulta, um registro por chamada de ferramenta, com a identidade de quem pediu. O chat não serve, e o logging do protocolo também não: a especificação do Model Context Protocol marcou o recurso de logging como descontinuado na revisão 2026-07-28 e proíbe dado pessoal nessas mensagens ([MCP](https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging)).
 
 > **Log de auditoria do agente**: registro gravado pela camada que executa a consulta, uma linha por chamada de ferramenta, que permite responder depois quem pediu, por qual agente, o que rodou, sobre quais dados, a que custo e com que resultado.
@@ -142,4 +143,4 @@ E não afirma que registrar previne vazamento. O log torna a consulta reconstitu
 
 ---
 
-Se hoje ninguém na sua operação consegue dizer o que o agente consultou na semana passada, o primeiro passo é medir quantas consultas dele chegam ao banco sem identidade. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se hoje ninguém na sua operação consegue dizer o que o agente consultou na semana passada, o primeiro passo é medir quantas consultas dele chegam ao banco sem identidade. [Veja um MCP governado respondendo](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=log-de-auditoria-de-agente-de-ia&utm_content=texto) sobre um lake isolado, sem compromisso de contrato.

@@ -12,11 +12,14 @@ citations: ["https://www.nekt.com/", "https://www.nekt.com/pricing", "https://ww
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://www.nekt.com/", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha a Nekt se você tem alguém técnico e quer montar a própria stack de dados para IA em autosserviço; escolha a Precisian se você é um e-commerce médio sem time de dados e quer a operação inclusa. Em 27/10/2026, a Nekt cobra a partir de US$ 149 por mês no Starter, tem plano sem custo e serve o dado a qualquer agente "through a single governed MCP" ([Nekt, preços](https://www.nekt.com/pricing); [Nekt](https://www.nekt.com/)). As duas atacam o mesmo problema. Muda quem escreve a definição de métrica e quem cuida do dado quando ele quebra.
 
 > **Nekt**: plataforma brasileira de dados (operada pela Nekt Data Ltda.) que reúne conectores, um lakehouse gerenciado, uma camada de contexto para agentes e um servidor MCP, vendida em autosserviço com cobrança por créditos em dólar. Entrou em operação em janeiro de 2024 e captou R$ 5 milhões numa rodada liderada pela Alexia Ventures ([Startups, 09/06/2025](https://startups.com.br/negocios/rodada-de-investimento/nekt-capta-r-5m-para-ser-a-databricks-brasileira/)).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-nekt&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Nekt e não a Precisian?", abaixo.
 
 Este é o comparativo mais próximo que dá para fazer com a Precisian. Os dois produtos partem da mesma tese: a IA erra quando lê tabela sem saber o que cada número significa, o que no blog chamamos de [alucinação de métrica](https://precisian.io/blog/pt-BR/posts/alucinacao-de-metrica/). Quem escreveu este texto fui eu, da Precisian, então os critérios estão declarados abaixo para você poder discordar deles.
 
@@ -102,4 +105,4 @@ Não testei a Nekt em uso; tudo o que está aqui sobre ela vem do site, da docum
 
 ---
 
-Se o agente da sua operação já responde uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui para fechar essa distância, e como ela cobra, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se o agente da sua operação já responde uma receita que não bate com o ERP, o primeiro passo é medir essa distância e descobrir qual definição cada lado usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-nekt&utm_content=texto), sem compromisso de contrato.

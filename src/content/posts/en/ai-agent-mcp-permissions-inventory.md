@@ -12,8 +12,9 @@ citations: ["https://developers.google.com/identity/protocols/oauth2", "https://
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Principle_of_least_privilege", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 No single console shows which AI agents can reach your data, because every grant is recorded by the platform that issued it. And grants last: Google only retires a refresh token on its own after 6 months without use ([Google](https://developers.google.com/identity/protocols/oauth2)), and Meta lets you mint system user tokens that never expire ([Meta for Developers](https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens)). A working MCP permission inventory has seven columns: agent, owner, MCP server, token scope, write tools, reachable data, and last review date.
 
 > **An AI agent permission inventory** is a list, owned by a named person, of every agent that reads or changes company data: which MCP server it goes through, which credential it holds, what that credential allows, and when someone last checked.
@@ -140,4 +141,4 @@ It doesn't compare agent gateways or commercial agent management platforms, whic
 
 ---
 
-If nobody can say today how many agents reach your ad accounts and your store, the first step is filling in the seven columns for the agents you already know about, then checking them against your Workspace accessed-apps list. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io), with no contract commitment, and no promise of an answer in 30 minutes either.
+If nobody can say today how many agents reach your ad accounts and your store, the first step is filling in the seven columns for the agents you already know about, then checking them against your Workspace accessed-apps list. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=ai-agent-mcp-permissions-inventory&utm_content=texto) over an isolated lake, with no contract commitment.

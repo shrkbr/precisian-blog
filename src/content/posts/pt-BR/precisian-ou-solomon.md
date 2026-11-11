@@ -12,11 +12,14 @@ citations: ["https://www.solomon.com.br/", "https://www.solomon.com.br/comecar",
 about: ["https://www.solomon.com.br/", "https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Escolha a Solomon se a pergunta é "de qual campanha veio esta venda" e você quer a resposta num painel pronto, contratado sozinho, em minutos. Escolha a Precisian se a pergunta é "qual foi a receita", feita pela IA da diretoria sobre loja, marketplace e ERP, e ninguém no time tem tempo de escrever e manter a definição. Em 26/10/2026, a [Solomon](https://www.solomon.com.br/) declara 6 modelos de atribuição, mais de 400 marcas atendidas e configuração "em menos de 5 minutos". São produtos para perguntas diferentes.
 
 > **Solomon**: plataforma brasileira (SOLOMON BRASIL LTDA, São José dos Campos, SP) de atribuição, analytics e IA para e-commerce, com pixel próprio, dashboards, agentes de IA e conector MCP para Claude e ChatGPT, vendida em autosserviço ([solomon.com.br](https://www.solomon.com.br/), consultado em 26/10/2026). Não confundir com a Solomono, agência web, nem com projetos de cripto de nome parecido.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-solomon&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher a Solomon e não a Precisian?", abaixo.
 
 ## O que cada uma faz?
 
@@ -110,4 +113,4 @@ Não avalia a qualidade dos modelos de atribuição da Solomon nem a precisão d
 
 ---
 
-Se a receita que a sua IA devolve não bate com a do ERP, o primeiro passo é medir a distância entre as duas e descobrir que definição cada uma usou. O que a plataforma inclui para fechar essa distância, e como ela é cobrada, está em [preços da Precisian](https://precisian.io/precos), sem compromisso de contrato.
+Se a receita que a sua IA devolve não bate com a do ERP, o primeiro passo é medir a distância entre as duas e descobrir que definição cada uma usou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=precisian-ou-solomon&utm_content=texto), sem compromisso de contrato.

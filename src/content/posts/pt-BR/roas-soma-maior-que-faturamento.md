@@ -12,8 +12,9 @@ citations: ["https://support.google.com/google-ads/answer/15299024", "https://su
 about: ["https://pt.wikipedia.org/wiki/Retorno_sobre_investimento", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: regua
+updatedAt: 2026-11-08
 ---
-
 Você abre o Meta, o Google e o TikTok, soma a receita que cada um declara e o total passa do que o ERP fechou no mês. Nada está quebrado. A janela padrão do Google Ads sozinha conta uma compra até 30 dias depois do clique ([Google Ads](https://support.google.com/google-ads/answer/3123169)), e o mesmo pedido cabe dentro da janela de três plataformas ao mesmo tempo.
 
 O Google documenta o comportamento dos concorrentes por escrito: *"Outras plataformas de publicidade recebem crédito integral por um anúncio mesmo quando há outros pontos de contato no caminho de conversão"* ([Google Ads](https://support.google.com/google-ads/answer/15299024)). Ele diz isso apresentando uma coluna feita para imitar esse comportamento.
@@ -115,4 +116,4 @@ Não diz quanto o seu ROAS declarado passa da sua receita, porque nenhuma fonte 
 
 Três números foram deixados de fora de propósito. Uma redução de retorno muito repetida atribuída ao estudo do eBay, que não aparece no material da universidade e que não consegui confirmar no artigo. A mediana de testes geográficos de um fornecedor, publicada sem metodologia. E um percentual atribuído ao estudo dos 663 experimentos que se revelou **inventado por um extrator automático** lendo o PDF, lembrete útil de que número com citação colada não é número conferido.
 
-Se as suas plataformas declaram mais receita do que o ERP fechou, o primeiro passo é parar de somá-las. [Vale uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se as suas plataformas declaram mais receita do que o ERP fechou, o primeiro passo é parar de somá-las. [Veja a pergunta deste post respondida sobre um lake de verdade](https://precisian.io/demonstracao?utm_source=blog&utm_medium=cta&utm_campaign=roas-soma-maior-que-faturamento&utm_content=texto), sem compromisso de contrato.

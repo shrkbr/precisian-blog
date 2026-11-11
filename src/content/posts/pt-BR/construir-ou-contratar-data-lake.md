@@ -12,11 +12,14 @@ citations: ["https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20
 about: ["https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io/precos"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A diferença mais útil entre construir e contratar não é preço: é que só um dos dois lados publica o preço. Dá para calcular o custo de um lake próprio com tabelas oficiais abertas: o S3 em São Paulo custa US$ 0,0405 por GB-mês nos primeiros 50 TB, com vigência de setembro de 2026 ([AWS Price List API](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260918174747/sa-east-1/index.json)). Do lado gerenciado, a Fivetran não publica a tarifa por MAR em nenhuma das três páginas oficiais que tratam do assunto, a Snowflake remete o valor do crédito a um PDF, e a Databricks serve a página de preço em JavaScript sem cifra no HTML.
 
 > **Build vs buy de plataforma de dados**: decisão entre montar ingestão, armazenamento e modelagem com peças contratadas separadamente, ou contratar uma plataforma que entrega o conjunto sob um contrato único.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=construir-ou-contratar-data-lake&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 ## Quais critérios decidem essa escolha?
 
@@ -112,4 +115,4 @@ Também não traz faixa salarial de engenheiro de dados no Brasil. A melhor font
 
 E há um número que **não** vai aparecer aqui: o de que 85% dos projetos de dados fracassam. Ele é citado em praticamente todo material sobre o tema. Rastreando a origem, ela é um **tweet hoje deletado** de um analista comentando que um número anterior era conservador demais. Não existe nota de pesquisa com metodologia por trás. É redondo, é memorável e não tem lastro.
 
-Se você está decidindo entre montar e contratar, comece pelo critério que ninguém lista: quanto do custo total você consegue estimar antes de assinar. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se você está decidindo entre montar e contratar, comece pelo critério que ninguém lista: quanto do custo total você consegue estimar antes de assinar. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=construir-ou-contratar-data-lake&utm_content=texto), sem compromisso de contrato.

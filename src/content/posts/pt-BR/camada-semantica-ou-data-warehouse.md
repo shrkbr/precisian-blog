@@ -5,7 +5,7 @@ slug: "camada-semantica-ou-data-warehouse"
 lang: "pt-BR"
 translationKey: "semantic-layer-or-warehouse"
 publishedAt: 2026-10-09
-updatedAt: 2026-10-23
+updatedAt: 2026-11-08
 tags: ["camada-semantica", "data-warehouse", "arquitetura-de-dados"]
 draft: false
 llmSummary: "Data warehouse guarda dado e executa consulta; camada semântica guarda a regra que define a métrica. Sem warehouse a consulta falha, sintoma técnico. Sem camada semântica tudo funciona e os números discordam, sintoma político."
@@ -13,11 +13,13 @@ citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
 ---
-
 Camada semântica e data warehouse não competem: um guarda e calcula, o outro define o que está sendo calculado. A confusão aparece porque os dois aparecem na mesma frase em material de fornecedor, e porque é possível operar sem o segundo, mal. Num teste de abril de 2026 com três modelos de fronteira, fornecer as definições de negócio como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev](https://arxiv.org/abs/2604.25149)).
 
 > **Data warehouse**: onde o dado é armazenado e as consultas são executadas. **Camada semântica**: onde está escrito o que cada métrica significa, de forma que todo sistema que a reporta leia a mesma regra.
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=camada-semantica-ou-data-warehouse&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando não escolher a Precisian?", abaixo.
 
 Este post compara os dois. A definição completa, campo a campo, está em [o que é camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/).
 
@@ -114,4 +116,4 @@ A nomenclatura de entidades, dimensões e métricas segue a do dbt porque virou 
 
 E um limite no número citado: o teste de abril mede acurácia de resposta num benchmark, com e sem contexto semântico. Ele não mede retorno financeiro, não mede tempo de implementação e não foi feito na sua base. Trate-o como evidência de direção, não como promessa de resultado.
 
-Se duas áreas da sua empresa reportam números diferentes para a mesma métrica, o problema não é o warehouse. [Agende uma conversa sobre o seu caso](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+Se duas áreas da sua empresa reportam números diferentes para a mesma métrica, o problema não é o warehouse. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=camada-semantica-ou-data-warehouse&utm_content=texto), sem compromisso de contrato.

@@ -12,8 +12,9 @@ citations: ["https://privacysandbox.google.com/blog/privacy-sandbox-next-steps",
 about: ["https://en.wikipedia.org/wiki/HTTP_cookie", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 Third-party cookies still work in Chrome, on by default. In April 2025 Google stated it would "maintain our current approach" and that it would **not** ship the prompt that would have asked users to choose ([Privacy Sandbox](https://privacysandbox.google.com/blog/privacy-sandbox-next-steps)). In October 2025 it went further and retired much of the technology that was meant to replace the cookie ([Privacy Sandbox](https://privacysandbox.google.com/blog/update-on-plans-for-privacy-sandbox-technologies)).
 
 Anyone who planned their measurement around the cookie's disappearance planned for an event that did not happen.
@@ -105,3 +106,7 @@ It does not predict what Chrome will do. Everyone who has predicted this has bee
 It does not cover the legal layer. What consent your jurisdiction requires is a question for counsel working from the instrument, and it is a separate question from what any browser technically permits.
 
 And it does not describe the current state of individual Privacy Sandbox APIs in detail. That surface has been changing, some pieces were retired and others were not, and describing a moving target precisely enough to be useful would make this article wrong within a quarter.
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=third-party-cookie-state&utm_content=texto).

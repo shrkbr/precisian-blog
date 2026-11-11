@@ -12,8 +12,9 @@ citations: ["https://hightouch.com/docs/identity-resolution/overview", "https://
 about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 A composable CDP is a customer data platform assembled on top of the warehouse you already run: profiles live in your tables, and a reverse ETL tool syncs them to Meta, Google and your email platform. Hightouch, a vendor of the model, documents that its deterministic identity resolution runs "directly in your data warehouse" ([Hightouch docs](https://hightouch.com/docs/identity-resolution/overview), retrieved October 14, 2026). A data lake keeps raw data from every source so you can find out what actually happened. A CDP activates. A lake explains.
 
 > **Composable CDP**: a customer data platform whose profiles are built and stored in the company's own data warehouse, with a separate activation tool reading from there and syncing audiences and traits to marketing destinations.
@@ -98,4 +99,4 @@ It doesn't quote CDP pricing, because neither [Twilio](https://www.twilio.com/en
 
 ---
 
-If the open question in your business is "what did this campaign actually sell" rather than "who gets the next message," the first step is measuring the gap between what the ad platforms report and what your store booked. What Precisian includes to run that math, and how it charges, is on the [pricing page](https://precisian.io/en/pricing).
+If the open question in your business is "what did this campaign actually sell" rather than "who gets the next message," the first step is measuring the gap between what the ad platforms report and what your store booked. What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=composable-cdp-vs-data-lake&utm_content=texto), with no contract commitment.

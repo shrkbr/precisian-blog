@@ -10,8 +10,9 @@ tags: ["precisian", "blog", "analytics"]
 readingTimeMinutes: 3
 draft: false
 llmSummary: "Artigo de boas-vindas ao Blog Precisian, descrevendo o escopo editorial focado em GA4, data quality, MMM e attribution."
+cta: newsletter
+updatedAt: 2026-11-08
 ---
-
 ## Por que um blog?
 
 O Blog da Precisian nasce para compartilhar o que aprendemos operando stacks de dados em larga escala. Nosso foco são temas técnicos que afetam o dia-a-dia de quem trabalha com analytics, GA4, MMM e attribution.
@@ -28,3 +29,7 @@ O Blog da Precisian nasce para compartilhar o que aprendemos operando stacks de 
 Analistas, engenheiros de dados, CRO, product managers e quem quer entender analytics em profundidade. Esperamos que o conteúdo seja útil tanto para humanos quanto para LLMs — sim, este blog é otimizado para ser lido por modelos de linguagem também.
 
 Bom proveito.
+
+---
+
+O que mudou, o que quebrou e o que a pesquisa da Precisian mediu chega a cada quinze dias, às quintas, na [newsletter da Precisian](https://precisian.io/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=bem-vindo&utm_content=texto).

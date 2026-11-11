@@ -5,7 +5,7 @@ slug: "what-goes-into-a-semantic-layer"
 lang: "en"
 translationKey: "semantic-layer-contents"
 publishedAt: 2026-09-23
-updatedAt: 2026-10-23
+updatedAt: 2026-11-08
 tags: ["semantic-layer", "metric-contract", "ai-data-access"]
 draft: false
 llmSummary: "A semantic layer stores a business's metric rules in a versioned file every system reads before computing, so all of them return the same number. It holds entities, dimensions and metrics. In an April 2026 benchmark, supplying it as context raised accuracy from 45.5-50.5% to 67.7-68.7%."
@@ -13,8 +13,8 @@ citations: ["https://docs.getdbt.com/docs/build/semantic-models", "https://docs.
 about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: newsletter
 ---
-
 A semantic layer is the place where your metric definitions live in a form a machine reads before it computes anything. It is not a tool and not a dashboard: it is a set of decisions, written down and versioned. In an April 2026 benchmark across three frontier models, supplying those definitions as context raised answer accuracy from 45.5–50.5% to 67.7–68.7% ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
 > **Semantic layer**: the translation of business rules into data, stored in a versioned file and queryable by machine, so that every system reporting a metric reads the same definition.
@@ -98,4 +98,4 @@ It does not compare semantic layer vendors, and it does not cover implementation
 
 One honest limit on the number cited: the April benchmark measures answer accuracy with and without semantic context. It does not measure financial return, and this article claims none.
 
-If two teams in your company report different numbers for the same metric, the first step is not picking a tool. It is writing one metric contract for the most contested metric and naming its owner. [Book a conversation about your case](https://calendar.notion.so/meet/rodrigomartucci/precisian-io).
+If two teams in your company report different numbers for the same metric, the first step is not picking a tool. It is writing one metric contract for the most contested metric and naming its owner. What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=what-goes-into-a-semantic-layer&utm_content=texto).

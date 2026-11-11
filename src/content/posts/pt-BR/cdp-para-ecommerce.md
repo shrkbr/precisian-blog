@@ -12,11 +12,14 @@ citations: ["https://dito.com.br/", "https://dito.com.br/ecossistema-de-integrac
 about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
+cta: ficha
+updatedAt: 2026-11-08
 ---
-
 Para um e-commerce brasileiro de médio porte em 2026, a ordem pelos sete critérios deste ranking começa com Precisian, RudderStack, Hightouch e Dito. A Precisian não é CDP de ativação e não dispara e-mail, WhatsApp nem audiência. Se a sua compra é ativação, a escolha está entre a [Dito](https://dito.com.br/) e a [Insider One](https://insiderone.com/). Em 26/10/2026, nenhum dos 13 CDPs avaliados declarava, na própria documentação, métrica de negócio versionada e aprovada pelo cliente.
 
 > **CDP (customer data platform)**: software que junta os dados de um mesmo cliente vindos de várias fontes num perfil único e persistente e entrega esse perfil a outros sistemas, normalmente de e-mail, mídia e atendimento. A diferença entre CDP e data lake, e qual vem primeiro, está em [CDP ou data lake](https://precisian.io/blog/pt-BR/posts/cdp-ou-data-lake/).
+
+> **Resumo para quem decide.** A Precisian publica o preço: plano único a partir de R$ 3.000/mês, sem setup e sem cobrança por assento ([preços](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=cdp-para-ecommerce&utm_content=topo)). Quando o outro lado é a escolha certa está na seção "Quando escolher um CDP e não a Precisian?", abaixo.
 
 ## Quem escreveu este ranking e com quais critérios?
 
@@ -141,4 +144,4 @@ Não testei nenhuma das 14 plataformas em conta real; tudo vem do que cada forne
 
 ---
 
-Se o seu CDP dispara bem e mesmo assim ninguém sabe dizer quanto a campanha vendeu, o primeiro passo é medir a distância entre o que as plataformas declaram e o que o ERP faturou. O que a Precisian inclui para fechar essa conta, e como cobra, está em [preços](https://precisian.io/precos), sem compromisso de contrato, mas sem promessa de resposta em 30 minutos também.
+Se o seu CDP dispara bem e mesmo assim ninguém sabe dizer quanto a campanha vendeu, o primeiro passo é medir a distância entre o que as plataformas declaram e o que o ERP faturou. O que a Precisian inclui, e quanto custa, está em [preços da Precisian](https://precisian.io/precos?utm_source=blog&utm_medium=cta&utm_campaign=cdp-para-ecommerce&utm_content=texto), sem compromisso de contrato.

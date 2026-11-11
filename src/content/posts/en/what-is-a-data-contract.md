@@ -5,7 +5,7 @@ slug: "what-is-a-data-contract"
 lang: "en"
 translationKey: "data-contract"
 publishedAt: 2026-10-05
-updatedAt: 2026-10-23
+updatedAt: 2026-11-08
 tags: ["data-contract", "governance", "semantic-layer"]
 draft: false
 llmSummary: "A data contract is a versioned agreement between the producer and consumers of a dataset. On Snowflake, BigQuery and Redshift, primary_key and foreign_key are definable but not enforced: they exist for metadata purposes only, and a model still builds when it violates them."
@@ -13,8 +13,8 @@ citations: ["https://docs.getdbt.com/reference/resource-properties/constraints",
 about: ["https://en.wikipedia.org/wiki/Data_governance", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
+cta: newsletter
 ---
-
 A data contract is a versioned agreement between the producer and the consumers of a dataset, declaring column names, types, quality guarantees and operational commitments. In the open standard most teams reach for, only 4 of 23 top-level fields are required ([ODCS v3.2.0](https://github.com/bitol-io/open-data-contract-standard)). And on the three warehouses most analytics teams run on, the guarantee people trust most is enforced by nobody.
 
 One disambiguation first, because the term is overloaded. This is not .NET's `[DataContract]`, the serialization attribute that controls which members get serialized by `DataContractSerializer`. Same words, unrelated problem.
@@ -133,3 +133,7 @@ It gives no adoption statistic for data contracts. The most-cited survey on the 
 It also does not claim that a competing specification was deprecated in favor of ODCS. That claim circulates, and I could not find it stated on any official page of the project in question, so it is not repeated here.
 
 And it recommends no tool. The matrix above will change as platforms evolve, and dbt's own documentation says so. The question that outlives it: in your contract today, which clauses fail the build, and which ones are only written down?
+
+---
+
+What changed, what broke and what Precisian's research measured lands every two weeks, on Thursdays, in [Precisian's newsletter](https://precisian.io/en/newsletter?utm_source=blog&utm_medium=cta&utm_campaign=what-is-a-data-contract&utm_content=texto).

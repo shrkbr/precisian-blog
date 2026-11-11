@@ -12,8 +12,9 @@ citations: ["https://modelcontextprotocol.io/specification/2026-07-28/server/too
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 The specification contains a sentence that should govern your whole design: clients "**MUST** consider tool annotations to be untrusted unless they come from trusted servers" ([MCP spec, revision 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)). The description you write is not a behavioral guarantee to anyone. Only what the tool **does** is a guarantee.
 
 That single line settles the most common architectural question. Your tool surface is your security boundary, because the model, not you, chooses what to call.
@@ -115,3 +116,7 @@ It carries no adoption figure for MCP in e-commerce. I found no survey with a st
 It does not describe protocol session state, because there is none: the spec states that "MCP has no protocol-level session" and treats continuity as an explicit handle returned by a tool, which it labels non-normative guidance.
 
 And it leaves the legal layer around personal data entirely aside. That sits on top of all of this and deserves its own article.
+
+---
+
+If an AI agent already reads production data in your company, the first step is knowing exactly what it can, and cannot, reach. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=mcp-for-ecommerce-analytics&utm_content=texto) over an isolated lake, with no contract commitment.

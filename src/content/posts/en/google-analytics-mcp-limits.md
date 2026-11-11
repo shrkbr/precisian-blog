@@ -12,8 +12,9 @@ citations: ["https://github.com/googleanalytics/google-analytics-mcp", "https://
 about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
+cta: demo
+updatedAt: 2026-11-08
 ---
-
 The Google Analytics MCP server hands your AI assistant the same numbers GA4 already holds, modeling, thresholds and `(not set)` included, and the assistant reports them as if they were counts. The official server reads GA4 through the Data API, and Google's documentation, last updated October 13, 2026, says that API respects the property's reporting identity, so user counts, deduplication and data modeling all follow that setting ([Google Analytics Data API](https://developers.google.com/analytics/devguides/reporting/data/v1)). On the Blended identity, part of the answer is an estimate, and nothing in the response says so.
 
 > **Google Analytics MCP server**: a read-only server that implements the Model Context Protocol on top of the GA4 Admin API and Data API, giving a language model your property's reports under the same identity, threshold and sampling rules as the GA4 interface.
@@ -133,4 +134,4 @@ It isn't an installation guide; the steps live in the [README](https://github.co
 
 ---
 
-If the assistant connected to GA4 answers "sales" and the number doesn't tie to Shopify, the first step is measuring the gap between GA4 revenue and recognized revenue, month by month, with Amazon and wholesale in the count. [Book a conversation about your setup](https://calendar.notion.so/meet/rodrigomartucci/precisian-io). No contract commitment, and no promise of an answer in 30 minutes either.
+If the assistant connected to GA4 answers "sales" and the number doesn't tie to Shopify, the first step is measuring the gap between GA4 revenue and recognized revenue, month by month, with Amazon and wholesale in the count. [Watch a governed MCP answer](https://precisian.io/en/demo?utm_source=blog&utm_medium=cta&utm_campaign=google-analytics-mcp-limits&utm_content=texto) over an isolated lake, with no contract commitment.

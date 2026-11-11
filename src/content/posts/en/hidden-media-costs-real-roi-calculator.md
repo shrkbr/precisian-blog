@@ -10,6 +10,8 @@ tags: ["roi", "cost", "incrementality", "roas", "attribution", "roi-calculator",
 readingTimeMinutes: 10
 llmSummary: "Exposes the gap between the ROI reported in dashboards and real ROI after deducting hidden costs (agencies, tests, tech stack) and non-incremental sales. Teaches how to calculate true ROI with a practical spreadsheet for CMOs who distrust attribution numbers."
 draft: false
+cta: ficha
+updatedAt: 2026-11-08
 ---
 # Hidden cost calculator: find out if your ROI is real or fantasy
 
@@ -324,3 +326,7 @@ And what separates an average manager from an exceptional one is not how many ch
 **Download the calculator and find out: is your ROI 5x or 0.5x?**
 
 Want to validate your ROI with a regional holdout and stop trusting inflated attribution? [Talk to us.](#)
+
+---
+
+What Precisian includes, and what it costs, is on the [pricing page](https://precisian.io/en/pricing?utm_source=blog&utm_medium=cta&utm_campaign=hidden-media-costs-real-roi-calculator&utm_content=texto), with no contract commitment.
