@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 O `ctwa_clid` é o identificador do clique num anúncio Click to WhatsApp. A Meta o entrega dentro do objeto `referral` do webhook de mensagens da WhatsApp Business Platform, campo que entrou na Cloud API em 27 de setembro de 2023 ([changelog da Meta](https://developers.facebook.com/docs/whatsapp/business-platform/changelog)). A empresa precisa guardá-lo junto com a conversa e devolvê-lo pela Conversions API quando a venda acontece. Se ninguém o grava, a venda chega ao financeiro sem origem.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Para registrar tudo o que um agente de IA consultou, grave o log no servidor que executa a consulta, um registro por chamada de ferramenta, com a identidade de quem pediu. O chat não serve, e o logging do protocolo também não: a especificação do Model Context Protocol marcou o recurso de logging como descontinuado na revisão 2026-07-28 e proíbe dado pessoal nessas mensagens ([MCP](https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging)).
 

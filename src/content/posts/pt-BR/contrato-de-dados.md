@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://preci
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Um contrato de dados é um acordo versionado entre quem produz e quem consome uma tabela, declarando nomes de colunas, tipos e garantias de qualidade. No padrão aberto mais usado hoje, apenas 4 dos 23 campos de topo são obrigatórios ([ODCS v3.2.0](https://github.com/bitol-io/open-data-contract-standard)). E na maioria dos data warehouses, a parte do contrato que as pessoas mais confiam não é cobrada por ninguém.
 
@@ -29,7 +28,7 @@ Quatro coisas, em ordem de quanto costumam ser levadas a sério.
 
 **A semântica.** O que a coluna significa. `receita` é com ou sem frete? Com ou sem imposto? Essa é a parte que quase nunca entra no arquivo, e é a que gera a divergência que ninguém consegue explicar na reunião.
 
-**O compromisso operacional.** Frequência de atualização, janela de atraso tolerada, quem é o dono, como avisar antes de mudar.
+**O compromisso operacional.** Frequência de atualização, janela de atraso tolerada, quem é o dono, como avisar antes de mudar. Quem decide sobre cada dado, e como uma mudança é aprovada, é o registro de [governança de dados no e-commerce](https://precisian.io/blog/pt-BR/posts/governanca-de-dados-ecommerce/).
 
 O padrão aberto governado pela LF AI & Data Foundation em conjunto com o Bitol, o Open Data Contract Standard, organiza isso em seções de fundamentos, esquema, qualidade, times, papéis e níveis de serviço ([ODCS](https://bitol-io.github.io/open-data-contract-standard/latest/)).
 
@@ -78,7 +77,7 @@ Com teste, não com declaração. São camadas diferentes, e a confusão entre e
 
 **Teste de dados** é uma consulta que roda depois e falha se o resultado não for o esperado. É aí que `unique` de verdade acontece em Snowflake e BigQuery: não como restrição declarada, e sim como um teste que conta duplicatas e derruba o pipeline quando acha alguma.
 
-**Contrato** é o documento que diz o que as duas camadas anteriores deveriam sustentar, mais a parte que nenhuma das duas cobre: significado e compromisso operacional.
+**Contrato** é o documento que diz o que as duas camadas anteriores deveriam sustentar, mais a parte que nenhuma das duas cobre: significado e compromisso operacional. Saber de quais tabelas e regras saiu um número publicado é outro registro, a [linhagem de dados](https://precisian.io/blog/pt-BR/posts/linhagem-de-dados/).
 
 Quem escreve `primary_key` no YAML e não escreve o teste correspondente tem o desenho de uma garantia, não a garantia.
 

@@ -13,13 +13,12 @@ about: ["https://pt.wikipedia.org/wiki/Meta_Platforms", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 A API de Conversões da Meta envia à Meta o evento que o seu servidor registrou, sem depender do navegador do visitante. Com isso ela recupera parte do que o Pixel perde, e não faz mais que isso. A documentação da Meta para desenvolvedores (consultada em 23/10/2026) diz que um evento do Pixel e um do servidor só viram a mesma compra quando chegam com `event_id` e `event_name` iguais, em até 48 horas ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/)). Fora dessa regra, a venda é contada duas vezes.
 
 > **API de Conversões (CAPI)** é a conexão servidor a servidor pela qual o anunciante manda à Meta os eventos que o próprio sistema registrou. Segundo a Meta, esses eventos *"são vinculados a um ID de conjunto de dados e processados como eventos enviados pelo Pixel da Meta"* ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api)).
 
-A API melhora o que entra na Meta. Não muda o que a Meta faz com isso depois.
+A API melhora o que entra na Meta. Não muda o que a Meta faz com isso depois. Como a entrega da Meta aprende com esse evento está em [Meta Andromeda](https://precisian.io/blog/pt-BR/posts/meta-andromeda/).
 
 ## Como uma API de Conversões mal configurada aparece no relatório?
 

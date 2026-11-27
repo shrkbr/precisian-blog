@@ -13,7 +13,6 @@ about: ["https://www.triplewhale.com", "https://en.wikipedia.org/wiki/Semantic_l
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 If you run a Shopify brand selling in the US, Triple Whale is probably the right tool, and Precisian is not a real alternative: Precisian serves e-commerce operating in Brazil. As of October 27, 2026, Triple Whale's Foundation plan lists at $219 a month on the [Shopify App Store](https://apps.shopify.com/triplewhale-1), with native Shopify, WooCommerce and BigCommerce integrations ([Triple Whale](https://www.triplewhale.com/our-integrations)). Precisian becomes the alternative when part of your business runs in Brazil, on VTEX or Magento.
 
@@ -45,7 +44,7 @@ A lot. It reports more than 60,000 brands and says it tracked $71 billion in rev
 
 The self-serve promise is explicit: "Most brands are up and running with Triple Whale in 15 minutes, with no engineer required," per the FAQ on its [pricing page](https://www.triplewhale.com/pricing). It is not software-only, either. The same page offers implementation specialists, custom onboarding and migration with dedicated success coverage on Enterprise, and a service add-on, Moby Concierge, described as "high-touch, custom builds." Paying customers can get humans from Triple Whale.
 
-Moby adjusts budgets, pauses ads and launches campaigns "within your approval settings and guardrails" ([pricing](https://www.triplewhale.com/pricing)). The MCP server connects Claude, ChatGPT, Cursor and n8n to account data over OAuth2 ([help center, MCP](https://kb.triplewhale.com/en/articles/15656798-triple-whale-mcp)). And the Free plan includes the pixel, first- and last-click attribution, 12 months of lookback and 10 users ([Shopify App Store](https://apps.shopify.com/triplewhale-1)).
+Moby adjusts budgets, pauses ads and launches campaigns "within your approval settings and guardrails" ([pricing](https://www.triplewhale.com/pricing)). The MCP server connects Claude, ChatGPT, Cursor and [n8n](https://precisian.io/blog/en/posts/n8n-mcp/) to account data over OAuth2 ([help center, MCP](https://kb.triplewhale.com/en/articles/15656798-triple-whale-mcp)). And the Free plan includes the pixel, first- and last-click attribution, 12 months of lookback and 10 users ([Shopify App Store](https://apps.shopify.com/triplewhale-1)).
 
 ## How do they compare, criterion by criterion?
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Server-side_tracking", "https://en.wikipe
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha o SMKTY Tracker se o problema é o sinal de conversão que chega à Meta e ao Google; escolha a Precisian se o problema é a empresa não ter um número de receita em que a própria IA possa confiar. Em 27/10/2026, o SMKTY Tracker se define como "a plataforma brasileira de atribuição server-side, inteligência de visitante e ativação nativa" e cobra de R$ 0 a R$ 3.490 por mês, por volume de cliques ([SMKTY Tracker](https://www.smktytracker.com.br/)). Os dois fazem coleta server-side. O que cada um faz com o dado depois da coleta é diferente.
 

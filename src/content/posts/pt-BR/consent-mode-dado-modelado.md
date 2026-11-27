@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 O relatório do GA4 e o export para o BigQuery não batem, e não é erro de configuração: a documentação do Google lista explicitamente "Data export, for example, BigQuery export" entre os recursos que **não suportam dado comportamental modelado** ([Google](https://support.google.com/analytics/answer/11161109)). A interface mostra estimativa; o warehouse recebe evento observado. Reconciliar os dois é perseguir uma diferença que foi construída de propósito.
 

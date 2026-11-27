@@ -5,6 +5,7 @@ slug: "analise-rfm-ecommerce"
 lang: "pt-BR"
 translationKey: "analise-rfm-ecommerce"
 publishedAt: 2026-11-16
+updatedAt: 2026-11-27
 tags: ["ecommerce", "divergencia-de-dados", "camada-semantica", "marketplace"]
 draft: false
 llmSummary: "Análise RFM pontua cada cliente por recência, frequência e valor. No estudo de Fader, Hardie e Lee (2005), 12.054 de 23.570 clientes não recompraram em 78 semanas, o que impede quintil de frequência; e a VTEX mascara o e-mail do pedido por padrão."
@@ -42,6 +43,8 @@ Por três mecanismos, nesta ordem de estrago.
 **1. O identificador de cliente.** RFM agrupa pedidos por cliente. Se a chave falha, uma pessoa vira várias, e cada fragmento tem F baixo e R ruim. Na VTEX, o Conversation Tracker cria um alias para o e-mail do comprador, e a máscara **Complexa**, que vem por padrão em todas as lojas, gera um endereço não legível do tipo `ff2e6348a53a4d449af92be2a1011328@ct.vtex.com.br`, *"válido até o fim do fluxo do pedido"* ([VTEX](https://help.vtex.com/pt/docs/tutorials/conversation-tracker), lido em 16/11/2026). Quem conta cliente pelo e-mail que sai do pedido pode contar um cliente por pedido. O mesmo documento do pedido traz `clientProfileData.document` e `clientProfileData.userProfileId`, descrito como *"Customer user profile ID"* na especificação da Orders API ([`vtex/openapi-schemas`](https://github.com/vtex/openapi-schemas)). Essas são as chaves que agrupam.
 
 No marketplace a chave falta de vez. A Amazon devolve o e-mail do comprador anonimizado ([Amazon SP-API](https://developer-docs.amazon/sp-api/reference/getorders)). O Mercado Livre identifica o comprador por `buyer.id`, um número interno, e o documento fiscal em `buyer.billing_info` pode vir nulo enquanto está em processamento ([Mercado Livre](https://developers.mercadolivre.com.br/pt_br/faturamento-billing-info)). O detalhe por canal está em [deduplicar venda entre site e marketplace](https://precisian.io/blog/pt-BR/posts/deduplicar-venda-site-marketplace/).
+
+*Atualização em 27/11/2026: os campos citados acima são da Orders API v0, que a Amazon remove em 27/03/2027 ([cronograma de descontinuação da SP-API](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). O que muda na versão v2026-01-01 para o dado de venda está em [API da Amazon (SP-API): pedido e repasse para o vendedor](https://precisian.io/blog/pt-BR/posts/api-da-amazon-dados-de-venda/).*
 
 **2. O pedido que conta.** Pedido cancelado, pedido devolvido depois da nota e pedido de teste entram ou não em F e em M conforme o filtro. Na VTEX, devolução de pedido faturado não vira status `canceled`: vira uma segunda nota, do tipo `Input`, e quem filtra só por status mantém a venda devolvida no histórico, como descrevi em [API da VTEX: pedido, faturamento e cancelamento](https://precisian.io/blog/pt-BR/posts/api-da-vtex-dados-de-pedido/).
 

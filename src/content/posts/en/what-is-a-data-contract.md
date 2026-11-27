@@ -5,7 +5,7 @@ slug: "what-is-a-data-contract"
 lang: "en"
 translationKey: "data-contract"
 publishedAt: 2026-10-05
-updatedAt: 2026-11-08
+updatedAt: 2026-10-23
 tags: ["data-contract", "governance", "semantic-layer"]
 draft: false
 llmSummary: "A data contract is a versioned agreement between the producer and consumers of a dataset. On Snowflake, BigQuery and Redshift, primary_key and foreign_key are definable but not enforced: they exist for metadata purposes only, and a model still builds when it violates them."
@@ -29,7 +29,7 @@ Four layers, listed in descending order of how seriously teams treat them.
 
 **Semantics.** What the column means. Is `revenue` gross or net of returns? Before or after shipping? This layer is usually absent from the file, and it is the one that produces the disagreement nobody can resolve in the meeting.
 
-**Operational commitment.** Refresh cadence, tolerated lateness, owner, and how a breaking change gets announced.
+**Operational commitment.** Refresh cadence, tolerated lateness, owner, and how a breaking change gets announced. Owner and change control also belong to the governance minimum covered in [data governance for ecommerce teams](https://precisian.io/blog/en/posts/data-governance-ecommerce/).
 
 The Open Data Contract Standard, governed by the LF AI & Data Foundation together with Bitol, organizes these into sections for fundamentals, schema, data quality, team, roles and service levels ([ODCS](https://bitol-io.github.io/open-data-contract-standard/latest/)).
 

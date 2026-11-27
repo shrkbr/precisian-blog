@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha o Windsor.ai se quem lê o número é uma pessoa que conhece as plataformas e quer o relatório de mídia no Looker Studio, na planilha ou no Claude pagando pouco. Escolha a Precisian se você é um e-commerce médio sem time de dados e precisa que a IA responda a receita com a definição do seu financeiro. Em 03/11/2026, o Windsor.ai cobra a partir de US$ 19 por mês no plano anual, com todos os conectores e o Windsor MCP em todos os planos ([Windsor.ai, preços](https://windsor.ai/pricing/)).
 
@@ -93,7 +92,7 @@ Com escrita liberada em todos os planos, o erro de leitura vira erro de ação: 
 
 ## O que recomendar, por perfil?
 
-**Analista de mídia ou loja pequena que quer o relatório semanal:** Windsor.ai, no Basic ou no Standard. Escolha pelo destino que você já usa.
+**Analista de mídia ou loja pequena que quer o relatório semanal:** Windsor.ai, no Basic ou no Standard. Escolha pelo destino que você já usa. Se o destino é o Google Sheets, a Adveronix também leva dado de mídia para a planilha, e a comparação está em [Precisian ou Adveronix](https://precisian.io/blog/pt-BR/posts/precisian-ou-adveronix/).
 
 **Time com BigQuery e analista de SQL:** Windsor.ai como conector, com a camada de regra escrita pelo seu time no warehouse.
 
@@ -101,7 +100,7 @@ Com escrita liberada em todos os planos, o erro de leitura vira erro de ação: 
 
 **Grupo com várias marcas:** o critério que domina é o isolamento. Pergunte a cada fornecedor, por escrito, como o dado de uma marca fica separado do da outra; o raciocínio está em [isolamento por cliente no MCP](https://precisian.io/blog/pt-BR/posts/isolamento-por-cliente-mcp/).
 
-**Quem quer ver mais opções lado a lado:** o ranking com a mesma régua está em [ferramentas de ETL para dados de marketing](https://precisian.io/blog/pt-BR/posts/ferramentas-de-etl-para-dados-de-marketing/), e a conta de montar por conta própria está em [construir ou contratar um data lake](https://precisian.io/blog/pt-BR/posts/construir-ou-contratar-data-lake/).
+**Quem quer ver mais opções lado a lado:** o ranking com a mesma régua está em [ferramentas de ETL para dados de marketing](https://precisian.io/blog/pt-BR/posts/ferramentas-de-etl-para-dados-de-marketing/), e a conta de montar por conta própria está em [construir ou contratar um data lake](https://precisian.io/blog/pt-BR/posts/construir-ou-contratar-data-lake/). A Porter Metrics, que liga mídia e VTEX ao Claude e ao Looker Studio, está na mesma régua em [Precisian ou Porter Metrics](https://precisian.io/blog/pt-BR/posts/precisian-ou-porter-metrics/).
 
 ## O que este artigo não cobre?
 

@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Controle_de_acesso", "https://precisian.i
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 O GA4 oferece 5 papéis e 2 restrições de dado que quase ninguém usa, entre elas uma que esconde métrica de receita e outra que esconde métrica de custo ([Google](https://support.google.com/analytics/answer/9305587)). O padrão de mercado, mesmo assim, é conceder Administrador e seguir a vida.
 

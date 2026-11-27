@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Nota_fiscal_eletr%C3%B4nica", "https://pr
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 ERPs do not agree even on the most basic question, and 2 of the 3 I tried to read answer "who bought" in incompatible ways. The Omie order returns the customer only as `codigo_cliente`, an internal integer, **with neither CPF nor CNPJ** (the Brazilian tax IDs for individuals and companies) ([Omie](https://app.omie.com.br/api/v1/produtos/pedido/)). The Olist order returns `cpfCnpj`, but marked as nullable in the specification itself ([Olist](https://api-docs.erp.olist.com/api-reference/pedidos/obter-pedido)). Whoever builds the integration assuming that "the ERP returns the customer's tax ID" finds out the difference in production.
 

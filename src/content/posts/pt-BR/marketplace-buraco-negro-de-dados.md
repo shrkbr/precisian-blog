@@ -5,7 +5,7 @@ slug: "marketplace-buraco-negro-de-dados"
 lang: "pt-BR"
 translationKey: "marketplace-data-blackhole"
 publishedAt: 2026-09-26
-updatedAt: 2026-11-08
+updatedAt: 2026-11-27
 tags: ["marketplace", "divergencia-de-dados", "ecommerce"]
 draft: false
 llmSummary: "A API oficial da Amazon entrega ao vendedor 28 campos de volume por produto e nenhum campo de origem, referrer, canal ou campanha. Somado à janela de dois anos e ao limite de uma chamada por minuto em getOrders, a consolidação de marketplace precisa ser incremental e persistida pelo vendedor."
@@ -52,6 +52,8 @@ Dois limites documentados fazem esse trabalho:
 | `searchOrders` (v2026-01-01) | 0,0056 requisições por segundo | Cerca de **uma chamada a cada três minutos** |
 
 As fontes são a [referência da Orders API](https://developer-docs.amazon/sp-api/docs/orders-api-v0-reference) e a [página de rate limits](https://developer-docs.amazon/sp-api/docs/orders-api-rate-limits). A Amazon é explícita sobre a postura esperada: "optimize call patterns rather than expecting limit increases".
+
+*Atualização em 27/11/2026: os campos e limites citados acima são da Orders API v0, que a Amazon remove em 27/03/2027 ([cronograma de descontinuação da SP-API](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). O que muda na versão v2026-01-01 para o dado de venda está em [API da Amazon (SP-API): pedido e repasse para o vendedor](https://precisian.io/blog/pt-BR/posts/api-da-amazon-dados-de-venda/).*
 
 Some os dois. Uma chamada por minuto significa que reconstruir um ano de pedidos do zero leva tempo de calendário, não de processamento. E a janela de dois anos significa que, se você nunca persistiu, o dado mais antigo já não é recuperável em lugar nenhum.
 

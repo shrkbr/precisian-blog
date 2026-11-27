@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha a Kondado se a sua loja é pequena, roda em Bling, Nuvemshop ou Mercado Livre e tem alguém disposto a configurar o próprio dado; escolha a Precisian se você é um e-commerce médio sem time de dados e quer a operação e a definição de métrica inclusas. Em 27/10/2026, os planos da Kondado "começam em R$ 99/mês incluindo acesso a todos os conectores MCP", com pagamento mensal e sem fidelidade ([Kondado, MCP](https://kondado.com.br/mcp/); [Kondado, preços](https://kondado.com.br/pricing.html)).
 

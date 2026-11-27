@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Multilocat%C3%A1rio", "https://precisian.
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Uma agência que usa o mesmo agente de IA para vários clientes mistura dados por três caminhos operacionais, e nenhum deles exige atacante: o contexto de um cliente que sobra na conversa do outro, um cache que guarda resposta sem o cliente na chave, e uma credencial única que alcança todas as contas. Em março de 2023, um cache compartilhado expôs dados de pagamento de 1,2% dos assinantes do ChatGPT Plus a outros usuários ([OpenAI](https://openai.com/index/march-20-chatgpt-outage/)).
 

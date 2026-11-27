@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wik
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Data lake guarda o dado bruto, no formato em que ele chegou, em armazenamento barato. Data warehouse guarda o dado já modelado, pronto para consulta rápida. Lakehouse é a tentativa de fazer as duas coisas sobre os mesmos arquivos abertos, como definiram Armbrust, Ghodsi, Xin e Zaharia no CIDR de janeiro de 2021 ([paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). Para um e-commerce, a ordem é guardar cru primeiro e modelar depois. E nenhum dos três define o que é receita.
 
@@ -29,7 +28,7 @@ No **data lake**, ninguém decide na entrada. O JSON da API do Meta Ads, o CSV d
 
 No **data warehouse**, alguém decide antes. O pedido vira uma linha com colunas definidas, o gasto de mídia vira outra tabela, e as duas se juntam por data e canal. A consulta é rápida porque o trabalho de interpretação já foi feito, uma vez.
 
-O **lakehouse** põe uma camada de metadados transacional sobre os arquivos do lake. O paper de 2021 descreve exatamente isso: arquivos abertos, como Parquet, mais uma camada que registra quais arquivos compõem a tabela em cada versão ([CIDR 2021](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). Na prática, essa camada é um formato de tabela aberto. O Apache Iceberg se descreve como "an open table format for huge analytic datasets", com commit atômico, isolamento serializável e *time travel*, que permite repetir uma consulta sobre o mesmo snapshot ([Iceberg](https://iceberg.apache.org/docs/latest/)).
+O **lakehouse** põe uma camada de metadados transacional sobre os arquivos do lake. O paper de 2021 descreve exatamente isso: arquivos abertos, como Parquet, mais uma camada que registra quais arquivos compõem a tabela em cada versão ([CIDR 2021](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). Na prática, essa camada é um formato de tabela aberto. O Apache Iceberg se descreve como "an open table format for huge analytic datasets", com commit atômico, isolamento serializável e *time travel*, que permite repetir uma consulta sobre o mesmo snapshot ([Iceberg](https://iceberg.apache.org/docs/latest/)). O verbete, com quando o e-commerce precisa de um, está em [o que é lakehouse](https://precisian.io/blog/pt-BR/posts/o-que-e-lakehouse/).
 
 O mesmo paper explica por que a terceira categoria apareceu: na arquitetura de duas camadas, o dado é carregado no lake e de novo no warehouse, e cada etapa "risks incurring failures or introducing bugs", além de pagar o armazenamento em dobro ([CIDR 2021](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). Os quatro autores são da Databricks, que vende lakehouse. A definição é a primária; a previsão de que o warehouse vai "definhar" é a opinião de quem vende a alternativa.
 

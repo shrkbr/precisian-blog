@@ -1,5 +1,5 @@
 ---
-title: "Fivetran pricing in 2026: how MAR billing works and what drives the bill"
+title: "Fivetran pricing in 2026: how MAR billing drives the bill"
 description: "Fivetran bills each connection by monthly active rows. On Standard, the first million MAR costs $500 a month at list price, and the rate falls per connection."
 slug: "fivetran-pricing"
 lang: "en"
@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Extract%2C_load%2C_transform", "https://p
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Fivetran charges each connection separately for its monthly active rows (MAR). On the Standard plan, Fivetran's [Service Consumption Table](https://www.fivetran.com/legal/service-consumption-table) (V.11, effective November 1, 2026) lists a $5 base charge plus $495 per million MAR for a connection's first million rows, which comes to $500 a month at 1 million MAR. The rate then falls to $170 per million, then $58, but only within that one connection. Rows from different connections are never pooled.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.i
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 A especificação do Model Context Protocol não obriga ninguém a autenticar. O texto é literal: "Authorization is OPTIONAL for MCP implementations" ([spec MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). Conectar um agente de IA aos dados da empresa com segurança, portanto, não é seguir o protocolo, é acrescentar o que o protocolo deixou de fora.
 

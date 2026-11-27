@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Revenue_recognition", "https://precisian.
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Two teams export revenue for the same month and the numbers differ. Neither made a mistake. Finance follows a five-step model, effective for annual reporting periods beginning on or after 1 January 2018, that governs when revenue may be recognised ([IFRS Foundation](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/)). Marketing measures at checkout. Different events, different dates, both defensible.
 
@@ -102,7 +101,7 @@ It needs a seventh row, on a clock of its own.
 
 When the sale happens on a marketplace, there is a gross order value the buyer paid and a net remittance that reaches your account, on a date that is not the order date. Marketing reporting usually sees the full amount. The bank statement sees the remittance. The difference is commission, and it is nobody's error: it is how the channel works.
 
-Add that many of these channels return no traffic-source field at all, and you have a slice of revenue that agrees with the rest of the report neither by definition nor by attribution.
+Add that many of these channels return no traffic-source field at all, and you have a slice of revenue that agrees with the rest of the report neither by definition nor by attribution. ERP order data has its own version of this gap, covered in [what the ERP returns as sales data](https://precisian.io/blog/en/posts/what-the-erp-returns-as-sales-data/).
 
 The practical handling is the same as everything else here, with one addition: marketplace revenue needs its own field from day one. Teams that push it into the same `revenue` column as the direct store lose the ability to explain the difference later, and that explanation is exactly what gets asked for.
 
@@ -112,7 +111,7 @@ Someone with the authority to overrule a team's preferred number, which is rarel
 
 This is where most attempts quietly die. Data engineering can build the bridge, publish the definitions and wire up the semantic layer, but it cannot tell the commercial team that its favorite figure is now called something else. That decision is organizational, and if it is never made, every technical fix gets reverted by the first person who needs a number in a hurry.
 
-The workable pattern is narrow: one named owner per metric, a written definition, and a rule that changing it is a reviewed change rather than a conversation. It sounds bureaucratic for exactly one metric. It is, and one metric is where it should start.
+The workable pattern is narrow: one named owner per metric, a written definition, and a rule that changing it is a reviewed change rather than a conversation. It sounds bureaucratic for exactly one metric. It is, and one metric is where it should start. The choices behind the other common metrics are in [ecommerce KPIs: the definition each team needs to agree on](https://precisian.io/blog/en/posts/ecommerce-kpis-definitions/).
 
 ## Where should the definition live?
 

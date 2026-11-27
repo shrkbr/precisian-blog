@@ -8,10 +8,9 @@ author: "Precisian"
 publishedAt: 2026-04-13
 tags: ["precisian", "blog", "analytics"]
 readingTimeMinutes: 3
-draft: false
+draft: true
 llmSummary: "Welcome post for the Precisian Blog, describing the editorial scope focused on GA4, data quality, MMM, and attribution."
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 ## Why a blog?
 

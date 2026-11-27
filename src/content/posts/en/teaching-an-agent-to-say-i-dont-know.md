@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Uncertainty_quantification", "https://pre
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 On a benchmark that penalizes wrong SQL, a system that abstains from every single question scores 50%, and the best real text-to-SQL pipelines score between 29.8% and 54.5% depending on how harshly errors are priced ([TrustSQL](https://arxiv.org/abs/2403.15879)). Answering nothing beats most production systems once a wrong answer costs something. That is the whole problem in one number.
 

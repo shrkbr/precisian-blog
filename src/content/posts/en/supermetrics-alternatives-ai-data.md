@@ -1,5 +1,5 @@
 ---
-title: "Supermetrics alternatives when the consumer is an AI agent, not a spreadsheet"
+title: "Supermetrics alternatives when an AI agent reads the data"
 description: "Windsor.ai, Funnel and Improvado all ship MCP servers now. Choose a Supermetrics alternative by who defines the metric, not by connector count."
 slug: "supermetrics-alternatives-ai-data"
 lang: "en"
@@ -35,7 +35,7 @@ I left out connector counts and report templates on purpose. All four vendors co
 
 ## What does each alternative do well?
 
-**Supermetrics** is the shortest path from an ad account to a spreadsheet. Starter and Growth cost $39 and $159 a month billed yearly ($49 and $199 billed monthly), each with one core destination chosen from a list that includes Google Sheets, Looker Studio, Excel, Power BI, Claude and ChatGPT ([Supermetrics, checked October 14, 2026](https://supermetrics.com/pricing)). Warehouse destinations, API access and data transformations are listed only on Enterprise, which is quote-based. The MCP server is a separate product for subscribers with API access, and it can create or modify campaigns, which start paused ([docs, August 27, 2026](https://docs.supermetrics.com/docs/supermetrics-mcp-server)).
+**Supermetrics** is the shortest path from an ad account to a spreadsheet. Starter and Growth cost $39 and $159 a month billed yearly ($49 and $199 billed monthly), each with one core destination chosen from a list that includes Google Sheets, Looker Studio, Excel, Power BI, Claude and ChatGPT ([Supermetrics, checked October 14, 2026](https://supermetrics.com/pricing)). Warehouse destinations, API access and data transformations are listed only on Enterprise, which is quote-based. The MCP server is a separate product for subscribers with API access, and it can create or modify campaigns, which start paused ([docs, August 27, 2026](https://docs.supermetrics.com/docs/supermetrics-mcp-server)). What each plan includes and what drives the bill is broken down in [Supermetrics pricing](https://precisian.io/blog/en/posts/supermetrics-pricing/).
 
 **Windsor.ai** is the cheapest option here and the most generous on destinations: every plan sends data to Looker Studio, Sheets, BigQuery and Snowflake, with up to 10 years of history and access to Windsor MCP ([Windsor.ai, checked October 14, 2026](https://windsor.ai/pricing/)). Its Claude connector reads and writes to connected accounts, including pausing campaigns and reallocating budget ([Windsor.ai](https://windsor.ai/documentation/windsor-mcp/how-to-integrate-data-into-claude/)).
 

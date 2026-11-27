@@ -1,5 +1,5 @@
 ---
-title: "Meta Ads MCP: the official connector, its permissions, and whose numbers it returns"
+title: "Meta Ads MCP: the official connector and its permissions"
 description: "Meta's official Ads MCP server entered open beta on April 29, 2026 with 91 tools. The conversions it reports are the ones Meta attributes to itself."
 slug: "meta-ads-mcp-permissions"
 lang: "en"
@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisi
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: demo
-updatedAt: 2026-11-08
 ---
 The Meta Ads MCP server is Meta's official connector between an AI agent and a Meta ad account. Meta announced it in open beta on April 29, 2026 ([Meta](https://www.facebook.com/business/news/meta-ads-ai-connectors)). It is hosted at `https://mcp.facebook.com/ads`, and when I counted on October 14, 2026, its developer docs listed 91 tools. It reads and writes, and the conversions it reports are the ones Meta credits to its own ads.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Google_Tag_Manager", "https://precisian.i
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 Two vendor documents describe the same setup and reach opposite conclusions. Google's domain table says pointing a **subdomain** at your tagging server grants "full access to security and durability benefits" ([Google](https://developers.google.com/tag-platform/tag-manager/server-side/custom-domain)). WebKit says a first-party subresource resolving through a CNAME that differs from the first-party domain gets its HTTP-response cookies "capped to 7 days" ([WebKit](https://webkit.org/tracking-prevention/)).
 
@@ -102,7 +101,7 @@ Three instances at USD 40 to 50 is USD 120 to 150 per month in compute alone. Th
 
 Size decides more than architecture does.
 
-At low traffic, the arithmetic rarely works. Three instances of compute plus egress plus log storage is a fixed monthly cost against a variable, unproven benefit, and the engineering time to maintain a container nobody on the team has operated before is the larger line item. A small store is usually better served by fixing what it already has.
+At low traffic, the arithmetic rarely works. Three instances of compute plus egress plus log storage is a fixed monthly cost against a variable, unproven benefit, and the engineering time to maintain a container nobody on the team has operated before is the larger line item. A small store is usually better served by fixing what it already has. If the only goal is loading the Google tag from your own domain, [Google tag gateway for advertisers](https://precisian.io/blog/en/posts/google-tag-gateway-for-advertisers/) does that through your CDN.
 
 At high traffic, the calculus inverts, but for a reason that has nothing to do with cookies: when you are dispatching millions of events, controlling what leaves your domain becomes a compliance position rather than an optimization. Stripping personal data before it reaches a vendor is a documented capability (see above), and it is the one benefit that does not depend on how any browser behaves next quarter.
 

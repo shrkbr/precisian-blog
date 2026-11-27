@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_warehouse", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 An AI agent querying your warehouse can cost more than a human analyst doing the same work, and the reason is not that it asks more questions. It is that nothing in the default configuration stops one query from scanning everything. Databricks ships `STATEMENT_TIMEOUT` with a system default of 172,800 seconds, which is two days ([Databricks docs](https://docs.databricks.com/aws/en/sql/language-manual/parameters/statement_timeout)). That default was written for humans who notice.
 

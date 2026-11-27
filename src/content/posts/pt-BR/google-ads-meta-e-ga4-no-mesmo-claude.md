@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://pt.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 Ligar os MCPs de Google Ads, Meta e GA4 no mesmo Claude dá ao agente três réguas que se sobrepõem. A janela padrão do Google Ads conta uma compra até 30 dias depois do clique ([Google Ads](https://support.google.com/google-ads/answer/3123169)); a da Meta, até 7 dias depois do clique ou 1 dia depois da visualização ([Meta](https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights)). O mesmo pedido cabe nas duas, e o agente soma.
 

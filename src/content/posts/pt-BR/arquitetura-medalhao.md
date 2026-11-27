@@ -38,7 +38,7 @@ A Databricks resume cada camada em uma linha: bronze é "ingestão de dado bruto
 
 ## Como fica a arquitetura medalhão num e-commerce?
 
-A Microsoft dá um exemplo de e-commerce no guia do Fabric. No bronze, a venda do site em JSON, o estoque em CSV e o CRM em exportação SQL. Na prata, "padronizar formatos de data", "converter toda moeda para dólar", "remover transações de teste" e "casar registros de cliente entre sistemas". No ouro, a tabela de vendas diárias, a de valor do cliente no tempo e a de previsão de estoque ([Microsoft Learn](https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture)).
+A Microsoft dá um exemplo de e-commerce no guia do Fabric. No bronze, a venda do site em JSON, o estoque em CSV e o CRM em exportação SQL. Na prata, "padronizar formatos de data", "converter toda moeda para dólar", "remover transações de teste" e "casar registros de cliente entre sistemas". No ouro, a tabela de vendas diárias, a de valor do cliente no tempo e a de previsão de estoque ([Microsoft Learn](https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture)). O que o Fabric entrega a um e-commerce, como cobra e o que fica com o seu time está em [Microsoft Fabric para dados de e-commerce](https://precisian.io/blog/pt-BR/posts/microsoft-fabric-para-ecommerce/).
 
 Traduzindo para uma operação com loja VTEX, Mercado Livre, Meta Ads e Google Ads, o trabalho da prata é o que costuma dar mais briga:
 
@@ -69,7 +69,7 @@ Não. São coisas de tipos diferentes, e é comum ver as quatro na mesma frase.
 | Responde "o que é receita?" | Não. Cada ouro pode ter a sua | Não | Só se a regra estiver escrita numa tabela | Sim, é a função dela |
 | Onde aparece na prática | Bronze, prata e ouro dentro de um lake ou lakehouse | Armazenamento de objeto | Plataforma de warehouse | Arquivo de definição lido por BI, API e agente |
 
-A Microsoft mostra que as fronteiras se misturam: um dos padrões que ela documenta põe bronze e prata em *lakehouse* e a ouro num *data warehouse* ([Microsoft Learn](https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture)). A diferença entre os repositórios está em [o que é data lake](https://precisian.io/blog/pt-BR/posts/o-que-e-data-lake/); a diferença entre warehouse e definição, em [camada semântica ou data warehouse](https://precisian.io/blog/pt-BR/posts/camada-semantica-ou-data-warehouse/).
+A Microsoft mostra que as fronteiras se misturam: um dos padrões que ela documenta põe bronze e prata em *lakehouse* e a ouro num *data warehouse* ([Microsoft Learn](https://learn.microsoft.com/en-us/fabric/onelake/onelake-medallion-lakehouse-architecture)). A diferença entre os repositórios está em [o que é data lake](https://precisian.io/blog/pt-BR/posts/o-que-e-data-lake/); a diferença entre warehouse e definição, em [camada semântica ou data warehouse](https://precisian.io/blog/pt-BR/posts/camada-semantica-ou-data-warehouse/). O padrão de lakehouse tem verbete próprio: [o que é lakehouse](https://precisian.io/blog/pt-BR/posts/o-que-e-lakehouse/).
 
 ## O que a arquitetura medalhão não é?
 

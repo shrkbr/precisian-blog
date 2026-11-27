@@ -24,7 +24,7 @@ Este é o terceiro texto da série sobre o que cada canal de venda devolve pela 
 
 O faturamento da Shopee na planilha não fecha com o que cai na carteira do vendedor, e a diferença é maior que a comissão que alguém tem de cabeça. Ou a receita de um mesmo mês muda quando você puxa de novo na semana seguinte, sem ninguém ter mexido na integração.
 
-As duas coisas têm a mesma origem: a integração leu um módulo só, ou leu cedo demais um valor que a própria Shopee avisa que ainda vai mudar.
+As duas coisas têm a mesma origem: a integração leu um módulo só, ou leu cedo demais um valor que a própria Shopee avisa que ainda vai mudar. Na Amazon, pedido e repasse também saem de APIs diferentes, como mostra [API da Amazon (SP-API): pedido e repasse para o vendedor](https://precisian.io/blog/pt-BR/posts/api-da-amazon-dados-de-venda/).
 
 ## O que o get_order_detail devolve?
 

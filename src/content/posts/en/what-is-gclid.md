@@ -1,5 +1,5 @@
 ---
-title: "What is gclid? How the Google Ads click ID gets lost before the sale"
+title: "What is gclid? Why the Google Ads click ID gets lost"
 description: "gclid is the Google Ads click ID. It arrives in the URL, lives in a cookie on your domain, and only reaches Google again if you store it with the order."
 slug: "what-is-gclid"
 lang: "en"
@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Google_Ads", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 `gclid` (Google Click Identifier) is the parameter Google Ads auto-tagging appends to the landing URL of every clicked ad, as in `www.example.com/?gclid=123xyz` ([Google Ads Help](https://support.google.com/google-ads/answer/3095550), accessed November 3, 2026). Google's tag writes it to a cookie on your domain and uses it to tie a conversion back to the click. When the sale closes somewhere other than that page, someone has to store the `gclid` with the order.
 

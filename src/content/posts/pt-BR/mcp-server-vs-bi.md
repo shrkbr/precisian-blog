@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Business_intelligence", "https://precisia
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Um servidor MCP é um processo que expõe dados e ferramentas a um modelo de linguagem por um protocolo padronizado, de forma que a IA que o time já usa consiga perguntar sem que alguém construa uma integração nova a cada vez. A especificação corrente é a revisão **2026-07-28**, versionada por data e incrementada apenas quando há quebra de compatibilidade ([modelcontextprotocol.io](https://modelcontextprotocol.io/specification/versioning)).
 

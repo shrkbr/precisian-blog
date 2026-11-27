@@ -60,7 +60,7 @@ Some of that is Meta's system changing, which you don't control. Some of it is t
 
 ## Why does your purchase event carry more weight now?
 
-Because Meta's delivery system learns from the event you optimize for, and Meta documents that only events it can match to a person count.
+Because Meta's delivery system learns from the event you optimize for, and Meta documents that only events it can match to a person count. On Google Search, [AI Max](https://precisian.io/blog/en/posts/ai-max-for-search/) optimizes to the conversion Google Ads records.
 
 The sentence is in the Conversions API best practices: *"You can use only matched events for ads attribution and ad delivery optimization,"* and *"Higher matching quality produces better results"* ([Meta, Conversions API best practices](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices), read November 23, 2026).
 

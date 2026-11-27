@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Linhagem de dados é o registro do caminho que um número percorreu: de quais tabelas de origem ele saiu, por quais transformações passou e qual regra o produziu. A especificação aberta [OpenLineage](https://openlineage.io/docs/), projeto graduado da LF AI & Data Foundation e na versão 1.54.0 em outubro de 2026, descreve esse caminho com três entidades: dataset, job e execução. Para uma métrica de marketing, é a linhagem que responde "esse ROAS veio de quais pedidos?".
 

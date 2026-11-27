@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Connecting the Google Ads, Meta and GA4 MCP servers to one Claude gives the agent three attribution rules that overlap. Google Ads counts a purchase up to 30 days after a click by default ([Google Ads](https://support.google.com/google-ads/answer/3123169)). Meta's default counts it up to 7 days after a click or 1 day after a view ([Meta](https://developers.facebook.com/docs/marketing-api/reference/ad-account/insights)). The same order fits inside both, and the agent adds them up.
 

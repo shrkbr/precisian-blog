@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Reten%C3%A7%C3%A3o_de_dados", "https://pr
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 A pergunta chega como política de governança e a resposta já está tomada por você. No GA4 padrão, dado de usuário e de evento pode ser retido por **2 ou 14 meses**, e só isso: as opções de 26, 38 e 50 meses são exclusivas do Analytics 360 ([Google](https://support.google.com/analytics/answer/7667196)). Passado o prazo, *"o dado é excluído automaticamente em base mensal"*.
 
@@ -69,7 +68,7 @@ Prazo sem pergunta vira ou desperdício ou arrependimento. Três horizontes cobr
 | **25 meses** | comparar duas Black Fridays completas | você não sabe se o ano foi bom ou se o mercado foi |
 | **ciclo de vida do cliente** | recompra, valor ao longo do tempo, coorte | qualquer análise de retenção vira estimativa |
 
-O terceiro é o que costuma estourar o prazo. Se o seu intervalo típico de recompra é de oito meses, uma janela de catorze meses mostra uma recompra por cliente e nenhuma coorte fechada.
+O terceiro é o que costuma estourar o prazo. Se o seu intervalo típico de recompra é de oito meses, uma janela de catorze meses mostra uma recompra por cliente e nenhuma coorte fechada. Como montar a coorte sem que cliente duplicado ou primeira compra cancelada troquem a safra está em [análise de cohort no e-commerce](https://precisian.io/blog/pt-BR/posts/analise-de-cohort-ecommerce/).
 
 E repare que **nenhum** desses três cabe em dois meses, que é o teto imposto às propriedades grandes.
 

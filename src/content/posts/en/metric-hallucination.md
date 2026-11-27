@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Metric hallucination is what happens when an AI agent returns an arithmetically correct number based on a business definition your company never wrote down. The model did not invent the data. It guessed the rule. In a paired benchmark published in April 2026 across three frontier models, supplying those business definitions as context raised answer accuracy from 45.5–50.5% to 67.7–68.7% ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
@@ -53,9 +52,9 @@ The gap between 91.2% and 21.3% comes from the schema, not the model: it is the 
 
 Four silent tiebreakers show up most often.
 
-**Which date wins.** Order date, ship date, or revenue recognized under ASC 606 and its international counterpart, [IFRS 15](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/). A DTC brand shipping in three days barely notices the spread. The same brand selling a twelve-month subscription will see the three definitions diverge by an entire quarter, and only on part of the catalog, which is the hardest kind of error to spot.
+**Which date wins.** Order date, ship date, or revenue recognized under ASC 606 and its international counterpart, [IFRS 15](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/). A DTC brand shipping in three days barely notices the spread. The same brand selling a twelve-month subscription will see the three definitions diverge by an entire quarter, and only on part of the catalog, which is the hardest kind of error to spot. Why marketing and finance land the same order in different months is covered in [marketing and finance revenue definitions](https://precisian.io/blog/en/posts/marketing-finance-revenue-definition/).
 
-**What goes in and what stays out.** Shipping, discounts, returns, and sales tax. Tax is the one that bites hardest in the US, because nexus rules make it vary by state, so the same order carries a different tax line depending on where it shipped. There is no universally correct answer here, only the one your finance team uses. If that is not written down, the agent picks whatever the column name suggests.
+**What goes in and what stays out.** Shipping, discounts, returns, and sales tax. Tax is the one that bites hardest in the US, because nexus rules make it vary by state, so the same order carries a different tax line depending on where it shipped. There is no universally correct answer here, only the one your finance team uses. If that is not written down, the agent picks whatever the column name suggests. The same choices for each common KPI are laid out in [ecommerce KPI definitions](https://precisian.io/blog/en/posts/ecommerce-kpis-definitions/).
 
 **What counts as a "new customer."** First purchase with the brand, first purchase in the channel, or first purchase inside the period being analyzed. All three show up in the wild, sometimes inside the same report at the same company.
 
@@ -73,7 +72,7 @@ Gartner projected in June 2025 that more than 40% of agentic AI projects will be
 
 ## How do you know if this is already happening?
 
-Three checks, in order of effort. None requires new tooling, and all three produce the same deliverable: a list of the definitions that currently live only in somebody's head. That list is where the fix starts, and it is usually shorter than people fear.
+Three checks, in order of effort. None requires new tooling, and all three produce the same deliverable: a list of the definitions that currently live only in somebody's head. That list is where the fix starts, and it is usually shorter than people fear. What belongs on it, field by field, is in [what goes into a semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/).
 
 **Ask the same question twice, in separate sessions.** If the numbers differ, the agent is breaking the tie on the fly, and the tiebreak is not stable.
 

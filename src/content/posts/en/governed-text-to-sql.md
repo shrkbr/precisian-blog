@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Natural-language_user_interface", "https:
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 Text-to-SQL fails on marketing data precisely when the query runs: the model picks the wrong revenue column, the wrong date window, joins a table that multiplies rows, or adds up the same order under two channels, and hands back a clean number with no error message. Getting it right is hard even under test conditions: on Spider 2.0, presented at ICLR 2025, o1-preview solved 21.3% of 632 enterprise tasks, against 91.2% on Spider 1.0 ([Lei et al., 2024](https://arxiv.org/abs/2411.07763)).
 

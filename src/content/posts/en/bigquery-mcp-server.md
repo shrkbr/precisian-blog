@@ -1,5 +1,5 @@
 ---
-title: "BigQuery MCP server: what an AI agent can query, and the guardrails it needs"
+title: "BigQuery MCP server: what agents can query and the guardrails"
 description: "Google's BigQuery MCP server gives an agent 9 tools, SQL on raw tables and up to 3,000 rows. It has no per-query byte cap and no metric definitions."
 slug: "bigquery-mcp-server"
 lang: "en"
@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 The BigQuery MCP server lets an AI agent list datasets, read table schemas and run SQL in your Google Cloud project, but it has no idea what any column means to your business. Google's remote server at `https://bigquery.googleapis.com/mcp` exposes nine tools, cancels queries after three minutes and returns at most 3,000 rows ([Google Cloud](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp), page updated October 29, 2026). Its SQL tool accepts no per-query byte cap, and the agent rewrites the definition of "revenue" every time someone asks.
 
@@ -116,7 +115,7 @@ Then the checklist:
 
 In order of payoff per hour of work:
 
-**1. A dedicated, read-only identity.** Create a service account for the agent, grant BigQuery Data Viewer only on the datasets it needs, and apply the deny policy that blocks read-write MCP tools. That removes `execute_sql` and leaves `execute_sql_readonly`.
+**1. A dedicated, read-only identity.** Create a service account for the agent, grant BigQuery Data Viewer only on the datasets it needs, and apply the deny policy that blocks read-write MCP tools. That removes `execute_sql` and leaves `execute_sql_readonly`. On Postgres, real read-only lives in the database role, covered in [Postgres MCP server](https://precisian.io/blog/en/posts/postgres-mcp-server/).
 
 **2. A daily byte cap.** Since the remote server doesn't accept `maximumBytesBilled`, the brake is the quota: set `QueryUsagePerUserPerDay` for the agent's identity. Past the limit, BigQuery returns `quotaExceeded` and the agent is done until midnight Pacific. On Toolbox, set `maximumBytesBilled` and `allowedDatasets`, and switch `writeMode` to `blocked`. The full cost argument is in [query cost guardrails](https://precisian.io/blog/en/posts/query-cost-guardrails/).
 

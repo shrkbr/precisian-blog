@@ -13,7 +13,7 @@ about: ["https://en.wikipedia.org/wiki/Attribution_(marketing)", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
+updatedAt: 2026-11-27
 ---
 In the `salesAndTraffic` schema dated 24 April 2024, published by Amazon itself, the API returns **28 traffic fields per product and not one origin field**. The official Data Kiosk schema lists sessions, B2B sessions, browser sessions, app sessions, page views and buy box percentage, and contains no referrer, no channel, no campaign, no UTM and no search term ([Amazon's schema on GitHub](https://raw.githubusercontent.com/amzn/selling-partner-api-models/main/schemas/data-kiosk/analytics_salesAndTraffic_2024_04_24.graphql)).
 
@@ -102,6 +102,8 @@ The raw order payload, before transformation, with three fields disciplined.
 The **native order identifier**, which is the only genuinely stable key. The **status kept as a series** rather than overwritten, because overwriting erased the cancellation you will later be asked to explain. And the **collection timestamp**, separate from the order date, which lets you reconstruct what you knew at a past moment.
 
 Rate limits shape how you do this. Amazon publishes per-operation rates for the Orders API ([Amazon](https://developer-docs.amazon/sp-api/docs/orders-api-rate-limits)), and a nightly job that pulls a list and then details per order has to respect them. Designing the extraction against the documented rates, rather than discovering them through throttling, is the difference between a job that finishes and one that silently returns a partial day.
+
+*Update, November 27, 2026: the rate limits cited above come from Orders API v0, which Amazon removes on March 27, 2027 ([SP-API deprecation schedule](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). What changes for sales data in v2026-01-01 is covered in [Amazon SP-API for sales data: orders, payouts and limits](https://precisian.io/blog/en/posts/amazon-sp-api-sales-data/).*
 
 A partial day is the dangerous outcome, because it looks like a slow sales day rather than a failed extraction.
 

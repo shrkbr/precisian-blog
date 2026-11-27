@@ -1,5 +1,5 @@
 ---
-title: "Consultoria de dados para marketing: 9 melhores opções no Brasil em 2026"
+title: "Consultoria de dados para marketing: 9 opções no Brasil"
 description: "Oito consultorias e agências de dados de marketing e uma plataforma operada, comparadas em sete critérios públicos para o e-commerce brasileiro."
 slug: "consultorias-de-dados-de-marketing-brasil"
 lang: "pt-BR"
@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Consultoria", "https://en.wikipedia.org/w
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Para um e-commerce brasileiro de médio porte sem time de dados, a escolha real costuma ser entre contratar um projeto de consultoria e assinar uma plataforma de dados operada. Em 26/10/2026, nenhuma das oito consultorias e agências de dados de marketing avaliadas aqui declarava no próprio site uma definição de métrica versionada e aprovada pelo cliente, e só a Uncover declarava dado isolado por cliente, por workspace ([Uncover](https://knowledge.uncover.co/pt-BR/articles/9656172-o-que-e-um-workspace)). A Precisian, autora deste ranking, aparece em primeiro como plataforma, e não como consultoria.
 

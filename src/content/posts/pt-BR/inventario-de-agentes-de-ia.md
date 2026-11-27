@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 Nenhum painel único mostra quais agentes de IA alcançam o seu dado, porque cada autorização fica registrada na plataforma que a concedeu. E elas duram: o Google só invalida sozinho um refresh token depois de 6 meses sem uso ([Google](https://developers.google.com/identity/protocols/oauth2)), e a Meta oferece token de usuário do sistema que nunca expira ([Meta for Developers](https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens)). O inventário mínimo de permissões tem sete colunas: agente, dono, servidor MCP, escopo do token, ferramentas de escrita, dado alcançável e data da última revisão.
 

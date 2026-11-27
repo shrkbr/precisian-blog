@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wik
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A data lake stores raw data exactly as the source sends it, on cheap object storage. A data warehouse stores data that has already been modeled into tables built for fast queries. A data lakehouse puts warehouse features (ACID transactions, versioning, indexing) on top of open lake files, a design Armbrust, Ghodsi, Xin and Zaharia defined at CIDR in January 2021 ([paper](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)). For an ecommerce brand, raw comes first. And none of the three decides what "net revenue" means.
 

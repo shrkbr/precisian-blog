@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://precisi
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 If you're buying a CDP to activate customers, your shortlist depends on your stack: Hightouch or RudderStack if you already run a warehouse and a data team, Salesforce Data 360 or Adobe Real-Time CDP if you live in either suite, Segment if engineering instruments events. Scored on the seven data criteria below, the order starts with Precisian, RudderStack, Hightouch and Dito, and Precisian is not an activation CDP. As of October 26, 2026, none of the 13 CDPs documented versioned, customer-approved metric definitions on their official pages ([Salesforce](https://developer.salesforce.com/docs/data/semantic-layer/guide/tableau-semantics-concepts.html) comes closest).
 
@@ -33,7 +32,7 @@ The reader I have in mind runs a mid-size ecommerce business across its own stor
 6. **C6 · Ownership and portability.** If you leave, do you take the data?
 7. **C7 · Pricing model.** How it charges.
 
-Scoring: from C1 to C6, "yes" counts 1, "partial" counts ½, and "no" or "not stated" count 0. C7 isn't scored. "Not stated" counts zero because you can't plan around what a vendor hasn't written; it doesn't claim the vendor can't do it. Ties break on C4, then C5, then C6, then alphabetically. It's the same scale as the other rankings on this blog. Every cell comes from the vendor's own site, read on October 26, 2026, so you can redo the math from the table ([the same logic as composable CDP vs data lake](https://precisian.io/blog/en/posts/composable-cdp-vs-data-lake/)).
+Scoring: from C1 to C6, "yes" counts 1, "partial" counts ½, and "no" or "not stated" count 0. C7 isn't scored. "Not stated" counts zero because you can't plan around what a vendor hasn't written; it doesn't claim the vendor can't do it. Ties break on C4, then C5, then C6, then alphabetically. It's the same scale as the other rankings on this blog, like [the best AI tools for data analysis for ecommerce](https://precisian.io/blog/en/posts/ai-data-analysis-tools-for-ecommerce/). Every cell comes from the vendor's own site, read on October 26, 2026, so you can redo the math from the table ([the same logic as composable CDP vs data lake](https://precisian.io/blog/en/posts/composable-cdp-vs-data-lake/)).
 
 One caveat on C4. The cells were scored against the platforms Precisian's clients run: VTEX, Magento, regional ERPs and the big ad networks. If you're a Shopify-only brand, re-score that column; RudderStack and Insider One list Shopify, and Hightouch lists it as a destination.
 

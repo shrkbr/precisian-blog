@@ -13,7 +13,6 @@ about: ["https://www.solomon.com.br/", "https://en.wikipedia.org/wiki/Semantic_l
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha a Solomon se a pergunta é "de qual campanha veio esta venda" e você quer a resposta num painel pronto, contratado sozinho, em minutos. Escolha a Precisian se a pergunta é "qual foi a receita", feita pela IA da diretoria sobre loja, marketplace e ERP, e ninguém no time tem tempo de escrever e manter a definição. Em 26/10/2026, a [Solomon](https://www.solomon.com.br/) declara 6 modelos de atribuição, mais de 400 marcas atendidas e configuração "em menos de 5 minutos". São produtos para perguntas diferentes.
 
@@ -91,7 +90,7 @@ O terceiro é a saída. Os termos da Solomon proíbem "fazer o download de conte
 
 **Dropshipping e infoproduto.** A Solomon aceita esses modelos no próprio formulário de demonstração ([Solomon](https://www.solomon.com.br/comecar)). Os dois estão fora do perfil da Precisian.
 
-**Time de performance cuja pergunta é "qual anúncio vendeu".** Atribuição por anúncio, influenciador e cupom, com envio de venda aprovada à Meta e ao Google, é o produto dela. A Precisian não vende atribuição.
+**Time de performance cuja pergunta é "qual anúncio vendeu".** Atribuição por anúncio, influenciador e cupom, com envio de venda aprovada à Meta e ao Google, é o produto dela. A Precisian não vende atribuição. A Nemu, outra plataforma brasileira de atribuição, está comparada na mesma régua em [Precisian ou Nemu](https://precisian.io/blog/pt-BR/posts/precisian-ou-nemu/).
 
 **Quem quer painel pronto e IA embutida, contratando sozinho, hoje.** A Precisian não tem painel nem autosserviço, e não tem plano de entrada para testar sem conversa.
 

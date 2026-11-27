@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: demo
-updatedAt: 2026-11-08
 ---
 The Google Ads MCP server lets an AI assistant query your ad account in plain English, with read-only access. According to Google's documentation, last updated October 14, 2026, it exposes three tools, and the main one, `search`, runs Google Ads Query Language (GAQL) queries ([Google Ads API](https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server)). It answers precisely what Google Ads recorded as a conversion. How much of that became a shipped, paid order is something it has no way to know.
 
@@ -75,7 +74,7 @@ Four mechanisms, all documented by Google itself.
 
 **A GA4 import brings GA4's rules.** When the conversion is a GA4 key event, Google Ads respects the Analytics settings, and properties linking for the first time give credit, by default, only to Google paid channels ([Google Ads Help](https://support.google.com/google-ads/answer/10632359)). That default favors the channel being measured.
 
-**A refund only exists if someone reports it.** The API accepts `RETRACTION` adjustments (remove the conversion) and `RESTATEMENT` adjustments (correct its value) ([Google Ads API](https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments)). If your stack doesn't push those from Shopify or your ERP, the refund never happened as far as Google Ads knows, and so it never happened for the MCP server either.
+**A refund only exists if someone reports it.** The API accepts `RETRACTION` adjustments (remove the conversion) and `RESTATEMENT` adjustments (correct its value) ([Google Ads API](https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments)). If your stack doesn't push those from Shopify or your ERP, the refund never happened as far as Google Ads knows, and so it never happened for the MCP server either. Nor for [AI Max in Google Ads](https://precisian.io/blog/en/posts/ai-max-for-search/), which optimizes to the conversion Google Ads records.
 
 None of this is a bug in the server. It faithfully reads what the account holds. The problem is that "how much did I sell?" is answered in a different system.
 

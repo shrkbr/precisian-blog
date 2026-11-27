@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: demo
-updatedAt: 2026-11-08
 ---
 O MCP do Google Ads é um servidor que deixa um assistente de IA consultar sua conta de anúncios em linguagem natural, só em leitura. Na documentação do Google atualizada em 14/10/2026, ele expõe três ferramentas, e a principal, `search`, executa consultas GAQL ([Google Ads API](https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server)). Ele responde com precisão o que o Google Ads registrou como conversão. Quanto isso virou de pedido faturado, ele não tem como saber.
 
@@ -77,7 +76,7 @@ Quatro mecanismos, todos documentados pelo próprio Google.
 
 **Devolução só existe se alguém contar.** A API aceita ajustes do tipo `RETRACTION` (retirar a conversão) e `RESTATEMENT` (corrigir o valor) ([Google Ads API](https://developers.google.com/google-ads/api/docs/conversions/upload-adjustments)). Se a sua operação não sobe esses ajustes a partir do ERP, a devolução não existe para o Google Ads, e portanto não existe para o MCP.
 
-Nenhum desses mecanismos é defeito do servidor. Ele lê fielmente o que a conta contém. O problema é que a pergunta "quanto vendi" tem resposta em outro sistema.
+Nenhum desses mecanismos é defeito do servidor. Ele lê fielmente o que a conta contém. O problema é que a pergunta "quanto vendi" tem resposta em outro sistema. Com o AI Max ligado, a campanha escolhe termo, texto e página otimizando para essa mesma conversão, como mostra [AI Max no Google Ads](https://precisian.io/blog/pt-BR/posts/ai-max-google-ads/).
 
 ## O que o MCP do Google Ads não é?
 

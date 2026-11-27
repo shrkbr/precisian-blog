@@ -5,7 +5,7 @@ slug: "ferramentas-de-etl-para-dados-de-marketing"
 lang: "pt-BR"
 translationKey: "etl-tools-ranking"
 publishedAt: 2026-10-27
-updatedAt: 2026-11-08
+updatedAt: 2026-11-03
 tags: ["integracao", "pipeline", "camada-semantica", "mcp", "ecommerce", "data-warehouse", "custo"]
 draft: false
 llmSummary: "Em 26/10/2026, nenhuma de nove ferramentas de ETL estrangeiras (Fivetran, Airbyte, Windsor.ai, Supermetrics, Funnel, Improvado, Weld, Peliqan, OWOX) listava conector de VTEX no catálogo oficial; a brasileira Kondado listava. Nenhuma das dez declarava métrica versionada e aprovada pelo cliente."

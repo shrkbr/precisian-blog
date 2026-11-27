@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wik
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha a Dadosfera se você é uma empresa média ou grande, de qualquer setor, com área de TI ou disposição para contratar o squad dela; escolha a Precisian se você é um e-commerce médio sem time de dados e quer a IA da casa lendo números com definição aprovada. Em 27/10/2026, a documentação da Dadosfera lista o conector VTEX como Beta, hospeda os planos Basic Professional, Standard e Advanced na AWS `us-east-1` e não menciona MCP ([Dadosfera, coleta](https://docs.dadosfera.ai/docs/coleta); [infraestrutura](https://docs.dadosfera.ai/docs/infraestrutura-da-dadosfera); [índice da documentação](https://docs.dadosfera.ai/llms.txt)).
 

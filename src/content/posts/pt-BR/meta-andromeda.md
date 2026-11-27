@@ -118,7 +118,7 @@ Se o caminho do evento passa por um contêiner server-side, vale ler [o que o GT
 
 Em três situações, e nenhuma é de configuração.
 
-**A venda que nunca passou pelo site.** Pedido no Mercado Livre, venda fechada no WhatsApp, loja física. O Andromeda só aprende com o que chega à Meta, e essas vendas só chegam se outro sistema as registrar e enviar. Sem isso, o sistema otimiza para o pedaço da receita que ele enxerga.
+**A venda que nunca passou pelo site.** Pedido no Mercado Livre, venda fechada no WhatsApp, loja física. O Andromeda só aprende com o que chega à Meta, e essas vendas só chegam se outro sistema as registrar e enviar. Sem isso, o sistema otimiza para o pedaço da receita que ele enxerga. No Google Ads, o AI Max otimiza do mesmo jeito para a conversão que a plataforma registra, como mostra [AI Max no Google Ads](https://precisian.io/blog/pt-BR/posts/ai-max-google-ads/).
 
 **O leilão é da Meta.** Recuperação, ranqueamento e leilão são caixas fechadas. Os ganhos de 4%, 8% e 14% da tabela acima foram medidos e publicados pela própria empresa que vende a mídia. Nenhum ajuste de dado do seu lado torna esse processo auditável.
 

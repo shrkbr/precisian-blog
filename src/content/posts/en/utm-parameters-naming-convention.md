@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/UTM_parameters", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 UTM parameters are tags appended to a link (`?utm_source=...&utm_medium=...&utm_campaign=...`) that tell Google Analytics where a visit came from. They only add up when every team spells them the same way, because GA4 compares values as exact text: [Google Analytics Help](https://support.google.com/analytics/answer/10917952) states that `utm_source=google` is different from `utm_source=Google`. One campaign tagged by five teams and three agencies ends up as several rows nobody can reconcile.
 

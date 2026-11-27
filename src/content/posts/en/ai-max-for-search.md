@@ -91,7 +91,7 @@ A synthetic example with round numbers: the campaign goes from 100 to 114 conver
 
 ## How do you fix the signal before judging AI Max?
 
-Fix the conversion first. If the conversion is wrong, every reading of AI Max inherits the error.
+Fix the conversion first. If the conversion is wrong, every reading of AI Max inherits the error. On Meta, delivery learns from the matched events your store sends, covered in [Meta Andromeda and signal quality](https://precisian.io/blog/en/posts/meta-andromeda-signal-quality/).
 
 1. **One primary purchase action, with your order number as `transaction_id`.** Everything else goes secondary, which Google describes as "for observation only" ([Google](https://support.google.com/google-ads/answer/11461796)).
 2. **Conversion adjustments for what the store canceled or refunded.** Google accepts `RETRACT` and `RESTATE`, with "up to 7 days after they're first recorded for autobidding readability" and 54 days overall ([Google, adjust conversions](https://support.google.com/google-ads/answer/7686280)). A fraud cancellation usually lands inside the 7 days; a refund after that corrects your reports, not the bidding signal.

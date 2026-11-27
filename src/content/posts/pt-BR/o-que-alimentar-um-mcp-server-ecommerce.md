@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Com%C3%A9rcio_eletr%C3%B4nico", "https://
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 A especificação define a ferramenta como **controlada pelo modelo**: *"o modelo de linguagem pode descobrir e invocar ferramentas automaticamente com base no entendimento contextual e nos prompts do usuário"* ([spec MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)). Isso muda a pergunta de projeto. O que você expõe não é uma conveniência: **é a fronteira de segurança**, porque quem escolhe o que chamar não é você.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A composable CDP is a customer data platform assembled on top of the warehouse you already run: profiles live in your tables, and a reverse ETL tool syncs them to Meta, Google and your email platform. Hightouch, a vendor of the model, documents that its deterministic identity resolution runs "directly in your data warehouse" ([Hightouch docs](https://hightouch.com/docs/identity-resolution/overview), retrieved October 14, 2026). A data lake keeps raw data from every source so you can find out what actually happened. A CDP activates. A lake explains.
 

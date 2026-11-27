@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_analysis", "https://en.wikipedia.org
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 For an ecommerce brand without a data team, the best AI tool for data analysis is one that finds the data already loaded and defined, and almost none of them do. As of October 26, 2026, 10 of the 14 competitors in this ranking stated in their documentation that they read from a data warehouse the customer has built. Databricks Genie requires "a pro or serverless SQL warehouse" ([Databricks](https://docs.databricks.com/aws/en/genie/set-up)), and Snowflake Cortex Analyst answers only about "structured data in Snowflake" ([Snowflake](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst)).
 
@@ -101,7 +100,7 @@ BI with data integration, agents and MCP. Progress Software closed its purchase 
 
 ### 9. Databricks Genie
 
-Natural-language questions over Unity Catalog tables, up to 50 per agent, running on a pro or serverless SQL warehouse ([Databricks](https://docs.databricks.com/aws/en/genie/set-up)). Its managed MCP server is generally available ([Databricks](https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp)), and per-user usage carries no charge through January 31, 2027 ([Databricks](https://docs.databricks.com/aws/en/genie/)). Ingesting Google Ads, Meta Ads and TikTok Ads is a separate product, Lakeflow Connect. **Best for:** teams already on Databricks with data people to curate tables, metric views and instructions.
+Natural-language questions over Unity Catalog tables, up to 50 per agent, running on a pro or serverless SQL warehouse ([Databricks](https://docs.databricks.com/aws/en/genie/set-up)). Its [managed MCP server](https://precisian.io/blog/en/posts/databricks-mcp-server/) is generally available ([Databricks](https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp)), and per-user usage carries no charge through January 31, 2027 ([Databricks](https://docs.databricks.com/aws/en/genie/)). Ingesting Google Ads, Meta Ads and TikTok Ads is a separate product, Lakeflow Connect. **Best for:** teams already on Databricks with data people to curate tables, metric views and instructions.
 
 ### 10. Snowflake Cortex Analyst
 
@@ -121,7 +120,7 @@ Search-based BI with an agent (Spotter) over Models that are "defined and verifi
 
 ### 14. Copilot in Power BI
 
-Chat and report generation inside Power BI, on top of the semantic model. It needs Fabric capacity F2 or higher, or Premium P1; a Pro license at $14 per user per month isn't enough on its own ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction); [pricing](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing)). Microsoft tells model owners to prepare the semantic model first, and token consumption drives Copilot billing ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction)). **Best for:** companies already paying for Fabric capacity, with an owner for the semantic model.
+Chat and report generation inside Power BI, on top of the semantic model. What an outside AI agent can query and change in that model is covered in [Power BI MCP server](https://precisian.io/blog/en/posts/power-bi-mcp-server/). It needs Fabric capacity F2 or higher, or Premium P1; a Pro license at $14 per user per month isn't enough on its own ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction); [pricing](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing)). Microsoft tells model owners to prepare the semantic model first, and token consumption drives Copilot billing ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction)). **Best for:** companies already paying for Fabric capacity, with an owner for the semantic model.
 
 ### 15. Julius AI
 

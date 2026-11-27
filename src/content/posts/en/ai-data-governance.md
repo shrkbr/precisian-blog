@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_governance", "https://precisian.io/e
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 AI data governance is the part of an AI policy that decides what a model may read, not only who may use it and for what. Most policies stop before that line. NIST's Generative AI Profile, released on July 26, 2024, tells organizations to "establish policies for collection, retention, and minimum quality of data" (action MP-4.1-005), which is a data question, not a usage question ([NIST AI 600-1](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf)).
 
@@ -103,7 +102,7 @@ The answer that holds is a versioned definition with an owner, read by the agent
 
 ## What is AI data governance not?
 
-AI data governance is more than an ethics charter or an approved-tools list. A principle with no matching permission stops no query, and the tools list names which model may be used without saying what it reaches once connected.
+AI data governance is more than an ethics charter or an approved-tools list. A principle with no matching permission stops no query, and the tools list names which model may be used without saying what it reaches once connected. Nor is it the same as governing the datasets themselves, covered in [data governance for ecommerce teams](https://precisian.io/blog/en/posts/data-governance-ecommerce/).
 
 A SOC 2 report doesn't fill the role either. It attests to controls you described; it does not decide what those controls should be.
 

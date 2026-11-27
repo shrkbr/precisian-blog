@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 Google's official Ads MCP server only offers read tools, but the credential behind it carries the `adwords` OAuth scope, which Google itself describes as permission to *"see, edit, create, and delete"* your Google Ads accounts and data ([Google](https://developers.google.com/identity/protocols/oauth2/scopes)). Google Ads publishes no read-only scope, and the server's own source code says so in a comment ([googleads/google-ads-mcp](https://github.com/googleads/google-ads-mcp), release of October 9, 2026). For marketing data, MCP security comes down to the token's scope far more than the protocol.
 
@@ -78,7 +77,7 @@ Six checks. All of them fit in an afternoon and none needs a paid tool.
 
 Sources: [Google, linked apps](https://support.google.com/accounts/answer/13533235), [Meta, debug_token](https://developers.facebook.com/docs/graph-api/reference/debug_token/), [Google Ads access levels](https://support.google.com/google-ads/answer/9978556), [Meta Business Help Center](https://www.facebook.com/business/help/1456422242197840).
 
-Two notes on the table. `readOnlyHint` is no substitute for reading the tool list, for the reason in the section above. And the NSA backs the last row: it recommends choosing actively maintained projects and running them through your strictest code-review profile, because *"many popular servers are no longer actively maintained"* ([NSA](https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF)).
+Two notes on the table. `readOnlyHint` is no substitute for reading the tool list, for the reason in the section above. And the NSA backs the last row: it recommends choosing actively maintained projects and running them through your strictest code-review profile, because *"many popular servers are no longer actively maintained"* ([NSA](https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF)). The archived reference [Postgres MCP server](https://precisian.io/blog/en/posts/postgres-mcp-server/) is one such case.
 
 ## How do you fix it?
 

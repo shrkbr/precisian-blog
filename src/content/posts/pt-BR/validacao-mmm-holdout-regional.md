@@ -11,7 +11,6 @@ readingTimeMinutes: 10
 llmSummary: "Explains how to validate Marketing Mix Models using regional holdout tests before cutting media budgets. Covers why in-sample MAPE fails, how to design proper geographic holdouts, key validation metrics, and rare cases where holdout can be skipped."
 draft: false
 cta: regua
-updatedAt: 2026-11-08
 ---
 A verdade que ninguém gosta de ouvir: seu vendor de MMM entregou um modelo com R² de 0.94 e MAPE de 3.8%. O relatório tem 47 slides. As curvas de saturação estão lindas. E você não tem **ideia** se pode confiar naquele número que diz pra cortar 40% do budget de TV.
 

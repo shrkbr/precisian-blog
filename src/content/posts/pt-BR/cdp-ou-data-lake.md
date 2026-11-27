@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 CDP (customer data platform) é, pela definição de 2026 do CDP Institute, "software que cria e mantém um registro unificado e persistente do cliente, acessível a outros sistemas" (tradução livre, como as demais citações deste texto; [CDP Institute](https://www.cdpinstitute.org/learning-center/what-is-a-cdp/), consultado em 14/10/2026). Data lake guarda o dado bruto de todas as fontes para análise. CDP serve para **ativar** o cliente; data lake serve para **entender** a operação.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Performance_indicator", "https://precisia
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Ecommerce KPIs are the handful of numbers a store runs on: revenue, AOV, conversion rate, CAC, ROAS, MER, LTV, refund rate and contribution margin. Each one has a formula and at least one choice that changes the result. Shopify alone computes average order value as `(gross sales - discounts) / orders`, before returns ([ShopifyQL reference, version 2026-10](https://shopify.dev/docs/api/shopifyql/2026-10/schemas/sales_revenue/sales), read November 3, 2026), while finance usually nets returns out first.
 

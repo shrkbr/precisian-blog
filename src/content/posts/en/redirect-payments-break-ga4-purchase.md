@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Payment_service_provider", "https://preci
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 Mollie states it in two sentences that should end the debate: "Your customer may not always return to your website. Always make sure to listen to webhooks as a back-up" ([Mollie](https://docs.mollie.com/docs/triggering-fulfilment)). Stripe says the same thing differently, warning that "you can't rely on triggering fulfillment only from your checkout landing page, because it's not guaranteed customers visit that page" ([Stripe](https://docs.stripe.com/checkout/fulfillment)).
 

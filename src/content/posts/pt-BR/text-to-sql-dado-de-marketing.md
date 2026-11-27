@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Natural-language_user_interface", "https:
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 Text-to-SQL erra em dado de marketing justamente quando a consulta roda: o modelo escolhe a coluna de receita errada, a janela de datas errada, junta uma tabela que duplica linhas ou soma o mesmo pedido em dois canais, e devolve um número limpo, sem mensagem de erro. Acertar é difícil mesmo em teste controlado: no Spider 2.0, apresentado no ICLR 2025, o o1-preview resolveu 21,3% de 632 tarefas corporativas, contra 91,2% no Spider 1.0 ([Lei et al., 2024](https://arxiv.org/abs/2411.07763)).
 

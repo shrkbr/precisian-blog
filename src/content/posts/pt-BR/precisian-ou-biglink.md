@@ -13,7 +13,6 @@ about: ["https://biglink.io/", "https://en.wikipedia.org/wiki/Semantic_layer", "
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A Biglink serve a quem quer uma tela pronta com IA dentro; a Precisian serve a quem já tem uma IA e quer que ela leia números confiáveis. Em 27/10/2026, a [página de preços da Biglink](https://biglink.io/pricing) mostra planos com preço público de R$ 399,99 a R$ 2.375,99 por mês no compromisso anual, com painel e o Agente Biglink IA incluídos. A Precisian não tem painel: entrega um data lake isolado por cliente e uma camada semântica que o Claude, o ChatGPT ou o BI do cliente consulta.
 

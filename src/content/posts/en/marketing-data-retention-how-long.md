@@ -5,7 +5,7 @@ slug: "marketing-data-retention-how-long"
 lang: "en"
 translationKey: "marketing-data-retention"
 publishedAt: 2026-10-08
-updatedAt: 2026-11-08
+updatedAt: 2026-10-23
 tags: ["governance", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4 standard properties retain user and event data for 2 or 14 months; 26, 38 and 50 months are 360 only, and large properties are limited to 2 months at event level. The setting does not affect standard aggregate reports, only explorations and funnels."
@@ -55,7 +55,7 @@ The demographic fields are fixed regardless of setting. And large and XL propert
 
 Read that second one again. The bigger the store, the smaller the window of granular data it can hold inside the tool. The business that would most need a historical series is the one least able to keep it where it originates.
 
-That is the entire argument for extracting data out of the analytics tool, and it has nothing to do with sophistication. It is about the clock running out.
+That is the entire argument for extracting data out of the analytics tool, and it has nothing to do with sophistication. It is about the clock running out. The BigQuery export route has its own daily cap, covered in [what breaks in your analytics during peak season](https://precisian.io/blog/en/posts/peak-season-data-breakage/).
 
 ## So how long should you actually keep it?
 

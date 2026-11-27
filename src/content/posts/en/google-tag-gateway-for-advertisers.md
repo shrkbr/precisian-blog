@@ -112,7 +112,7 @@ If you also send purchases to Meta, the gateway doesn't touch that route. Pixel 
 
 When the sale never touches a browser, or when the problem is how the number is defined.
 
-Amazon orders, in-store sales, phone orders, and B2B invoices never load `gtm.js`, gateway or not. Data a visitor declined in the consent banner doesn't come back either: the gateway changes the tag's route, not the consent decision. And gross versus net, with or without shipping, on order date or ship date, is a business decision, not a routing one.
+Amazon orders, in-store sales, phone orders, and B2B invoices never load `gtm.js`, gateway or not. Where Amazon order data comes from instead is covered in [Amazon SP-API for sales data](https://precisian.io/blog/en/posts/amazon-sp-api-sales-data/). Data a visitor declined in the consent banner doesn't come back either: the gateway changes the tag's route, not the consent decision. And gross versus net, with or without shipping, on order date or ship date, is a business decision, not a routing one.
 
 In those cases your order system is the source of truth for sales, and the useful question becomes which number governs which decision. That rule has to live somewhere analysts and AI agents read before they calculate, which is the job of a [semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/).
 

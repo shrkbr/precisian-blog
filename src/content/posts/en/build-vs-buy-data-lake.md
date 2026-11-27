@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 The most useful difference between building and buying is not price. It is that only one side publishes one. You can compute the cost of your own lake from open official tables: S3 storage in North Virginia costs **US$ 0.023 per GB-month** for the first 50 TB, from a price file published 18 September 2026 ([AWS Price List API](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/current/us-east-1/index.json)).
 

@@ -1,5 +1,5 @@
 ---
-title: "Supermetrics, Windsor.ai ou plataforma de dados: quando o conector basta"
+title: "Supermetrics ou Windsor.ai: quando só o conector basta"
 description: "Supermetrics e Windsor.ai levam o dado à planilha e à IA a partir de US$ 19/mês. Nenhum deles decide o que receita significa na sua empresa."
 slug: "supermetrics-windsor-ou-plataforma-de-dados"
 lang: "pt-BR"
@@ -73,7 +73,7 @@ Três dos quatro MCPs da tabela também alteram campanha. Com permissão de escr
 
 ## Quando **não** escolher a Precisian?
 
-**Time pequeno que só quer o relatório semanal no Sheets ou no Looker Studio.** Se a pergunta é "quanto gastei e quantos cliques tive por campanha", e quem lê é uma pessoa que conhece as plataformas, o conector resolve. O Windsor.ai Basic custa US$ 19 por mês no anual e o Supermetrics Starter, US$ 39 ([Windsor.ai](https://windsor.ai/pricing/); [Supermetrics](https://supermetrics.com/pricing)). Nenhuma plataforma gerenciada compete com isso, e nem deveria tentar.
+**Time pequeno que só quer o relatório semanal no Sheets ou no Looker Studio.** Se a pergunta é "quanto gastei e quantos cliques tive por campanha", e quem lê é uma pessoa que conhece as plataformas, o conector resolve. O Windsor.ai Basic custa US$ 19 por mês no anual e o Supermetrics Starter, US$ 39 ([Windsor.ai](https://windsor.ai/pricing/); [Supermetrics](https://supermetrics.com/pricing)). Nenhuma plataforma gerenciada compete com isso, e nem deveria tentar. Para quem vive no Google Sheets, a Adveronix começa sem custo, como mostra [Precisian ou Adveronix](https://precisian.io/blog/pt-BR/posts/precisian-ou-adveronix/).
 
 **Operação de uma fonte só.** Uma loja que vende só pelo site e anuncia só no Google não tem reconciliação a fazer. O relatório nativo basta.
 
@@ -85,7 +85,7 @@ Três dos quatro MCPs da tabela também alteram campanha. Com permissão de escr
 
 **Relatório semanal, uma pessoa lendo:** Windsor.ai ou Supermetrics no plano de entrada. Escolha pelo destino que você já usa. Se a dúvida já é entre o Windsor.ai e uma plataforma gerenciada, o comparativo direto está em [Precisian ou Windsor.ai](https://precisian.io/blog/pt-BR/posts/precisian-ou-windsor-ai/).
 
-**Time de mídia que quer perguntar no Claude sobre mídia, só mídia:** conector com MCP serve. Comece em só leitura (o Funnel já vem assim) e só libere escrita depois de saber o que o agente faz com ela.
+**Time de mídia que quer perguntar no Claude sobre mídia, só mídia:** conector com MCP serve. Comece em só leitura (o Funnel já vem assim) e só libere escrita depois de saber o que o agente faz com ela. A Porter Metrics, com MCP em todos os planos, é um desses conectores, comparada em [Precisian ou Porter Metrics](https://precisian.io/blog/pt-BR/posts/precisian-ou-porter-metrics/).
 
 **Agente respondendo à diretoria sobre receita, com VTEX, marketplace e ERP no meio:** você precisa de definição escrita antes de precisar de conector. Com time de dados para escrever e manter as regras, Funnel ou Improvado dão o lugar. Sem esse time, a escolha é uma plataforma gerenciada, em que a modelagem da camada semântica é feita com o seu time e faz parte do contrato.
 

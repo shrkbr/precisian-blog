@@ -50,7 +50,7 @@ Porque a Cloud API entrega cada mensagem ao servidor do negócio e não mantém 
 
 Do lado da Meta, a página de [privacidade e segurança de dados](https://developers.facebook.com/documentation/business-messaging/whatsapp/data-privacy-and-security), atualizada em 16/06/2026, diz que as mensagens têm "período máximo de retenção de 30 dias" para funções como retransmissão, e que a Meta age como operadora do dado em nome do negócio. Quem quer o histórico precisa gravá-lo no próprio servidor no momento em que o webhook chega.
 
-O MCP oficial administra esse encanamento: número, template, webhook. O histórico, se existir, mora no sistema que o negócio montou para receber o webhook: a plataforma de atendimento, o CRM ou um banco próprio.
+O MCP oficial administra esse encanamento: número, template, webhook. O histórico, se existir, mora no sistema que o negócio montou para receber o webhook: a plataforma de atendimento, o CRM ou um banco próprio. Quando esse sistema é o RD Station, cada produto, do CRM ao atendimento, tem servidor MCP próprio, como mostra [MCP do RD Station: o que a IA consegue ler do CRM e do Marketing](https://precisian.io/blog/pt-BR/posts/mcp-do-rd-station/).
 
 Os servidores de comunidade contornam isso por outro caminho. Em vez da API de negócio, usam a conta do aplicativo, que guarda o histórico no aparelho. Por isso leem conversa antiga, e por isso o enquadramento contratual muda.
 

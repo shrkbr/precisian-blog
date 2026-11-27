@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Black_Friday", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 O limite que mais estraga Black Friday não derruba nada: o export do GA4 para o BigQuery tem teto de **1 milhão de eventos por dia** em propriedade padrão e, se você estourar de forma consistente, a documentação do Google diz que "o export diário será pausado e os dias anteriores não serão reprocessados" ([Google](https://support.google.com/analytics/answer/9823238)). O site fica de pé, o relatório abre, e o dado do dia mais importante do ano simplesmente não existe depois.
 
@@ -27,7 +26,7 @@ Três coisas, e nenhuma aparece no monitoramento convencional.
 
 **A amostragem.** Acima de **10 milhões de eventos por consulta** numa propriedade padrão, o relatório passa a ser estimado ([Google](https://support.google.com/analytics/answer/13331292)). O número continua aparecendo; ele só deixa de ser exato, sem que nada na tela diga isso com clareza.
 
-**A cardinalidade.** Uma dimensão com mais de **500 valores únicos por dia** é considerada de alta cardinalidade, e o limite geral é de 50.000 valores ([Google](https://support.google.com/analytics/answer/12226705)). Quando a tabela estoura, o excedente vai para uma linha chamada `(other)`. Em Black Friday, dimensões que passam o ano inteiro comportadas, como nome de campanha ou variante de produto, estouram num dia. Vale lembrar que nome de campanha é campo escrito por gente de fora e [sem validação de conteúdo documentada](https://precisian.io/blog/en/posts/prompt-injection-marketing-data/) (em inglês), o que é outro problema do mesmo campo.
+**A cardinalidade.** Uma dimensão com mais de **500 valores únicos por dia** é considerada de alta cardinalidade, e o limite geral é de 50.000 valores ([Google](https://support.google.com/analytics/answer/12226705)). Quando a tabela estoura, o excedente vai para uma linha chamada `(other)`. Em Black Friday, dimensões que passam o ano inteiro comportadas, como nome de campanha ou variante de produto, estouram num dia. Vale lembrar que nome de campanha é campo escrito por gente de fora e [sem validação de conteúdo documentada](https://precisian.io/blog/pt-BR/posts/injecao-de-prompt-em-dado-de-marketing/) (em inglês), o que é outro problema do mesmo campo.
 
 ## Por que o frescor piora exatamente quando você mais precisa?
 
@@ -66,7 +65,7 @@ Duas, e as duas por motivo de formato de resposta.
 
 **O checkout estrangulado da Shopify devolve 200.** A documentação da Storefront API informa que a criação de checkout tem limite por minuto e retorna `200 Throttled`, não 429, recomendando fila com recuo exponencial ([Shopify](https://shopify.dev/docs/api/storefront)). Qualquer alerta configurado sobre status HTTP maior ou igual a 400 fica cego para checkout sendo limitado no minuto mais caro do ano.
 
-**O export pausado não avisa.** Já descrito acima, e vale repetir porque é a única falha desta lista cujo prejuízo é permanente. Rate limit se recupera; dia de export perdido não volta.
+**O export pausado não avisa.** Já descrito acima, e vale repetir porque é a única falha desta lista cujo prejuízo é permanente. Rate limit se recupera; dia de export perdido não volta. Como montar o alerta que pega esse tipo de falha está em [como saber se o pipeline de dados quebrou](https://precisian.io/blog/pt-BR/posts/como-saber-se-o-pipeline-de-dados-quebrou/).
 
 ## O que checar agora, antes de novembro?
 

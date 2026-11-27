@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Data lake é um repositório que guarda o dado no formato em que a fonte o entregou e só aplica estrutura na hora da leitura, abordagem que a Microsoft chama de *schema-on-read* ([Microsoft Learn](https://learn.microsoft.com/en-us/azure/architecture/data-guide/scenarios/data-lake), revisão de 16/04/2026). Num e-commerce, a função prática é guardar o histórico que as fontes apagam: a API de pedidos da VTEX só devolve pedidos criados nos últimos dois anos ([VTEX](https://developers.vtex.com/docs/api-reference/orders-api#get-/api/oms/pvt/orders)).
 

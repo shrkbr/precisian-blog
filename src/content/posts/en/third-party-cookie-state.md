@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/HTTP_cookie", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Third-party cookies still work in Chrome, on by default. In April 2025 Google stated it would "maintain our current approach" and that it would **not** ship the prompt that would have asked users to choose ([Privacy Sandbox](https://privacysandbox.google.com/blog/privacy-sandbox-next-steps)). In October 2025 it went further and retired much of the technology that was meant to replace the cookie ([Privacy Sandbox](https://privacysandbox.google.com/blog/update-on-plans-for-privacy-sandbox-technologies)).
 
@@ -69,7 +68,7 @@ The things that were worth doing regardless of what Chrome decided.
 
 **Measure your own browser mix.** The size of your exposure is the share of your revenue arriving through browsers that already block. That is a query you can run today, and it converts an industry narrative into your number.
 
-**Fix first-party collection.** Whatever fraction of your measurement depends on a third party setting an identifier on your behalf is the fraction at risk. Reducing it is durable work, and it does not become obsolete if a browser vendor reverses again.
+**Fix first-party collection.** Whatever fraction of your measurement depends on a third party setting an identifier on your behalf is the fraction at risk. Reducing it is durable work, and it does not become obsolete if a browser vendor reverses again. What counts as first-party data, and where it should live, is covered in [first-party data for ecommerce](https://precisian.io/blog/en/posts/first-party-data-ecommerce/).
 
 **Separate the identity problem from the measurement problem.** Knowing that a purchase happened does not require knowing which anonymous session it belongs to. A large share of what teams lose to cookie restrictions is attribution rather than revenue, and those have different fixes and different urgency.
 
@@ -79,7 +78,7 @@ The things that were worth doing regardless of what Chrome decided.
 
 Partly, conditionally, and not in the way it is usually sold.
 
-Moving tag execution to your own server changes where the request comes from, and in a genuine first-party context it allows server-set cookies rather than script-set ones. That is a real difference in some browsers.
+Moving tag execution to your own server changes where the request comes from, and in a genuine first-party context it allows server-set cookies rather than script-set ones. That is a real difference in some browsers. A related option, [Google tag gateway for advertisers](https://precisian.io/blog/en/posts/google-tag-gateway-for-advertisers/), serves the Google tag from your own domain through your CDN.
 
 It is not a general escape. WebKit's rules cap cookies set in HTTP responses at seven days when it classifies the request as CNAME-cloaked, and the classification depends on how your subdomain resolves rather than on your intent. [The full argument is a separate article](https://precisian.io/blog/en/posts/server-side-tagging-worth-it/), but the short version is that the durability benefit depends on a condition the vendor selling it rarely mentions.
 

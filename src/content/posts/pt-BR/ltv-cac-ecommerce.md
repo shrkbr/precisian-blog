@@ -13,7 +13,7 @@ about: ["https://en.wikipedia.org/wiki/Customer_lifetime_value", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
+updatedAt: 2026-11-27
 ---
 LTV/CAC é a razão entre a margem que um cliente deixa ao longo do relacionamento (LTV) e o custo de adquiri-lo (CAC). Quando parte da venda acontece no marketplace, as duas pontas se distorcem. A Amazon documenta o e-mail do comprador como *"anonimizado"* ([Amazon SP-API](https://developer-docs.amazon/sp-api/reference/getorders)), então quem recompra lá some do LTV da loja. E o CAC calculado com conversões de plataforma herda janelas de atribuição de até 90 dias no Google Ads ([Google](https://support.google.com/google-ads/answer/3123169)), que contam o mesmo cliente mais de uma vez.
 
@@ -75,6 +75,8 @@ O que decide é o **payback**: em quantos meses a margem acumulada da safra paga
 Porque o cliente que você adquiriu na loja própria pode voltar a comprar no Mercado Livre, na Shopee ou na Amazon, e essa recompra não chega à sua base com uma chave que identifique a mesma pessoa.
 
 A Amazon devolve o e-mail do comprador como *"o endereço de e-mail anonimizado do comprador"* e não traz campo de identificador de cliente no pedido ([Amazon SP-API](https://developer-docs.amazon/sp-api/reference/getorders)). Sem chave comum, não há como juntar o pedido do marketplace ao histórico do cliente da loja. Os detalhes por canal estão em [deduplicar venda entre site e marketplace](https://precisian.io/blog/pt-BR/posts/deduplicar-venda-site-marketplace/).
+
+*Atualização em 27/11/2026: os campos citados acima são da Orders API v0, que a Amazon remove em 27/03/2027 ([cronograma de descontinuação da SP-API](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). O que muda na versão v2026-01-01 para o dado de venda está em [API da Amazon (SP-API): pedido e repasse para o vendedor](https://precisian.io/blog/pt-BR/posts/api-da-amazon-dados-de-venda/).*
 
 O que existe é dado agregado. A SP-API documenta um relatório de recompra (*Repeat Purchase*) com pedidos, clientes únicos e percentual de clientes recorrentes por produto, por semana, mês ou trimestre, para marcas inscritas no Brand Registry ([Amazon SP-API](https://developer-docs.amazon/sp-api/docs/report-type-values-analytics)). *Não confirmei a disponibilidade desse relatório na Amazon Brasil: a central de ajuda brasileira cita "Brand Analytics" entre os benefícios do Brand Registry, mas não lista os relatórios.* Mesmo onde existe, ele diz quantos recompraram, nunca quem.
 

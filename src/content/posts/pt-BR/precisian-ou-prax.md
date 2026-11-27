@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Para a loja pequena ou média em Nuvemshop, Tray ou Yampi que quer painel pronto e preço de entrada baixo, a Prax é a melhor escolha. Para o varejo de médio porte com VTEX ou Magento, ERP e vários canais, que quer a própria IA consultando métricas com definição aprovada, a Precisian é. As duas ligam o Claude e o ChatGPT ao dado da loja por MCP. A Prax declara atender "mais de 2.600 lojas no Brasil" e deixar o dado disponível cerca de 3 horas depois da integração ([Prax, consultado em 27/10/2026](https://www.prax.ai)).
 

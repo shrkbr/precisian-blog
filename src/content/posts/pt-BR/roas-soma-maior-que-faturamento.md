@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Retorno_sobre_investimento", "https://pre
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 Você abre o Meta, o Google e o TikTok, soma a receita que cada um declara e o total passa do que o ERP fechou no mês. Nada está quebrado. A janela padrão do Google Ads sozinha conta uma compra até 30 dias depois do clique ([Google Ads](https://support.google.com/google-ads/answer/3123169)), e o mesmo pedido cabe dentro da janela de três plataformas ao mesmo tempo.
 

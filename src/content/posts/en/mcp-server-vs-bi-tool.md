@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Business_intelligence", "https://precisia
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A paired test across three frontier models, published in April 2026, measured what happens when you hand a model your business definitions: answer accuracy rose from **45.5–50.5% to 67.7–68.7%** ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)). The intervention was a document describing measures, conventions and disambiguation rules. Not a product.
 

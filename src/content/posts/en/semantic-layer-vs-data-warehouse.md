@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A semantic layer and a data warehouse do not compete: one stores and computes, the other defines what is being computed. The confusion exists because vendor material puts both in the same sentence, and because you can operate without the second, badly. In an April 2026 test across three frontier models, supplying business definitions as context raised answer accuracy from **45.5–50.5% to 67.7–68.7%** ([Rumiantsau and Fokeev](https://arxiv.org/abs/2604.25149)).
 

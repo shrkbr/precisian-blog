@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Um gateway MCP é um proxy que fica entre os agentes de IA e os servidores MCP da empresa e concentra num ponto só a autenticação, o registro das chamadas e o limite de uso. A especificação do MCP, na revisão 2026-07-28, determina que um servidor *"MUST NOT accept or transit any other tokens"* ([MCP, Autorização](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization), lida em 03/11/2026): o gateway tem que guardar credencial própria para cada servidor de trás. O que ele não resolve é a definição da métrica.
 

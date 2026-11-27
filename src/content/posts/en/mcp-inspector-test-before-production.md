@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 MCP Inspector, the reference testing tool for the Model Context Protocol, tells you whether your server speaks the protocol: the handshake completes, the tools list, a call returns, and the exit code is stable. It does not tell you whether the number that came back is correct. The project's own smoke-testing guide, read on November 3, 2026, calls the workflow "deliberately not a conformance suite" ([modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector/blob/main/docs/cli-smoke-testing.md)). Four checks sit between a green Inspector run and production data: a scrubbed copy, an answer key, a scope check and a cost ceiling.
 
@@ -79,7 +78,7 @@ A copy with the production schema, roughly production volume, and no data that i
 
 The vendor behind the most cited MCP incident wrote the rule plainly: use MCP with non-production data and "never connect AI agents directly to production data" ([Supabase, September 16, 2025](https://supabase.com/blog/defense-in-depth-mcp)). The case itself is covered in [connecting an AI agent to production data without exposing it](https://precisian.io/blog/en/posts/connect-ai-to-production-data/).
 
-On the copy, the agent connects with its own role: `SELECT` only, no `BYPASSRLS`, not the table owner. PostgreSQL documents that superusers, roles with `BYPASSRLS` and table owners skip row policies unless `FORCE ROW LEVEL SECURITY` is set ([PostgreSQL](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)). Testing under the wrong role approves a configuration production will not have.
+On the copy, the agent connects with its own role: `SELECT` only, no `BYPASSRLS`, not the table owner. PostgreSQL documents that superusers, roles with `BYPASSRLS` and table owners skip row policies unless `FORCE ROW LEVEL SECURITY` is set ([PostgreSQL](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)). Testing under the wrong role approves a configuration production will not have. Why the role, not the server, decides what read-only means is covered in [Postgres MCP server](https://precisian.io/blog/en/posts/postgres-mcp-server/).
 
 Finally, isolate the Inspector's own state. The guide tells you to set both `MCP_STORAGE_DIR` and `MCP_INSPECTOR_OAUTH_STATE_PATH`, because the second is checked first and an inherited value "silently wins", so the run reaches a developer's real token file anyway ([cli-smoke-testing.md, section 6](https://github.com/modelcontextprotocol/inspector/blob/main/docs/cli-smoke-testing.md)).
 

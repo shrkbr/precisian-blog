@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Multitenancy", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 To give your product's AI agent access to customer data without exposing one tenant to another, close three paths, none of which needs an attacker: context from one tenant left in the conversation about the next, a cache that stores answers without the tenant in its key, and one credential that reaches every account. In March 2023, a shared cache exposed payment details of 1.2% of ChatGPT Plus subscribers to other users ([OpenAI](https://openai.com/index/march-20-chatgpt-outage/)).
 

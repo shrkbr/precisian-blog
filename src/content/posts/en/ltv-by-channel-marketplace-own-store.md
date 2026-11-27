@@ -13,11 +13,13 @@ about: ["https://en.wikipedia.org/wiki/Customer_lifetime_value", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
+updatedAt: 2026-11-27
 ---
 Lifetime value by acquisition channel needs one thing: knowing that 2 orders came from the same person. Amazon documents its buyer email as "the anonymized email address of the buyer", and the order payload carries no customer key at all ([Amazon](https://developer-docs.amazon/sp-api/reference/getorders)). There is no shared key between your marketplace orders and your own store, and the marketplace documents its absence rather than hiding it.
 
 This is not an integration gap somebody forgot to close. It is the design. The order status list holds 8 values, and 2 of them, `Canceled` and `Unfulfillable`, are not sales at all, yet they sit in the same enum as `Shipped` ([Amazon](https://developer-docs.amazon/sp-api/reference/getorders)).
+
+*Update, November 27, 2026: the fields cited above come from Orders API v0, which Amazon removes on March 27, 2027 ([SP-API deprecation schedule](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). What changes for sales data in v2026-01-01 is covered in [Amazon SP-API for sales data: orders, payouts and limits](https://precisian.io/blog/en/posts/amazon-sp-api-sales-data/).*
 
 > **What you can compute:** orders, revenue and contribution per channel. **What you cannot:** distinct customers across channels, repeat rate spanning channels, or true LTV by acquisition source. The second list needs identity, and identity is what the channel removes.
 

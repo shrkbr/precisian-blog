@@ -91,7 +91,7 @@ Um exemplo com números redondos, sintético: a campanha passa de 100 para 114 c
 
 ## Como corrigir antes de julgar o AI Max?
 
-Corrigindo o sinal primeiro. Se a conversão está errada, qualquer leitura do AI Max herda o erro.
+Corrigindo o sinal primeiro. Se a conversão está errada, qualquer leitura do AI Max herda o erro. Na Meta vale o mesmo raciocínio, porque a entrega aprende com o evento que a loja envia, como mostra [Meta Andromeda e o papel do seu dado](https://precisian.io/blog/pt-BR/posts/meta-andromeda/).
 
 1. **Uma ação primária de compra, com o número do pedido como `transaction_id`.** As outras viram secundárias, que ficam *"apenas para observação"* ([Google](https://support.google.com/google-ads/answer/11461796)).
 2. **Ajuste de conversão para o que o ERP cancelou.** O Google aceita `RETRACT` (retirar) e `RESTATE` (corrigir o valor), com prazo de *"até 7 dias"* após o registro para a leitura do lance automático e 54 dias no total ([Google, ajustar conversões](https://support.google.com/google-ads/answer/7686280)). Pedido barrado no antifraude costuma cair dentro dos 7 dias; o que for cancelado depois disso corrige o relatório, não o sinal do lance.

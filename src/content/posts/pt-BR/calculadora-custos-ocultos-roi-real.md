@@ -11,7 +11,6 @@ readingTimeMinutes: 10
 llmSummary: "Artigo expõe a diferença entre ROI reportado em dashboards e ROI real após descontar custos ocultos (agências, testes, tech stack) e vendas não-incrementais. Ensina a calcular ROI verdadeiro com planilha prática para CMOs que desconfiam dos números de atribuição."
 draft: false
 cta: ficha
-updatedAt: 2026-11-08
 ---
 # Calculadora de custos ocultos: descubra se seu ROI é real ou fantasia
 

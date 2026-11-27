@@ -138,7 +138,7 @@ O Bling publica um [servidor MCP hospedado](https://developer.bling.com.br/mcp-s
 
 **Origem da venda.** O pedido traz `loja.id` e `intermediador`, mas nenhum campo de campanha, UTM ou clique. A API do Bling diz em qual canal a venda caiu, não de onde o comprador veio. É o mesmo desenho que descrevi em [marketplace como buraco negro de dados](https://precisian.io/blog/pt-BR/posts/marketplace-buraco-negro-de-dados/).
 
-**Taxa que ninguém gravou.** Se o hub não preencheu `taxas`, o Bling não tem a comissão, e o dado precisa vir da API do próprio marketplace (no Mercado Livre, o `sale_fee` do [`/orders`](https://precisian.io/blog/pt-BR/posts/api-do-mercado-livre-dados-de-venda/)).
+**Taxa que ninguém gravou.** Se o hub não preencheu `taxas`, o Bling não tem a comissão, e o dado precisa vir da API do próprio marketplace (no Mercado Livre, o `sale_fee` do [`/orders`](https://precisian.io/blog/pt-BR/posts/api-do-mercado-livre-dados-de-venda/)). Na Amazon, a comissão fica fora do pedido e aparece no repasse, como mostra [API da Amazon (SP-API): pedido e repasse para o vendedor](https://precisian.io/blog/pt-BR/posts/api-da-amazon-dados-de-venda/).
 
 **Taxa efetiva do adquirente.** O Bling guarda a taxa cadastrada na forma de pagamento. A cobrada de fato está no extrato do adquirente.
 
@@ -146,7 +146,7 @@ Quando a Precisian não é a resposta: se o Bling é a única fonte e o fechamen
 
 ## O que este artigo não cobre?
 
-**Não cobre a API v2**, nem os endpoints de NFS-e, estoque e compras. **Não traz o tamanho máximo de página**: a [especificação](https://developer.bling.com.br/referencia) declara o mínimo de `limite` e o padrão de 100, não o máximo.
+**Não cobre a API v2**, nem os endpoints de NFS-e, estoque e compras. **Não traz o tamanho máximo de página**: a [especificação](https://developer.bling.com.br/referencia) declara o mínimo de `limite` e o padrão de 100, não o máximo. Para quem fatura pelo Protheus, o equivalente está em [API do TOTVS: o que dá para tirar de venda e nota fiscal](https://precisian.io/blog/pt-BR/posts/api-do-totvs-dados-de-venda/).
 
 Registro de método: a página de referência do Bling monta a documentação no navegador a partir de um arquivo OpenAPI. Li esse arquivo, carregado pela própria página em 11 de novembro de 2026, e as páginas de limites, boas práticas, aplicativos, webhooks e MCP, que renderizam no servidor. As versões citadas (291, 310, 341, 344) são as do changelog oficial.
 

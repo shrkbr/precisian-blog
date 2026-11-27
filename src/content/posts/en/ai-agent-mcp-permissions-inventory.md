@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 No single console shows which AI agents can reach your data, because every grant is recorded by the platform that issued it. And grants last: Google only retires a refresh token on its own after 6 months without use ([Google](https://developers.google.com/identity/protocols/oauth2)), and Meta lets you mint system user tokens that never expire ([Meta for Developers](https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens)). A working MCP permission inventory has seven columns: agent, owner, MCP server, token scope, write tools, reachable data, and last review date.
 
@@ -37,13 +36,13 @@ Three versions of the same symptom keep showing up:
 
 Because an agent's access is the sum of four records that live in different places, and none of them was designed to be read together.
 
-**Consent is per person, not per company.** When someone authorizes an MCP server with Google, the grant is tied to that person's Google account. The MCP spec makes visibility worse in two ways: authorization is *"OPTIONAL,"* and servers running locally over the STDIO transport *"SHOULD NOT"* use the OAuth flow and instead retrieve credentials from the environment ([MCP spec, Authorization, 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). In practice, an API key pasted into a config file never passes through a consent screen and never shows up in an admin console.
+**Consent is per person, not per company.** When someone authorizes an MCP server with Google, the grant is tied to that person's Google account. The MCP spec makes visibility worse in two ways: authorization is *"OPTIONAL,"* and servers running locally over the STDIO transport *"SHOULD NOT"* use the OAuth flow and instead retrieve credentials from the environment ([MCP spec, Authorization, 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). In practice, an API key pasted into a config file never passes through a consent screen and never shows up in an admin console. CRM servers follow the person too: [HubSpot's MCP server](https://precisian.io/blog/en/posts/hubspot-mcp-server/) gives the agent the connected user's CRM access.
 
 **The credential outlives the reason it was created.** Google lists when a refresh token stops working: the user revoked access, six months without use, a password change when Gmail scopes are involved, and a few more ([Google](https://developers.google.com/identity/protocols/oauth2)). An agent that runs every Monday never hits six months. On Meta, a regular user token refreshed by Meta's SDKs lasts about 60 days from last use and data access expires after 90 days of inactivity ([Meta for Developers](https://developers.facebook.com/docs/facebook-login/auth-vs-data)), but a system user token can be generated as permanent ([Meta for Developers](https://developers.facebook.com/docs/business-management-apis/system-users/install-apps-and-generate-tokens)).
 
 **The requested scope is usually the widest one on offer.** When a server doesn't say which scope it needs, the client falls back to requesting everything listed in `scopes_supported` (same spec). MCP's security best practices name the cumulative effect *"scope inflation blindness,"* where a lack of metrics makes over-broad requests normal ([MCP, Security Best Practices](https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices)).
 
-**Write tools ship alongside read tools.** OWASP files this under excessive agency, with three root causes: excessive functionality, excessive permissions, and excessive autonomy. Its example is an extension that only needed to read and was granted update, insert, and delete as well ([OWASP, LLM06:2025](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)).
+**Write tools ship alongside read tools.** OWASP files this under excessive agency, with three root causes: excessive functionality, excessive permissions, and excessive autonomy. Its example is an extension that only needed to read and was granted update, insert, and delete as well ([OWASP, LLM06:2025](https://genai.owasp.org/llmrisk/llm062025-excessive-agency/)). [Stripe's MCP server](https://precisian.io/blog/en/posts/stripe-mcp-server/) is a case in point: it puts every API read and write behind two tools.
 
 Together, the four records explain the usual picture, where access was granted by individuals, sits where admins can't see it, has no expiration date, and is wider than the job.
 

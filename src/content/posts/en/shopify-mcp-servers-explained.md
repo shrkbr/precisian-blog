@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Shopify publishes several official MCP servers, and every one of them works for someone other than the merchant asking about revenue. Its agentic commerce servers exist to "act on behalf of buyers" ([Shopify, checked Oct 14, 2026](https://shopify.dev/docs/agents)); Customer Accounts MCP serves a logged-in shopper checking an order; Dev MCP serves a developer reading docs. The query that answers "what did Google Ads return in margin last month" lives in the Admin API, and only community servers wire it to an AI assistant.
 
@@ -43,7 +42,7 @@ Here is what [shopify.dev](https://shopify.dev/docs/agents) documents, checked o
 
 Sources: [Shopify agents docs](https://shopify.dev/docs/agents), [Storefront MCP](https://shopify.dev/docs/apps/build/storefront-mcp), [Customer Accounts MCP](https://shopify.dev/docs/apps/build/customer-accounts-mcp) and [Shopify AI Toolkit](https://shopify.dev/docs/apps/build/ai-toolkit).
 
-**The buyer side.** Shopify describes Global Catalog as a way to "search products across every Shopify merchant from a single endpoint," and Checkout MCP as the step that will "convert carts into checkouts and complete purchases for trusted agents" ([Shopify](https://shopify.dev/docs/agents)). These servers implement the Universal Commerce Protocol. The older per-store Storefront MCP endpoint lost its catalog and cart tools, which moved to `/api/ucp/mcp`; only `search_shop_policies_and_faqs` stays on the old path ([Shopify](https://shopify.dev/docs/apps/build/storefront-mcp)).
+**The buyer side.** Shopify describes Global Catalog as a way to "search products across every Shopify merchant from a single endpoint," and Checkout MCP as the step that will "convert carts into checkouts and complete purchases for trusted agents" ([Shopify](https://shopify.dev/docs/agents)). These servers implement the Universal Commerce Protocol. The older per-store Storefront MCP endpoint lost its catalog and cart tools, which moved to `/api/ucp/mcp`; only `search_shop_policies_and_faqs` stays on the old path ([Shopify](https://shopify.dev/docs/apps/build/storefront-mcp)). What your catalog and order data need before those agents buy from you is covered in [agentic commerce data](https://precisian.io/blog/en/posts/agentic-commerce-data/).
 
 **The customer side.** Customer Accounts MCP handles "authenticated customer requests, such as checking order status," through OAuth with PKCE, and the store needs a custom domain ([Shopify](https://shopify.dev/docs/apps/build/customer-accounts-mcp)). A shopper sees their own orders. A merchant sees nothing new.
 
@@ -95,7 +94,7 @@ Cheapest first.
 
 **Use each official server for its job.** If you are building a shopping agent, the UCP servers are the right tools. If you are writing an app, Dev MCP saves time. Neither belongs in an analytics setup.
 
-**Build a read-only custom app.** If you must connect the Admin API to an assistant, create an app with `read_reports` and nothing with `write_` in it, and point a server at that token.
+**Build a read-only custom app.** If you must connect the Admin API to an assistant, create an app with `read_reports` and nothing with `write_` in it, and point a server at that token. On Stripe, the equivalent is a read-only agent API key, covered in [Stripe MCP server](https://precisian.io/blog/en/posts/stripe-mcp-server/).
 
 **Move the business rule out of the model.** Margin by channel needs Shopify sales, ad spend, returns and product cost in one place, with revenue defined once. Expose that answer as a closed tool rather than raw tables, and keep the definition in a [semantic layer](https://precisian.io/blog/en/posts/what-goes-into-a-semantic-layer/) that both analysts and agents read before computing.
 

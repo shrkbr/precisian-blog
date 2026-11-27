@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Mercado_Livre", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
 cta: regua
-updatedAt: 2026-11-08
 ---
 A API do Mercado Livre devolve o pedido em `GET /orders/$ORDER_ID` com preço, quantidade e a comissão de cada item no campo `sale_fee`, mas não devolve o custo do frete do vendedor: esse exige uma segunda chamada, a `/shipments/$SHIPMENT_ID/costs`. A devolução fica em outro recurso, o `/post-purchase`, e os pedidos ficam salvos por até 12 meses ([documentação de Orders](https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-vendas), atualizada em 21/09/2026 e lida em 3 de novembro de 2026).
 
@@ -25,7 +24,7 @@ Em dois posts anteriores desta série eu disse que não tinha conseguido ler ess
 
 O relatório de vendas do Mercado Livre não fecha com o repasse, e a diferença não cabe na comissão que alguém tem de cabeça. Ou a contagem de pedidos da integração não bate com a de "vendas" do painel do vendedor, e os dois números parecem certos.
 
-Os dois vêm do mesmo erro: a integração leu um recurso só e o tratou como a venda inteira.
+Os dois vêm do mesmo erro: a integração leu um recurso só e o tratou como a venda inteira. A [API da Shopee](https://precisian.io/blog/pt-BR/posts/api-da-shopee-dados-de-venda/) separa pedido e repasse do mesmo jeito.
 
 ## O que o /orders devolve, campo por campo?
 
@@ -130,7 +129,7 @@ Na extração, quatro regras práticas tiradas da própria doc:
 
 O limite geral não tem número publicado: a [FAQ de rate limit](https://developers.mercadolivre.com.br/pt_br/rate-limit-erro-429) (atualizada em 05/05/2026) diz que o controle é "por Client ID (aplicação) na maioria dos casos e por endpoint".
 
-A doc de Orders também avisa que a "vista atual" de `/orders/$ORDER_ID/shipments` "será descontinuada a partir do final de setembro de 2026". A vista nova sempre devolve um *array*; integração que lia um objeto único "falhará automaticamente". Se a sua carga de frete parou em outubro, comece por aí.
+A doc de Orders também avisa que a "vista atual" de `/orders/$ORDER_ID/shipments` "será descontinuada a partir do final de setembro de 2026". A vista nova sempre devolve um *array*; integração que lia um objeto único "falhará automaticamente". Se a sua carga de frete parou em outubro, comece por aí. O [MCP do Mercado Livre](https://precisian.io/blog/pt-BR/posts/mcp-do-mercado-livre/) lê essa documentação, não a conta.
 
 ## Quando isso não tem conserto?
 

@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Nota_fiscal_eletr%C3%B4nica", "https://pr
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 Os ERPs não concordam nem na pergunta mais básica, e 2 dos 3 que tentei ler respondem "quem comprou" de formas incompatíveis. O pedido do Omie devolve o cliente só por `codigo_cliente`, um inteiro interno, **sem CPF nem CNPJ** ([Omie](https://app.omie.com.br/api/v1/produtos/pedido/)). O do Olist devolve `cpfCnpj`, mas marcado como anulável na própria especificação ([Olist](https://api-docs.erp.olist.com/api-reference/pedidos/obter-pedido)). Quem monta a integração assumindo que "o ERP devolve o documento do cliente" descobre a diferença em produção.
 
@@ -83,7 +82,7 @@ O erro de digitação em "oepração" está no esquema oficial. Reproduzo como e
 
 O mesmo documento traz `dhEmi`, *"Data e Hora de emissão do Documento Fiscal"*, e, no destinatário, `CNPJ`, `CPF` e `idEstrangeiro`.
 
-A conclusão é útil e pouco explorada: onde o pedido do ERP deixa o documento do cliente anulável ou ausente, **a nota fiscal não tem essa liberdade**. Para separar venda própria de venda por marketplace, e para ter uma data com valor legal, o documento fiscal é uma fonte melhor do que o objeto de pedido. Não substitui o ERP, mas responde perguntas que o ERP deixa em aberto.
+A conclusão é útil e pouco explorada: onde o pedido do ERP deixa o documento do cliente anulável ou ausente, **a nota fiscal não tem essa liberdade**. Para separar venda própria de venda por marketplace, e para ter uma data com valor legal, o documento fiscal é uma fonte melhor do que o objeto de pedido. Não substitui o ERP, mas responde perguntas que o ERP deixa em aberto. Por que a chave da nota pesa também na conciliação com o repasse está em [split payment da reforma tributária](https://precisian.io/blog/pt-BR/posts/split-payment-ecommerce/).
 
 ## Por que isso vira divergência de relatório?
 
@@ -111,7 +110,7 @@ Vale um elogio ao desenho do Omie: a listagem aceita `filtrar_apenas_alteracao`,
 
 **Não traz a lista de campos do Bling.** A página de referência dele é renderizada no navegador e devolve quase nenhum texto para leitura automatizada; o arquivo de especificação existe, responde, e é grande demais para ser lido por inteiro nas tentativas que fiz. Os limites acima vêm de uma página que renderiza no servidor. Campo de pedido do Bling, não.
 
-**Não cita TOTVS nem Linx.** Os portais de desenvolvedor da TOTVS responderam com exigência de pagamento e a página da Linx respondeu como inexistente. Sem leitura, sem afirmação.
+**Não cita TOTVS nem Linx.** Os portais de desenvolvedor da TOTVS responderam com exigência de pagamento e a página da Linx respondeu como inexistente. Sem leitura, sem afirmação. A leitura do Protheus pela documentação da TDN está em [API do TOTVS: o que dá para tirar de venda e nota fiscal](https://precisian.io/blog/pt-BR/posts/api-do-totvs-dados-de-venda/).
 
 **Não decompõe a composição da chave de acesso.** Essa tabela circula bastante e eu só a obtive por resumo automático de um PDF que não consegui abrir. Estrutura de chave fiscal se publica com o manual aberto na frente.
 

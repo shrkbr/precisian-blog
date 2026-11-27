@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Prompt_engineering", "https://precisian.i
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 A Google Ads campaign name accepts 256 characters and Google documents no validation of what goes in them ([Google Ads API system limits](https://developers.google.com/google-ads/api/docs/best-practices/system-limits)). That is roughly forty words of anything, sitting in a field that an agency, a contractor or a compromised account can write, and that your AI agent will later read as part of a report. The length limits are documented. The content rules are not.
 

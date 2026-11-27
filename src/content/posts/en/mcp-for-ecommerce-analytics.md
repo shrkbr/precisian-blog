@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisi
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: demo
-updatedAt: 2026-11-08
 ---
 The specification contains a sentence that should govern your whole design: clients "**MUST** consider tool annotations to be untrusted unless they come from trusted servers" ([MCP spec, revision 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)). The description you write is not a behavioral guarantee to anyone. Only what the tool **does** is a guarantee.
 

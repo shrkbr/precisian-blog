@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
 cta: demo
-updatedAt: 2026-11-08
 ---
 O MCP do BigQuery deixa um agente de IA listar datasets, ler o esquema das tabelas e rodar SQL no seu projeto, mas não sabe o que cada coluna significa para o negócio. O servidor remoto do Google, em `https://bigquery.googleapis.com/mcp`, expõe nove ferramentas, corta a consulta em três minutos e devolve no máximo 3.000 linhas ([Google Cloud](https://docs.cloud.google.com/bigquery/docs/use-bigquery-mcp), página atualizada em 29/10/2026). O esquema de entrada da ferramenta de SQL não aceita teto de bytes por consulta, e a definição de "receita" continua sendo escrita pelo agente, a cada pergunta.
 

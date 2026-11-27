@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Metadados", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 O Agents Schema, na versão **0.0.11**, e o Model Context Protocol, na revisão **2026-07-28**, não disputam a mesma função. A declaração mais clara disso vem do próprio FAQ do Agents Schema, que pergunta "preciso de MCP?" e responde: *"Não. `AGENTS.*` são apenas tabelas, então qualquer agente que consiga rodar SQL pode lê-lo. MCP é uma opção; uma CLI e uma skill também funcionam"* ([Agents Schema](https://www.opendatainfrastructure.com/agents-schema)).
 

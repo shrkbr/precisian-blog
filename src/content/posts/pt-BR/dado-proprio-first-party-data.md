@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/First-party_data", "https://pt.wikipedia.
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Dado próprio (first-party data) é a informação que a empresa coleta diretamente da relação com o próprio cliente: o pedido, o cadastro, o evento no site, a conversa de atendimento. O Google usa o mesmo critério na política de Segmentação por lista de clientes: só é possível enviar informações "coletadas em contexto próprio", ou seja, em sites, apps, lojas físicas ou situações em que o cliente compartilhou o dado diretamente com o anunciante ([Google](https://support.google.com/adspolicy/answer/6299717?hl=pt-BR), consultado em 23/10/2026).
 

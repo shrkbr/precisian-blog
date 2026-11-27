@@ -30,7 +30,7 @@ Em cima disso, a página de preços lista recursos próprios. Três deles aparec
 - `Cookie Keeper`: *"estende cookies quando a pessoa usa um navegador com a versão mais recente do ITP"*.
 - `Click ID Restorer`: *"recupera identificadores de clique perdidos, como GCLID e MSCLKID, no modo privado do Safari e do Brave"*.
 
-Os três atuam na **coleta**: no caminho entre o navegador e o servidor, e na vida do cookie.
+Os três atuam na **coleta**: no caminho entre o navegador e o servidor, e na vida do cookie. O Google tem um recurso próprio para servir a tag pelo domínio da loja, o [Google tag gateway](https://precisian.io/blog/pt-BR/posts/google-tag-gateway/).
 
 ## Quanto custa a Stape em 2026?
 
@@ -50,7 +50,7 @@ O que define o plano é a contagem de requisições, e ela não é a contagem de
 
 A regra do teto também entra na conta. Pela documentação da Stape, ao chegar a **110%** do limite o contêiner é pausado e *"para de processar requisições completamente"*; no Pro, *"sem período de carência"*; do Business para cima, há uma carência única de 30 dias por contêiner ([Stape, limites e pausa](https://stape.io/helpdesk/documentation/request-limits-and-pause-logic), atualizado em 01/09/2026). A alternativa é ligar o upgrade automático, que sobe um plano e cobra o novo valor a partir dali ([Stape, planos e limites](https://stape.io/helpdesk/documentation/plan-tiers-and-limits)).
 
-Em loja sazonal, novembro é o mês em que o contador estoura, e contêiner pausado não coleta nada.
+Em loja sazonal, novembro é o mês em que o contador estoura, e contêiner pausado não coleta nada. Outros limites que falham em silêncio no pico, como o do export do GA4 para o BigQuery, estão em [o que quebra no dado na Black Friday](https://precisian.io/blog/pt-BR/posts/black-friday-o-que-quebra-no-dado/).
 
 ## Sai mais barato hospedar no Google Cloud?
 

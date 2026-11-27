@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.or
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha a Biso se você quer um painel pronto e um agente de IA que mora dentro da plataforma, com conectores brasileiros de ERP já prontos. Escolha a Precisian se a IA que vai perguntar é a sua (Claude, ChatGPT, Copilot ou agente próprio) e você precisa que "receita" tenha uma definição escrita, versionada e aprovada antes de alguém perguntar. Em 27/10/2026, a página de integrações da Biso lista mais de 30 conectores, entre eles VTEX, Magento, Linx, TOTVS, Bling e Tiny ([Biso](https://www.biso.digital/conecte)).
 

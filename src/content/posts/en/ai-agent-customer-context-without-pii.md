@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Personal_data", "https://en.wikipedia.org
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: demo
-updatedAt: 2026-11-08
 ---
 An AI agent answering a business question almost never needs a customer's name, email, phone number or shipping address. Cohorts, segments and lifetime value all come from a pseudonymous customer ID, and the identifying columns can stay out of the model's context entirely. NIST SP 800-122 gives the working definition: PII is information that can "distinguish or trace an individual's identity," plus anything "linked or linkable" to one ([NIST SP 800-122, April 2010](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-122.pdf)).
 
@@ -107,7 +106,7 @@ Four cases where the techniques don't help, and it's better to know before promi
 
 **When the task is about the person.** A support agent answering "where is my order?" needs that customer's order. The control there is different: scope per session, one person per conversation, no access to the wider table. That is a customer-service application problem, not an analytics data problem, and Precisian is not the right answer for it.
 
-**When the PII is inside the text.** Support tickets, product reviews and chat transcripts carry names, phone numbers and addresses mid-sentence. Pattern-based redaction catches a formatted phone number and misses the rest. If the agent must read customer free text, treat that text as personal data in full.
+**When the PII is inside the text.** Support tickets, product reviews and chat transcripts carry names, phone numbers and addresses mid-sentence. Pattern-based redaction catches a formatted phone number and misses the rest. If the agent must read customer free text, treat that text as personal data in full. For WhatsApp chats, see [what an agent shouldn't read through the WhatsApp MCP server](https://precisian.io/blog/en/posts/whatsapp-mcp-server/).
 
 **When the customer base is too small.** A B2B operation with a few dozen buyers re-identifies any segment from context: "the Ohio account that ordered in March" is one company and often one buyer. Below a certain volume aggregation stops protecting anyone, and sometimes the honest answer is not to give the agent that access.
 

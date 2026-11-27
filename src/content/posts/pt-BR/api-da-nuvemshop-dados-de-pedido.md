@@ -72,7 +72,7 @@ Fora do pedido. A tabela é o mapa mínimo para transformar `total` em margem:
 
 O recurso [Transaction](https://nuvemshop.dev/pt-BR/api/resources/2025-03/transaction) (atualizado em 13/11/2026) tem os campos certos: `captured_amount`, `refunded_amount` e cobranças do tipo `payment_processing_fee`, `cost_per_transaction` e `financing_cost`. Só que a página avisa que "este endpoint é de uso exclusivo de apps de pagamento", e a página de Order acrescenta que, para o Nuvem Pago no Brasil, adicionar `read_payments` a uma integração comum de lojista não dá acesso aos dados nativos do titular ou de risco.
 
-O `payment_details` do pedido traz `method`, `credit_card_company` e `installments`, sem taxa. A taxa sai do extrato do provedor.
+O `payment_details` do pedido traz `method`, `credit_card_company` e `installments`, sem taxa. A taxa sai do extrato do provedor. O que o split payment da reforma tributária muda nesse extrato está em [split payment: o que muda no dado de venda do e-commerce](https://precisian.io/blog/pt-BR/posts/split-payment-ecommerce/).
 
 ## O pedido cancelado e o Pix não pago aparecem?
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Answer lineage is the record that lets you reconstruct, afterwards, which definition and which data produced a number an AI agent delivered. It is not the conversation log and not the chat history: it is the link between an answer and its origin. The Model Context Protocol recommends that clients log tool usage "for audit purposes" ([MCP, revision 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)), which is a recommendation rather than a requirement, and almost nobody implements it.
 
@@ -41,7 +40,7 @@ Five fields, and the list is shorter than most governance frameworks suggest.
 | **Data extent** | which rows or range were read, and their freshness |
 | **Timestamp** | when, so the state of the data can be reconstructed |
 
-The third and fourth are the ones usually missing, and they are the ones that make the difference between a log and a lineage. Knowing that a tool called `revenue_by_period` on a Tuesday afternoon tells you nothing if revenue was redefined last quarter and you cannot tell which version ran.
+The third and fourth are the ones usually missing, and they are the ones that make the difference between a log and a lineage. Knowing that a tool called `revenue_by_period` on a Tuesday afternoon tells you nothing if revenue was redefined last quarter and you cannot tell which version ran. Following the number past the answer, through the pipeline to its source tables, is covered in [data lineage for marketing metrics](https://precisian.io/blog/en/posts/data-lineage-marketing-metrics/).
 
 ## Why does identity break first?
 

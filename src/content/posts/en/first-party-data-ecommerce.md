@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/First-party_data", "https://precisian.io/
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 First-party data is customer information your business records in a direct relationship with the customer: the order, the account, the site event, the support conversation. Google draws the line the same way in its Customer Match policy: advertisers may only upload customer information "collected in the first-party context," such as data from "your websites, apps, physical stores" or situations where customers shared it directly with you ([Google](https://support.google.com/adspolicy/answer/6299717?hl=en), checked October 23, 2026).
 
@@ -27,7 +26,7 @@ First-party data is customer information your business records in a direct relat
 
 **Is it an observation or an estimate?** First-party data records a fact: order 10482 was paid by card at 2:02 p.m. A number the platform computes to fill in what it couldn't see is something else, even when it lands in the same column.
 
-**Who decides what happens to it?** If you can't decide how long the data is kept, who reads it and where it goes, someone else controls it. Amazon is the cleanest example. Its security guidance for Selling Partner API integrations tells solution providers to "delete personally identifiable information (PII) within 30 days after order delivery" ([Amazon SP-API](https://developer-docs.amazon.com/sp-api/docs/guidance-to-address-key-security-controls-in-sp-api-integration), checked October 23, 2026). The sale is in your revenue. The customer's identity is on Amazon's clock.
+**Who decides what happens to it?** If you can't decide how long the data is kept, who reads it and where it goes, someone else controls it. Amazon is the cleanest example. Its security guidance for Selling Partner API integrations tells solution providers to "delete personally identifiable information (PII) within 30 days after order delivery" ([Amazon SP-API](https://developer-docs.amazon.com/sp-api/docs/guidance-to-address-key-security-controls-in-sp-api-integration), checked October 23, 2026). The sale is in your revenue. The customer's identity is on Amazon's clock. What the API returns for orders and payouts is covered in [Amazon SP-API for sales data](https://precisian.io/blog/en/posts/amazon-sp-api-sales-data/).
 
 ## What looks like first-party data but isn't?
 

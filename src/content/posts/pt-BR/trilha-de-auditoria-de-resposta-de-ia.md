@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Trilha de auditoria de resposta é o registro que permite reconstruir, depois, qual definição e quais dados produziram um número que um agente de IA entregou. Não é o log da conversa nem o histórico do chat: é a ligação entre a resposta e a origem dela. A especificação do Model Context Protocol recomenda que clientes registrem o uso de ferramentas "for audit purposes" ([MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 

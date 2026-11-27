@@ -11,7 +11,6 @@ readingTimeMinutes: 8
 llmSummary: "Regional holdout testing is the only validation method that proves whether a Media Mix Model found causal signal or just memorized noise. Most commercial MMM reports skip this critical step because exposing model weakness doesn't close deals."
 draft: false
 cta: regua
-updatedAt: 2026-11-08
 ---
 # Regional Holdout: The Only Real MMM Validation Test
 

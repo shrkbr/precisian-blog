@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Row-level_security", "https://precisian.i
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 The Model Context Protocol does not require anyone to authenticate. The text is explicit: "Authorization is OPTIONAL for MCP implementations" ([MCP spec, revision 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). A measurement of 7,973 live remote MCP servers found **40.55% exposing tools with no authentication at all** ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint).
 

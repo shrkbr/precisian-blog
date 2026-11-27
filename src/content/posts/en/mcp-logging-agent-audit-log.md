@@ -13,13 +13,12 @@ about: ["https://en.wikipedia.org/wiki/Audit_trail", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: demo
-updatedAt: 2026-11-08
 ---
 To log every query an AI agent makes through MCP, write one record per tool call on the server that executes it, tagged with the identity of the person behind the request. Don't rely on the chat transcript or on the protocol's own logging: the Model Context Protocol deprecated its logging feature in the 2026-07-28 revision, and the spec forbids personal information in those messages ([MCP](https://modelcontextprotocol.io/specification/2026-07-28/server/utilities/logging)).
 
 > **Agent audit log**: a record written by the layer that executes the query, one entry per tool call, that later answers who asked, through which agent, what ran, against which data, at what cost and with what outcome.
 
-This piece is about the operational record and where it has to live. Tracing a specific number back to its definition is a related but separate problem, covered in [answer lineage](https://precisian.io/blog/en/posts/answer-lineage-audit-trail/).
+This piece is about the operational record and where it has to live. Tracing a specific number back to its definition is a related but separate problem, covered in [answer lineage](https://precisian.io/blog/en/posts/answer-lineage-audit-trail/). Mapping that number from source to report through the pipeline is [data lineage](https://precisian.io/blog/en/posts/data-lineage-marketing-metrics/).
 
 ## What does it look like when an agent has no audit log?
 

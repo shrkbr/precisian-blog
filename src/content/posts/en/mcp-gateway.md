@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 An MCP gateway is a proxy that sits between your AI agents and your MCP servers and puts authentication, call logging and usage limits in one place. The MCP specification, revision 2026-07-28, says a server *"MUST NOT accept or transit any other tokens"* ([MCP Authorization](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization), read November 3, 2026), so a compliant gateway holds its own credential for every upstream server. What it can't do is decide what your metrics mean.
 

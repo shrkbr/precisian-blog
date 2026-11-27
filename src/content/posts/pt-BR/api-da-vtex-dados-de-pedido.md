@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/VTEX", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 A API da VTEX devolve pedido pelo OMS por três caminhos, e o número diverge porque cada caminho vê o pedido num momento diferente. O endpoint `List orders` só devolve pedido já indexado, o que "takes approximately four minutes", para em 30 páginas de até 100 pedidos (3.000 por consulta) e, nas palavras da própria VTEX, "should not be used for integrations" ([Orders API, consultada em 03/11/2026](https://developers.vtex.com/docs/api-reference/orders-api#get-/api/oms/pvt/orders)). Para integração, a VTEX indica o Feed ou o Hook.
 
@@ -136,7 +135,7 @@ Em três situações.
 
 ## O que este artigo não cobre?
 
-Não cobre a API de Pagamentos (liquidação e conciliação de adquirente), a API de modificação de pedido (`/api/order-system/orders/{changeOrderId}/changes`), os fluxos de B2B e de marketplace externo. Também não traz uma divergência típica entre VTEX e GA4: a VTEX não publica uma, e este blog não repete as faixas que circulam sem dado.
+Não cobre a API de Pagamentos (liquidação e conciliação de adquirente), a API de modificação de pedido (`/api/order-system/orders/{changeOrderId}/changes`), os fluxos de B2B e de marketplace externo. Também não traz uma divergência típica entre VTEX e GA4: a VTEX não publica uma, e este blog não repete as faixas que circulam sem dado. O mesmo levantamento para a Nuvemshop está em [API da Nuvemshop: o que ela devolve de dado de pedido](https://precisian.io/blog/pt-BR/posts/api-da-nuvemshop-dados-de-pedido/).
 
 Os servidores MCP oficiais da VTEX, que não leem pedido, estão em [Existe MCP para VTEX, Shopify e Nuvemshop?](https://precisian.io/blog/pt-BR/posts/mcp-de-plataforma-de-ecommerce/).
 

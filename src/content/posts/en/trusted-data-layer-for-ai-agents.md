@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 A trusted data layer is the set of guarantees that sit between your raw data and an AI agent, so that an answer can be reproduced and defended rather than merely produced. The need is not theoretical: a measurement of 7,973 live remote MCP servers found **40.55% exposing tools with no authentication at all** ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint), and the protocol itself states that "Authorization is OPTIONAL for MCP implementations" ([MCP spec](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 

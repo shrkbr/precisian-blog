@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Camada semântica é o lugar onde ficam escritas, em formato que a máquina lê, as regras de cálculo das métricas do seu negócio. Não é ferramenta nem dashboard: é um conjunto de decisões registradas e versionadas. Num teste de abril de 2026 com três modelos de fronteira, entregar essas regras como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
@@ -68,7 +67,7 @@ Comece por uma métrica só, e pela mais disputada. Quatro campos bastam.
 
 **Qual data manda.** Pedido, pagamento ou faturamento. No Brasil isso não é detalhe: com Pix, pedido e pagamento colapsam no mesmo instante e a diferença some, até entrar um boleto e voltar.
 
-E um quinto campo que não é técnico e decide o resto: **quem é o dono**. A pessoa que arbitra quando alguém discorda. Contrato de métrica sem dono é sugestão, e volta a divergir no trimestre seguinte.
+E um quinto campo que não é técnico e decide o resto: **quem é o dono**. A pessoa que arbitra quando alguém discorda. Contrato de métrica sem dono é sugestão, e volta a divergir no trimestre seguinte. Dono por métrica abre a lista mínima de [governança de dados no e-commerce](https://precisian.io/blog/pt-BR/posts/governanca-de-dados-ecommerce/).
 
 Na prática, o primeiro contrato cabe numa tabela. Este é o de *receita líquida* de uma operação de e-commerce com loja própria e marketplace, que é onde a discussão costuma começar.
 
@@ -98,7 +97,7 @@ Na Precisian, a camada semântica fica sobre um [data lake isolado por cliente](
 
 ## O que este artigo não cobre?
 
-Não compara fornecedores de camada semântica, e não entra em implementação em ferramenta específica. A nomenclatura de entidades, dimensões e métricas está na do dbt porque virou vocabulário comum, não porque seja a única.
+Não compara fornecedores de camada semântica, e não entra em implementação em ferramenta específica. A nomenclatura de entidades, dimensões e métricas está na do dbt porque virou vocabulário comum, não porque seja a única. As outras garantias que um agente precisa além da definição (acesso, atualidade e procedência) estão em [camada de dados confiável para agentes](https://precisian.io/blog/pt-BR/posts/camada-de-dados-confiavel-para-agentes/).
 
 E um limite honesto no número citado: o teste de abril mede acurácia de resposta com e sem contexto semântico, num benchmark. Ele não mede retorno financeiro, e este artigo não afirma nenhum.
 

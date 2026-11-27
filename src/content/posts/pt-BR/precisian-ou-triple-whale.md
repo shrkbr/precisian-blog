@@ -13,7 +13,6 @@ about: ["https://www.triplewhale.com", "https://en.wikipedia.org/wiki/Semantic_l
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Para uma marca que vende em Shopify, opera em inglês e quer painel pronto com atribuição por pixel, a Triple Whale é a escolha natural. Para um e-commerce brasileiro em VTEX ou Magento, com marketplace e ERP no meio, a conta muda. Em 27/10/2026, a Shopify App Store lista o plano Foundation da Triple Whale a US$ 219 por mês, cobrado em dólar, e o app só em inglês ([Shopify App Store](https://apps.shopify.com/triplewhale-1)). A VTEX não aparece entre as integrações nativas ([Triple Whale](https://www.triplewhale.com/our-integrations)).
 
@@ -85,7 +84,7 @@ Se o tema é isolamento entre clientes num mesmo fornecedor, o que perguntar est
 
 **Marca DTC em Shopify, WooCommerce ou BigCommerce que compra muita mídia paga.** A integração é nativa, o pixel instala em minutos e o painel sai pronto. A Precisian não tem painel, de propósito: a entrega termina na camada semântica.
 
-**Quem quer atribuição, modelo de mix e incrementalidade como produto.** É o centro da Triple Whale. A Precisian não vende atribuição nem modelo de mídia.
+**Quem quer atribuição, modelo de mix e incrementalidade como produto.** É o centro da Triple Whale. A Precisian não vende atribuição nem modelo de mídia. No Brasil, a Nemu vende atribuição com painel e setup feito pelo time dela, e a comparação está em [Precisian ou Nemu](https://precisian.io/blog/pt-BR/posts/precisian-ou-nemu/).
 
 **Quem quer um agente que mexe na conta de anúncio.** O Moby age dentro das regras que você define. A Precisian não ativa campanha.
 

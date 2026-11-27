@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_governance", "https://precisian.io/e
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: demo
-updatedAt: 2026-11-08
 ---
 Data governance is the set of recorded decisions about who owns each dataset, how each metric is defined, who can access it, how long it is kept and who approves a change. For US ecommerce, one of those decisions is already a legal duty: under the California Consumer Privacy Act, a covered business must disclose "the length of time the business intends to retain each category of personal information" ([Cal. Civ. Code §1798.100(a)(3), CPPA text effective July 15, 2024](https://cppa.ca.gov/regulations/pdf/cppa_act.pdf)).
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Return_on_investment", "https://precisian
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Marketing efficiency ratio (MER) is the total revenue a business booked in a period divided by its total marketing spend in that period. ROAS divides only the revenue an ad platform attributes to itself by the spend on that platform; Google's own target ROAS example is "$5 USD in sales ÷ $1 USD in ad spend x 100% = 500%" ([Google Ads Help](https://support.google.com/google-ads/answer/6268637?hl=en)). In a round-number example, $400,000 booked on $50,000 of total spend is an MER of 8.
 
@@ -85,7 +84,7 @@ In this example the platforms claim less than the business booked, because organ
 Five steps, and only the last one is arithmetic.
 
 1. **Fix the period** and use the same one for revenue and spend. A calendar month is the usual choice because finance closes on it.
-2. **Pull revenue from the system of record**, not from any ad platform: the Shopify sales report, the Amazon Seller Central payments report, or the ERP if both feed into it.
+2. **Pull revenue from the system of record**, not from any ad platform: the Shopify sales report, the Amazon Seller Central payments report, or the ERP if both feed into it. Pulling Amazon orders and payouts through the API is covered in [Amazon SP-API for sales data](https://precisian.io/blog/en/posts/amazon-sp-api-sales-data/).
 3. **Apply the revenue rule you wrote down**: gross or net, with or without refunds, order date or recognition date.
 4. **Sum every marketing cost your rule includes**, from every platform invoice plus the fees your definition covers.
 5. **Divide revenue by spend.** Keep the rule next to the number, so next quarter's MER is calculated the same way.

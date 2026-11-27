@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Google_Shopping", "https://precisian.io/e
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 The symptom almost nobody can explain: nothing changed in the feed, and hundreds of SKUs were disapproved overnight. Google has a name for that and documents the mechanism. **Preemptive item disapproval** happens when price or availability disagree between your feed and your landing pages, and when it is in force, "we err on the side of caution and disapprove products that are likely to violate our requirements" ([Google](https://support.google.com/merchants/answer/2948694)). A review takes 3 to 5 business days to undo.
 
@@ -57,7 +56,7 @@ The documentation is literal: "Googlebot routinely crawls your website landing p
 
 A price that only appears after your framework hydrates does not exist for Google. The page looks correct to you and wrong to the crawler, which is why this failure survives every manual check.
 
-Availability goes further, comparing across "the landing page, checkout page, structured data (if applicable) and your data source" ([Google](https://support.google.com/merchants/answer/9773127)). The checkout leg is what catches a store whose product page says in stock and whose cart rejects the SKU.
+Availability goes further, comparing across "the landing page, checkout page, structured data (if applicable) and your data source" ([Google](https://support.google.com/merchants/answer/9773127)). The checkout leg is what catches a store whose product page says in stock and whose cart rejects the SKU. An AI agent that buys from your feed depends on the same price and stock agreement, covered in [agentic commerce data](https://precisian.io/blog/en/posts/agentic-commerce-data/).
 
 And there is an automation detail that inverts the hierarchy most teams assume. With automations enabled, Google uses your page to correct your feed, with its own example: if the latest upload lists a product at $4 and the page lists $3, "we'll update the product to $3 USD in your ads or free listings" ([Google](https://support.google.com/merchants/answer/12157888)). **The page wins, not the feed.**
 

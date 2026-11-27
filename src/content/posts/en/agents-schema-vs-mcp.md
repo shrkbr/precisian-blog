@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_warehouse", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Agents Schema, at version 0.0.11, and the Model Context Protocol, at revision 2026-07-28, are not competing for the same job, and the clearest statement of that comes from Fivetran's own FAQ, which asks "Do I need MCP?" and answers: "No. `AGENTS.*` is just tables, so any agent that can run SQL can read it. MCP is one option; a CLI and a skill work too" ([Agents Schema](https://www.opendatainfrastructure.com/agents-schema)). One publishes context inside the warehouse. The other is a transport for tools. The real difference between them is governance, not function.
 

@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Google_Tag_Manager", "https://precisian.i
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 A conta começa em torno de **US$ 40 a 50 por instância por mês**, e o Google recomenda no mínimo três para produção ([Google](https://developers.google.com/tag-platform/tag-manager/server-side/app-engine-setup)). Antes de aprovar isso, vale saber que o principal benefício vendido pelo produto tem uma condição que a documentação do Google não menciona, e que o motivo mais citado para comprá-lo é um texto de 2019 que o próprio WebKit já reescreveu.
 
@@ -39,7 +38,7 @@ A tabela oficial de domínios é categórica: mesmo domínio e **subdomínio** d
 
 O WebKit descreve a mesma configuração de outro jeito: *"O ITP detecta requisições de CNAME cloaking de terceiro e de IP cloaking de terceiro, e limita a validade de quaisquer cookies definidos na resposta HTTP a 7 dias"*. E define o que conta como tal: *"um sub-recurso de primeira parte que resolve através de um CNAME diferente do domínio de primeira parte e diferente do CNAME do host do frame superior, se houver"* ([WebKit](https://webkit.org/tracking-prevention/)).
 
-Leia as duas em sequência. O subdomínio que o Google recomenda apontar para o servidor de tagueamento é, quase sempre, um subdomínio que resolve por CNAME para outro lugar. É exatamente a forma que o WebKit descreve.
+Leia as duas em sequência. O subdomínio que o Google recomenda apontar para o servidor de tagueamento é, quase sempre, um subdomínio que resolve por CNAME para outro lugar. É exatamente a forma que o WebKit descreve. O [Google tag gateway](https://precisian.io/blog/pt-BR/posts/google-tag-gateway/) usa outro desenho: serve a tag por um caminho do próprio domínio da loja, via CDN.
 
 Uma ressalva honesta: **não encontrei documento do Google nem da Apple afirmando que um endpoint específico do sGTM dispara esse detector.** Não vou afirmar que dispara. O que está verificado é que a definição publicada pelo WebKit descreve essa arquitetura, e que o Google omite a questão na página que promete durabilidade total. Teste no seu domínio antes de assumir qualquer um dos lados.
 

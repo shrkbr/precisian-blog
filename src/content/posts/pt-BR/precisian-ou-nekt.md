@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Semantic_layer", "https://en.wikipedia.or
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha a Nekt se você tem alguém técnico e quer montar a própria stack de dados para IA em autosserviço; escolha a Precisian se você é um e-commerce médio sem time de dados e quer a operação inclusa. Em 27/10/2026, a Nekt cobra a partir de US$ 149 por mês no Starter, tem plano sem custo e serve o dado a qualquer agente "through a single governed MCP" ([Nekt, preços](https://www.nekt.com/pricing); [Nekt](https://www.nekt.com/)). As duas atacam o mesmo problema. Muda quem escreve a definição de métrica e quem cuida do dado quando ele quebra.
 

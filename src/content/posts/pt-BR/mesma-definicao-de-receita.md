@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Receita_(contabilidade)", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 O marketing fecha o mês com um número de receita, o financeiro fecha com outro, e a reunião vira uma caça ao erro que não existe. Os dois estão certos. O financeiro segue uma norma de cinco etapas em vigor desde 2018 que diz quando a receita pode ser reconhecida ([IFRS Foundation](https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/)). O marketing mede no checkout. São eventos diferentes, em datas diferentes, por motivos legítimos dos dois lados.
 
@@ -42,7 +41,7 @@ Mais do que você imagina, e todas defensáveis.
 | Com ou sem imposto | financeiro vs marketing | no mesmo instante |
 | Receita reconhecida | contabilidade | na transferência de controle |
 
-Seis leituras do mesmo mês. Nenhuma inventada. Cada uma responde a uma pergunta diferente, e cada uma vira "receita" quando alguém exporta uma planilha sem rótulo.
+Seis leituras do mesmo mês. Nenhuma inventada. Cada uma responde a uma pergunta diferente, e cada uma vira "receita" quando alguém exporta uma planilha sem rótulo. O CRM pode somar mais uma: no RD Station, a receita que o agente lê é a negociação marcada como ganha, como mostra [MCP do RD Station](https://precisian.io/blog/pt-BR/posts/mcp-do-rd-station/).
 
 O problema não é a existência das seis. É o fato de a palavra ser a mesma nas seis.
 

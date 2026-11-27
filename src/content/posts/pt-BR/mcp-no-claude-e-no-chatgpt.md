@@ -47,7 +47,7 @@ A diferença entre os planos está em quem pode fazer isso. A tabela resume a do
 
 Fontes: [Anthropic](https://support.claude.com/en/articles/11175166-get-started-with-custom-connectors-using-remote-mcp) e [OpenAI](https://help.openai.com/en/articles/12584461-connecting-custom-mcp-servers-in-chatgpt). A página da OpenAI não menciona o plano Plus.
 
-Três regras do ChatGPT pesam na operação. Conexão a servidor MCP próprio é só na web; no celular, não. O ChatGPT não conecta direto a servidor local, e indica o Secure MCP Tunnel para servidor em rede privada. E depois que o admin aprova um servidor, o workspace usa uma "frozen snapshot" das ferramentas: mudança feita depois pelo desenvolvedor só vale quando o admin revisa e publica de novo, e ferramenta alterada de forma incompatível passa a dar erro sem aviso ao admin.
+Três regras do ChatGPT pesam na operação. Conexão a servidor MCP próprio é só na web; no celular, não. O ChatGPT não conecta direto a servidor local, e indica o Secure MCP Tunnel para servidor em rede privada. E depois que o admin aprova um servidor, o workspace usa uma "frozen snapshot" das ferramentas: mudança feita depois pelo desenvolvedor só vale quando o admin revisa e publica de novo, e ferramenta alterada de forma incompatível passa a dar erro sem aviso ao admin. Quando a empresa quer concentrar autenticação, registro e limite de chamadas de vários servidores num ponto só, o assunto é [gateway MCP](https://precisian.io/blog/pt-BR/posts/gateway-mcp/).
 
 ## Por que a mesma pergunta devolve receitas diferentes?
 
@@ -118,7 +118,7 @@ Em quatro situações, e vale saber antes de prometer à diretoria.
 
 **Dado que nenhum sistema registrou.** Venda fechada no WhatsApp sem pedido lançado, ou desconto dado no balcão, não aparece em servidor nenhum.
 
-E há o caso em que a Precisian é a escolha errada: se o que o time quer é operar uma ferramenta pelo chat (abrir tarefa, responder ticket, criar campanha pausada), o conector oficial daquela ferramenta resolve, e uma camada semântica não acrescenta nada.
+E há o caso em que a Precisian é a escolha errada: se o que o time quer é operar uma ferramenta pelo chat (abrir tarefa, responder ticket, criar campanha pausada), o conector oficial daquela ferramenta resolve, e uma camada semântica não acrescenta nada. Se a ação passa por um workflow, o n8n deixa o Claude ou o ChatGPT rodar esse workflow como ferramenta, como mostra [MCP do n8n](https://precisian.io/blog/pt-BR/posts/mcp-do-n8n/).
 
 ## O que este artigo não cobre
 

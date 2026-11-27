@@ -1,5 +1,5 @@
 ---
-title: "What is data lineage, and how do you trace a marketing metric back to its source?"
+title: "What is data lineage? Trace a metric back to its source"
 description: "Data lineage maps a number from source to report. dbt's column-level lineage shows the columns, but not the filter that changed the result."
 slug: "data-lineage-marketing-metrics"
 lang: "en"
@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Data lineage is the record of the path a number took: which source tables it came from, which transformations it passed through, and which rule produced it. The open [OpenLineage](https://openlineage.io/docs/) specification, a graduated LF AI & Data Foundation project at version 1.54.0 in October 2026, models that path with three entities: dataset, job and run. For a marketing metric, lineage is what answers "which orders is this ROAS built on?"
 

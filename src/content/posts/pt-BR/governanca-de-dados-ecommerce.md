@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://preci
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: demo
-updatedAt: 2026-11-08
 ---
 Governança de dados é o conjunto de decisões registradas sobre quem é dono de cada dado, como ele é definido, quem pode acessá-lo, por quanto tempo é guardado e quem aprova uma mudança. A LGPD não obriga um programa formal: o art. 50 diz que o controlador "poderá" implementá-lo, adaptado "à estrutura, à escala e ao volume de suas operações". Mas o art. 52 lista "a adoção de política de boas práticas e governança" entre os critérios para dosar a sanção, cuja multa simples chega a 2% do faturamento no Brasil, limitada a R$ 50 milhões por infração ([Lei 13.709/2018](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709compilado.htm)).
 

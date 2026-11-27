@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Pix", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 O Pix liquida em no máximo 40 segundos, limite que o Banco Central impõe no [Manual de Tempos do Pix](https://www.bcb.gov.br/estabilidadefinanceira/pix), e transações que passam dele são rejeitadas. O que quebra a receita do GA4 não é a liquidação: é a **cobrança**, que nasce ativa e pode ficar assim por horas ou dias antes de alguém pagar. O GA4 dispara o evento de compra no carregamento da página de confirmação, não na chegada do dinheiro.
 

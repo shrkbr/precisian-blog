@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://precisian.io/precos"
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A diferença mais útil entre construir e contratar não é preço: é que só um dos dois lados publica o preço. Dá para calcular o custo de um lake próprio com tabelas oficiais abertas: o S3 em São Paulo custa US$ 0,0405 por GB-mês nos primeiros 50 TB, com vigência de setembro de 2026 ([AWS Price List API](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonS3/20260918174747/sa-east-1/index.json)). Do lado gerenciado, a Fivetran não publica a tarifa por MAR em nenhuma das três páginas oficiais que tratam do assunto, a Snowflake remete o valor do crédito a um PDF, e a Databricks serve a página de preço em JavaScript sem cifra no HTML.
 

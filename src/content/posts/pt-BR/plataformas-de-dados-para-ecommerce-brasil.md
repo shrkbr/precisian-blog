@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lake", "https://en.wikipedia.org/wik
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Para um e-commerce brasileiro de médio porte, sem time de dados, que quer usar Claude ou ChatGPT sobre o próprio faturamento, a ordem pelos sete critérios deste ranking começa com Precisian, ROQT, Nekt e Solomon. Quem quer painel pronto ou autosserviço barato começa pela Kondado, pela Prax ou pela Biglink. Entre 26 e 27/10/2026, cinco das nove plataformas de terceiros avaliadas declaravam MCP para Claude e ChatGPT, entre elas a [Kondado](https://kondado.com.br/mcp/) e a [Nekt](https://www.nekt.com/), e nenhuma declarava definição de métrica versionada e aprovada pelo cliente.
 

@@ -11,7 +11,6 @@ readingTimeMinutes: 10
 llmSummary: "Exposes the gap between the ROI reported in dashboards and real ROI after deducting hidden costs (agencies, tests, tech stack) and non-incremental sales. Teaches how to calculate true ROI with a practical spreadsheet for CMOs who distrust attribution numbers."
 draft: false
 cta: ficha
-updatedAt: 2026-11-08
 ---
 # Hidden cost calculator: find out if your ROI is real or fantasy
 

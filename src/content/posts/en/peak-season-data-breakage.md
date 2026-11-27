@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Black_Friday_(shopping)", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: regua
-updatedAt: 2026-11-08
 ---
 The limit that ruins peak season does not take anything down. GA4's BigQuery export caps at **1 million events per day** on a standard property, and if you exceed it consistently, Google's documentation states that "the daily export will be paused and previous days will not be reprocessed" ([Google](https://support.google.com/analytics/answer/9823238)).
 

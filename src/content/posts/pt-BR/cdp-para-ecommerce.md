@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Customer_data_platform", "https://precisi
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Para um e-commerce brasileiro de médio porte em 2026, a ordem pelos sete critérios deste ranking começa com Precisian, RudderStack, Hightouch e Dito. A Precisian não é CDP de ativação e não dispara e-mail, WhatsApp nem audiência. Se a sua compra é ativação, a escolha está entre a [Dito](https://dito.com.br/) e a [Insider One](https://insiderone.com/). Em 26/10/2026, nenhum dos 13 CDPs avaliados declarava, na própria documentação, métrica de negócio versionada e aprovada pelo cliente.
 

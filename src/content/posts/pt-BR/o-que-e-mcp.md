@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 MCP (Model Context Protocol) é um protocolo aberto pelo qual um servidor descreve ferramentas para um modelo de IA, e o modelo decide quando usá-las. Ele não substitui a API: quase todo servidor MCP chama uma API por baixo. A diferença está em quem escreve a chamada. Na revisão atual da especificação, a 2026-07-28, as ferramentas são definidas como "controladas pelo modelo" ([MCP, lido em 03/11/2026](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 
@@ -55,7 +54,7 @@ Uma API é o contrato de um sistema com programas que um desenvolvedor escreve. 
 
 Fontes: [MCP, tools](https://modelcontextprotocol.io/specification/2026-07-28/server/tools), [MCP, autorização](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization) e [changelog 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/changelog), lidos em 03/11/2026.
 
-Sobre autorização, a especificação diz, em maiúsculas, que ela "is OPTIONAL for MCP implementations" ([MCP, autorização](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). Quando o servidor chama uma API a jusante, ele precisa de um token próprio para ela e "MUST NOT pass through the token it received from the MCP client" ([MCP, considerações de segurança](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations)). Na prática, o MCP soma uma credencial à da API.
+Sobre autorização, a especificação diz, em maiúsculas, que ela "is OPTIONAL for MCP implementations" ([MCP, autorização](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)). Quando o servidor chama uma API a jusante, ele precisa de um token próprio para ela e "MUST NOT pass through the token it received from the MCP client" ([MCP, considerações de segurança](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization/security-considerations)). Na prática, o MCP soma uma credencial à da API. Quando vários servidores ficam atrás de um ponto único de entrada, quem guarda essas credenciais é o [gateway MCP](https://precisian.io/blog/pt-BR/posts/gateway-mcp/).
 
 ## O que o MCP não é?
 
@@ -63,7 +62,7 @@ Sobre autorização, a especificação diz, em maiúsculas, que ela "is OPTIONAL
 
 **Não é uma camada de segurança.** A especificação lista o que o servidor "MUST" fazer (validar entradas, controlar acesso, limitar taxa de chamadas, sanitizar saídas), mas reconhece que o protocolo não consegue impor esses princípios por conta própria ([especificação](https://modelcontextprotocol.io/specification/2026-07-28)). Uma medição publicada em maio de 2026 encontrou 7.973 servidores MCP remotos no ar, 40,55% deles expondo ferramentas sem autenticação nenhuma ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint). Escopo e permissão continuam sendo trabalho de quem publica o servidor, como detalhado em [segurança de servidor MCP](https://precisian.io/blog/pt-BR/posts/seguranca-de-servidor-mcp/).
 
-**Não é uma definição de métrica.** O `inputSchema` diz que a ferramenta aceita uma métrica e um intervalo de datas. Não diz se "receita" inclui frete, cancelamento ou venda de marketplace. Essa regra fica fora do protocolo.
+**Não é uma definição de métrica.** O `inputSchema` diz que a ferramenta aceita uma métrica e um intervalo de datas. Não diz se "receita" inclui frete, cancelamento ou venda de marketplace. Essa regra fica fora do protocolo. Onde ela entra, junto com acesso, atualidade e procedência, está em [camada de dados confiável para agentes](https://precisian.io/blog/pt-BR/posts/camada-de-dados-confiavel-para-agentes/).
 
 **Não é um substituto de BI.** O painel responde a pergunta prevista; o MCP abre espaço para a pergunta nova. As duas coisas convivem, e a comparação está em [servidor MCP ou BI](https://precisian.io/blog/pt-BR/posts/mcp-server-vs-bi/).
 

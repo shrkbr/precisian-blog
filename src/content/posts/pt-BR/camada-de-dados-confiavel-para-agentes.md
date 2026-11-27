@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://preci
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Camada de dados confiável é o conjunto de garantias entre a sua base e o agente de IA, para que uma resposta possa ser **reproduzida e defendida**, não apenas produzida. A urgência é mensurável: um levantamento de 7.973 servidores MCP remotos ativos encontrou **40,55% expondo ferramentas sem autenticação nenhuma** ([arXiv 2605.22333](https://arxiv.org/abs/2605.22333), preprint), e o próprio protocolo afirma que *"a autorização é OPCIONAL para implementações de MCP"* ([spec MCP](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 

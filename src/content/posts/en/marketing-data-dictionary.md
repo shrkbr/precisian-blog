@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_dictionary", "https://precisian.io/e
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 A data dictionary is the record that states, for every field and metric in a dataset, its name, what it means, where it comes from, who owns it, how it is calculated and what it leaves out. For AI, it is the floor: in an April 2026 benchmark, a 4 KB definitions file raised the accuracy of three frontier models by 17 to 23 percentage points ([Rumiantsau and Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
@@ -27,7 +26,7 @@ Six fields per metric. Fewer leaves room for guessing. More turns it into a form
 
 **Definition.** One sentence in business English that a VP can read without opening the SQL.
 
-**Source.** The system and table the number comes from: Shopify, Amazon Seller Central, Google Ads, Meta Ads, GA4, the ERP. When two systems could answer, the dictionary says which one wins.
+**Source.** The system and table the number comes from: Shopify, Amazon Seller Central, Google Ads, Meta Ads, GA4, the ERP. When two systems could answer, the dictionary says which one wins. What an ERP order actually carries is covered in [what the ERP returns as sales data](https://precisian.io/blog/en/posts/what-the-erp-returns-as-sales-data/).
 
 **Owner.** The person or team that settles disputes. Without one, the definition drifts again by next quarter.
 
@@ -37,7 +36,7 @@ Six fields per metric. Fewer leaves room for guessing. More turns it into a form
 
 Shopify's own reports are a good reminder of why the formula column matters. Shopify defines net sales as gross sales minus discounts minus sales reversals, and it books a return as a negative number on the date it was processed, not on the date of the original order ([Shopify Help Center](https://help.shopify.com/en/manual/reports-and-analytics/shopify-reports/report-types/default-reports/sales-report)). That is a defensible rule. It is also a rule your finance team may not use, and nothing on the screen tells you which one you are looking at.
 
-Here is a starter dictionary with ten ecommerce metrics. The rules are an example, not a universal standard. Your business can decide differently; what matters is that it decides in writing.
+Here is a starter dictionary with ten ecommerce metrics. The rules are an example, not a universal standard. Your business can decide differently; what matters is that it decides in writing. The formula behind each common KPI, and the choice that moves it, is in [ecommerce KPI definitions](https://precisian.io/blog/en/posts/ecommerce-kpis-definitions/).
 
 | Name | Definition | Source | Owner | Formula | Exclusions |
 |---|---|---|---|---|---|

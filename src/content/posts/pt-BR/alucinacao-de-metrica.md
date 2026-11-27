@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)",
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Alucinação de métrica é o erro em que um agente de IA devolve um número aritmeticamente correto sobre uma definição de negócio que a empresa nunca escreveu em lugar nenhum. O modelo não inventou o dado: ele adivinhou a regra. Num teste pareado de abril de 2026 com três modelos de fronteira, fornecer as definições de negócio como contexto elevou a acurácia das respostas de 45,5–50,5% para 67,7–68,7% ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 
@@ -55,7 +54,7 @@ Na prática, os pontos de desempate silencioso que mais aparecem são quatro, e 
 
 **Qual campo de data manda.** Pedido, pagamento ou faturamento. Com Pix, pedido e pagamento colapsam no mesmo instante e a diferença some, até entrar um boleto e voltar. O agente que aprendeu a tratar os dois como sinônimos passa a errar só na parte da base que tem boleto, e erro intermitente é o mais difícil de achar.
 
-**O que entra e o que sai da conta.** Frete, imposto, desconto, cancelamento, devolução. Não existe resposta certa universal; existe a resposta que o financeiro da sua empresa usa. Se ela não está escrita, o agente escolhe a que o nome do campo sugere.
+**O que entra e o que sai da conta.** Frete, imposto, desconto, cancelamento, devolução. Não existe resposta certa universal; existe a resposta que o financeiro da sua empresa usa. Se ela não está escrita, o agente escolhe a que o nome do campo sugere. A distância entre a receita do marketing e a do financeiro está em [marketing e financeiro nunca fecham o mesmo número de receita](https://precisian.io/blog/pt-BR/posts/mesma-definicao-de-receita/).
 
 **Qual recorte conta como "cliente novo".** Primeira compra na marca, primeira compra no canal, ou primeira compra no período analisado. As três aparecem no mesmo relatório em empresas diferentes, e às vezes no mesmo relatório da mesma empresa.
 
@@ -67,13 +66,13 @@ Porque o agente não tem onde registrar a dúvida. Um analista humano pergunta "
 
 Os autores do teste de abril colocam as duas falhas na mesma origem: resposta incorreta e alucinação confiante nascem de o modelo ser forçado a inferir a semântica de negócio que o esquema não codifica ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)). O experimento deles é deliberadamente modesto: um documento de 4 KB descrevendo medidas, convenções e regras de desambiguação. Esse texto moveu a acurácia em 17 a 23 pontos percentuais, sem trocar de modelo e sem ferramenta nova.
 
-Enquanto uma pessoa faz a pergunta e confere o resultado contra o que conhece do negócio, o erro é pego. Quando a mesma pergunta entra numa automação que roda toda segunda-feira, ninguém confere, e a definição errada vira série histórica.
+Enquanto uma pessoa faz a pergunta e confere o resultado contra o que conhece do negócio, o erro é pego. Quando a mesma pergunta entra numa automação que roda toda segunda-feira, ninguém confere, e a definição errada vira série histórica. É o risco de cada workflow calcular a métrica do jeito dele, descrito em [MCP do n8n](https://precisian.io/blog/pt-BR/posts/mcp-do-n8n/).
 
 A previsão do Gartner de junho de 2025 é que mais de 40% dos projetos de IA agêntica sejam cancelados até o fim de 2027, por custo, valor incerto e controle de risco insuficiente ([Gartner, 2025](https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027)). Valor incerto é o que acontece quando ninguém consegue afirmar se a resposta do agente está certa.
 
 ## Como saber se isso já está acontecendo na sua operação?
 
-Três verificações, em ordem de esforço. Nenhuma exige ferramenta nova, e as três produzem o mesmo entregável: uma lista das definições que hoje só existem na cabeça de alguém. Essa lista é o ponto de partida da correção, e costuma ser mais curta do que se teme.
+Três verificações, em ordem de esforço. Nenhuma exige ferramenta nova, e as três produzem o mesmo entregável: uma lista das definições que hoje só existem na cabeça de alguém. Essa lista é o ponto de partida da correção, e costuma ser mais curta do que se teme. O formato em que cada definição deve ser escrita está em [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/).
 
 **Faça a mesma pergunta duas vezes, em sessões separadas.** Se os números divergirem, o agente está desempatando na hora, e o desempate não é estável.
 

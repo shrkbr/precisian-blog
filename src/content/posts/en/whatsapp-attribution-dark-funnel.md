@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Conversational_commerce", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 When someone clicks an ad and lands in your WhatsApp conversation, the API hands you the identifier of the **ad**, not the campaign, not the ad set, not a UTM. In Meta's published webhook reference, the `referral` object carries **11 fields**, among them `source_id` and `ctwa_clid`, and appears only "if message via a Click to WhatsApp ad" ([Meta for Developers](https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/text)).
 
@@ -98,7 +97,7 @@ That fourth point is where discipline pays. An unattributed bucket that stays ho
 
 Because there is no configuration that fixes it.
 
-A misconfigured channel is one where the data exists and is not being captured. Here, a large part of the journey produces no data at all: a conversation is text between two people, and text has no dimensions. No tag, no pixel and no connector changes that.
+A misconfigured channel is one where the data exists and is not being captured. Here, a large part of the journey produces no data at all: a conversation is text between two people, and text has no dimensions. No tag, no pixel and no connector changes that. Meta's official [WhatsApp MCP server](https://precisian.io/blog/en/posts/whatsapp-mcp-server/) doesn't either: none of its tools reads chat history.
 
 So the honest posture is to measure the edges and accept the middle: what came in, from which ad, and what came out, as a recorded sale, with an identifier carried between them. Everything in between is not measured and is not measurable, and a report claiming otherwise is presenting an inference as an observation, which is [the same failure as marketplace attribution](https://precisian.io/blog/en/posts/marketplace-attribution-blackhole/).
 

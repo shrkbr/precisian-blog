@@ -5,7 +5,7 @@ slug: "camada-semantica-ou-data-warehouse"
 lang: "pt-BR"
 translationKey: "semantic-layer-or-warehouse"
 publishedAt: 2026-10-09
-updatedAt: 2026-11-08
+updatedAt: 2026-10-23
 tags: ["camada-semantica", "data-warehouse", "arquitetura-de-dados"]
 draft: false
 llmSummary: "Data warehouse guarda dado e executa consulta; camada semântica guarda a regra que define a métrica. Sem warehouse a consulta falha, sintoma técnico. Sem camada semântica tudo funciona e os números discordam, sintoma político."

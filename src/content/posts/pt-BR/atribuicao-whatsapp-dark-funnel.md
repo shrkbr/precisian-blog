@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/WhatsApp", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 Quando alguém clica num anúncio e cai na sua conversa de WhatsApp, a API entrega o identificador do **anúncio**, não da campanha, não do conjunto, não da UTM. Na referência de webhook publicada pela Meta e vigente em setembro de 2026, o objeto `referral` traz 11 campos, entre eles `source_id` e `ctwa_clid`, e só aparece "if message via a Click to WhatsApp ad" ([Meta for Developers](https://developers.facebook.com/documentation/business-messaging/whatsapp/webhooks/reference/messages/text)). Todo o resto da jornada é conversa, e conversa não tem campo.
 
@@ -86,7 +85,7 @@ O WhatsApp é outra categoria. O dado de origem existe por um instante, o primei
 
 Isso muda o tipo de solução. Em canal mal configurado você conserta a coleta. Aqui você constrói persistência: alguém precisa pegar o identificador no momento em que ele passa e guardá-lo num lugar que o pedido também alcance. Se esse pedaço não for construído, nenhuma ferramenta comprada depois recupera o histórico, porque o histórico nunca foi gravado.
 
-É também por isso que a pergunta "qual ferramenta resolve atribuição de WhatsApp" costuma ter resposta decepcionante. Ferramenta nenhuma resolve sozinha: ela pode capturar bem a partir de hoje, e não pode inventar o que não foi guardado ontem.
+É também por isso que a pergunta "qual ferramenta resolve atribuição de WhatsApp" costuma ter resposta decepcionante. Ferramenta nenhuma resolve sozinha: ela pode capturar bem a partir de hoje, e não pode inventar o que não foi guardado ontem. O MCP oficial do WhatsApp não muda isso: ele configura a conta e envia mensagem, e nenhuma ferramenta dele lê o histórico de conversa, como mostra [MCP do WhatsApp: o oficial e o risco dos não oficiais](https://precisian.io/blog/pt-BR/posts/mcp-do-whatsapp/).
 
 ## Como montar a captura mesmo assim?
 

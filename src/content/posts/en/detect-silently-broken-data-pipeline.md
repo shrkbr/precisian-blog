@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_lineage", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 Airflow's own migration guide states the failure mode in one line: "**If the Dag run never finishes, the SLA is never checked**" ([Airflow](https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-deadlines.html)). In a CHI 2021 study of 53 interviewed practitioners, cascading data problems showed a **92% prevalence**, characterised as "invisible, delayed, but often avoidable" ([CHI 2021](https://research.google/pubs/everyone-wants-to-do-the-model-work-not-the-data-work-data-cascades-in-high-stakes-ai/)).
 
@@ -61,7 +60,7 @@ Airflow's check operator evaluates each value in the first row as a Python boole
 
 There is a gotcha here worth its weight, and almost nobody checks it: **sibling operators ship opposite defaults.** On the table-level operator, the parameter that accepts emptiness defaults to false, documented as "if True, an empty table (row count=0) will not trigger a failure". On the column-level operator, the analogous parameter defaults to **true**, converting null to zero.
 
-So depending on which of the two you used, an empty table either stops the pipeline or passes through converted into a zero. Reading the default backwards is easy, and the mistake surfaces as a plausible number.
+So depending on which of the two you used, an empty table either stops the pipeline or passes through converted into a zero. Reading the default backwards is easy, and the mistake surfaces as a plausible number. High volume produces the same kind of quiet failure, covered in [what breaks in your analytics during peak season](https://precisian.io/blog/en/posts/peak-season-data-breakage/).
 
 The same documentation states the design decision every team should make consciously: put the check on the critical path, "preventing from publishing dubious data", or beside it, receiving an alert "without stopping the progress of the DAG". Both are legitimate. What is not legitimate is having never decided.
 

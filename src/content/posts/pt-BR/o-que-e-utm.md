@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Par%C3%A2metros_UTM", "https://precisian.
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 UTM são parâmetros que você acrescenta ao fim de um link (`?utm_source=...&utm_medium=...&utm_campaign=...`) para dizer ao Google Analytics de onde veio a visita. O número não bate porque o GA4 compara texto exato: a [Ajuda do Google Analytics](https://support.google.com/analytics/answer/10917952) diz que `utm_source=google` e `utm_source=Google` são valores diferentes. Sem convenção escrita, cada pessoa grafa a mesma origem de um jeito, e a campanha se espalha em várias linhas do relatório.
 

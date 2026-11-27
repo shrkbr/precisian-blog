@@ -30,7 +30,7 @@ Three primitives. The spec's own table gives an example for each: slash commands
 
 **Prompts.** Templates with arguments, listed by `prompts/list` and filled by `prompts/get`. The spec says user-controlled "refers to who decides when the prompt is used, not who authors its content. Prompt content is defined by the server" ([MCP prompts](https://modelcontextprotocol.io/specification/2026-07-28/server/prompts)).
 
-A real server shows the split. The official dbt MCP server lists Semantic Layer tools named `list_metrics`, `get_dimensions`, `get_entities`, `get_metrics_compiled_sql` and `query_metrics`, plus a separate `execute_sql` and `text_to_sql` ([dbt-labs/dbt-mcp README](https://github.com/dbt-labs/dbt-mcp), read November 11, 2026). Every one of those is a tool, so the model chooses when to call it.
+A real server shows the split. The official dbt MCP server lists Semantic Layer tools named `list_metrics`, `get_dimensions`, `get_entities`, `get_metrics_compiled_sql` and `query_metrics`, plus a separate `execute_sql` and `text_to_sql` ([dbt-labs/dbt-mcp README](https://github.com/dbt-labs/dbt-mcp), read November 11, 2026). Every one of those is a tool, so the model chooses when to call it. Microsoft splits Power BI across two servers, one that reads and runs DAX and one that edits measures, covered in [Power BI MCP server](https://precisian.io/blog/en/posts/power-bi-mcp-server/).
 
 ## How does an MCP server talk to a client?
 
@@ -84,7 +84,7 @@ A [gateway in front of your MCP servers](https://precisian.io/blog/en/posts/mcp-
 
 **Not a security boundary on its own.** Tool annotations are hints, authorization is optional, and the human-in-the-loop requirement is a client-side "SHOULD": "there SHOULD always be a human in the loop with the ability to deny tool invocations" ([MCP tools](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 
-**Not the data.** The server is a door. What sits behind it (a warehouse, a SaaS API, a spreadsheet) decides whether the answer is right.
+**Not the data.** The server is a door. What sits behind it (a warehouse, a SaaS API, a spreadsheet) decides whether the answer is right. It can also be a workflow, as covered in [n8n MCP](https://precisian.io/blog/en/posts/n8n-mcp/).
 
 ## When does an MCP server start to matter for a business?
 

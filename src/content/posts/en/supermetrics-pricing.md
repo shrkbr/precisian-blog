@@ -1,5 +1,5 @@
 ---
-title: "Supermetrics pricing in 2026: what each plan includes and what drives the bill"
+title: "Supermetrics pricing in 2026: plans and what drives the bill"
 description: "Supermetrics Starter lists at $44 a month billed yearly and Growth at $177. The bill grows with destinations, data sources, users and accounts, not data volume."
 slug: "supermetrics-pricing"
 lang: "en"

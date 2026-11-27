@@ -13,13 +13,12 @@ about: ["https://en.wikipedia.org/wiki/Meta_Platforms", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 Meta's Conversions API sends Meta the events your own server recorded, without depending on the shopper's browser, so it recovers part of what the Pixel loses, and nothing more. Meta's developer documentation (checked October 23, 2026) says a Pixel event and a server event are treated as one purchase only when they share the same `event_id` and `event_name` and arrive within 48 hours of each other ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api/deduplicate-pixel-and-server-events/)). Miss any of those and the order counts twice.
 
 > **Conversions API (CAPI)** is the server-to-server connection an advertiser uses to send Meta the events its own systems recorded. In Meta's words, those events "are linked to a dataset ID and are processed like events sent using the Meta Pixel" ([Meta](https://developers.facebook.com/docs/marketing-api/conversions-api)).
 
-CAPI improves what goes into Meta. It does not change what Meta does with it afterward.
+CAPI improves what goes into Meta. It does not change what Meta does with it afterward. How delivery learns from those events is covered in [Meta Andromeda and signal quality](https://precisian.io/blog/en/posts/meta-andromeda-signal-quality/).
 
 ## What does a broken Conversions API setup look like in your reports?
 
@@ -35,7 +34,7 @@ Three patterns, and the first one usually gets celebrated before anyone checks i
 
 The event the browser never delivered, as long as your server recorded it.
 
-The Pixel depends on a script running in the visitor's browser. Ad blockers, a script that didn't load, a tab closed before the confirmation page fired: those losses happen before anything reaches Meta. A server event comes from somewhere else, the system that wrote the order. If the order is in your database, it can reach Meta even if the thank-you page never rendered.
+The Pixel depends on a script running in the visitor's browser. Ad blockers, a script that didn't load, a tab closed before the confirmation page fired: those losses happen before anything reaches Meta. A server event comes from somewhere else, the system that wrote the order. If the order is in your database, it can reach Meta even if the thank-you page never rendered. Why that order record counts as first-party data is covered in [what counts as first-party data for an ecommerce brand](https://precisian.io/blog/en/posts/first-party-data-ecommerce/).
 
 Meta recommends running both: "Use the Conversions API in addition to the Meta Pixel, and share the same events using both tools" ([Meta, best practices](https://developers.facebook.com/docs/marketing-api/conversions-api/best-practices)). That redundancy is what creates the double-count risk, which is why deduplication is the center of this topic.
 

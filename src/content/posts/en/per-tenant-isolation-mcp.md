@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Multitenancy", "https://precisian.io/en"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Giving an agency, a client, or a partner access to your data through an AI agent is a tenancy problem before it is an AI problem. The Model Context Protocol has one normative sentence about it, and it rules out the pattern most implementations reach for first: "MCP servers MUST NOT use sessions for authentication" ([MCP spec, 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
@@ -71,7 +70,7 @@ One measurement puts the gap between spec and practice in perspective. A May 202
 
 Concretely, four decisions, made in this order. The order is the design.
 
-**One identity per tenant, never a shared service account.** The moment two clients share a connection, the only thing separating their data is application code that is now security-critical. A dedicated role per tenant costs nothing and moves the boundary into the database.
+**One identity per tenant, never a shared service account.** The moment two clients share a connection, the only thing separating their data is application code that is now security-critical. A dedicated role per tenant costs nothing and moves the boundary into the database. The runtime side, where leftover context, a cache or one shared token crosses tenants, is covered in [one AI agent, many client accounts](https://precisian.io/blog/en/posts/one-ai-agent-many-client-accounts/).
 
 **A role without `BYPASSRLS` and without table ownership.** This is the single check that most reviews skip and most incidents turn on.
 

@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Lei_Geral_de_Prote%C3%A7%C3%A3o_de_Dados_
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: demo
-updatedAt: 2026-11-08
 ---
 Se você manda dado de cliente para um LLM hospedado fora do Brasil, hoje existem dois caminhos legais vivos, e não três. Ou o dado fica na União Europeia, considerada adequada pela ANPD desde janeiro de 2026, ou o contrato incorpora as cláusulas-padrão da [Resolução 19/2024](https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-19-de-23-de-agosto-de-2024), cujo prazo de adequação **já venceu**. A terceira saída que todo fornecedor oferece, normas corporativas globais, não está disponível: a ANPD declara por escrito que nunca aprovou nenhuma.
 

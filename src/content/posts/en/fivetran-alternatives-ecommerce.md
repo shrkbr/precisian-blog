@@ -1,11 +1,11 @@
 ---
-title: "Fivetran alternatives for ecommerce data: what the pricing page leaves out"
+title: "Fivetran alternatives for ecommerce: what pricing leaves out"
 description: "Fivetran bills per monthly active row and Airbyte by credit, but in Airbyte Cloud only 67 of 573 source connectors are maintained by Airbyte itself."
 slug: "fivetran-alternatives-ecommerce"
 lang: "en"
 translationKey: "elt-tool-choice"
 publishedAt: 2026-10-14
-updatedAt: 2026-11-08
+updatedAt: 2026-11-03
 tags: ["build-vs-buy", "integration", "pipeline", "cost", "ecommerce", "data-lake"]
 draft: false
 llmSummary: "As of October 14, 2026, Airbyte's official Cloud registry listed 573 source connectors, of which 67 are maintained by Airbyte and 506 by the community. Fivetran bills each connection by monthly active rows, with per-MAR rates in its Service Consumption Table (V.11)."

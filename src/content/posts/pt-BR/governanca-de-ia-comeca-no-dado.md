@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Governan%C3%A7a_de_dados", "https://preci
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Governança de IA é o conjunto de regras que decide quem pode usar um sistema de inteligência artificial, para quê e, na parte que quase sempre falta, o que ele pode ler. Essa lacuna agora tem prazo. Pela Resolução CD/ANPD nº 30, de 23 de dezembro de 2025, a ANPD prevê 20 atividades de fiscalização sobre dados pessoais em sistemas de IA em 2026-2027, com 50% delas até o primeiro semestre de 2027 ([DOU](https://www.in.gov.br/web/dou/-/resolucao-cd/anpd-n-30-de-23-de-dezembro-de-2025-677947163)).
 

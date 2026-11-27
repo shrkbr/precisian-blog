@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Pipeline_de_dados", "https://precisian.io
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 A documentação do Airflow descreve o modo de falha em uma frase: *"se o Dag run nunca termina, o SLA nunca é verificado"*. Foi um dos motivos para o recurso ser **removido na versão 3.0** e substituído por alertas de prazo na 3.1, que passam a ser calculados quando a execução **começa** e conferidos a cada 5 segundos ([Airflow](https://airflow.apache.org/docs/apache-airflow/stable/howto/sla-to-deadlines.html)).
 
@@ -81,7 +80,7 @@ A execução que nunca começou.
 
 Os alertas de prazo do Airflow são registrados **quando uma execução inicia**. Uma execução que nunca iniciou, porque o agendador estava fora, porque o cron foi apagado, porque a credencial venceu, não entra nesse mecanismo. Procurei um recurso documentado para esse caso e não encontrei nenhum.
 
-A mitigação existe e é arquitetural, não um recurso: um vigia externo ao pipeline, que espera um sinal periódico e alerta quando ele não chega. É o inverso de todo o resto, porque alerta pela **ausência** de evento. E é justamente o formato que cobre a falha que este artigo abriu descrevendo.
+A mitigação existe e é arquitetural, não um recurso: um vigia externo ao pipeline, que espera um sinal periódico e alerta quando ele não chega. É o inverso de todo o resto, porque alerta pela **ausência** de evento. E é justamente o formato que cobre a falha que este artigo abriu descrevendo. O export do GA4 para o BigQuery é um exemplo desse tipo de falha no pico de vendas, descrito em [Black Friday: o que quebra no seu dado antes de quebrar o seu site](https://precisian.io/blog/pt-BR/posts/black-friday-o-que-quebra-no-dado/).
 
 Registro explicitamente que isso é recomendação de desenho, não recurso documentado das ferramentas citadas. A diferença importa, porque significa que alguém precisa construir e manter.
 

@@ -5,7 +5,7 @@ slug: "fivetran-airbyte-ou-servico-gerenciado"
 lang: "pt-BR"
 translationKey: "elt-tool-choice"
 publishedAt: 2026-10-14
-updatedAt: 2026-11-08
+updatedAt: 2026-11-03
 tags: ["build-vs-buy", "integracao", "pipeline", "custo", "ecommerce", "data-lake"]
 draft: false
 llmSummary: "Em 14/10/2026, nem o catálogo oficial da Fivetran nem o registro de conectores do Airbyte Cloud tinha conector de VTEX ou Nuvemshop; do Mercado Livre, o Airbyte lista só o Mercado Ads, mantido pela comunidade. A Fivetran cobra por MAR e o Airbyte Cloud parte de US$ 20/mês."

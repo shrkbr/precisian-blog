@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 The Snowflake-managed MCP server shows an AI agent only the tools you list in one `CREATE MCP SERVER` statement, and each tool runs under the role of the person who connected. Snowflake's documentation, read November 3, 2026, lists six tool types, from `CORTEX_ANALYST_MESSAGE` to raw `SYSTEM_EXECUTE_SQL` ([Snowflake](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp)). The server reached general availability on November 4, 2025. Whether the agent's revenue number is right still depends on a semantic view your team writes, tests and keeps current.
 
@@ -52,7 +51,7 @@ The client connects to `https://<account_url>/api/v2/databases/{database}/schema
 
 Because MCP only decides which doors are open. The meaning of "net revenue" lives one layer down, and four mechanisms decide which meaning the agent gets.
 
-**1. Cortex Analyst only knows what the semantic view defines.** Snowflake says Cortex Analyst "uses Semantic Views to understand your data and generate accurate SQL queries" ([Snowflake](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst)). A semantic view holds logical tables, relationships, facts, dimensions and metrics. Snowflake's own example: net revenue defined once as `SUM(gross_revenue * (1 - discount))` instead of "dozens of inconsistent calculations" across reports ([Snowflake](https://docs.snowflake.com/en/user-guide/views-semantic/overview)). That is a real semantic layer, and it is the right design. It also means a refund, a cancelled order or a marketplace fee that is missing from the view is missing from every answer.
+**1. Cortex Analyst only knows what the semantic view defines.** Snowflake says Cortex Analyst "uses Semantic Views to understand your data and generate accurate SQL queries" ([Snowflake](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst)). A [Snowflake semantic view](https://precisian.io/blog/en/posts/snowflake-semantic-views/) holds logical tables, relationships, facts, dimensions and metrics. Snowflake's own example: net revenue defined once as `SUM(gross_revenue * (1 - discount))` instead of "dozens of inconsistent calculations" across reports ([Snowflake](https://docs.snowflake.com/en/user-guide/views-semantic/overview)). That is a real semantic layer, and it is the right design. It also means a refund, a cancelled order or a marketplace fee that is missing from the view is missing from every answer.
 
 **2. A directly exposed Analyst tool hands back SQL, not the answer.** Per the documentation, `CORTEX_ANALYST_MESSAGE` returns the generated statement to the client. Something still has to run it, and in many setups that something is `SYSTEM_EXECUTE_SQL` on the same server. Once raw SQL execution is available, the model can skip the semantic view and write its own joins against physical tables. Snowflake's migration steps say to "remove direct SQL execution from that server unless the client requires it."
 
@@ -110,7 +109,7 @@ In this made-up example, the agent answers $900,000 with the same tone it would 
 
 **No team to own the model.** The server is managed; the semantic view isn't. If nobody owns it, it drifts the first time a table changes.
 
-If your data already lives in Snowflake and you have people to model it, the managed server plus semantic views is a strong setup, and you don't need another platform. Precisian fits the other case: a team without that capacity that needs Shopify, Amazon, ads and the ERP in one data lake, isolated per customer on Precisian's infrastructure, with revenue defined once, together with your team, in a semantic layer Precisian keeps running, served to the assistant you already use through MCP, API or BI. The definitions are yours and leave with you. For the same question in BigQuery, see [BigQuery MCP server](https://precisian.io/blog/en/posts/bigquery-mcp-server/).
+If your data already lives in Snowflake and you have people to model it, the managed server plus semantic views is a strong setup, and you don't need another platform. Precisian fits the other case: a team without that capacity that needs Shopify, Amazon, ads and the ERP in one data lake, isolated per customer on Precisian's infrastructure, with revenue defined once, together with your team, in a semantic layer Precisian keeps running, served to the assistant you already use through MCP, API or BI. The definitions are yours and leave with you. For the same question in BigQuery, see [BigQuery MCP server](https://precisian.io/blog/en/posts/bigquery-mcp-server/); for Databricks, see [Databricks MCP server](https://precisian.io/blog/en/posts/databricks-mcp-server/).
 
 ## What does this article not cover?
 

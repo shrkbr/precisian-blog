@@ -5,7 +5,7 @@ slug: "deduplicar-venda-site-marketplace"
 lang: "pt-BR"
 translationKey: "dedupe-orders-marketplace"
 publishedAt: 2026-10-06
-updatedAt: 2026-11-08
+updatedAt: 2026-11-27
 tags: ["marketplace", "divergencia-de-dados", "lgpd"]
 draft: false
 llmSummary: "Nao ha chave comum de comprador entre loja propria e marketplace: a Amazon documenta o e-mail como anonimizado e o Magalu nao devolve campo de e-mail. Origem de trafego nunca vem no pedido. Quantos pedidos e respondivel; quantos clientes distintos, nao."
@@ -28,6 +28,8 @@ Depende do canal, e a variação é maior do que qualquer ferramenta de integra�
 **Amazon.** O e-mail existe, mas vem anonimizado, e o acesso é restrito. A tabela de redação de dados pessoais mostra que, para pedidos fora dos Estados Unidos, Japão e Singapura, o e-mail do comprador só aparece num caso: envio direto ao consumidor pelo próprio vendedor, com o papel de acesso restrito habilitado e o pedido em status específico ([Amazon](https://developer-docs.amazon/sp-api/docs/access-orders-pii)). Para a maior parte dos vendedores brasileiros, portanto, não aparece.
 
 Existe um campo genérico de identificador fiscal, descrito apenas como *"o identificador fiscal do comprador"*, sem menção a CPF ([Amazon](https://developer-docs.amazon/sp-api/reference/getorders)). E existe um campo só do Brasil, `BuyerCounty`, documentado com a nota *"este atributo está disponível apenas no marketplace do Brasil"*.
+
+*Atualização em 27/11/2026: os campos citados acima são da Orders API v0, que a Amazon remove em 27/03/2027 ([cronograma de descontinuação da SP-API](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). O que muda na versão v2026-01-01 para o dado de venda está em [API da Amazon (SP-API): pedido e repasse para o vendedor](https://precisian.io/blog/pt-BR/posts/api-da-amazon-dados-de-venda/).*
 
 **Magalu.** O bloco do cliente traz `CustomerPfCpf`, descrito como *"CPF do Consumidor"*, junto de nome, CNPJ, razão social e data de nascimento. E não traz campo de e-mail em lugar nenhum da estrutura ([Integra Commerce](https://api.integracommerce.com.br/Documentation/Orders)).
 

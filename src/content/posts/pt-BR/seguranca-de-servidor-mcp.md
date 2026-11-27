@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 O servidor MCP oficial do Google Ads só oferece ferramentas de leitura, mas a credencial que ele usa carrega o escopo OAuth `adwords`, que o próprio Google descreve como permissão para *"ver, editar, criar e apagar"* contas de anúncio ([Google](https://developers.google.com/identity/protocols/oauth2/scopes)). Não existe escopo só de leitura no Google Ads; o código do servidor diz isso em comentário ([googleads/google-ads-mcp](https://github.com/googleads/google-ads-mcp), versão de 09/10/2026). Em dado de marketing, o risco do MCP mora no escopo do token, e não no protocolo.
 
@@ -84,7 +83,7 @@ Duas notas sobre a tabela. A anotação `readOnlyHint` não substitui a leitura 
 
 Pela ordem do que custa menos.
 
-**Ponha o limite na conta, não no servidor.** No Google Ads, autorize o servidor com um usuário de nível "Somente leitura", que pela documentação do Google não edita campanhas nem cobrança ([Google Ads](https://support.google.com/google-ads/answer/9978556)). O escopo continua cheio, mas o usuário por trás dele não tem o que editar. Não encontrei página da API que descreva esse bloqueio em detalhe; confirme tentando uma alteração numa conta de teste antes de confiar.
+**Ponha o limite na conta, não no servidor.** No Google Ads, autorize o servidor com um usuário de nível "Somente leitura", que pela documentação do Google não edita campanhas nem cobrança ([Google Ads](https://support.google.com/google-ads/answer/9978556)). O escopo continua cheio, mas o usuário por trás dele não tem o que editar. Não encontrei página da API que descreva esse bloqueio em detalhe; confirme tentando uma alteração numa conta de teste antes de confiar. No banco de dados vale a mesma regra: a trava de só leitura fica no papel da conexão, como mostra [MCP do Postgres](https://precisian.io/blog/pt-BR/posts/mcp-do-postgres/).
 
 **Na Meta, use as regras do servidor.** Quem tem controle total do portfólio empresarial define, por conta de anúncio, o que agentes podem fazer: bloquear criação de campanha, bloquear edição de orçamento ou impor um teto. No exemplo da própria Meta, com teto de US$ 1.000, pedido acima disso é negado pelo servidor ([Central de Ajuda da Meta](https://www.facebook.com/business/help/1456422242197840)). Para uma operação em real, um exemplo sintético, com números redondos: teto de R$ 2.000 por dia numa conta que gasta R$ 1.500 deixa o agente ajustar dentro da margem e impede que uma instrução plantada multiplique o gasto.
 
@@ -92,7 +91,7 @@ Pela ordem do que custa menos.
 
 **Registre o que o agente chamou.** A especificação recomenda que clientes registrem o uso de ferramentas para auditoria, sem obrigar. A NSA vai além: toda invocação registrada com os parâmetros exatos e as identidades envolvidas ([NSA](https://media.defense.gov/2026/Jun/02/2003943289/-1/-1/0/CSI_MCP_SECURITY.PDF)). O que guardar está em [trilha de auditoria de resposta de IA](https://precisian.io/blog/pt-BR/posts/trilha-de-auditoria-de-resposta-de-ia/).
 
-**Isole por cliente se você é agência.** Um token por cliente, um servidor por cliente. O token compartilhado entre contas transforma a injeção numa conta em acesso a todas, e o desenho para evitar isso está em [isolar dados por cliente num servidor MCP](https://precisian.io/blog/pt-BR/posts/isolamento-por-cliente-mcp/).
+**Isole por cliente se você é agência.** Um token por cliente, um servidor por cliente. O token compartilhado entre contas transforma a injeção numa conta em acesso a todas, e o desenho para evitar isso está em [isolar dados por cliente num servidor MCP](https://precisian.io/blog/pt-BR/posts/isolamento-por-cliente-mcp/). O resto da operação de quem atende várias marcas com um agente só está em [agente de IA para vários clientes](https://precisian.io/blog/pt-BR/posts/agente-de-ia-para-varios-clientes/).
 
 Há uma alternativa estrutural para quem só precisa de análise. Na Precisian, o agente do cliente consulta, por MCP, métricas definidas na camada semântica, num data lake isolado por cliente na infraestrutura da Precisian. Ele não recebe o token da plataforma de mídia, e a Precisian não ativa campanha.
 

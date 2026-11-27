@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: ficha
-updatedAt: 2026-11-08
 ---
 MCP and APIs are not competing options: most MCP servers call an API underneath. What changes is who writes the call. With an API, a developer decides at build time which endpoint, fields and filters to use. With MCP, the model decides at runtime. The current Model Context Protocol spec, revision 2026-07-28, defines tools as "model-controlled," meaning the model "can discover and invoke tools automatically" ([MCP spec, read Nov 3, 2026](https://modelcontextprotocol.io/specification/2026-07-28/server/tools)).
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Access_control", "https://precisian.io/en
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 GA4 ships **5 roles and 2 data restrictions** that almost nobody uses, one of which hides revenue metrics and another of which hides cost metrics ([Google](https://support.google.com/analytics/answer/9305587)). The market default, regardless, is to grant Administrator and move on, which hands over user management along with the data.
 
@@ -103,7 +102,7 @@ Three habits handle most of it, and none costs money:
 
 The question stopped being hypothetical, and it changes the arithmetic.
 
-When an agency connects an assistant to the data it has access to, the reach of that access stops being what a person can read manually and becomes what a system can traverse in minutes. The level you granted is unchanged. Its consequence is not.
+When an agency connects an assistant to the data it has access to, the reach of that access stops being what a person can read manually and becomes what a system can traverse in minutes. The level you granted is unchanged. Its consequence is not. When one agent serves several clients, keeping their data apart is covered in [one AI agent, many client accounts](https://precisian.io/blog/en/posts/one-ai-agent-many-client-accounts/).
 
 Add that the model vendor does not audit the server it connects to. Anthropic states about its own directory that it reviews connectors against listing criteria "but does not security-audit or manage any MCP server", and recommends "either writing your own MCP servers or using MCP servers from providers that you trust" ([Anthropic](https://code.claude.com/docs/en/security)). The trust is yours, and the access you granted is its boundary.
 

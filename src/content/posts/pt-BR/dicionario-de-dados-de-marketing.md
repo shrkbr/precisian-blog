@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_dictionary", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 Dicionário de dados é o registro que diz, para cada campo e cada métrica de uma base, o nome, o que significa, de onde vem, quem responde por ele, como se calcula e o que fica de fora. Para a IA, ele é o mínimo: num teste de abril de 2026, um documento de definições de 4 KB elevou a acurácia de três modelos em 17 a 23 pontos percentuais ([Rumiantsau e Fokeev, 2026](https://arxiv.org/abs/2604.25149)).
 

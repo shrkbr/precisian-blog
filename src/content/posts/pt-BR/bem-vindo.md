@@ -8,10 +8,9 @@ author: "Precisian"
 publishedAt: 2026-04-13
 tags: ["precisian", "blog", "analytics"]
 readingTimeMinutes: 3
-draft: false
+draft: true
 llmSummary: "Artigo de boas-vindas ao Blog Precisian, descrevendo o escopo editorial focado em GA4, data quality, MMM e attribution."
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 ## Por que um blog?
 

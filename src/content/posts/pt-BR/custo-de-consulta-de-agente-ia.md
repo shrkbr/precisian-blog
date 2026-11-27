@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Data_warehouse", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 O Databricks entrega `STATEMENT_TIMEOUT` com padrão de sistema de **172.800 segundos**, ou seja, dois dias ([Databricks](https://docs.databricks.com/aws/en/sql/language-manual/parameters/statement_timeout)). Esse padrão foi escrito para gente, que percebe. Um agente de IA consultando o mesmo warehouse não percebe nada: ele produz SQL válido, envia, lê o resultado e envia o próximo.
 

@@ -1,5 +1,5 @@
 ---
-title: "MCP da Meta Ads: o conector oficial, as permissões e o número que ele devolve"
+title: "MCP da Meta Ads: o conector oficial e o que ele devolve"
 description: "O MCP oficial da Meta Ads saiu em beta aberto em 29/04/2026 e expõe 91 ferramentas. A conversão que ele devolve é a atribuída pela própria Meta."
 slug: "mcp-da-meta-ads"
 lang: "pt-BR"
@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://precisi
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 O MCP da Meta Ads é o servidor oficial que liga um agente de IA à conta de anúncios da Meta. Foi lançado em beta aberto em 29 de abril de 2026 ([Meta](https://www.facebook.com/business/news/meta-ads-ai-connectors)), fica hospedado em `https://mcp.facebook.com/ads` e, na documentação que conferi em 14/10/2026, expõe 91 ferramentas. Ele lê e escreve, e a conversão que devolve é a que a Meta atribuiu a si mesma.
 
@@ -45,7 +44,7 @@ O da Meta, calculado pelas regras da Meta. A ferramenta principal de relatório,
 
 A referência da API de Marketing mostra o tamanho dessa escolha. Cada ação pode vir em campos separados por janela: `1d_click`, `7d_click`, `28d_view`, mais um campo `dda`, descrito como janela "powered by data driven model", e um `incrementality`, de atribuição incremental ([Meta, Ads Action Stats](https://developers.facebook.com/docs/marketing-api/reference/ads-action-stats/)). A mesma página avisa que a métrica some quando se tenta agregar configurações de atribuição diferentes. Quando o agente responde "a campanha X converteu 412 vezes", ele escolheu uma dessas janelas, ou herdou a padrão, e raramente diz qual.
 
-A própria definição de clique mudou este ano. Em março de 2026 a Meta passou a contar na atribuição por clique só cliques em link, onde antes entravam curtida, compartilhamento e salvamento, e justificou com a inconsistência entre o Gerenciador de Anúncios e as ferramentas de terceiros ([Meta, março de 2026](https://www.facebook.com/business/news/click-attribution)). Uma série histórica puxada pelo MCP atravessa esse corte sem marcação.
+A própria definição de clique mudou este ano. Em março de 2026 a Meta passou a contar na atribuição por clique só cliques em link, onde antes entravam curtida, compartilhamento e salvamento, e justificou com a inconsistência entre o Gerenciador de Anúncios e as ferramentas de terceiros ([Meta, março de 2026](https://www.facebook.com/business/news/click-attribution)). Uma série histórica puxada pelo MCP atravessa esse corte sem marcação. Do lado da entrega, o que mudou e o papel do evento que a loja manda à Meta estão em [o que mudou com o Meta Andromeda](https://precisian.io/blog/pt-BR/posts/meta-andromeda/).
 
 Nada disso é defeito do servidor, que entrega com fidelidade o que a Meta mede. O problema aparece quando o mesmo agente também lê o Google Ads e soma as duas respostas: cada plataforma desconta só o que ela mesma contou, e o total passa do que o ERP faturou.
 
@@ -96,7 +95,7 @@ Por isso a pergunta útil passa a ser quem na empresa decide o teto de orçament
 
 ## Quando isso passa a importar na sua operação?
 
-No dia em que alguém do time liga o conector e pergunta qual canal tem o melhor ROAS. Um exemplo com números redondos, sintéticos, no mecanismo descrito no [post sobre a soma do ROAS](https://precisian.io/blog/pt-BR/posts/roas-soma-maior-que-faturamento/): no mês, a Meta atribui R$ 180 mil em compras aos anúncios dela, o Google Ads atribui R$ 150 mil, e o ERP fechou R$ 260 mil em vendas online, das quais parte veio de busca orgânica e de recompra. Os R$ 330 mil somados passam do faturado em R$ 70 mil antes de qualquer receita orgânica entrar na conta. O agente, lendo os dois MCPs, não tem como saber disso: cada servidor responde com fidelidade ao próprio modelo.
+No dia em que alguém do time liga o conector e pergunta qual canal tem o melhor ROAS. Um exemplo com números redondos, sintéticos, no mecanismo descrito no [post sobre a soma do ROAS](https://precisian.io/blog/pt-BR/posts/roas-soma-maior-que-faturamento/): no mês, a Meta atribui R$ 180 mil em compras aos anúncios dela, o Google Ads atribui R$ 150 mil, e o ERP fechou R$ 260 mil em vendas online, das quais parte veio de busca orgânica e de recompra. Os R$ 330 mil somados passam do faturado em R$ 70 mil antes de qualquer receita orgânica entrar na conta. O agente, lendo os dois MCPs, não tem como saber disso: cada servidor responde com fidelidade ao próprio modelo. Partir de um ROAS e chegar aos pedidos que o produziram é o trabalho da [linhagem de dados](https://precisian.io/blog/pt-BR/posts/linhagem-de-dados/).
 
 O segundo gatilho é a escrita. Se o conector foi ligado por alguém com permissão de anunciante e as regras do servidor ainda estão no padrão, o limite do que o agente pode fazer é o limite daquela pessoa.
 

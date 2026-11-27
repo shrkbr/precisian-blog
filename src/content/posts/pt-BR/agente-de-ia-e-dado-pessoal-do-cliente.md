@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Pseudonimiza%C3%A7%C3%A3o", "https://pt.w
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Para responder pergunta de negócio, um agente de IA quase nunca precisa de nome, CPF, e-mail ou telefone. Coorte, segmento e LTV saem de um identificador pseudonimizado, e o dado que identifica a pessoa fica fora do contexto do modelo. A LGPD dá o vocabulário: pelo art. 12, dado anonimizado deixa de ser dado pessoal; pelo art. 13, §4º, o pseudonimizado continua sendo, porque existe uma chave que o religa à pessoa ([Lei 13.709/2018, Planalto](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm)).
 
@@ -89,7 +88,7 @@ Quatro técnicas, cada uma com o que protege e o que deixa passar. Nenhuma basta
 | Colunas pessoais fora do alcance | O dado identificador nunca entra no contexto do modelo | Texto livre (comentário, conversa de SAC) que carrega nome e telefone dentro |
 | Mascaramento em log e trace | O que o agente viu não fica guardado em outro serviço | O que o agente já viu e devolveu na resposta ao usuário |
 
-**Pseudonimize com segredo, não com hash puro.** Gere o identificador com uma função de hash com chave (HMAC) ou com uma tabela de correspondência aleatória, e guarde a chave fora do alcance do agente e de quem consulta o lake. É o que o art. 13, §4º, descreve: informação adicional mantida separadamente, em ambiente controlado. Coorte por mês de primeira compra, recompra em 90 dias, LTV de 12 meses e canal de aquisição saem todos desse ID, sem uma única coluna pessoal.
+**Pseudonimize com segredo, não com hash puro.** Gere o identificador com uma função de hash com chave (HMAC) ou com uma tabela de correspondência aleatória, e guarde a chave fora do alcance do agente e de quem consulta o lake. É o que o art. 13, §4º, descreve: informação adicional mantida separadamente, em ambiente controlado. Coorte por mês de primeira compra, recompra em 90 dias, LTV de 12 meses e canal de aquisição saem todos desse ID, sem uma única coluna pessoal. A montagem da coorte em si, e o que faz a safra mudar, está em [análise de cohort no e-commerce](https://precisian.io/blog/pt-BR/posts/analise-de-cohort-ecommerce/).
 
 **Exponha métrica, não tabela.** O agente não precisa de acesso à tabela `clientes`; precisa de "clientes ativos", "LTV por canal" e "taxa de recompra", já definidos. Quando a definição vive numa [camada semântica](https://precisian.io/blog/pt-BR/posts/camada-semantica/), o controle de acesso é por entidade e por métrica, e a coluna pessoal simplesmente não existe para o papel do agente. O princípio da necessidade da LGPD (art. 6º, III) pede o *"mínimo necessário"* para a finalidade, e uma pergunta de LTV não precisa de CPF.
 
@@ -107,7 +106,7 @@ Em quatro situações a técnica não resolve, e vale saber antes de prometer.
 
 **Quando a tarefa é sobre a pessoa.** Um agente de atendimento que responde "onde está o meu pedido" precisa do pedido daquele cliente. Aqui o controle é outro: escopo por sessão, uma pessoa por conversa, sem acesso à base. É um problema da aplicação de atendimento, não do lake analítico, e a Precisian não é a resposta certa para ele.
 
-**Quando o dado pessoal está dentro do texto.** Conversa de WhatsApp, avaliação de produto e chamado de SAC carregam nome, telefone e endereço no meio da frase. Mascaramento por padrão de texto pega CPF formatado e perde o resto. Se o agente precisa ler texto livre de cliente, trate esse texto como dado pessoal inteiro.
+**Quando o dado pessoal está dentro do texto.** Conversa de WhatsApp, avaliação de produto e chamado de SAC carregam nome, telefone e endereço no meio da frase. Mascaramento por padrão de texto pega CPF formatado e perde o resto. Se o agente precisa ler texto livre de cliente, trate esse texto como dado pessoal inteiro. O que o MCP oficial do WhatsApp lê, e como dar conversa a um agente sem expor o cliente, está em [MCP do WhatsApp](https://precisian.io/blog/pt-BR/posts/mcp-do-whatsapp/).
 
 **Quando a base é pequena demais.** Uma operação B2B com poucas dezenas de compradores reidentifica qualquer segmento pelo contexto: "o cliente de Joinville que comprou em março" é uma pessoa. Agregação não protege abaixo de um certo volume, e às vezes a resposta honesta é não dar esse acesso ao agente.
 

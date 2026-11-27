@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Attribution_(marketing)", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 Google Ads documents what its competitors do, in writing: "Other advertising platforms get full credit for an ad even if there are other touchpoints in the conversion path" ([Google Ads](https://support.google.com/google-ads/answer/15299024)). It says this while introducing a column built to match that behavior, and its own default window counts a purchase up to 30 days after the click. If you run three platforms, the same order can appear in three sets of books, and nothing in any of them subtracts the others.
 

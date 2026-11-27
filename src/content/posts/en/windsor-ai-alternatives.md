@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Extract%2C_load%2C_transform", "https://e
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 The right Windsor.ai alternative depends on why you're leaving, because on price there isn't a cheaper one. As of November 3, 2026, Windsor.ai starts at $19 a month billed annually, with every connector and its MCP server on every plan ([Windsor.ai](https://windsor.ai/pricing/)). Teams switch because Windsor.ai keeps processed data only as a cache, for about three weeks at most ([Windsor.ai security](https://windsor.ai/security/)), documents no versioned metric definitions, and leaves operations to you. For a mid-size ecommerce brand without a data team, the top five are Precisian, OWOX, Fivetran, Funnel and Improvado.
 
@@ -98,7 +97,7 @@ A built-in warehouse with ELT, Python apps, an MCP server and a white-label edit
 
 ### 8. Supermetrics
 
-Windsor.ai's closest like-for-like: ad data to Sheets, Looker Studio, Power BI, Claude or ChatGPT. Starter showed $39 a month billed yearly when we loaded the page on November 3, 2026, and $44 on a second load from another server the same day, so check the price for your region ([Supermetrics](https://supermetrics.com/pricing)). Warehouse destinations and data transformations sit on Enterprise. **Best for:** media analysts and agencies who mainly want a different reporting connector.
+Windsor.ai's closest like-for-like: ad data to Sheets, Looker Studio, Power BI, Claude or ChatGPT. Starter showed $39 a month billed yearly when we loaded the page on November 3, 2026, and $44 on a second load from another server the same day, so check the price for your region ([Supermetrics](https://supermetrics.com/pricing)). [Supermetrics pricing](https://precisian.io/blog/en/posts/supermetrics-pricing/) covers what each plan includes. Warehouse destinations and data transformations sit on Enterprise. **Best for:** media analysts and agencies who mainly want a different reporting connector.
 
 ### 9. Weld
 

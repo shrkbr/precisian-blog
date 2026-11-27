@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Google_Ads", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 O `gclid` (Google Click Identifier) é o parâmetro que o auto-tagging do Google Ads acrescenta à URL de destino de cada anúncio clicado, no formato `www.exemplo.com/?gclid=123xyz` ([Ajuda do Google Ads](https://support.google.com/google-ads/answer/3095550), consultada em 03/11/2026). A tag do Google o grava num cookie do seu domínio e o usa para ligar a conversão ao clique. Se a venda acontece longe dessa página, alguém precisa guardar o `gclid` com o pedido.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_analysis", "https://en.wikipedia.org
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Para um e-commerce sem time de dados, a melhor ferramenta de análise de dados com IA é a que já encontra o dado carregado e definido, e quase nenhuma encontra. Em 26/10/2026, 10 das 14 concorrentes deste ranking declaravam na documentação que leem de um data warehouse montado pelo cliente. O Databricks Genie exige "a pro or serverless SQL warehouse" ([Databricks](https://docs.databricks.com/aws/en/genie/set-up)) e o Snowflake Cortex Analyst responde só sobre "structured data in Snowflake" ([Snowflake](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst)).
 
@@ -123,7 +122,7 @@ BI de busca com agente (Spotter) sobre Models que são "defined and verified by 
 
 ### 14. Copilot no Power BI
 
-Chat e geração de relatório dentro do Power BI, sobre o semantic model. Exige capacidade Fabric F2 ou superior, ou Premium P1; a licença Pro, de US$ 14 por usuário/mês, não basta sozinha ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction); [preços](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing)). Dois avisos da própria Microsoft para quem pergunta em português: uso multilíngue "isn't officially supported", e fora dos EUA e da UE o Copilot vem desligado até o administrador liberar ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction)). **Para quem é:** quem já paga capacidade Fabric e tem dono do semantic model.
+Chat e geração de relatório dentro do Power BI, sobre o semantic model. Exige [capacidade Fabric](https://precisian.io/blog/pt-BR/posts/microsoft-fabric-para-ecommerce/) F2 ou superior, ou Premium P1; a licença Pro, de US$ 14 por usuário/mês, não basta sozinha ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction); [preços](https://www.microsoft.com/en-us/power-platform/products/power-bi/pricing)). Dois avisos da própria Microsoft para quem pergunta em português: uso multilíngue "isn't officially supported", e fora dos EUA e da UE o Copilot vem desligado até o administrador liberar ([Microsoft](https://learn.microsoft.com/en-us/power-bi/create-reports/copilot-introduction)). **Para quem é:** quem já paga capacidade Fabric e tem dono do semantic model.
 
 ### 15. Julius AI
 

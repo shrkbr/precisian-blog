@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Google_Shopping", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: regua
-updatedAt: 2026-11-08
 ---
 A regra brasileira de preço é o **inverso** da americana, e cada revisão perdida custa de 3 a 5 dias úteis ([Google](https://support.google.com/merchants/answer/12488713)). A maior parte do material em português sobre o assunto é traduzida de lá. O Google manda informar o preço *"incluindo qualquer imposto sobre valor agregado"* numa lista de países que inclui o Brasil, e manda *"não incluir nenhum imposto"* ao segmentar Estados Unidos ou Canadá ([Google](https://support.google.com/merchants/answer/6324371)). Quem segue o tutorial errado cria uma divergência entre o feed e o próprio checkout, que é exatamente o gatilho da reprovação em bloco.
 

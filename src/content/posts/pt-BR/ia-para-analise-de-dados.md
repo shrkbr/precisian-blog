@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Data_analysis", "https://en.wikipedia.org
 author: "Gabriel Sorato"
 readingTimeMinutes: 10
 cta: demo
-updatedAt: 2026-11-08
 ---
 Usar IA para análise de dados de marketing funciona para explorar e falha para decidir. O ChatGPT lê planilhas de até cerca de 50 MB e escreve e roda Python num notebook Jupyter para fazer as contas ([OpenAI](https://help.openai.com/en/articles/8555545-uploading-files-and-audio-to-chatgpt), consultado em 14/10/2026); o Claude faz o mesmo com arquivos de até 30 MB ([Anthropic](https://support.claude.com/en/articles/12111783-create-and-edit-files-with-claude)). A aritmética sai certa. O que não vem junto com o CSV é a definição de receita, de ROAS ou de cliente novo, e sem ela o modelo escolhe uma sozinho.
 

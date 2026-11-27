@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Web_analytics", "https://precisian.io/en"
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 Adobe answers this in its own troubleshooting documentation, without hedging. Asked whether the two numbers should be equal, it says "the answer is 'no' in almost every case" ([Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)). The gap is not a broken tag. It is 3 different definitions of the word revenue, each documented by its own vendor.
 

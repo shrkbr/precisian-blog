@@ -13,7 +13,6 @@ about: ["https://usenemu.com/br", "https://en.wikipedia.org/wiki/Semantic_layer"
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: ficha
-updatedAt: 2026-11-08
 ---
 Escolha a Nemu se a pergunta é "qual campanha, criativo ou influenciador trouxe esta venda" e você quer a resposta num painel pronto, com o pixel montado pelo time dela. Escolha a Precisian se a pergunta é "qual foi a receita, a margem e o ROAS", feita pela IA da diretoria sobre loja, marketplace e ERP. Em 27/10/2026, a [Nemu](https://usenemu.com/br) declara mais de 300 e-commerces clientes e modelos de atribuição first-click, last-click e linear. Uma é painel de atribuição; a outra, base de dado governada que a sua IA consome.
 

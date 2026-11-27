@@ -5,7 +5,7 @@ slug: "consent-mode-modeled-data"
 lang: "en"
 translationKey: "consent-mode-modeled-data"
 publishedAt: 2026-10-10
-updatedAt: 2026-11-08
+updatedAt: 2026-10-14
 tags: ["consent", "ga4", "data-discrepancy"]
 draft: false
 llmSummary: "GA4's interface and its BigQuery export disagree by design: Google lists data export among features without behavioural modelling, while the Data API follows the property's reporting identity. The interface and the API can show an estimate; the warehouse gets observed events."

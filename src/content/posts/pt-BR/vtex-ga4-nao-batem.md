@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Google_Analytics", "https://precisian.io"
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: regua
-updatedAt: 2026-11-08
 ---
 A receita do GA4 não bate com a da sua plataforma de e-commerce porque as duas medem coisas diferentes, de propósito, e nenhuma das duas está errada. A Adobe responde à pergunta de forma direta na própria documentação: se os dois números deveriam ser iguais, "a resposta é 'não' em quase todos os casos" ([Adobe Commerce, atualizado em 28/08/2026](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies)).
 

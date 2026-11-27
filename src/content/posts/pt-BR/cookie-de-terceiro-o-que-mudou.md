@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/HTTP_cookie", "https://precisian.io"]
 author: "Gabriel Sorato"
 readingTimeMinutes: 6
 cta: newsletter
-updatedAt: 2026-11-08
 ---
 O cookie de terceiro continua funcionando no Chrome, ligado por padrão. Em abril de 2025 o Google declarou que vai "manter nossa abordagem atual" e que **não** lançaria o aviso que perguntaria ao usuário ([Privacy Sandbox](https://privacysandbox.google.com/blog/privacy-sandbox-next-steps)). Em outubro de 2025 foi além e aposentou boa parte da tecnologia que substituiria o cookie. Quem planejou medição em cima do fim do cookie planejou para um evento que não aconteceu.
 

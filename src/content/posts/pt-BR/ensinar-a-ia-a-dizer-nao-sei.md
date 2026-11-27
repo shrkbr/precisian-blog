@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Alucina%C3%A7%C3%A3o_(intelig%C3%AAncia_a
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Num comparativo que pune SQL errado, um sistema que se recusa a responder **todas** as perguntas marca 50%, e os melhores fluxos reais de texto-para-SQL marcam entre **29,8% e 54,5%**, dependendo de quão duramente o erro é cobrado ([TrustSQL](https://arxiv.org/abs/2403.15879)). A recusa universal, que é um sistema completamente inútil, bate a maioria deles.
 

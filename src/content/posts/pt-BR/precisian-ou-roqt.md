@@ -13,7 +13,6 @@ about: ["https://www.roqt.com.br/", "https://precisian.io", "https://en.wikipedi
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: ficha
-updatedAt: 2026-11-08
 ---
 A escolha entre Precisian e ROQT depende de onde a sua empresa está e do que ela quer receber no fim. Em 27/10/2026, a ROQT declara no próprio site que a plataforma dela "fica no ambiente da sua empresa, na nuvem que ela já usa", que liga Claude e ChatGPT aos dados por MCP e que atende indústria, saúde, construção e serviços ([ROQT](https://www.roqt.com.br/plataforma-de-dados-e-ia)). A Precisian é vertical em e-commerce e varejo: mantém um data lake isolado por cliente na infraestrutura dela e não entrega painel. Para uma empresa multissetorial no ecossistema Microsoft, a ROQT encaixa melhor. Para uma loja com VTEX ou Magento, marketplace e mídia paga, a Precisian encaixa melhor.
 

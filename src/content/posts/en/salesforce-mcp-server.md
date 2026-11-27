@@ -52,7 +52,7 @@ One older project causes confusion in search results. `salesforcecli/mcp`, publi
 
 ## Why does the agent see what it sees?
 
-Because Salesforce built the MCP layer on top of its existing permission model instead of adding a new one. The security page puts it in four lines: the agent has the user's CRUD permissions, respects field-level security, follows sharing rules, and every action is attributed to the named user. It adds: "There are no service accounts, no machine-to-machine flows, and no autonomous operation outside of user context."
+Because Salesforce built the MCP layer on top of its existing permission model instead of adding a new one. The security page puts it in four lines: the agent has the user's CRUD permissions, respects field-level security, follows sharing rules, and every action is attributed to the named user. It adds: "There are no service accounts, no machine-to-machine flows, and no autonomous operation outside of user context." HubSpot's remote server also gives the agent the connected user's CRM access, as covered in [HubSpot MCP server](https://precisian.io/blog/en/posts/hubspot-mcp-server/).
 
 That design has two consequences.
 

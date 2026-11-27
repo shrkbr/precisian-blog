@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Seguran%C3%A7a_da_informa%C3%A7%C3%A3o", 
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 Um nome de campanha no Google Ads aceita **256 caracteres**, e o Google não documenta validação nenhuma sobre o que entra ali ([Google Ads API](https://developers.google.com/google-ads/api/docs/best-practices/system-limits)). São cerca de quarenta palavras de qualquer coisa, num campo que uma agência, um terceirizado ou uma conta comprometida podem escrever, e que o seu agente de IA vai ler depois como parte de um relatório.
 

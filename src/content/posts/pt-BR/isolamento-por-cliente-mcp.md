@@ -13,7 +13,6 @@ about: ["https://pt.wikipedia.org/wiki/Multilocat%C3%A1rio", "https://precisian.
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 Dar acesso aos seus dados a uma agência, a um parceiro ou a outra marca do grupo por meio de um agente de IA é um problema de locatário antes de ser um problema de IA. A especificação do MCP tem **1 frase normativa** sobre isso, e ela elimina justamente o padrão que a maioria das implementações tenta primeiro: *"servidores MCP NÃO DEVEM usar sessões para autenticação"* ([spec MCP, revisão 2026-07-28](https://modelcontextprotocol.io/specification/2026-07-28/basic/authorization)).
 
@@ -57,7 +56,7 @@ Nenhuma etapa explora falha de software. Cada peça funcionou como projetada. O 
 
 A resposta pública do fornecedor vale tanto quanto a demonstração, porque termina numa recomendação que encerra o assunto: use com dado que não é de produção, mantenha aprovação manual, limite grupos de ferramentas, registre todas as consultas, e *"nunca conecte agentes de IA diretamente a dado de produção"* ([Supabase, 16/09/2025](https://supabase.com/blog/defense-in-depth-mcp)).
 
-Repare no que esse caso ensina sobre multilocatário: o vazamento não precisou atravessar a fronteira entre clientes. Bastou o agente ter, no mesmo contexto, algo que aquele solicitante não deveria alcançar.
+Repare no que esse caso ensina sobre multilocatário: o vazamento não precisou atravessar a fronteira entre clientes. Bastou o agente ter, no mesmo contexto, algo que aquele solicitante não deveria alcançar. Numa agência, o mesmo efeito aparece sem ataque, por contexto que sobra na conversa e cache sem chave de cliente, como mostra [agente de IA para vários clientes](https://precisian.io/blog/pt-BR/posts/agente-de-ia-para-varios-clientes/).
 
 ## O que a espec exige quando você autentica?
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 8
 cta: demo
-updatedAt: 2026-11-08
 ---
 O MCP do Google Analytics devolve o número que o GA4 já carrega, com modelagem, limiar e `(not set)` incluídos, e o assistente responde como se fosse contagem. O servidor oficial lê o GA4 pela Data API, e a documentação do Google, atualizada em 13/10/2026, diz que essa API respeita a identidade de relatório da propriedade, e que contagem de usuários, deduplicação e modelagem de dados seguem essa configuração ([Google Analytics Data API](https://developers.google.com/analytics/devguides/reporting/data/v1)). Se a propriedade usa a identidade combinada, parte do número é estimativa, e nada na resposta avisa.
 

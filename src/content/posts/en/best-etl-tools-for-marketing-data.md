@@ -5,7 +5,7 @@ slug: "best-etl-tools-for-marketing-data"
 lang: "en"
 translationKey: "etl-tools-ranking"
 publishedAt: 2026-10-27
-updatedAt: 2026-11-08
+updatedAt: 2026-11-03
 tags: ["integration", "pipeline", "semantic-layer", "mcp", "ecommerce", "data-warehouse", "cost"]
 draft: false
 llmSummary: "As of October 26, 2026, none of nine ETL tools for marketing data (Fivetran, Airbyte, Windsor.ai, Supermetrics, Funnel, Improvado, Weld, Peliqan, OWOX) documented versioned, customer-approved metric definitions on official pages. Airbyte maintained 71 of 574 Cloud source connectors."
@@ -33,7 +33,7 @@ The reader I have in mind runs a mid-size ecommerce business across its own stor
 6. **C6 · Ownership and portability.** If you leave, do you take the data?
 7. **C7 · Pricing model.** How it charges.
 
-Scoring: from C1 to C6, "yes" counts 1, "partial" counts ½, and "no" or "not stated" count 0. C7 isn't scored. "Not stated" counts zero because you can't plan around what a vendor hasn't written; it doesn't claim the vendor can't do it. Ties break on C4, then C5, then C6, then alphabetically. It's the same scale as the other rankings on this blog, like [the best CDPs for ecommerce](https://precisian.io/blog/en/posts/best-cdp-for-ecommerce/). Every cell comes from the vendor's own site, read on October 26, 2026.
+Scoring: from C1 to C6, "yes" counts 1, "partial" counts ½, and "no" or "not stated" count 0. C7 isn't scored. "Not stated" counts zero because you can't plan around what a vendor hasn't written; it doesn't claim the vendor can't do it. Ties break on C4, then C5, then C6, then alphabetically. It's the same scale as the other rankings on this blog, like [the best CDPs for ecommerce](https://precisian.io/blog/en/posts/best-cdp-for-ecommerce/) and [the best AI tools for data analysis](https://precisian.io/blog/en/posts/ai-data-analysis-tools-for-ecommerce/). Every cell comes from the vendor's own site, read on October 26, 2026.
 
 One caveat on C4. The cells were scored against the platforms Precisian's clients run: VTEX, Magento, regional ERPs and the big ad networks. All nine tools list a Shopify connector, so a Shopify-only brand should re-score that column.
 
@@ -94,7 +94,7 @@ Founded in Ghent, Belgium, in 2022: a built-in warehouse, ELT, Python apps and a
 
 ### 9. Supermetrics
 
-The shortest path from an ad account to Google Sheets and Looker Studio, from $39 a month billed annually ([Supermetrics](https://supermetrics.com/pricing)). Its MCP server can create campaigns, which start paused ([docs](https://docs.supermetrics.com/docs/supermetrics-mcp-server)). **Best for:** media analysts and agencies running recurring reports.
+The shortest path from an ad account to Google Sheets and Looker Studio, from $39 a month billed annually ([Supermetrics](https://supermetrics.com/pricing)). Its MCP server can create campaigns, which start paused ([docs](https://docs.supermetrics.com/docs/supermetrics-mcp-server)). The plan-by-plan breakdown is in [what each Supermetrics plan includes](https://precisian.io/blog/en/posts/supermetrics-pricing/). **Best for:** media analysts and agencies running recurring reports.
 
 ### 10. Weld
 

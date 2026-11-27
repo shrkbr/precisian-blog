@@ -13,7 +13,7 @@ about: ["https://en.wikipedia.org/wiki/Customer_lifetime_value", "https://precis
 author: "Gabriel Sorato"
 readingTimeMinutes: 7
 cta: regua
-updatedAt: 2026-11-08
+updatedAt: 2026-11-27
 ---
 LTV:CAC is the ratio between the contribution margin a customer generates over a set horizon (LTV) and what it cost to acquire that customer (CAC). For a DTC brand that also sells on Amazon, both halves drift. Amazon's Repeat Purchase report counts repeat customers per ASIN by week, month or quarter, but never says who they are ([Amazon SP-API](https://developer-docs.amazon/sp-api/docs/report-type-values-analytics)). And CAC built on platform conversions inherits attribution windows of up to 90 days in Google Ads ([Google](https://support.google.com/google-ads/answer/3123169)).
 
@@ -73,6 +73,8 @@ What decides it is **payback**: how many months until a cohort's cumulative marg
 Because a customer you acquired on your Shopify store can reorder on Amazon, and that order reaches you with no key that ties it to the same person.
 
 Amazon's order payload describes the buyer email as "the anonymized email address of the buyer" and carries no customer identifier ([Amazon SP-API](https://developer-docs.amazon/sp-api/reference/getorders)). Without a shared key, the Amazon order cannot be attached to the customer's history in your store. The channel-by-channel detail is in [why you can't compute LTV across marketplace and own store](https://precisian.io/blog/en/posts/ltv-by-channel-marketplace-own-store/).
+
+*Update, November 27, 2026: the fields cited above come from Orders API v0, which Amazon removes on March 27, 2027 ([SP-API deprecation schedule](https://developer-docs.amazon/sp-api/docs/sp-api-deprecations)). What changes for sales data in v2026-01-01 is covered in [Amazon SP-API for sales data: orders, payouts and limits](https://precisian.io/blog/en/posts/amazon-sp-api-sales-data/).*
 
 What Amazon does give you is an aggregate. The Repeat Purchase report, available to sellers with the Brand Analytics role who are enrolled in Brand Registry, returns order count, unique customers, repeat customers as a share of the total and repeat purchase revenue per ASIN ([Amazon SP-API](https://developer-docs.amazon/sp-api/docs/report-type-values-analytics)). It tells you how many came back. It never tells you whether they first found you on your own site.
 

@@ -13,7 +13,6 @@ about: ["https://en.wikipedia.org/wiki/Model_Context_Protocol", "https://en.wiki
 author: "Gabriel Sorato"
 readingTimeMinutes: 9
 cta: demo
-updatedAt: 2026-11-08
 ---
 O MCP Inspector, a ferramenta oficial de teste do Model Context Protocol, prova que o servidor fala o protocolo: aperto de mão, lista de ferramentas, chamada e código de saída. Ele não prova que o número devolvido está certo. A documentação do próprio projeto, lida em 03/11/2026, chama o teste de fumaça de "deliberately not a conformance suite" ([modelcontextprotocol/inspector](https://github.com/modelcontextprotocol/inspector/blob/main/docs/cli-smoke-testing.md)). Antes de liberar o dado de produção faltam quatro passos: cópia anonimizada, perguntas de resposta conhecida, checagem de escopo e teto de custo.
 
@@ -72,7 +71,7 @@ Uma cópia com o mesmo schema, o mesmo volume aproximado e nenhum dado que ident
 
 O fornecedor que viveu o incidente mais citado de MCP escreveu a regra sem rodeio: use MCP com dado que não seja de produção e "never connect AI agents directly to production data" ([Supabase, 16/09/2025](https://supabase.com/blog/defense-in-depth-mcp)). O contexto do caso está em [conectar IA sem expor a base](https://precisian.io/blog/pt-BR/posts/conectar-ia-sem-expor-a-base/).
 
-Na cópia, o agente conecta com um papel próprio, só com `SELECT`, sem o atributo `BYPASSRLS` e sem ser dono das tabelas. O PostgreSQL documenta que superusuário, papel com `BYPASSRLS` e dono da tabela ignoram a política de linha, salvo `FORCE ROW LEVEL SECURITY` ([PostgreSQL](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)). Testar com o papel errado aprova uma configuração que a produção não vai ter.
+Na cópia, o agente conecta com um papel próprio, só com `SELECT`, sem o atributo `BYPASSRLS` e sem ser dono das tabelas. O PostgreSQL documenta que superusuário, papel com `BYPASSRLS` e dono da tabela ignoram a política de linha, salvo `FORCE ROW LEVEL SECURITY` ([PostgreSQL](https://www.postgresql.org/docs/current/ddl-rowsecurity.html)). Testar com o papel errado aprova uma configuração que a produção não vai ter. Por que essa trava precisa estar no papel do banco, e não no servidor MCP, está em [MCP do Postgres](https://precisian.io/blog/pt-BR/posts/mcp-do-postgres/).
 
 Por último, isole o estado do próprio Inspector. O guia manda definir as duas variáveis, nesta ordem de precedência, para que o teste não leia nem renove o token real de alguém: `MCP_STORAGE_DIR` e `MCP_INSPECTOR_OAUTH_STATE_PATH` ([cli-smoke-testing.md, seção 6](https://github.com/modelcontextprotocol/inspector/blob/main/docs/cli-smoke-testing.md)).
 
