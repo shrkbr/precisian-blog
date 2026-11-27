@@ -21,8 +21,8 @@ export const GET: APIRoute = async ({ params, site }) => {
     title: lang === 'pt-BR' ? 'Precisian Blog' : 'Precisian Blog (EN)',
     description:
       lang === 'pt-BR'
-        ? 'Blog técnico da Precisian — GA4, data quality, attribution, analytics engineering.'
-        : 'Precisian technical blog — GA4, data quality, attribution, analytics engineering.',
+        ? 'Blog técnico da Precisian: MCP, pipeline de dados de marketing e venda, rastreamento, definição de métrica e governança de dado para IA.'
+        : 'Precisian technical blog: MCP servers, marketing and sales data pipelines, tracking, metric definitions and data governance for AI.',
     site: site!,
     items: posts.map((post) => ({
       title: post.data.title,

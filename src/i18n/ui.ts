@@ -25,8 +25,8 @@ export const ui = {
     'post.translation.available': 'Disponível em',
     'post.translation.unavailable': 'Tradução indisponível',
     'tableOfContents.title': 'Nesta página',
-    'site.tagline': 'Blog técnico da Precisian — AI-powered data integrity',
-    'site.footer.copyright': 'Precisian — plataforma de integridade de dados GA4',
+    'site.tagline': 'Blog técnico da Precisian: MCP, pipeline de dados de e-commerce, rastreamento e definição de métrica, com fonte primária',
+    'site.footer.copyright': 'Precisian: plataforma de dados para e-commerce e varejo',
   },
   en: {
     'nav.home': 'Home',
@@ -44,8 +44,8 @@ export const ui = {
     'post.translation.available': 'Available in',
     'post.translation.unavailable': 'Translation unavailable',
     'tableOfContents.title': 'On this page',
-    'site.tagline': 'Precisian technical blog — AI-powered data integrity',
-    'site.footer.copyright': 'Precisian — GA4 data integrity platform',
+    'site.tagline': 'Precisian technical blog: MCP servers, ecommerce data pipelines, tracking and metric definitions, with primary sources',
+    'site.footer.copyright': 'Precisian: data platform for ecommerce and retail',
   },
 } as const
 

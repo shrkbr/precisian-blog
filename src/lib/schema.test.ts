@@ -62,7 +62,7 @@ describe('buildOrganizationJsonLd', () => {
 })
 
 describe('buildWebSiteJsonLd', () => {
-  it('produces a WebSite schema with SearchAction', () => {
+  it('produces a WebSite schema without SearchAction (the blog has no search)', () => {
     const result = buildWebSiteJsonLd()
     expect(result['@context']).toBe('https://schema.org')
     expect(result['@type']).toBe('WebSite')
@@ -71,13 +71,13 @@ describe('buildWebSiteJsonLd', () => {
     expect(result.inLanguage).toEqual(['pt-BR', 'en'])
     expect(result.publisher['@type']).toBe('Organization')
     expect(result.publisher.name).toBe('Precisian')
-    expect(result.potentialAction).toBeDefined()
-    expect(result.potentialAction?.['@type']).toBe('SearchAction')
-    const target = result.potentialAction?.target
-    if (typeof target === 'string') {
-      expect(target).toContain('{search_term_string}')
-    } else {
-      expect(target?.urlTemplate).toContain('{search_term_string}')
+    expect('potentialAction' in result).toBe(false)
+  })
+
+  it('never describes extinct products', () => {
+    const text = JSON.stringify([buildWebSiteJsonLd(), buildOrganizationJsonLd()])
+    for (const dead of ['DVQ', 'MMM', 'Data Value Quotient', 'GA4 data integrity', 'dashboard']) {
+      expect(text).not.toContain(dead)
     }
   })
 })
@@ -257,5 +257,41 @@ describe('buildBlogPostingJsonLd (enhanced)', () => {
     const isPartOf = result.isPartOf as { '@type': string; url: string }
     expect(isPartOf['@type']).toBe('WebSite')
     expect(isPartOf.url).toBe('https://precisian.io/blog')
+  })
+})
+
+describe('author as Person', () => {
+  it('renders a known human author as Person with jobTitle, sameAs and worksFor', () => {
+    const result = buildBlogPostingJsonLd({
+      title: 'T',
+      description: 'D',
+      url: 'https://precisian.io/blog/en/posts/x/',
+      publishedAt: new Date('2026-11-01T00:00:00.000Z'),
+      author: 'Gabriel Sorato',
+      lang: 'en',
+      wordCount: 10,
+      tags: ['mcp'],
+    })
+    expect(result.author).toMatchObject({
+      '@type': 'Person',
+      name: 'Gabriel Sorato',
+      jobTitle: 'Head of Data at Precisian',
+      worksFor: { '@type': 'Organization', name: 'Precisian' },
+    })
+    expect((result.author as { sameAs: string[] }).sameAs).toContain('https://www.linkedin.com/in/gabrielsorato/')
+  })
+
+  it('keeps an unknown author as Organization', () => {
+    const result = buildBlogPostingJsonLd({
+      title: 'T',
+      description: 'D',
+      url: 'https://precisian.io/blog/pt-BR/posts/x/',
+      publishedAt: new Date('2026-11-01T00:00:00.000Z'),
+      author: 'Precisian',
+      lang: 'pt-BR',
+      wordCount: 10,
+      tags: ['mcp'],
+    })
+    expect(result.author['@type']).toBe('Organization')
   })
 })

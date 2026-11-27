@@ -13,7 +13,7 @@ export const GET: APIRoute = async ({ site }) => {
   const lines: string[] = [
     '# Precisian Blog',
     '',
-    '> Technical blog from Precisian — AI-powered GA4 data integrity platform. Articles on data quality, MMM, attribution, GTM, and analytics engineering. Content is bilingual (pt-BR + en).',
+    '> Technical blog from Precisian, a managed data platform for ecommerce and retail: an isolated data lake per client (Precisian Lake) and a semantic layer with versioned metric definitions, consumed by the client\'s own AI, BI or automation through MCP, API or a direct BI connection. Articles on MCP servers, marketing and sales data pipelines, tracking (GA4, GTM, click IDs, server-side), metric definitions and data governance for AI. Content is bilingual (pt-BR + en).',
     '',
     '## Artigos em Português',
     '',

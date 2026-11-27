@@ -8,8 +8,24 @@ const PRECISIAN_SAME_AS = [
 
 const BLOG_URL = 'https://precisian.io/blog'
 const ORG_NAME = 'Precisian'
+// Posicionamento de 09/09/2026: a entrega termina na camada semântica e quem
+// consome é a IA, o BI ou a automação do próprio cliente. Nada de MMM, DVQ,
+// atribuição como módulo ou dashboard (produtos extintos).
 const ORG_DESCRIPTION =
-  'AI-powered GA4 data integrity platform. Frameworks like DVQ (Data Value Quotient) and operating modules for attribution, MMM, and analytics engineering.'
+  "Managed data platform for ecommerce and retail. Precisian Lake keeps each client's marketing and sales data in an isolated data lake with full history, and a semantic layer with versioned metric definitions delivers it to the client's own AI, BI or automation through MCP, API or a direct BI connection. Precisian does not run media."
+
+// Logo oficial achatado sobre #030303 (o arquivo do site é branco sobre
+// transparente e some em fundo claro). Servido de public/precisian-logo.png.
+const ORG_LOGO = 'https://precisian.io/blog/precisian-logo.png'
+
+// Autores humanos conhecidos. Sem cadastro aqui, o autor cai em Organization.
+// Fonte do perfil: decisão de 13/07/2026 (Gabriel Sorato é a cara da Precisian).
+const AUTHORS: Record<string, { jobTitle: Record<'pt-BR' | 'en', string>; sameAs: string[] }> = {
+  'Gabriel Sorato': {
+    jobTitle: { 'pt-BR': 'Head de Dados da Precisian', en: 'Head of Data at Precisian' },
+    sameAs: ['https://www.linkedin.com/in/gabrielsorato/'],
+  },
+}
 
 // ──────────────────────────────────────────────────────────
 // BlogPosting
@@ -41,12 +57,20 @@ export interface BlogPostingJsonLd {
   image?: string
   datePublished: string
   dateModified?: string
-  author: {
-    '@type': 'Organization'
-    name: string
-    url: string
-    sameAs?: string[]
-  }
+  author:
+    | {
+        '@type': 'Organization'
+        name: string
+        url: string
+        sameAs?: string[]
+      }
+    | {
+        '@type': 'Person'
+        name: string
+        jobTitle: string
+        sameAs: string[]
+        worksFor: { '@type': 'Organization'; name: string; url: string }
+      }
   publisher: {
     '@type': 'Organization'
     name: string
@@ -75,6 +99,21 @@ export interface BlogPostingJsonLd {
 
 export function buildBlogPostingJsonLd(input: BlogPostingInput): BlogPostingJsonLd {
   const authorSameAs = input.authorSameAs ?? [...PRECISIAN_SAME_AS]
+  const person = AUTHORS[input.author]
+  const author: BlogPostingJsonLd['author'] = person
+    ? {
+        '@type': 'Person',
+        name: input.author,
+        jobTitle: person.jobTitle[input.lang],
+        sameAs: input.authorSameAs ?? person.sameAs,
+        worksFor: { '@type': 'Organization', name: ORG_NAME, url: 'https://precisian.io' },
+      }
+    : {
+        '@type': 'Organization',
+        name: input.author,
+        url: 'https://precisian.io',
+        sameAs: authorSameAs,
+      }
 
   const base: BlogPostingJsonLd = {
     '@context': 'https://schema.org',
@@ -84,19 +123,14 @@ export function buildBlogPostingJsonLd(input: BlogPostingInput): BlogPostingJson
     ...(input.imageUrl ? { image: input.imageUrl } : {}),
     datePublished: input.publishedAt.toISOString(),
     ...(input.updatedAt ? { dateModified: input.updatedAt.toISOString() } : {}),
-    author: {
-      '@type': 'Organization',
-      name: input.author,
-      url: 'https://precisian.io',
-      sameAs: authorSameAs,
-    },
+    author,
     publisher: {
       '@type': 'Organization',
       name: ORG_NAME,
       url: 'https://precisian.io',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://precisian.io/blog/precisian-logo.png',
+        url: ORG_LOGO,
       },
       sameAs: [...PRECISIAN_SAME_AS],
     },
@@ -151,14 +185,15 @@ export function buildOrganizationJsonLd(): OrganizationJsonLd {
     '@type': 'Organization',
     name: ORG_NAME,
     url: 'https://precisian.io',
-    logo: 'https://precisian.io/blog/precisian-logo.png',
+    logo: ORG_LOGO,
     description: ORG_DESCRIPTION,
     sameAs: [...PRECISIAN_SAME_AS],
   }
 }
 
 // ──────────────────────────────────────────────────────────
-// WebSite (site-wide with SearchAction)
+// WebSite (site-wide). Sem SearchAction: o blog não tem busca, e `?q=` só
+// devolvia a home (declaração falsa para o Google).
 // ──────────────────────────────────────────────────────────
 
 export interface WebSiteJsonLd {
@@ -172,14 +207,6 @@ export interface WebSiteJsonLd {
     '@type': 'Organization'
     name: string
     url: string
-  }
-  potentialAction?: {
-    '@type': 'SearchAction'
-    target: {
-      '@type': 'EntryPoint'
-      urlTemplate: string
-    }
-    'query-input': string
   }
 }
 
@@ -195,14 +222,6 @@ export function buildWebSiteJsonLd(): WebSiteJsonLd {
       '@type': 'Organization',
       name: ORG_NAME,
       url: 'https://precisian.io',
-    },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: 'https://precisian.io/blog/pt-BR/?q={search_term_string}',
-      },
-      'query-input': 'required name=search_term_string',
     },
   }
 }
