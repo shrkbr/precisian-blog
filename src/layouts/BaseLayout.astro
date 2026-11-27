@@ -18,11 +18,17 @@ interface Props {
   hreflang?: boolean
   // Pagina rasa: sai com noindex (mantendo follow) e sem hreflang.
   noindex?: boolean
+  // 'article' nos posts; o resto do blog e 'website'.
+  ogType?: 'website' | 'article'
 }
 
-const { title, description, image, alternateUrl, hreflang = true, noindex = false } = Astro.props
+const { title, description, image, alternateUrl, hreflang = true, noindex = false, ogType = 'website' } = Astro.props
 const lang = getLangFromUrl(Astro.url)
 const canonical = new URL(Astro.url.pathname, Astro.site).toString()
+// Sem imagem propria, a pagina sai com o cartao padrao do idioma (logo oficial
+// em arquivo, nunca digitado). Antes saia sem og:image e o LinkedIn/WhatsApp
+// mostravam um link cru.
+const ogImage = image ?? new URL(`/blog/og-default-${lang}.png`, Astro.site).toString()
 
 // hreflang so com par de verdade: declaracao de um idioma so e ignorada.
 // x-default aponta pro pt-BR, mesma convencao do site institucional.
@@ -103,14 +109,18 @@ const robots = noindex
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:locale" content={lang === 'pt-BR' ? 'pt_BR' : 'en_US'} />
-    {image && <meta property="og:image" content={image} />}
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Precisian Blog" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <slot name="head" />
   </head>
