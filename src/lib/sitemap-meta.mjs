@@ -8,9 +8,9 @@
 //   1. hreflang de post. A integracao so casa traducoes pelo CAMINHO, e os
 //      posts tem slug diferente por idioma (o par e ligado por translationKey).
 //      Sem isto nenhum post sai com hreflang no sitemap.
-//   2. lastmod. Vem da data do ultimo COMMIT que tocou o arquivo, nao do
-//      publishedAt: a maior parte dos posts tem publishedAt no futuro, e
-//      lastmod futuro e descartado pelo Google.
+//   2. lastmod. Vem do updatedAt/publishedAt do frontmatter; o ultimo commit
+//      que tocou o arquivo so entra quando a data editorial falta ou esta no
+//      futuro (lastmod futuro e descartado pelo Google). Ver lastmodOf().
 import { execFileSync } from 'node:child_process'
 import { readdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
@@ -77,12 +77,18 @@ function gitDates() {
   return dates
 }
 
+// lastmod = a data editorial do frontmatter (updatedAt, senao publishedAt).
+// Antes vinha do ultimo commit que tocou o arquivo: o commit da escada de CTA
+// (08/11/2026) marcou 177 posts como "modificados" no mesmo dia sem mudar uma
+// linha de conteudo, e lastmod que muda sem conteudo novo ensina o Google a
+// ignorar o campo. Mudanca de fato atualiza o updatedAt; link interno, CTA e
+// ajuste de forma nao. O git so entra quando o frontmatter nao serve (ausente,
+// invalido ou no futuro).
 function lastmodOf(post, dates, now) {
-  const fromGit = dates.get(post.file)
-  if (fromGit) return new Date(fromGit).toISOString()
-  // Reserva: a data do frontmatter, mas nunca no futuro.
   const d = post.frontmatterDate ? new Date(post.frontmatterDate) : undefined
-  return d && !Number.isNaN(d.getTime()) && d <= now ? d.toISOString() : undefined
+  if (d && !Number.isNaN(d.getTime()) && d <= now) return d.toISOString()
+  const fromGit = dates.get(post.file)
+  return fromGit ? new Date(fromGit).toISOString() : undefined
 }
 
 export function buildSitemapMeta(site, base) {
